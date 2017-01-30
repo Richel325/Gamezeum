@@ -21,26 +21,32 @@ My background and work in museums has been a way for me to combine my expertise 
 1. Would people who attend museums infrequently become more interested in museums/art because of this app?
 1. Will this app help to increase funding for museums and research?
 1. Will this app help make museums and art more accessible for diverse, and traditional underrepresented audiences?
-####Methodology: 20-30 minutes per participant (Max: 5 participants)
-Give participant background on project (goals, wants, personal experience, etc.)
-View short retro PC encyclopedia game demo on YouTube
-Review together 2-3 museum apps and collections
-Discuss history/relationship with museum attendance and interest
-Discuss combination of mobile gaming, education, social media, and museum visits
-Participants:
-Both frequent and infrequent museum-goers
-Public school teachers who have taken students to museums on school/class trips
-Schedule:
-Participant recruitment: January 30-31
-Study: February 1
-Results: February 3 
-Script: 
-Topics/Questions: 
-Favorite Museums?
-Favorite genre/sub-genre of art?
-Most recent exhibition visited?
-Do they play mobile games and why?
-Do they share their museum experiences on social media?
+
+####Methodology: 
+1. 20-30 minutes per participant (Max: 5 participants)
+1. Give participant background on project (goals, wants, personal experience, etc.)
+1. View short retro PC encyclopedia game demo on YouTube
+1. Review together 2-3 museum apps and collections
+1. Discuss history/relationship with museum attendance and interest
+1. Discuss combination of mobile gaming, education, social media, and museum visits
+
+####Participants:
+
+1. Both frequent and infrequent museum-goers
+1. Public school teachers who have taken students to museums on school/class trips
+
+####Schedule:
+1. Participant recruitment: January 30-31
+1. Study: February 1
+1. Results: February 3 
+
+####Script: 
+1. Topics/Questions: 
+    * Favorite Museums?
+    * Favorite genre/sub-genre of art?
+    * Most recent exhibition visited?
+    * Do they play mobile games and why?
+    * Do they share their museum experiences on social media?
 
 
 
@@ -84,7 +90,7 @@ We believe that by creating a trivia game that utilizes various museum collectio
 ![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Persona1.png)
 
 
-# 
+
 #Persona #2: Mr. Arts Education Advocate
 1. Mr. Arts Education Advocate wants to help other teachers find creative ways to engage students when learning about art or visiting arts institutions
 1. Mr. Arts Education Advocate needs to meet his state requirements for arts education and incorporation into his curriculum
@@ -94,5 +100,11 @@ We believe that by creating a trivia game that utilizes various museum collectio
 ![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Persona2.png)
 
 
+##Market Research
+
+![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4_MarketPositioning.png)
 
 
+![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4_ElementAnalysis.png)
+
+![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4_HeuristicEvaluation.png)
