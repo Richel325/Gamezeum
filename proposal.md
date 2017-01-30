@@ -1,19 +1,19 @@
 ##MuseumMindMaze Proposal
 
-![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4-MuseumMindMaze Presentation/Slide1.jpg)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/Project4-MuseumMindMaze%20Presentation/Slide1.jpg)
 
-![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4-MuseumMindMaze Presentation/Slide2.jpg)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/Project4-MuseumMindMaze%20Presentation/Slide2.jpg)
 
-![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4-MuseumMindMaze Presentation/Slide3.jpg)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/Project4-MuseumMindMaze%20Presentation/Slide3.jpg)
 
-![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4-MuseumMindMaze Presentation/Slide4.jpg)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/Project4-MuseumMindMaze%20Presentation/Slide4.jpg)
 
-![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4-MuseumMindMaze Presentation/Slide5.jpg)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/Project4-MuseumMindMaze%20Presentation/Slide5.jpg)
 
-![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4-MuseumMindMaze Presentation/Slide6.jpg)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/Project4-MuseumMindMaze%20Presentation/Slide6.jpg)
 
-![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4-MuseumMindMaze Presentation/Slide7.jpg)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/Project4-MuseumMindMaze%20Presentation/Slide7.jpg)
 
-![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4-MuseumMindMaze Presentation/Slide8.jpg)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/Project4-MuseumMindMaze%20Presentation/Slide8.jpg)
 
-![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4-MuseumMindMaze Presentation/Slide9.jpg)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/Project4-MuseumMindMaze%20Presentation/Slide9.jpg)
