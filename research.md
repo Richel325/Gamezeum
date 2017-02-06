@@ -87,7 +87,7 @@ We believe that by creating a trivia game that utilizes various museum collectio
 1. Megan hopes to connect with other museum-goers and share her own experiences online
 1. Megan wishes to go to museum more frequently and find reasons to be back
 
-![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Persona1.png)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/Persona1.png)
 
 
 
@@ -97,14 +97,14 @@ We believe that by creating a trivia game that utilizes various museum collectio
 1. Mr. Arts Education Advocate hopes to get his students involved in friendly, encouraging competition by using the information and history of the art objects
 1. Mr. Arts Education Advocate wishes to increase his students’ interest in the arts outside of typical museum visits, and beyond boring class field-trips
 
-![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Persona2.png)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/Persona2.png)
 
 
 ##Market Research
 
-![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4_MarketPositioning.png)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/Project4_MarketPositioning.png)
 
 
-![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4_ElementAnalysis.png)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/Project4_ElementAnalysis.png)
 
-![](/Users/richelcuyler/Desktop/General Assembly/MuseumMindMaze/MuseumMindMaze/Images/Project4_HeuristicEvaluation.png)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/Project4_HeuristicEvaluation.png)
