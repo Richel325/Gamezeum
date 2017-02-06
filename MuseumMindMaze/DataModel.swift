@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-
+var objects = [ShortObject]()
 //add: powered by BrooklynMuseum with a link to the site
 
 class LocationObject { //condensed art object listing including museum location and collection
