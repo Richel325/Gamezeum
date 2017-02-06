@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        APIClient.getData { (objects:[ShortObject]?) in
+            ()
+        }
     }
 
     override func didReceiveMemoryWarning() {

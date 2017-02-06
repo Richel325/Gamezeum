@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CA60EC51E4690A800CAA9B5 /* ArtObjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA60EC41E4690A800CAA9B5 /* ArtObjectCell.swift */; };
 		0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */; };
 		0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */; };
 		0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC306211E3F969100790A85 /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CA60EC41E4690A800CAA9B5 /* ArtObjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtObjectCell.swift; sourceTree = "<group>"; };
 		0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		0CC3061E1E3F969100790A85 /* MuseumMindMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumMindMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,9 +41,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CA60EC11E468F6D00CAA9B5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */,
+				0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */,
+			);
+			name = Data;
+			path = MuseumMindMaze;
+			sourceTree = "<group>";
+		};
+		0CA60EC21E468F8B00CAA9B5 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0CC306231E3F969100790A85 /* ViewController.swift */,
+				0CA60EC41E4690A800CAA9B5 /* ArtObjectCell.swift */,
+				0CC306211E3F969100790A85 /* AppDelegate.swift */,
+			);
+			name = Logic;
+			path = MuseumMindMaze;
+			sourceTree = "<group>";
+		};
+		0CA60EC31E468FA000CAA9B5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0CC306251E3F969100790A85 /* Main.storyboard */,
+				0CC3062A1E3F969100790A85 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		0CC306151E3F969100790A85 = {
 			isa = PBXGroup;
 			children = (
+				0CA60EC31E468FA000CAA9B5 /* UI */,
+				0CA60EC21E468F8B00CAA9B5 /* Logic */,
+				0CA60EC11E468F6D00CAA9B5 /* Data */,
 				0CC306201E3F969100790A85 /* MuseumMindMaze */,
 				0CC3061F1E3F969100790A85 /* Products */,
 			);
@@ -58,13 +93,7 @@
 		0CC306201E3F969100790A85 /* MuseumMindMaze */ = {
 			isa = PBXGroup;
 			children = (
-				0CC306211E3F969100790A85 /* AppDelegate.swift */,
-				0CC306231E3F969100790A85 /* ViewController.swift */,
-				0CC306251E3F969100790A85 /* Main.storyboard */,
-				0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */,
-				0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */,
 				0CC306281E3F969100790A85 /* Assets.xcassets */,
-				0CC3062A1E3F969100790A85 /* LaunchScreen.storyboard */,
 				0CC3062D1E3F969100790A85 /* Info.plist */,
 			);
 			path = MuseumMindMaze;
@@ -147,6 +176,7 @@
 				0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */,
 				0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */,
 				0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */,
+				0CA60EC51E4690A800CAA9B5 /* ArtObjectCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +189,7 @@
 				0CC306261E3F969100790A85 /* Base */,
 			);
 			name = Main.storyboard;
+			path = MuseumMindMaze;
 			sourceTree = "<group>";
 		};
 		0CC3062A1E3F969100790A85 /* LaunchScreen.storyboard */ = {
@@ -167,6 +198,7 @@
 				0CC3062B1E3F969100790A85 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = MuseumMindMaze;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
