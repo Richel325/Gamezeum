@@ -23,4 +23,9 @@ class ArtObjectCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    func getImageUrl() {
+        
+        // in completeion. fetch image
+    }
+    
 }

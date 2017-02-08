@@ -28,18 +28,16 @@ class APIClient{
                 DispatchQueue.main.async {
                     completion(art)
                 }
-                
             }
-            
             task.resume()
         }
     }
     
-    
     static func getObjects(_ json: [String: Any]) -> [ShortObject] {
         
         var objects = [ShortObject]()
-        if let listOfObjects = json["objects"] as? [[String: AnyObject]] {
+        if let listOfObjects = json["data"] as? [[String: AnyObject]] {
+         _ = Int(arc4random_uniform(UInt32(max(0, listOfObjects.count-1))))
             for jsonObject in listOfObjects {
                 let object = ShortObject(jsonObject: jsonObject)
                 objects.append(object)

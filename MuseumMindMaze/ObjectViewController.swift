@@ -9,7 +9,7 @@
 import UIKit
 import SafariServices
 
-class ObjectViewController: UIViewController {
+class ObjectViewController: UIViewController, UITableViewDelegate {
     
     @IBOutlet weak var objectTableView: UITableView!
     
@@ -27,13 +27,11 @@ class ObjectViewController: UIViewController {
 
 
 
-extension ObjectViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let object = objects[indexPath.row]
-        let safari = SFSafariViewController(url: URL(string: object.primary_image!)!)
-        navigationController?.pushViewController(safari, animated: true)
-    }
-}
+//extension ObjectViewController: UITableViewDelegate {
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let object = objects[indexPath.row]
+//    }
+//}
 
 
 
@@ -43,14 +41,20 @@ extension ObjectViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "artObjectCell", for: indexPath) as! ArtObjectCell
-            let object = objects[indexPath.row]
-            cell.objectTitle.text = object.title
-            cell.objectImage.downLoadImage(from: object.primary_image!)
-            return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "artObjectCell", for: indexPath) as! ArtObjectCell
+        let indexPath = Int(arc4random_uniform(UInt32(max(0, objects.count-1))))
+        let object = objects[indexPath]
+        cell.objectTitle.text = object.title
+        if let artObjectImageURLString = object.primaryImageURLString {
+            cell.objectImage.downLoadImage(from: artObjectImageURLString)
+        } else {
+            cell.objectImage.image = nil
         }
-
+        return cell
     }
+    
+}
+
 
 extension UIImageView {
     func downLoadImage(from url: String) {

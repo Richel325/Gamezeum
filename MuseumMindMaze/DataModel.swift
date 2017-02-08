@@ -51,3 +51,17 @@ class ShortObject { //condensed art object listing
         self.primary_image = jsonObject?["primary_image"] as? String
     }
 }
+
+extension ShortObject {
+    var primaryImageURLString : String? {
+        if let primary_image = primary_image {
+            return "https://d1lfxha3ugu3d4.cloudfront.net/images/opencollection/objects/size2/" + primary_image
+        } else {
+            return nil
+        }
+    }
+    var primaryImageURL : URL? {
+        return URL(string: primaryImageURLString ?? "")
+    }
+}
+
