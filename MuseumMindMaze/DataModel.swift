@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-var objects = [ShortObject]()
+var objects = [LocationObject]()
 //add: powered by BrooklynMuseum with a link to the site
 
 class LocationObject { //condensed art object listing including museum location and collection
@@ -37,22 +37,7 @@ class LocationObject { //condensed art object listing including museum location 
 }
 
 
-
-class ShortObject { //condensed art object listing
-    var ID: Int?
-    var title: String?
-    var accession_number: String?
-    var primary_image: String?
-    
-    init(jsonObject : [String : AnyObject]?) {
-        self.ID = jsonObject?["id"] as? Int
-        self.title = jsonObject?["title"] as? String
-        self.accession_number = jsonObject?["accession_number"] as? String
-        self.primary_image = jsonObject?["primary_image"] as? String
-    }
-}
-
-extension ShortObject {
+extension LocationObject {
     var primaryImageURLString : String? {
         if let primary_image = primary_image {
             return "https://d1lfxha3ugu3d4.cloudfront.net/images/opencollection/objects/size2/" + primary_image
