@@ -9,35 +9,31 @@
 import Foundation
 import UIKit
 
-var objects = [LocationObject]()
+var objects = [ArtObject]()
 //add: powered by BrooklynMuseum with a link to the site
 
-class LocationObject { //condensed art object listing including museum location and collection
+class ArtObject { //condensed art object listing including museum location and collection
     var ID: Int?
     var title: String?
-    var accession_number: String?
+    var object_date: String?
+    var medium: String?
+    var description: String?
     var primary_image: String?
-    var museum_location_id: Int?
-    var collection_id: Int?
     var floor: Int?
-    var parent_location_id: Int?
-    var parent_location_description: String?
     
     init(jsonObject : [String : AnyObject]?) {
         self.ID = jsonObject?["id"] as? Int
         self.title = jsonObject?["title"] as? String
-        self.accession_number = jsonObject?["accession_number"] as? String
+        self.object_date = jsonObject?["object_date"] as? String
+        self.medium = jsonObject?["medium"] as? String
+        self.description = jsonObject?["description"] as? String
         self.primary_image = jsonObject?["primary_image"] as? String
-        self.museum_location_id = jsonObject?["museum_location_id"] as? Int
-        self.collection_id = jsonObject?["collection_id"] as? Int
         self.floor = jsonObject?["floor"] as? Int
-        self.parent_location_id = jsonObject?["parent_location_id"] as? Int
-        self.parent_location_description = jsonObject?["parent_location_description"] as? String
     }
 }
 
 
-extension LocationObject {
+extension ArtObject {
     var primaryImageURLString : String? {
         if let primary_image = primary_image {
             return "https://d1lfxha3ugu3d4.cloudfront.net/images/opencollection/objects/size2/" + primary_image
@@ -49,4 +45,3 @@ extension LocationObject {
         return URL(string: primaryImageURLString ?? "")
     }
 }
-

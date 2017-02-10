@@ -13,11 +13,11 @@ class ObjectViewController: UIViewController, UITableViewDelegate {
     
     @IBOutlet weak var objectTableView: UITableView!
     
-    var objects = [LocationObject]()
+    var objects = [ArtObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        APIClient.getData(completion: { (objects: [LocationObject]?) -> () in
+        APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
             self.objects = objects!
             self.objectTableView.reloadData()
         })

@@ -14,7 +14,7 @@ class APIClient{
     
     static let APIKey = "YxAQk6MfcwSMr6k1Grrh1drvIz6afNzm"
     
-    static func getData(completion: @escaping ([LocationObject]?) -> ()) {
+    static func getData(completion: @escaping ([ArtObject]?) -> ()) {
         DispatchQueue.global(qos: .background).async{
             
             let endpoint = "https://www.brooklynmuseum.org/api/v2/object"
@@ -33,13 +33,13 @@ class APIClient{
         }
     }
     
-    static func getObjects(_ json: [String: Any]) -> [LocationObject] {
+    static func getObjects(_ json: [String: Any]) -> [ArtObject] {
         
-        var objects = [LocationObject]()
+        var objects = [ArtObject]()
         if let listOfObjects = json["data"] as? [[String: AnyObject]] {
          _ = Int(arc4random_uniform(UInt32(max(0, listOfObjects.count-1))))
             for jsonObject in listOfObjects {
-                let object = LocationObject(jsonObject: jsonObject)
+                let object = ArtObject(jsonObject: jsonObject)
                 objects.append(object)
             }
         }
