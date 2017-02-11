@@ -1,5 +1,5 @@
 //
-//  ArtObject3CollectionViewCell.swift
+//  ArtObject1CollectionViewCell.swift
 //  MuseumMindMaze
 //
 //  Created by Richel Cuyler on 2/10/17.
@@ -8,6 +8,8 @@
 
 import UIKit
 
-class ArtObject3CollectionViewCell: UICollectionViewCell {
+class ArtObjectCollectionViewCell: UICollectionViewCell {
+ 
+    @IBOutlet weak var artImage: UIImageView!
     
 }

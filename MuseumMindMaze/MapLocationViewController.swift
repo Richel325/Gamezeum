@@ -10,26 +10,31 @@ import UIKit
 
 class MapLocationViewController: UIViewController {
 
+    @IBOutlet weak var artTitle: UILabel!
+    @IBOutlet weak var artImage: UIImageView!
+    @IBOutlet weak var artArtist: UILabel!
+    @IBOutlet weak var artObjectDate: UILabel!
+    @IBOutlet weak var artLabel: UILabel!
+    @IBOutlet weak var answer: UITextField!
+    @IBOutlet weak var score: UILabel!
+    
+    
+    
+    @IBAction func submitAnswer(_ sender: UIButton) {
+        
+        
+    }
+
+    
+    
+    
+    
+    var objects = [ArtObject]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
+            self.objects = objects!
+        })
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

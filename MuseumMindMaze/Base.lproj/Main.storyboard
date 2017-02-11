@@ -21,18 +21,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSd-id-EGn">
-                                <rect key="frame" x="112" y="550" width="150" height="75"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MuseumBrooklynbuilding" translatesAutoresizingMaskIntoConstraints="NO" id="Siv-T3-cfn">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="INSTRUCTIONS">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="K39-pb-Ryc" kind="show" id="hzo-Tq-5cy"/>
-                                </connections>
-                            </button>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWF-SW-ROp">
                                 <rect key="frame" x="105" y="77" width="177" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -42,35 +34,29 @@ MUSEUM MIND MAZE!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Magritte_000000_100" translatesAutoresizingMaskIntoConstraints="NO" id="Siv-T3-cfn">
-                                <rect key="frame" x="16" y="147" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSd-id-EGn">
+                                <rect key="frame" x="259" y="591" width="100" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Modern Art_000000_100" translatesAutoresizingMaskIntoConstraints="NO" id="9Mk-vg-kof">
-                                <rect key="frame" x="137" y="185" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Frida Kahlo_000000_100" translatesAutoresizingMaskIntoConstraints="NO" id="uJo-cN-ssp">
-                                <rect key="frame" x="64" y="293" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Da Vinci_000000_100" translatesAutoresizingMaskIntoConstraints="NO" id="PKL-uD-lEM">
-                                <rect key="frame" x="259" y="147" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Edvard Munch_000000_100" translatesAutoresizingMaskIntoConstraints="NO" id="vfW-VN-jfJ">
-                                <rect key="frame" x="218" y="293" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-3i-JDL">
-                                <rect key="frame" x="112" y="431" width="150" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="PLAY!">
+                                <color key="backgroundColor" red="0.22352941176470589" green="0.75294117647058822" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="RULES">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="DhR-Pu-J7C" kind="show" id="Fp4-G8-7CX"/>
+                                    <segue destination="K39-pb-Ryc" kind="show" id="FNy-bt-NPj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-3i-JDL">
+                                <rect key="frame" x="16" y="591" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22352941176470589" green="0.75686274509803919" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="15"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fja-UY-k8J" kind="show" id="bV0-Ih-ygP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,10 +68,59 @@ MUSEUM MIND MAZE!</string>
             </objects>
             <point key="canvasLocation" x="-39.200000000000003" y="-2586.6566716641682"/>
         </scene>
+        <!--Art Object Collection View Controller-->
+        <scene sceneID="CEf-CO-EYI">
+            <objects>
+                <collectionViewController id="fja-UY-k8J" customClass="ArtObjectCollectionViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="YGs-TD-nfZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uUP-2u-j79">
+                            <size key="itemSize" width="90" height="90"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fVa-eb-yNn" customClass="ArtObjectCollectionViewCell" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pWo-oP-FnR">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <connections>
+                                    <outlet property="artImage" destination="pWo-oP-FnR" id="OVS-vI-M0J"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="fja-UY-k8J" id="hUd-sb-QNX"/>
+                            <outlet property="delegate" destination="fja-UY-k8J" id="58b-DG-m0r"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <outlet property="artImageCollectionView" destination="YGs-TD-nfZ" id="0W5-u6-qEt"/>
+                        <segue destination="VLT-54-Nlx" kind="show" identifier="to_find_medium" id="NEQ-c2-PdV"/>
+                        <segue destination="7sC-cK-G9H" kind="show" identifier="to_find_collection" id="nhT-k5-CVZ"/>
+                        <segue destination="Cim-3u-FER" kind="show" identifier="to_find_map_location" id="SNF-yn-h7D"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PF8-Rh-7fR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="-2688"/>
+        </scene>
         <!--InstructionViewController-->
         <scene sceneID="4H1-2M-GcQ">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="K39-pb-Ryc" userLabel="InstructionViewController" sceneMemberID="viewController">
+                <viewController id="K39-pb-Ryc" userLabel="InstructionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eAg-gT-Y4v"/>
                         <viewControllerLayoutGuide type="bottom" id="XTU-M7-z1E"/>
@@ -112,77 +147,18 @@ On the "What's Your Answer?" page, you can input your answer to the trivia quest
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.62513897210000002" green="0.80257184079999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.22352941179999999" green="0.75686274509999996" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bG-gr-NmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="688.79999999999995" y="-3367.4662668665669"/>
-        </scene>
-        <!--ArtCollectionViewController-->
-        <scene sceneID="cO5-o2-gRD">
-            <objects>
-                <collectionViewController title="CHOOSE YOUR ART:" id="DhR-Pu-J7C" userLabel="ArtCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="6oq-Pl-9k8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tdj-0Q-p8k">
-                            <size key="itemSize" width="110" height="110"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artObjectImage1" id="AJY-vM-Wsn">
-                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                                <connections>
-                                    <segue destination="VLT-54-Nlx" kind="show" identifier="find_the_medium" id="oHA-ms-RAq"/>
-                                </connections>
-                            </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artObjectImage2" id="VaN-RC-Qu9">
-                                <rect key="frame" x="133" y="0.0" width="110" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                                <connections>
-                                    <segue destination="7sC-cK-G9H" kind="show" identifier="find_the_collection" id="Rvy-G9-TLo"/>
-                                </connections>
-                            </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artObjectImage3" id="Dhw-MX-k9n">
-                                <rect key="frame" x="265" y="0.0" width="110" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                                <connections>
-                                    <segue destination="Cim-3u-FER" kind="show" identifier="find_the_location" id="Qoo-hL-AhM"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="DhR-Pu-J7C" id="Rri-wn-0Ti"/>
-                            <outlet property="delegate" destination="DhR-Pu-J7C" id="5EC-5q-yit"/>
-                        </connections>
-                    </collectionView>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IU2-Ai-Nsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1072.8" y="-2428.3358320839584"/>
+            <point key="canvasLocation" x="103" y="-3485"/>
         </scene>
         <!--WHAT'S YOUR ANSWER?-->
         <scene sceneID="QM7-Kz-iRa">
             <objects>
-                <viewController title="WHAT'S YOUR ANSWER?" id="VLT-54-Nlx" sceneMemberID="viewController">
+                <viewController title="WHAT'S YOUR ANSWER?" id="VLT-54-Nlx" customClass="MediumViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CV7-GF-gYU"/>
                         <viewControllerLayoutGuide type="bottom" id="uKy-mp-XCb"/>
@@ -217,22 +193,60 @@ On the "What's Your Answer?" page, you can input your answer to the trivia quest
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DESCRIPTION" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0N-I5-aoL">
-                                <rect key="frame" x="16" y="426" width="343" height="100"/>
+                                <rect key="frame" x="16" y="426" width="343" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-Sc-E2K">
+                                <rect key="frame" x="319" y="588" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Museum_000000_100"/>
+                                <connections>
+                                    <action selector="submitAnswer:" destination="VLT-54-Nlx" eventType="touchUpInside" id="B8R-PG-PQA"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mab-kS-SfH">
-                                <rect key="frame" x="16" y="551" width="343" height="30"/>
+                                <rect key="frame" x="16" y="539" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ift-xT-7Jc">
+                                <rect key="frame" x="91" y="607" width="61" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26Z-Pw-WQx">
+                                <rect key="frame" x="237" y="607" width="74" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCr-Qp-ilC">
+                                <rect key="frame" x="16" y="607" width="67" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="answer" destination="mab-kS-SfH" id="PEN-Mc-EMq"/>
+                        <outlet property="artArtist" destination="w9T-00-OW2" id="ZDT-Pw-CKh"/>
+                        <outlet property="artDescription" destination="d0N-I5-aoL" id="Asz-iS-ZDA"/>
+                        <outlet property="artImage" destination="KeV-mv-htP" id="aHG-Wg-1al"/>
+                        <outlet property="artObjectDate" destination="Wu8-5X-D1T" id="pr3-cQ-ouL"/>
+                        <outlet property="artTitle" destination="9AB-AS-HqZ" id="6AX-zg-OL2"/>
+                        <outlet property="score" destination="Ift-xT-7Jc" id="R8q-ed-vya"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6t-1G-xlj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,7 +257,7 @@ On the "What's Your Answer?" page, you can input your answer to the trivia quest
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="646-3b-HYg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" backIndicatorImage="Museum_000000_100" id="FsJ-bb-kG0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="Museum_000000_100" id="FsJ-bb-kG0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -264,7 +278,7 @@ On the "What's Your Answer?" page, you can input your answer to the trivia quest
         <!--WHAT'S YOUR ANSWER?-->
         <scene sceneID="FFW-Xh-5aA">
             <objects>
-                <viewController title="WHAT'S YOUR ANSWER?" id="7sC-cK-G9H" sceneMemberID="viewController">
+                <viewController title="WHAT'S YOUR ANSWER?" id="7sC-cK-G9H" customClass="FindCollectionViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vCO-dG-bZK"/>
                         <viewControllerLayoutGuide type="bottom" id="7am-Yj-YUx"/>
@@ -299,31 +313,69 @@ On the "What's Your Answer?" page, you can input your answer to the trivia quest
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MEDIUM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BH-9y-ibJ">
-                                <rect key="frame" x="16" y="426" width="343" height="100"/>
+                                <rect key="frame" x="16" y="426" width="343" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mXi-fo-IWX">
-                                <rect key="frame" x="16" y="551" width="343" height="30"/>
+                                <rect key="frame" x="16" y="535" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-aC-nPP">
+                                <rect key="frame" x="319" y="607" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Museum_000000_100"/>
+                                <connections>
+                                    <action selector="submitAnswer:" destination="7sC-cK-G9H" eventType="touchUpInside" id="mP6-D5-gZs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3S-Aj-KSP">
+                                <rect key="frame" x="16" y="625" width="67" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb7-sj-6fx">
+                                <rect key="frame" x="91" y="625" width="61" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyP-Hr-MAC">
+                                <rect key="frame" x="237" y="625" width="74" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="answer" destination="mXi-fo-IWX" id="lex-g4-EGX"/>
+                        <outlet property="artArtist" destination="Hi7-to-WiG" id="1qh-HN-QSK"/>
+                        <outlet property="artImage" destination="KTZ-8Y-tmd" id="PxQ-eh-9DN"/>
+                        <outlet property="artMedium" destination="5BH-9y-ibJ" id="yTy-cW-pIc"/>
+                        <outlet property="artObjectDate" destination="6GL-Wg-ws1" id="xaG-u7-Mv0"/>
+                        <outlet property="artTitle" destination="TZg-BB-kMJ" id="b92-qj-C5z"/>
+                        <outlet property="score" destination="jb7-sj-6fx" id="3Jm-Pu-rtQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJQ-Ma-4Ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2157.5999999999999" y="-2270.0149925037481"/>
+            <point key="canvasLocation" x="2158" y="-2405"/>
         </scene>
         <!--WHAT'S YOUR ANSWER?-->
         <scene sceneID="LLj-5T-Miu">
             <objects>
-                <viewController title="WHAT'S YOUR ANSWER?" id="Cim-3u-FER" sceneMemberID="viewController">
+                <viewController title="WHAT'S YOUR ANSWER?" id="Cim-3u-FER" customClass="MapLocationViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uyj-EA-gPx"/>
                         <viewControllerLayoutGuide type="bottom" id="nD4-q1-62e"/>
@@ -358,34 +410,68 @@ On the "What's Your Answer?" page, you can input your answer to the trivia quest
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LABEL" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE1-bw-0Ua">
-                                <rect key="frame" x="16" y="426" width="343" height="100"/>
+                                <rect key="frame" x="16" y="426" width="343" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J30-aj-cpC">
-                                <rect key="frame" x="16" y="551" width="343" height="30"/>
+                                <rect key="frame" x="16" y="534" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAc-5D-ckH">
+                                <rect key="frame" x="319" y="607" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Museum_000000_100"/>
+                                <connections>
+                                    <action selector="submitAnswer:" destination="Cim-3u-FER" eventType="touchUpInside" id="SsA-Ar-zpM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MI6-Yq-QvV">
+                                <rect key="frame" x="16" y="625" width="67" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puf-et-62T">
+                                <rect key="frame" x="91" y="625" width="61" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRQ-4M-Mn8">
+                                <rect key="frame" x="237" y="624" width="74" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="answer" destination="J30-aj-cpC" id="Pby-w8-dB0"/>
+                        <outlet property="artArtist" destination="q1d-kD-vRm" id="MxS-Rc-gee"/>
+                        <outlet property="artImage" destination="uVY-eQ-L73" id="ge2-4g-aHk"/>
+                        <outlet property="artLabel" destination="xE1-bw-0Ua" id="h8v-ok-9Qc"/>
+                        <outlet property="artObjectDate" destination="n9d-KS-8l9" id="gD2-bI-uME"/>
+                        <outlet property="artTitle" destination="e0i-A8-Jsj" id="h5u-Gv-3Ma"/>
+                        <outlet property="score" destination="puf-et-62T" id="VNQ-FC-D78"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="heq-UZ-3Jw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2157.5999999999999" y="-1449.6251874062971"/>
+            <point key="canvasLocation" x="2158" y="-1685"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Da Vinci_000000_100" width="100" height="100"/>
-        <image name="Edvard Munch_000000_100" width="100" height="100"/>
-        <image name="Frida Kahlo_000000_100" width="100" height="100"/>
-        <image name="Magritte_000000_100" width="100" height="100"/>
-        <image name="Modern Art_000000_100" width="100" height="100"/>
+        <image name="MuseumBrooklynbuilding" width="1920" height="1088"/>
         <image name="Museum_000000_100" width="100" height="100"/>
     </resources>
 </document>
