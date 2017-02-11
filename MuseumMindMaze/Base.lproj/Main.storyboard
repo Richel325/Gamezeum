@@ -21,9 +21,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MuseumBrooklynbuilding" translatesAutoresizingMaskIntoConstraints="NO" id="Siv-T3-cfn">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MuseumBrooklynbuilding" translatesAutoresizingMaskIntoConstraints="NO" id="Siv-T3-cfn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="D5I-qm-UMt"/>
+                                    <constraint firstAttribute="height" constant="667" id="W9D-cS-FUe"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWF-SW-ROp">
                                 <rect key="frame" x="105" y="77" width="177" height="41"/>
@@ -61,6 +64,10 @@ MUSEUM MIND MAZE!</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Siv-T3-cfn" firstAttribute="centerX" secondItem="G0z-94-h96" secondAttribute="centerX" id="YDM-eZ-69q"/>
+                            <constraint firstItem="Siv-T3-cfn" firstAttribute="centerY" secondItem="G0z-94-h96" secondAttribute="centerY" id="ifM-zg-slY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Dwq-dI-UcF"/>
                 </viewController>
@@ -72,30 +79,35 @@ MUSEUM MIND MAZE!</string>
         <scene sceneID="CEf-CO-EYI">
             <objects>
                 <collectionViewController id="fja-UY-k8J" customClass="ArtObjectCollectionViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="YGs-TD-nfZ">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="YGs-TD-nfZ" customClass="artImageCollectionView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uUP-2u-j79">
-                            <size key="itemSize" width="90" height="90"/>
+                            <size key="itemSize" width="175" height="160"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fVa-eb-yNn" customClass="ArtObjectCollectionViewCell" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artObjectCell" id="fVa-eb-yNn" customClass="ArtObjectCollectionViewCell" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="175" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="175" height="160"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pWo-oP-FnR">
-                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pWo-oP-FnR">
+                                            <rect key="frame" x="0.0" y="0.0" width="175" height="160"/>
                                         </imageView>
                                     </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pWo-oP-FnR" secondAttribute="trailing" id="XlJ-mw-wFu"/>
+                                    <constraint firstItem="pWo-oP-FnR" firstAttribute="top" secondItem="fVa-eb-yNn" secondAttribute="top" id="YGD-WD-CIX"/>
+                                    <constraint firstAttribute="bottom" secondItem="pWo-oP-FnR" secondAttribute="bottom" id="bNQ-dZ-395"/>
+                                    <constraint firstItem="pWo-oP-FnR" firstAttribute="leading" secondItem="fVa-eb-yNn" secondAttribute="leading" id="in5-3Y-re9"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="artImage" destination="pWo-oP-FnR" id="OVS-vI-M0J"/>
                                 </connections>
@@ -108,14 +120,14 @@ MUSEUM MIND MAZE!</string>
                     </collectionView>
                     <connections>
                         <outlet property="artImageCollectionView" destination="YGs-TD-nfZ" id="0W5-u6-qEt"/>
-                        <segue destination="VLT-54-Nlx" kind="show" identifier="to_find_medium" id="NEQ-c2-PdV"/>
-                        <segue destination="7sC-cK-G9H" kind="show" identifier="to_find_collection" id="nhT-k5-CVZ"/>
-                        <segue destination="Cim-3u-FER" kind="show" identifier="to_find_map_location" id="SNF-yn-h7D"/>
+                        <segue destination="WAj-91-d75" kind="presentation" identifier="to_find_medium" modalPresentationStyle="overCurrentContext" modalTransitionStyle="flipHorizontal" id="NEQ-c2-PdV"/>
+                        <segue destination="BJn-5Z-IMA" kind="presentation" identifier="to_find_collection" modalPresentationStyle="overCurrentContext" modalTransitionStyle="flipHorizontal" id="nhT-k5-CVZ"/>
+                        <segue destination="1VO-Xs-dYt" kind="presentation" identifier="to_find_map_location" modalPresentationStyle="overCurrentContext" modalTransitionStyle="flipHorizontal" id="SNF-yn-h7D"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PF8-Rh-7fR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="-2688"/>
+            <point key="canvasLocation" x="1028" y="-2688.3058470764618"/>
         </scene>
         <!--InstructionViewController-->
         <scene sceneID="4H1-2M-GcQ">
@@ -137,23 +149,25 @@ MUSEUM MIND MAZE!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dn-uX-Ng6">
-                                <rect key="frame" x="34" y="160" width="307" height="439"/>
+                                <rect key="frame" x="34" y="114" width="307" height="514"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Begin by clicking the image of the art object you want to select on the "Choose Your Art" page. 
 
-On the "What's Your Answer?" page, you can input your answer to the trivia question in the field provided. If you're correct, you can choose another art object to keep playing. If you're wrong, you get to keep trying until you get the correct answer. Good luck, godspeed, and have fun in the museum!</string>
+On the "What's Your Answer?" page, you can input your answer to the trivia question in the field provided. If your answer is correct, you can choose another art object to keep playing. If your answer is wrong, you get to keep trying until you get the correct answer. 
+
+Good luck, and have fun exploring the museum!</string>
                                 <fontDescription key="fontDescription" name="Didot-Italic" family="Didot" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.22352941179999999" green="0.75686274509999996" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bG-gr-NmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="-3485"/>
+            <point key="canvasLocation" x="101.59999999999999" y="-3485.307346326837"/>
         </scene>
         <!--WHAT'S YOUR ANSWER?-->
         <scene sceneID="QM7-Kz-iRa">
@@ -238,6 +252,7 @@ On the "What's Your Answer?" page, you can input your answer to the trivia quest
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="WHAT'S YOUR ANSWER?" id="uTk-6Z-Arh"/>
                     <connections>
                         <outlet property="answer" destination="mab-kS-SfH" id="PEN-Mc-EMq"/>
                         <outlet property="artArtist" destination="w9T-00-OW2" id="ZDT-Pw-CKh"/>
@@ -250,7 +265,7 @@ On the "What's Your Answer?" page, you can input your answer to the trivia quest
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6t-1G-xlj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2157.5999999999999" y="-3117.3913043478265"/>
+            <point key="canvasLocation" x="3096.8000000000002" y="-3117.3913043478265"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nic-V7-eHg">
@@ -358,6 +373,7 @@ On the "What's Your Answer?" page, you can input your answer to the trivia quest
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="WHAT'S YOUR ANSWER?" id="9L1-Nh-Cw1"/>
                     <connections>
                         <outlet property="answer" destination="mXi-fo-IWX" id="lex-g4-EGX"/>
                         <outlet property="artArtist" destination="Hi7-to-WiG" id="1qh-HN-QSK"/>
@@ -370,7 +386,7 @@ On the "What's Your Answer?" page, you can input your answer to the trivia quest
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJQ-Ma-4Ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2158" y="-2405"/>
+            <point key="canvasLocation" x="3096.8000000000002" y="-2403.1484257871066"/>
         </scene>
         <!--WHAT'S YOUR ANSWER?-->
         <scene sceneID="LLj-5T-Miu">
@@ -455,6 +471,7 @@ On the "What's Your Answer?" page, you can input your answer to the trivia quest
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="WHAT'S YOUR ANSWER?" id="oZH-gx-EAZ"/>
                     <connections>
                         <outlet property="answer" destination="J30-aj-cpC" id="Pby-w8-dB0"/>
                         <outlet property="artArtist" destination="q1d-kD-vRm" id="MxS-Rc-gee"/>
@@ -467,7 +484,61 @@ On the "What's Your Answer?" page, you can input your answer to the trivia quest
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="heq-UZ-3Jw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2158" y="-1685"/>
+            <point key="canvasLocation" x="3096.8000000000002" y="-1625.0374812593705"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hHO-Rd-A0u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WAj-91-d75" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XGD-dd-y8G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VLT-54-Nlx" kind="relationship" relationship="rootViewController" id="BWO-0d-T9B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iow-QW-SMq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2157.5999999999999" y="-3117.3913043478265"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ov6-ST-05T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BJn-5Z-IMA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uWi-K7-nyE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7sC-cK-G9H" kind="relationship" relationship="rootViewController" id="vlf-fi-WBw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xBt-9k-ZQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2157.5999999999999" y="-2403.1484257871066"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Uf-Pn-tcI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1VO-Xs-dYt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D15-IC-dGW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Cim-3u-FER" kind="relationship" relationship="rootViewController" id="oY7-VE-Xzv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tt5-N8-ne0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2157.5999999999999" y="-1625.0374812593705"/>
         </scene>
     </scenes>
     <resources>

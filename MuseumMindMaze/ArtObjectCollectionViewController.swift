@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let reuseIdentifier = "artObjectImage"
+private let reuseIdentifier = "artObjectCell"
 
 class ArtObjectCollectionViewController: UICollectionViewController {
     
@@ -39,7 +39,7 @@ class ArtObjectCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return objects.count
+        return 1
     }
     
     
@@ -49,7 +49,6 @@ class ArtObjectCollectionViewController: UICollectionViewController {
     
     func collectionView1(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtObjectCollectionViewCell
-        
         let indexPath = Int(arc4random_uniform(UInt32(max(0, objects.count-1))))
         let object = objects[indexPath]
         if let artObjectImageURLString = object.primaryImageURLString {
@@ -61,6 +60,35 @@ class ArtObjectCollectionViewController: UICollectionViewController {
         return cell
     }
     
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch QuestionVC.randomQuestionVC() {
+        case .one:
+            performSegue(withIdentifier: "to_find_medium", sender: nil)
+        case .two:
+            performSegue(withIdentifier: "to_find_collection", sender: nil)
+        case .three:
+            performSegue(withIdentifier: "to_find_map_location", sender: nil)
+        }
+    }
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier ?? "" {
+        case "to_find_medium":
+            let destination = segue.destination as! UINavigationController
+            destination.viewControllers[0] as! MediumViewController
+        case "to_find_collection":
+            let destination = segue.destination as! UINavigationController
+            destination.viewControllers[1] as! FindCollectionViewController
+        case "to_find_map_location":
+            let destination = segue.destination as! UINavigationController
+            destination.viewControllers[2] as! MapLocationViewController
+        default:
+            break
+        }
+    }
+    
     // MARK: UICollectionViewDelegate
     
     
@@ -68,6 +96,7 @@ class ArtObjectCollectionViewController: UICollectionViewController {
     //    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
     //        return true
     //    }
+
 }
 
 
@@ -83,3 +112,5 @@ extension UIImageView {
         task.resume()
     }
 }
+
+

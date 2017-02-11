@@ -1,0 +1,19 @@
+//
+//  QuestionVCEnum.swift
+//  MuseumMindMaze
+//
+//  Created by Richel Cuyler on 2/11/17.
+//  Copyright © 2017 Richel Cuyler. All rights reserved.
+//
+
+import Foundation
+
+enum QuestionVC: Int {
+    case one = 0
+    case two
+    case three
+    
+    static func randomQuestionVC() -> QuestionVC {
+        return QuestionVC(rawValue: Int(arc4random_uniform(3)))!
+    }
+}

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 var objects = [ArtObject]()
-//add: powered by BrooklynMuseum with a link to the site
+
 
 class ArtObject { //condensed art object listing including museum location and collection
     var ID: Int?
@@ -20,10 +20,10 @@ class ArtObject { //condensed art object listing including museum location and c
     var description: String?
     var primary_image: String?
 
-    var artist: Artist
-    var museumLocation: MuseumLocation
-    var collection: Collection
-    var label: Label
+    var artist: Artist?
+    var museumLocation: MuseumLocation?
+    var collection: Collection?
+    var label: Label?
     
     init(jsonObject : [String : AnyObject]?) {
         self.ID = jsonObject?["id"] as? Int
@@ -34,16 +34,50 @@ class ArtObject { //condensed art object listing including museum location and c
         self.primary_image = jsonObject?["primary_image"] as? String
         
         let artistJSON = jsonObject?["artists"]
-        artist = Artist(jsonObject: artistJSON as! [String : AnyObject]?)
+        if let aj = (artistJSON as? [[String : AnyObject]]) {
+            if aj.count > 0 {
+                artist = Artist(jsonObject: aj[0])}
+        } else {
+            print("Artist Unknown")
+        }
+
         
-        let museumLocationJSON = jsonObject?["museum_location"] as! [String : AnyObject]
-        museumLocation = MuseumLocation(jsonObject: museumLocationJSON)
+        let museumLocationJSON = jsonObject?["museum_location"]
+        if let ml = (museumLocationJSON as? [[String : AnyObject]]) {
+            if ml.count > 0 {
+                museumLocation = MuseumLocation(jsonObject: ml[0])}
+        } else {
+            print("Museum Location Unknown")
+        }
         
-        let collectionJSON = jsonObject?["collections"] as! [String : AnyObject]
-        collection = Collection(jsonObject: collectionJSON)
         
-        let labelJSON = jsonObject?["labels"] as! [String : AnyObject]
-        label = Label(jsonObject: labelJSON)
+        let collectionJSON = jsonObject?["collections"]
+        if let co = (collectionJSON as? [[String : AnyObject]]) {
+            if co.count > 0 {
+                collection = Collection(jsonObject: co[0])}
+        } else {
+            print("Collection Unknown")
+        }
+        
+        
+        let labelJSON = jsonObject?["labels"]
+        if let lj = (labelJSON as? [[String : AnyObject]]) {
+            if lj.count > 0 {
+                label = Label(jsonObject: lj[0])}
+        } else {
+            print("Label Unknown")
+        }
+        
+        
+        
+//        let museumLocationJSON = jsonObject?["museum_location"] as! [String : AnyObject]
+//        museumLocation = MuseumLocation(jsonObject: museumLocationJSON)
+        
+//        let collectionJSON = jsonObject?["collections"]
+//        collection = Collection(jsonObject: (collectionJSON as! [[String : AnyObject]])[0])
+        
+//        let labelJSON = jsonObject?["labels"]
+//        label = Label(jsonObject: (labelJSON as! [[String : AnyObject]])[0])
     }
 }
 
@@ -109,6 +143,10 @@ class Label {
         self.content = jsonObject?["content"] as? String
     }
 }
+
+
+
+
 
 
 
