@@ -15,10 +15,11 @@
 		0CC3062C1E3F969100790A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC3062A1E3F969100790A85 /* LaunchScreen.storyboard */; };
 		0CF942B41E4D8B5700E3F563 /* MediumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */; };
 		0CF942B61E4D8B7700E3F563 /* FindCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */; };
-		0CF942BE1E4F665D00E3F563 /* GameIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942BD1E4F665D00E3F563 /* GameIntroViewController.swift */; };
 		0CF942C01E4F76CA00E3F563 /* QuestionVCEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942BF1E4F76CA00E3F563 /* QuestionVCEnum.swift */; };
 		0CF942C21E5136EA00E3F563 /* ArtImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942C11E5136EA00E3F563 /* ArtImageViewController.swift */; };
 		0CF942C41E51429E00E3F563 /* ArtImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942C31E51429E00E3F563 /* ArtImageTableViewCell.swift */; };
+		0CF942C61E516EE900E3F563 /* GameIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942C51E516EE900E3F563 /* GameIntroViewController.swift */; };
+		0CF942C91E51705600E3F563 /* Fmaj.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CF942C81E51705600E3F563 /* Fmaj.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +33,11 @@
 		0CC3062D1E3F969100790A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumViewController.swift; sourceTree = "<group>"; };
 		0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindCollectionViewController.swift; sourceTree = "<group>"; };
-		0CF942BD1E4F665D00E3F563 /* GameIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameIntroViewController.swift; sourceTree = "<group>"; };
 		0CF942BF1E4F76CA00E3F563 /* QuestionVCEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionVCEnum.swift; sourceTree = "<group>"; };
 		0CF942C11E5136EA00E3F563 /* ArtImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtImageViewController.swift; sourceTree = "<group>"; };
 		0CF942C31E51429E00E3F563 /* ArtImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtImageTableViewCell.swift; sourceTree = "<group>"; };
+		0CF942C51E516EE900E3F563 /* GameIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameIntroViewController.swift; sourceTree = "<group>"; };
+		0CF942C81E51705600E3F563 /* Fmaj.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fmaj.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		0CC306151E3F969100790A85 = {
 			isa = PBXGroup;
 			children = (
+				0CF942C71E51704400E3F563 /* Music */,
 				0CA60EC31E468FA000CAA9B5 /* UI */,
 				0CA60EC21E468F8B00CAA9B5 /* Logic */,
 				0CA60EC11E468F6D00CAA9B5 /* Data */,
@@ -118,13 +121,21 @@
 		0CF942B21E4D8B2A00E3F563 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0CF942BD1E4F665D00E3F563 /* GameIntroViewController.swift */,
 				0CF942C11E5136EA00E3F563 /* ArtImageViewController.swift */,
+				0CF942C51E516EE900E3F563 /* GameIntroViewController.swift */,
 				0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */,
 				0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */,
 				0CC306211E3F969100790A85 /* AppDelegate.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0CF942C71E51704400E3F563 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				0CF942C81E51705600E3F563 /* Fmaj.mp3 */,
+			);
+			name = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF942C91E51705600E3F563 /* Fmaj.mp3 in Resources */,
 				0CC3062C1E3F969100790A85 /* LaunchScreen.storyboard in Resources */,
 				0CC306291E3F969100790A85 /* Assets.xcassets in Resources */,
 				0CC306271E3F969100790A85 /* Main.storyboard in Resources */,
@@ -204,8 +216,8 @@
 				0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */,
 				0CF942C41E51429E00E3F563 /* ArtImageTableViewCell.swift in Sources */,
 				0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */,
-				0CF942BE1E4F665D00E3F563 /* GameIntroViewController.swift in Sources */,
 				0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */,
+				0CF942C61E516EE900E3F563 /* GameIntroViewController.swift in Sources */,
 				0CF942B41E4D8B5700E3F563 /* MediumViewController.swift in Sources */,
 				0CF942B61E4D8B7700E3F563 /* FindCollectionViewController.swift in Sources */,
 				0CF942C01E4F76CA00E3F563 /* QuestionVCEnum.swift in Sources */,

@@ -13,6 +13,6 @@ enum QuestionVC: Int {
     case two
     
     static func randomQuestionVC() -> QuestionVC {
-        return QuestionVC(rawValue: Int(arc4random_uniform(3)))!
+        return QuestionVC(rawValue: Int(arc4random_uniform(2)))!
     }
 }

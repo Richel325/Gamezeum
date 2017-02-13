@@ -15,7 +15,7 @@
         <!--GameIntroViewController-->
         <scene sceneID="gu1-x5-edo">
             <objects>
-                <viewController id="LMj-HA-f7X" userLabel="GameIntroViewController" sceneMemberID="viewController">
+                <viewController id="LMj-HA-f7X" userLabel="GameIntroViewController" customClass="GameIntroViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BV0-wm-P0f"/>
                         <viewControllerLayoutGuide type="bottom" id="H7L-xC-Hx4"/>
@@ -46,6 +46,7 @@ MUSEUM MIND MAZE!</string>
                                 <color key="backgroundColor" red="0.22352941176470589" green="0.75294117647058822" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
                                 <state key="normal" title="RULES">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -121,6 +122,10 @@ MUSEUM MIND MAZE!</string>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="uvJ-tD-UfA" id="ky7-8t-1SU"/>
+                                    <outlet property="delegate" destination="uvJ-tD-UfA" id="H71-Y0-nm8"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -131,8 +136,8 @@ MUSEUM MIND MAZE!</string>
                     </view>
                     <connections>
                         <outlet property="artImageTableView" destination="C5J-mP-vQP" id="Py7-s5-kJc"/>
-                        <segue destination="VLT-54-Nlx" kind="presentation" identifier="to_find_medium" modalPresentationStyle="overCurrentContext" modalTransitionStyle="flipHorizontal" id="XXj-dK-GJl"/>
-                        <segue destination="7sC-cK-G9H" kind="presentation" identifier="to_find_collection" modalPresentationStyle="overCurrentContext" modalTransitionStyle="flipHorizontal" id="SIZ-8E-Ylk"/>
+                        <segue destination="aNR-rm-hjg" kind="presentation" identifier="to_find_medium" modalTransitionStyle="coverVertical" id="XXj-dK-GJl"/>
+                        <segue destination="Jv6-gM-1RV" kind="presentation" identifier="to_find_collection" modalTransitionStyle="coverVertical" id="SIZ-8E-Ylk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="do1-Ki-jLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -152,10 +157,10 @@ MUSEUM MIND MAZE!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dn-uX-Ng6">
-                                <rect key="frame" x="34" y="145" width="307" height="482"/>
+                                <rect key="frame" x="34" y="116.5" width="307" height="510.5"/>
                                 <string key="text">Begin by clicking the image of the art object you want to select on the "Choose Your Art" page. 
 
-On the "What's The Medium?" and "What's The Collection?" pages, you can input your answer to the trivia question in the field provided. If your answer is correct, you can choose another art object to keep playing. If your answer is wrong, you get to keep trying until you get the correct answer. 
+When the object detail pages appear, you can input your answer to the trivia question listed at the top of the page into the field provided at the bottom of the page. If your answer is correct, you can choose another art object to keep playing. If your answer is wrong, you get to keep trying until you get the correct answer. 
 
 Good luck, and have fun exploring the museum!</string>
                                 <fontDescription key="fontDescription" name="Didot-Italic" family="Didot" pointSize="23"/>
@@ -163,7 +168,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW TO PLAY:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9U-oY-mCZ">
-                                <rect key="frame" x="72" y="92" width="230" height="38"/>
+                                <rect key="frame" x="72" y="63.5" width="230" height="38"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -184,10 +189,10 @@ Good luck, and have fun exploring the museum!</string>
             </objects>
             <point key="canvasLocation" x="182" y="-3448"/>
         </scene>
-        <!--WHAT'S YOUR ANSWER?-->
+        <!--Medium Question-->
         <scene sceneID="QM7-Kz-iRa">
             <objects>
-                <viewController title="WHAT'S YOUR ANSWER?" id="VLT-54-Nlx" customClass="MediumViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="WHAT'S YOUR ANSWER?" id="VLT-54-Nlx" userLabel="Medium Question" customClass="MediumViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CV7-GF-gYU"/>
                         <viewControllerLayoutGuide type="bottom" id="uKy-mp-XCb"/>
@@ -197,48 +202,30 @@ Good luck, and have fun exploring the museum!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KeV-mv-htP">
-                                <rect key="frame" x="37" y="101" width="300" height="250"/>
+                                <rect key="frame" x="22.5" y="172" width="331" height="250"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AB-AS-HqZ">
-                                <rect key="frame" x="16" y="72" width="343" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="UqV-jh-3SY"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="455" width="343" height="21"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9T-00-OW2">
-                                <rect key="frame" x="16" y="368" width="343" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="wZL-vD-MOC"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="484" width="343" height="21"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OBJECT DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wu8-5X-D1T">
-                                <rect key="frame" x="16" y="397" width="343" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="kj7-sb-eqp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESCRIPTION" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0N-I5-aoL">
-                                <rect key="frame" x="16" y="426" width="343" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="xK5-Re-1vM"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="512" width="342" height="22"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-Sc-E2K">
-                                <rect key="frame" x="319" y="608" width="40" height="40"/>
+                                <rect key="frame" x="303.5" y="110" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="L4s-7G-IHL"/>
+                                    <constraint firstAttribute="width" constant="50" id="f8W-DC-oNL"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="Museum_000000_100"/>
                                 <connections>
@@ -246,69 +233,78 @@ Good luck, and have fun exploring the museum!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCr-Qp-ilC">
-                                <rect key="frame" x="16" y="625" width="67" height="22"/>
+                                <rect key="frame" x="22.5" y="129" width="67" height="22"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ift-xT-7Jc">
-                                <rect key="frame" x="91" y="626" width="61" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26Z-Pw-WQx">
+                                <rect key="frame" x="221.5" y="129" width="74" height="22"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="15" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mab-kS-SfH">
+                                <rect key="frame" x="16" y="72" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESCRIPTION" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0N-I5-aoL">
+                                <rect key="frame" x="16" y="542" width="343" height="105"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="61" id="GSf-e0-i4X"/>
-                                    <constraint firstAttribute="height" constant="21" id="vzW-ao-Lrn"/>
+                                    <constraint firstAttribute="height" constant="105" id="suf-U1-QcQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ift-xT-7Jc">
+                                <rect key="frame" x="97.5" y="128" width="61" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4sv-Dx-8DY"/>
+                                    <constraint firstAttribute="width" constant="61" id="uha-d1-0Mf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26Z-Pw-WQx">
-                                <rect key="frame" x="237" y="626" width="74" height="22"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mab-kS-SfH">
-                                <rect key="frame" x="16" y="570" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Wu8-5X-D1T" firstAttribute="top" secondItem="w9T-00-OW2" secondAttribute="bottom" constant="8" symbolic="YES" id="2rN-b8-FNe"/>
-                            <constraint firstItem="d0N-I5-aoL" firstAttribute="top" secondItem="Wu8-5X-D1T" secondAttribute="bottom" constant="8" symbolic="YES" id="4Ym-qS-Qzl"/>
-                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="leading" secondItem="keX-RZ-g5k" secondAttribute="leadingMargin" id="4ke-6l-s6K"/>
-                            <constraint firstItem="w9T-00-OW2" firstAttribute="top" secondItem="KeV-mv-htP" secondAttribute="bottom" constant="17" id="BBn-5R-kad"/>
-                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="trailing" secondItem="w9T-00-OW2" secondAttribute="trailing" id="CIt-TR-0vB"/>
-                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="centerX" secondItem="KeV-mv-htP" secondAttribute="centerX" id="CQK-fg-gmg"/>
-                            <constraint firstItem="26Z-Pw-WQx" firstAttribute="bottom" secondItem="Taw-Sc-E2K" secondAttribute="bottom" id="DRc-1Z-m4C"/>
-                            <constraint firstItem="Wu8-5X-D1T" firstAttribute="trailing" secondItem="d0N-I5-aoL" secondAttribute="trailing" id="E5O-UV-P4j"/>
-                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="trailing" secondItem="keX-RZ-g5k" secondAttribute="trailingMargin" id="FVH-N3-HhW"/>
-                            <constraint firstItem="mab-kS-SfH" firstAttribute="top" secondItem="d0N-I5-aoL" secondAttribute="bottom" constant="69" id="JSa-LD-mKw"/>
-                            <constraint firstItem="Wu8-5X-D1T" firstAttribute="leading" secondItem="d0N-I5-aoL" secondAttribute="leading" id="P2u-AT-KtM"/>
-                            <constraint firstItem="d0N-I5-aoL" firstAttribute="leading" secondItem="mab-kS-SfH" secondAttribute="leading" id="SKa-1q-MAq"/>
-                            <constraint firstItem="Ift-xT-7Jc" firstAttribute="top" secondItem="26Z-Pw-WQx" secondAttribute="top" id="SeF-fR-KFe"/>
-                            <constraint firstItem="Taw-Sc-E2K" firstAttribute="leading" secondItem="26Z-Pw-WQx" secondAttribute="trailing" constant="8" symbolic="YES" id="Sgh-po-GZT"/>
-                            <constraint firstItem="Taw-Sc-E2K" firstAttribute="top" secondItem="mab-kS-SfH" secondAttribute="bottom" constant="8" symbolic="YES" id="T2C-r5-VbD"/>
-                            <constraint firstAttribute="bottom" secondItem="JCr-Qp-ilC" secondAttribute="bottom" constant="20" symbolic="YES" id="Vtv-wx-Ouq"/>
-                            <constraint firstItem="JCr-Qp-ilC" firstAttribute="top" secondItem="mab-kS-SfH" secondAttribute="bottom" constant="25" id="Xrm-2Y-pGh"/>
-                            <constraint firstItem="mab-kS-SfH" firstAttribute="leading" secondItem="JCr-Qp-ilC" secondAttribute="leading" id="ZUz-X0-cJ3"/>
-                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="leading" secondItem="w9T-00-OW2" secondAttribute="leading" id="b4g-TN-FsK"/>
-                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="top" secondItem="CV7-GF-gYU" secondAttribute="bottom" constant="52" id="bla-qf-Ylx"/>
-                            <constraint firstItem="JCr-Qp-ilC" firstAttribute="bottom" secondItem="Ift-xT-7Jc" secondAttribute="bottom" id="epy-ZH-rBg"/>
-                            <constraint firstItem="d0N-I5-aoL" firstAttribute="trailing" secondItem="mab-kS-SfH" secondAttribute="trailing" id="fK0-hX-Cl3"/>
-                            <constraint firstItem="KeV-mv-htP" firstAttribute="leading" secondItem="keX-RZ-g5k" secondAttribute="leadingMargin" constant="21" id="gdA-Vb-4HP"/>
-                            <constraint firstItem="mab-kS-SfH" firstAttribute="trailing" secondItem="Taw-Sc-E2K" secondAttribute="trailing" id="i0n-18-LP2"/>
-                            <constraint firstItem="Ift-xT-7Jc" firstAttribute="centerY" secondItem="26Z-Pw-WQx" secondAttribute="centerY" id="jV9-uJ-cKX"/>
-                            <constraint firstItem="Ift-xT-7Jc" firstAttribute="leading" secondItem="JCr-Qp-ilC" secondAttribute="trailing" constant="8" symbolic="YES" id="mHz-15-ULp"/>
-                            <constraint firstItem="w9T-00-OW2" firstAttribute="leading" secondItem="Wu8-5X-D1T" secondAttribute="leading" id="o6T-2h-2QQ"/>
-                            <constraint firstItem="JCr-Qp-ilC" firstAttribute="centerY" secondItem="Ift-xT-7Jc" secondAttribute="centerY" id="oiM-Qf-Ybf"/>
-                            <constraint firstItem="KeV-mv-htP" firstAttribute="top" secondItem="9AB-AS-HqZ" secondAttribute="bottom" constant="8" symbolic="YES" id="tVh-XB-Nga"/>
-                            <constraint firstItem="w9T-00-OW2" firstAttribute="trailing" secondItem="Wu8-5X-D1T" secondAttribute="trailing" id="x6n-0b-Mgh"/>
+                            <constraint firstItem="JCr-Qp-ilC" firstAttribute="baseline" secondItem="26Z-Pw-WQx" secondAttribute="baseline" id="0uD-WW-SsA"/>
+                            <constraint firstItem="w9T-00-OW2" firstAttribute="trailing" secondItem="d0N-I5-aoL" secondAttribute="trailing" id="1AR-G4-M0A"/>
+                            <constraint firstItem="w9T-00-OW2" firstAttribute="leading" secondItem="Wu8-5X-D1T" secondAttribute="leading" id="1Wh-TC-a1G"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="top" secondItem="CV7-GF-gYU" secondAttribute="bottom" constant="8" symbolic="YES" id="2np-IM-ryn"/>
+                            <constraint firstAttribute="bottom" secondItem="d0N-I5-aoL" secondAttribute="bottom" constant="20" symbolic="YES" id="3dE-w9-DFR"/>
+                            <constraint firstItem="Ift-xT-7Jc" firstAttribute="leading" secondItem="JCr-Qp-ilC" secondAttribute="trailing" constant="8" symbolic="YES" id="6Xg-ys-u2D"/>
+                            <constraint firstItem="KeV-mv-htP" firstAttribute="centerX" secondItem="9AB-AS-HqZ" secondAttribute="centerX" id="BCb-cp-Ml8"/>
+                            <constraint firstItem="KeV-mv-htP" firstAttribute="top" secondItem="JCr-Qp-ilC" secondAttribute="bottom" constant="21" id="Neo-Zv-UcP"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="trailing" secondItem="9AB-AS-HqZ" secondAttribute="trailing" id="Nf3-ja-aUY"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="trailing" secondItem="keX-RZ-g5k" secondAttribute="trailingMargin" id="PUA-Rh-P5c"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="leading" secondItem="9AB-AS-HqZ" secondAttribute="leading" id="RgT-nW-ne4"/>
+                            <constraint firstItem="Wu8-5X-D1T" firstAttribute="top" secondItem="w9T-00-OW2" secondAttribute="bottom" constant="7" id="Uc1-hr-QwT"/>
+                            <constraint firstItem="w9T-00-OW2" firstAttribute="top" secondItem="9AB-AS-HqZ" secondAttribute="bottom" constant="8" symbolic="YES" id="UpG-XZ-GwM"/>
+                            <constraint firstItem="JCr-Qp-ilC" firstAttribute="leading" secondItem="KeV-mv-htP" secondAttribute="leading" id="a70-7l-Kc0"/>
+                            <constraint firstItem="26Z-Pw-WQx" firstAttribute="leading" secondItem="Ift-xT-7Jc" secondAttribute="trailing" constant="63" id="bZ4-JY-931"/>
+                            <constraint firstItem="Taw-Sc-E2K" firstAttribute="leading" secondItem="26Z-Pw-WQx" secondAttribute="trailing" constant="8" symbolic="YES" id="bdv-VB-C8w"/>
+                            <constraint firstItem="KeV-mv-htP" firstAttribute="top" secondItem="Ift-xT-7Jc" secondAttribute="bottom" constant="23" id="eif-Ql-cPp"/>
+                            <constraint firstItem="Ift-xT-7Jc" firstAttribute="top" secondItem="mab-kS-SfH" secondAttribute="bottom" constant="26" id="fKq-GM-8Xx"/>
+                            <constraint firstItem="Wu8-5X-D1T" firstAttribute="leading" secondItem="d0N-I5-aoL" secondAttribute="leading" id="jML-dM-0Cq"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="leading" secondItem="keX-RZ-g5k" secondAttribute="leadingMargin" id="kI8-2c-X9B"/>
+                            <constraint firstItem="KeV-mv-htP" firstAttribute="top" secondItem="Taw-Sc-E2K" secondAttribute="bottom" constant="12" id="ksS-vZ-U5h"/>
+                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="top" secondItem="KeV-mv-htP" secondAttribute="bottom" constant="33" id="lrj-4z-D3h"/>
+                            <constraint firstItem="w9T-00-OW2" firstAttribute="centerX" secondItem="Wu8-5X-D1T" secondAttribute="centerX" id="n7G-YB-C69"/>
+                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="leading" secondItem="w9T-00-OW2" secondAttribute="leading" id="nrG-9q-LlJ"/>
+                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="trailing" secondItem="w9T-00-OW2" secondAttribute="trailing" id="tHq-Sx-B6B"/>
+                            <constraint firstItem="d0N-I5-aoL" firstAttribute="top" secondItem="Wu8-5X-D1T" secondAttribute="bottom" constant="8" symbolic="YES" id="ugp-SP-2bm"/>
+                            <constraint firstItem="Taw-Sc-E2K" firstAttribute="top" secondItem="mab-kS-SfH" secondAttribute="bottom" constant="8" symbolic="YES" id="yWc-OP-YwU"/>
+                            <constraint firstItem="Taw-Sc-E2K" firstAttribute="trailing" secondItem="KeV-mv-htP" secondAttribute="trailing" id="yZ8-73-yWT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="WHAT'S YOUR ANSWER?" id="uTk-6Z-Arh"/>
+                    <navigationItem key="navigationItem" title="What medium is this object made of?" id="uTk-6Z-Arh">
+                        <barButtonItem key="backBarButtonItem" title="CANCEL" id="mBd-tB-PYR"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="answer" destination="mab-kS-SfH" id="PEN-Mc-EMq"/>
                         <outlet property="artArtist" destination="w9T-00-OW2" id="ZDT-Pw-CKh"/>
@@ -321,7 +317,7 @@ Good luck, and have fun exploring the museum!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6t-1G-xlj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2092" y="-3015"/>
+            <point key="canvasLocation" x="3030.434782608696" y="-3016.304347826087"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nic-V7-eHg">
@@ -346,10 +342,10 @@ Good luck, and have fun exploring the museum!</string>
             </objects>
             <point key="canvasLocation" x="-711" y="-2700"/>
         </scene>
-        <!--WHAT'S YOUR ANSWER?-->
+        <!--Collection Question-->
         <scene sceneID="FFW-Xh-5aA">
             <objects>
-                <viewController title="WHAT'S YOUR ANSWER?" id="7sC-cK-G9H" customClass="FindCollectionViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="WHAT'S YOUR ANSWER?" id="7sC-cK-G9H" userLabel="Collection Question" customClass="FindCollectionViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vCO-dG-bZK"/>
                         <viewControllerLayoutGuide type="bottom" id="7am-Yj-YUx"/>
@@ -359,48 +355,36 @@ Good luck, and have fun exploring the museum!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KTZ-8Y-tmd">
-                                <rect key="frame" x="37" y="101" width="300" height="250"/>
+                                <rect key="frame" x="23" y="172" width="331" height="250"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZg-BB-kMJ">
-                                <rect key="frame" x="16" y="72" width="343" height="21"/>
+                                <rect key="frame" x="16" y="455" width="343" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="4oE-c8-kfK"/>
+                                    <constraint firstAttribute="height" constant="21" id="dgV-vU-H6O"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi7-to-WiG">
-                                <rect key="frame" x="16" y="368" width="343" height="21"/>
+                                <rect key="frame" x="16" y="484" width="343" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="sia-ib-Xzo"/>
+                                    <constraint firstAttribute="height" constant="21" id="1w9-1W-0nA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OBJECT DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GL-Wg-ws1">
-                                <rect key="frame" x="16" y="397" width="343" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="s6H-CM-PrD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEDIUM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BH-9y-ibJ">
-                                <rect key="frame" x="16" y="426" width="343" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="CG8-gT-AnG"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="512" width="342" height="22"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-aC-nPP">
-                                <rect key="frame" x="319" y="607" width="40" height="40"/>
+                                <rect key="frame" x="304" y="110" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="2E8-k4-lcd"/>
+                                    <constraint firstAttribute="width" constant="50" id="Q6o-cL-MGo"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="Museum_000000_100"/>
                                 <connections>
@@ -408,68 +392,77 @@ Good luck, and have fun exploring the museum!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3S-Aj-KSP">
-                                <rect key="frame" x="16" y="625" width="67" height="22"/>
+                                <rect key="frame" x="23" y="128" width="67" height="22"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb7-sj-6fx">
-                                <rect key="frame" x="91" y="625" width="61" height="21"/>
+                                <rect key="frame" x="98" y="128" width="61" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="61" id="HpB-jy-s5X"/>
+                                    <constraint firstAttribute="width" constant="61" id="E2M-Sc-1IA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyP-Hr-MAC">
-                                <rect key="frame" x="237" y="625" width="74" height="22"/>
+                                <rect key="frame" x="222" y="128" width="74" height="22"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mXi-fo-IWX">
-                                <rect key="frame" x="16" y="569" width="343" height="30"/>
+                                <rect key="frame" x="16" y="72" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEDIUM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BH-9y-ibJ">
+                                <rect key="frame" x="16" y="542" width="343" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="2a5-fz-50k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="d3S-Aj-KSP" secondAttribute="bottom" constant="20" symbolic="YES" id="00n-se-Szo"/>
-                            <constraint firstItem="mXi-fo-IWX" firstAttribute="trailing" secondItem="hMF-aC-nPP" secondAttribute="trailing" id="2f3-th-p3s"/>
-                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="trailing" secondItem="lYJ-Vn-WPV" secondAttribute="trailingMargin" id="44K-tE-0Fy"/>
-                            <constraint firstItem="gyP-Hr-MAC" firstAttribute="bottom" secondItem="hMF-aC-nPP" secondAttribute="bottom" id="4f7-Ys-doD"/>
-                            <constraint firstItem="6GL-Wg-ws1" firstAttribute="leading" secondItem="5BH-9y-ibJ" secondAttribute="leading" id="5Fe-cr-ogn"/>
-                            <constraint firstItem="Hi7-to-WiG" firstAttribute="top" secondItem="KTZ-8Y-tmd" secondAttribute="bottom" constant="17" id="7kh-Uh-SJ4"/>
-                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="top" secondItem="jb7-sj-6fx" secondAttribute="top" id="9TX-4T-lW3"/>
-                            <constraint firstItem="6GL-Wg-ws1" firstAttribute="top" secondItem="Hi7-to-WiG" secondAttribute="bottom" constant="8" symbolic="YES" id="9zW-5s-a0A"/>
-                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="baseline" secondItem="gyP-Hr-MAC" secondAttribute="baseline" id="FvR-z0-oCB"/>
-                            <constraint firstItem="5BH-9y-ibJ" firstAttribute="top" secondItem="6GL-Wg-ws1" secondAttribute="bottom" constant="8" symbolic="YES" id="GUG-If-fRh"/>
-                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="top" secondItem="vCO-dG-bZK" secondAttribute="bottom" constant="52" id="H7y-Tv-xR2"/>
-                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" id="IfH-hs-oBS"/>
-                            <constraint firstItem="Hi7-to-WiG" firstAttribute="leading" secondItem="6GL-Wg-ws1" secondAttribute="leading" id="Ol1-Aw-xjv"/>
-                            <constraint firstItem="KTZ-8Y-tmd" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" constant="21" id="Qb8-xe-9vu"/>
-                            <constraint firstItem="mXi-fo-IWX" firstAttribute="top" secondItem="5BH-9y-ibJ" secondAttribute="bottom" constant="68" id="UVH-s5-lrD"/>
-                            <constraint firstItem="gyP-Hr-MAC" firstAttribute="baseline" secondItem="d3S-Aj-KSP" secondAttribute="firstBaseline" id="Ufv-J7-G8x"/>
-                            <constraint firstItem="hMF-aC-nPP" firstAttribute="top" secondItem="mXi-fo-IWX" secondAttribute="bottom" constant="8" symbolic="YES" id="W9B-5P-duQ"/>
-                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="top" secondItem="mXi-fo-IWX" secondAttribute="bottom" constant="26" id="YpT-xO-5ly"/>
-                            <constraint firstItem="Hi7-to-WiG" firstAttribute="trailing" secondItem="6GL-Wg-ws1" secondAttribute="trailing" id="bLG-PD-oRT"/>
-                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="centerX" secondItem="KTZ-8Y-tmd" secondAttribute="centerX" id="ey4-Gm-78Q"/>
-                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="leading" secondItem="Hi7-to-WiG" secondAttribute="leading" id="g4h-O3-ciM"/>
-                            <constraint firstItem="5BH-9y-ibJ" firstAttribute="trailing" secondItem="mXi-fo-IWX" secondAttribute="trailing" id="jvv-8g-Voi"/>
-                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="trailing" secondItem="Hi7-to-WiG" secondAttribute="trailing" id="l9t-z1-drl"/>
-                            <constraint firstItem="6GL-Wg-ws1" firstAttribute="trailing" secondItem="5BH-9y-ibJ" secondAttribute="trailing" id="lNv-U1-jwc"/>
-                            <constraint firstItem="hMF-aC-nPP" firstAttribute="leading" secondItem="gyP-Hr-MAC" secondAttribute="trailing" constant="8" symbolic="YES" id="po0-z9-V6f"/>
-                            <constraint firstItem="KTZ-8Y-tmd" firstAttribute="top" secondItem="TZg-BB-kMJ" secondAttribute="bottom" constant="8" symbolic="YES" id="qmi-ft-QTI"/>
-                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="centerY" secondItem="jb7-sj-6fx" secondAttribute="centerY" id="sNY-jI-Teb"/>
-                            <constraint firstItem="jb7-sj-6fx" firstAttribute="leading" secondItem="d3S-Aj-KSP" secondAttribute="trailing" constant="8" symbolic="YES" id="tx7-6M-6iL"/>
-                            <constraint firstItem="mXi-fo-IWX" firstAttribute="leading" secondItem="d3S-Aj-KSP" secondAttribute="leading" id="vhF-Zz-bTk"/>
-                            <constraint firstItem="5BH-9y-ibJ" firstAttribute="leading" secondItem="mXi-fo-IWX" secondAttribute="leading" id="xeH-aC-7cU"/>
+                            <constraint firstItem="Hi7-to-WiG" firstAttribute="centerX" secondItem="6GL-Wg-ws1" secondAttribute="centerX" id="1v4-yr-EI4"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="trailing" secondItem="lYJ-Vn-WPV" secondAttribute="trailingMargin" id="2sA-ih-Otq"/>
+                            <constraint firstItem="6GL-Wg-ws1" firstAttribute="leading" secondItem="5BH-9y-ibJ" secondAttribute="leading" id="4K9-uS-wlY"/>
+                            <constraint firstItem="6GL-Wg-ws1" firstAttribute="top" secondItem="Hi7-to-WiG" secondAttribute="bottom" constant="7" id="7wg-bc-P2J"/>
+                            <constraint firstItem="5BH-9y-ibJ" firstAttribute="top" secondItem="6GL-Wg-ws1" secondAttribute="bottom" constant="8" symbolic="YES" id="8xt-i0-BSL"/>
+                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="leading" secondItem="Hi7-to-WiG" secondAttribute="leading" id="9nI-Ij-vjz"/>
+                            <constraint firstItem="hMF-aC-nPP" firstAttribute="top" secondItem="mXi-fo-IWX" secondAttribute="bottom" constant="8" symbolic="YES" id="AuK-4v-lLd"/>
+                            <constraint firstItem="hMF-aC-nPP" firstAttribute="leading" secondItem="gyP-Hr-MAC" secondAttribute="trailing" constant="8" symbolic="YES" id="CVd-b0-07U"/>
+                            <constraint firstItem="jb7-sj-6fx" firstAttribute="leading" secondItem="d3S-Aj-KSP" secondAttribute="trailing" constant="8" symbolic="YES" id="CvO-tB-2ZY"/>
+                            <constraint firstItem="gyP-Hr-MAC" firstAttribute="baseline" secondItem="d3S-Aj-KSP" secondAttribute="firstBaseline" id="Nba-Bv-WJH"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" constant="7" id="QzE-rz-fd5"/>
+                            <constraint firstItem="hMF-aC-nPP" firstAttribute="trailing" secondItem="KTZ-8Y-tmd" secondAttribute="trailing" id="VCN-jz-kjW"/>
+                            <constraint firstItem="Hi7-to-WiG" firstAttribute="top" secondItem="TZg-BB-kMJ" secondAttribute="bottom" constant="8" symbolic="YES" id="VEf-3f-Ddv"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="centerY" secondItem="jb7-sj-6fx" secondAttribute="centerY" id="XIN-pg-dpx"/>
+                            <constraint firstItem="gyP-Hr-MAC" firstAttribute="leading" secondItem="jb7-sj-6fx" secondAttribute="trailing" constant="63" id="aSq-zm-9rV"/>
+                            <constraint firstItem="KTZ-8Y-tmd" firstAttribute="top" secondItem="d3S-Aj-KSP" secondAttribute="bottom" constant="22" id="c3E-21-5qf"/>
+                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="trailing" secondItem="Hi7-to-WiG" secondAttribute="trailing" id="cKd-fj-rjA"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="top" secondItem="mXi-fo-IWX" secondAttribute="bottom" constant="26" id="ctC-aU-5NS"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="top" secondItem="jb7-sj-6fx" secondAttribute="top" id="eSL-nq-REB"/>
+                            <constraint firstItem="Hi7-to-WiG" firstAttribute="leading" secondItem="6GL-Wg-ws1" secondAttribute="leading" id="iRZ-0h-YV0"/>
+                            <constraint firstAttribute="bottom" secondItem="5BH-9y-ibJ" secondAttribute="bottom" constant="20" symbolic="YES" id="oUo-sc-Aqy"/>
+                            <constraint firstItem="Hi7-to-WiG" firstAttribute="trailing" secondItem="5BH-9y-ibJ" secondAttribute="trailing" id="oWV-Mh-1pF"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="leading" secondItem="KTZ-8Y-tmd" secondAttribute="leading" id="pG4-MO-nH4"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="trailing" secondItem="TZg-BB-kMJ" secondAttribute="trailing" id="qjF-BW-t7p"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="leading" secondItem="TZg-BB-kMJ" secondAttribute="leading" id="rCJ-9X-4qU"/>
+                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="top" secondItem="KTZ-8Y-tmd" secondAttribute="bottom" constant="33" id="svf-Qh-lPH"/>
+                            <constraint firstItem="KTZ-8Y-tmd" firstAttribute="top" secondItem="hMF-aC-nPP" secondAttribute="bottom" constant="12" id="tyM-Z5-7pz"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="baseline" secondItem="gyP-Hr-MAC" secondAttribute="baseline" id="wdr-Ch-Nux"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="top" secondItem="vCO-dG-bZK" secondAttribute="bottom" constant="8" symbolic="YES" id="yUR-IM-0wf"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" id="zms-wr-5xE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="WHAT'S YOUR ANSWER?" id="9L1-Nh-Cw1"/>
+                    <navigationItem key="navigationItem" title="What collection does this object belong in?" id="9L1-Nh-Cw1"/>
                     <connections>
                         <outlet property="answer" destination="mXi-fo-IWX" id="lex-g4-EGX"/>
                         <outlet property="artArtist" destination="Hi7-to-WiG" id="1qh-HN-QSK"/>
@@ -482,7 +475,43 @@ Good luck, and have fun exploring the museum!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJQ-Ma-4Ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2092" y="-2316"/>
+            <point key="canvasLocation" x="3031.1999999999998" y="-2316.7916041979011"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dk4-6E-456">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aNR-rm-hjg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bd5-PZ-gob">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VLT-54-Nlx" kind="relationship" relationship="rootViewController" id="inR-eC-NGW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZIU-tf-8dW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2092" y="-3015.7421289355325"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="80I-pz-lIj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jv6-gM-1RV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GgZ-fJ-6yb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7sC-cK-G9H" kind="relationship" relationship="rootViewController" id="NiD-5E-b3I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfl-H5-YZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2092" y="-2316.7916041979011"/>
         </scene>
     </scenes>
     <resources>
