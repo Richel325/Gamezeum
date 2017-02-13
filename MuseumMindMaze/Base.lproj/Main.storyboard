@@ -26,22 +26,35 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bk-museum-portrait" translatesAutoresizingMaskIntoConstraints="NO" id="Siv-T3-cfn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="D5I-qm-UMt"/>
-                                    <constraint firstAttribute="height" constant="667" id="W9D-cS-FUe"/>
-                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MUSEUM MIND MAZE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWF-SW-ROp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MUSEUM MIND MAZE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWF-SW-ROp">
                                 <rect key="frame" x="16" y="72" width="343" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="0.16862745100000001" green="0.070588235289999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.59215686270000001" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSd-id-EGn">
-                                <rect key="frame" x="259" y="623" width="100" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-3i-JDL" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="16" y="118" width="100" height="36"/>
                                 <color key="backgroundColor" red="0.82745098039999998" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="jPa-G0-Iwq"/>
+                                    <constraint firstAttribute="height" constant="36" id="ow3-rP-yAZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="15"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uvJ-tD-UfA" kind="show" id="hxW-CI-wRg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSd-id-EGn" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="259" y="118" width="100" height="36"/>
+                                <color key="backgroundColor" red="0.82745098039999998" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0OS-Zp-zDc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
@@ -52,30 +65,30 @@
                                     <segue destination="K39-pb-Ryc" kind="show" id="FNy-bt-NPj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-3i-JDL">
-                                <rect key="frame" x="16" y="623" width="100" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.82745098039999998" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="15"/>
-                                <state key="normal" title="PLAY">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="uvJ-tD-UfA" kind="show" id="hxW-CI-wRg"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Siv-T3-cfn" firstAttribute="centerX" secondItem="G0z-94-h96" secondAttribute="centerX" id="YDM-eZ-69q"/>
-                            <constraint firstItem="Siv-T3-cfn" firstAttribute="centerY" secondItem="G0z-94-h96" secondAttribute="centerY" id="ifM-zg-slY"/>
+                            <constraint firstItem="Q1L-3i-JDL" firstAttribute="top" secondItem="wWF-SW-ROp" secondAttribute="bottom" constant="8" symbolic="YES" id="Dca-MS-vM8"/>
+                            <constraint firstItem="H7L-xC-Hx4" firstAttribute="top" secondItem="Q1L-3i-JDL" secondAttribute="bottom" constant="513" id="Gxt-HA-p8l"/>
+                            <constraint firstAttribute="trailing" secondItem="Siv-T3-cfn" secondAttribute="trailing" id="OsO-HB-VKW"/>
+                            <constraint firstItem="Siv-T3-cfn" firstAttribute="leading" secondItem="G0z-94-h96" secondAttribute="leading" id="Qyt-wB-hXM"/>
+                            <constraint firstItem="Q1L-3i-JDL" firstAttribute="baseline" secondItem="lSd-id-EGn" secondAttribute="firstBaseline" id="RY5-FR-lAQ"/>
+                            <constraint firstItem="wWF-SW-ROp" firstAttribute="leading" secondItem="Q1L-3i-JDL" secondAttribute="leading" id="S2Z-2Y-4Bg"/>
+                            <constraint firstItem="wWF-SW-ROp" firstAttribute="top" secondItem="BV0-wm-P0f" secondAttribute="bottom" constant="8" symbolic="YES" id="c1f-jC-dLj"/>
+                            <constraint firstItem="wWF-SW-ROp" firstAttribute="trailing" secondItem="lSd-id-EGn" secondAttribute="trailing" id="juF-VV-dSn"/>
+                            <constraint firstItem="lSd-id-EGn" firstAttribute="baseline" secondItem="Q1L-3i-JDL" secondAttribute="firstBaseline" id="k9g-wk-WTd"/>
+                            <constraint firstItem="Siv-T3-cfn" firstAttribute="top" secondItem="G0z-94-h96" secondAttribute="top" id="lSx-8m-fJb"/>
+                            <constraint firstItem="Siv-T3-cfn" firstAttribute="bottom" secondItem="H7L-xC-Hx4" secondAttribute="top" id="oHG-fS-XBD"/>
+                            <constraint firstItem="Siv-T3-cfn" firstAttribute="centerX" secondItem="wWF-SW-ROp" secondAttribute="centerX" id="pNu-Ye-Oc7"/>
+                            <constraint firstItem="Q1L-3i-JDL" firstAttribute="top" secondItem="lSd-id-EGn" secondAttribute="top" id="v4q-KA-qo9"/>
+                            <constraint firstItem="wWF-SW-ROp" firstAttribute="leading" secondItem="G0z-94-h96" secondAttribute="leadingMargin" id="xcx-Mg-adR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Dwq-dI-UcF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EyZ-tT-x1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112.8" y="-2700"/>
+            <point key="canvasLocation" x="-151" y="-2703"/>
         </scene>
         <!--Art Image View Controller-->
         <scene sceneID="CcB-Nk-YBk">
@@ -126,7 +139,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="C5J-mP-vQP" firstAttribute="centerX" secondItem="PJH-v7-MtF" secondAttribute="centerX" id="2KP-67-NcL"/>
                             <constraint firstItem="C5J-mP-vQP" firstAttribute="centerY" secondItem="PJH-v7-MtF" secondAttribute="centerY" id="u4o-8K-r9G"/>
@@ -134,13 +147,13 @@
                     </view>
                     <connections>
                         <outlet property="artImageTableView" destination="C5J-mP-vQP" id="Py7-s5-kJc"/>
-                        <segue destination="aNR-rm-hjg" kind="show" identifier="to_find_medium" id="XXj-dK-GJl"/>
-                        <segue destination="Jv6-gM-1RV" kind="show" identifier="to_find_collection" id="SIZ-8E-Ylk"/>
+                        <segue destination="VLT-54-Nlx" kind="show" identifier="to_find_medium" id="lpY-tF-SBh"/>
+                        <segue destination="7sC-cK-G9H" kind="show" identifier="to_find_collection" id="zxN-uv-mFw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="do1-Ki-jLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="-2700"/>
+            <point key="canvasLocation" x="666" y="-2703"/>
         </scene>
         <!--InstructionViewController-->
         <scene sceneID="4H1-2M-GcQ">
@@ -222,7 +235,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-Sc-E2K">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-Sc-E2K" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
                                 <rect key="frame" x="303.5" y="110" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="f8W-DC-oNL"/>
@@ -259,7 +272,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ift-xT-7Jc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ift-xT-7Jc">
                                 <rect key="frame" x="97.5" y="128" width="61" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="4sv-Dx-8DY"/>
@@ -302,9 +315,7 @@ Good luck, and have fun exploring the museum!</string>
                             <constraint firstItem="Taw-Sc-E2K" firstAttribute="trailing" secondItem="KeV-mv-htP" secondAttribute="trailing" id="yZ8-73-yWT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="What medium is this object made of?" id="uTk-6Z-Arh">
-                        <barButtonItem key="backBarButtonItem" title="CANCEL" id="mBd-tB-PYR"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="What medium was used?" id="uTk-6Z-Arh"/>
                     <connections>
                         <outlet property="answer" destination="mab-kS-SfH" id="PEN-Mc-EMq"/>
                         <outlet property="artArtist" destination="w9T-00-OW2" id="ZDT-Pw-CKh"/>
@@ -312,12 +323,12 @@ Good luck, and have fun exploring the museum!</string>
                         <outlet property="artImage" destination="KeV-mv-htP" id="aHG-Wg-1al"/>
                         <outlet property="artObjectDate" destination="Wu8-5X-D1T" id="pr3-cQ-ouL"/>
                         <outlet property="artTitle" destination="9AB-AS-HqZ" id="6AX-zg-OL2"/>
-                        <outlet property="score" destination="Ift-xT-7Jc" id="R8q-ed-vya"/>
+                        <outlet property="scoreLabel" destination="Ift-xT-7Jc" id="xeA-22-0rj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6t-1G-xlj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3030.434782608696" y="-3016.304347826087"/>
+            <point key="canvasLocation" x="1676" y="-3144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nic-V7-eHg">
@@ -340,7 +351,7 @@ Good luck, and have fun exploring the museum!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYB-p6-cia" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-711" y="-2700"/>
+            <point key="canvasLocation" x="-945" y="-2702"/>
         </scene>
         <!--Collection Question-->
         <scene sceneID="FFW-Xh-5aA">
@@ -381,7 +392,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-aC-nPP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-aC-nPP" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
                                 <rect key="frame" x="304" y="110" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Q6o-cL-MGo"/>
@@ -397,7 +408,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb7-sj-6fx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb7-sj-6fx">
                                 <rect key="frame" x="98" y="128" width="61" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="61" id="E2M-Sc-1IA"/>
@@ -462,7 +473,7 @@ Good luck, and have fun exploring the museum!</string>
                             <constraint firstItem="mXi-fo-IWX" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" id="zms-wr-5xE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="What collection does this object belong in?" id="9L1-Nh-Cw1"/>
+                    <navigationItem key="navigationItem" title="What collection does this belong in?" id="9L1-Nh-Cw1"/>
                     <connections>
                         <outlet property="answer" destination="mXi-fo-IWX" id="lex-g4-EGX"/>
                         <outlet property="artArtist" destination="Hi7-to-WiG" id="1qh-HN-QSK"/>
@@ -470,48 +481,12 @@ Good luck, and have fun exploring the museum!</string>
                         <outlet property="artMedium" destination="5BH-9y-ibJ" id="yTy-cW-pIc"/>
                         <outlet property="artObjectDate" destination="6GL-Wg-ws1" id="xaG-u7-Mv0"/>
                         <outlet property="artTitle" destination="TZg-BB-kMJ" id="b92-qj-C5z"/>
-                        <outlet property="score" destination="jb7-sj-6fx" id="3Jm-Pu-rtQ"/>
+                        <outlet property="scoreLabel" destination="jb7-sj-6fx" id="bzS-oz-ZM7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJQ-Ma-4Ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3031.1999999999998" y="-2316.7916041979011"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="dk4-6E-456">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aNR-rm-hjg" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bd5-PZ-gob">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="VLT-54-Nlx" kind="relationship" relationship="rootViewController" id="inR-eC-NGW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZIU-tf-8dW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2092" y="-3015.7421289355325"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="80I-pz-lIj">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jv6-gM-1RV" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GgZ-fJ-6yb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="7sC-cK-G9H" kind="relationship" relationship="rootViewController" id="NiD-5E-b3I"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfl-H5-YZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2092" y="-2316.7916041979011"/>
+            <point key="canvasLocation" x="1676" y="-2312"/>
         </scene>
     </scenes>
     <resources>

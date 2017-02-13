@@ -20,6 +20,7 @@
 		0CF942C41E51429E00E3F563 /* ArtImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942C31E51429E00E3F563 /* ArtImageTableViewCell.swift */; };
 		0CF942C61E516EE900E3F563 /* GameIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942C51E516EE900E3F563 /* GameIntroViewController.swift */; };
 		0CF942C91E51705600E3F563 /* Fmaj.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CF942C81E51705600E3F563 /* Fmaj.mp3 */; };
+		0CF942CB1E51837000E3F563 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942CA1E51837000E3F563 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0CF942C31E51429E00E3F563 /* ArtImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtImageTableViewCell.swift; sourceTree = "<group>"; };
 		0CF942C51E516EE900E3F563 /* GameIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameIntroViewController.swift; sourceTree = "<group>"; };
 		0CF942C81E51705600E3F563 /* Fmaj.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fmaj.mp3; sourceTree = "<group>"; };
+		0CF942CA1E51837000E3F563 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				0CC306251E3F969100790A85 /* Main.storyboard */,
 				0CC3062A1E3F969100790A85 /* LaunchScreen.storyboard */,
+				0CF942CA1E51837000E3F563 /* CustomButton.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */,
 				0CF942C41E51429E00E3F563 /* ArtImageTableViewCell.swift in Sources */,
 				0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */,
+				0CF942CB1E51837000E3F563 /* CustomButton.swift in Sources */,
 				0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */,
 				0CF942C61E516EE900E3F563 /* GameIntroViewController.swift in Sources */,
 				0CF942B41E4D8B5700E3F563 /* MediumViewController.swift in Sources */,

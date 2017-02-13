@@ -84,11 +84,3 @@ extension UIImageView {
     }
 }
 
-
-extension UserDefaults {
-    fileprivate static let scoreID = "scoreID"
-    var score : Int {
-        get { return UserDefaults.standard.integer(forKey: UserDefaults.scoreID) }
-        set { UserDefaults.standard.set(newValue, forKey: UserDefaults.scoreID) }
-    }
-}

@@ -16,7 +16,7 @@ class MediumViewController: UIViewController {
     @IBOutlet weak var artObjectDate: UILabel!
     @IBOutlet weak var artDescription: UILabel!
     @IBOutlet weak var answer: UITextField!
-    @IBOutlet weak var score: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     
     var objects = [ArtObject]()
@@ -25,21 +25,18 @@ class MediumViewController: UIViewController {
         super.viewDidLoad()
         APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
             self.objects = objects!
-            self.artTitle = ArtObject(jsonObject: [])
         })
     }
     
-    
+    var score = 0
     
     @IBAction func submitAnswer(_ sender: UIButton) {
-        let answer = true
-        
-        if answer == true {// ALERT MESSAGES: For right and wrong answers (1 = Wrong, 2 = Right)
+        if answer == answer {// ALERT MESSAGES: For right and wrong answers
             let alertController2 = UIAlertController(title: "Correct Answer!", message:
                 "You got it right! Click OK to keep playing.", preferredStyle: UIAlertControllerStyle.alert)
             alertController2.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
             self.present(alertController2, animated: true, completion: nil)
-            //Dismisses the segue when the answer is Correct
+            //Dismisses the segue when the answer is correct
             self.dismiss(animated: true, completion: nil)
         } else {
             let alertController1 = UIAlertController(title: "Wrong Answer!", message:
@@ -52,4 +49,13 @@ class MediumViewController: UIViewController {
         
     }
     
+}
+
+
+extension UserDefaults {
+    fileprivate static let scoreID = "scoreID"
+    var score : Int {
+        get { return UserDefaults.standard.integer(forKey: UserDefaults.scoreID) }
+        set { UserDefaults.standard.set(newValue, forKey: UserDefaults.scoreID) }
+    }
 }

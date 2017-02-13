@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum QuestionVC: Int {
+enum QuestionVC: Int {//Enum to randomize question storyboard segue
     case one = 0
     case two
     
