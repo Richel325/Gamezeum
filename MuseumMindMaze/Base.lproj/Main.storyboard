@@ -175,7 +175,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dn-uX-Ng6">
                                 <rect key="frame" x="34" y="159" width="307" height="488"/>
-                                <string key="text">Begin by clicking the image of the art object you want to select on the "Choose Your Art" page. 
+                                <string key="text">After selecting the "Play" button, begin by clicking the image of the art object you want to select. 
 
 When the object detail pages appear, you can input your answer to the trivia question listed at the top of the page into the field provided at the bottom of the page. If your answer is correct, you can choose another art object to keep playing. If your answer is wrong, you get to keep trying until you get the correct answer. 
 

@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bk-museum-landscape" translatesAutoresizingMaskIntoConstraints="NO" id="4CS-XG-XTh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mona-lisa" translatesAutoresizingMaskIntoConstraints="NO" id="4CS-XG-XTh">
                                 <rect key="frame" x="125" y="271" width="125" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="iGU-Go-2Ud"/>
@@ -42,6 +42,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bk-museum-landscape" width="1920" height="1080"/>
+        <image name="mona-lisa" width="336" height="336"/>
     </resources>
 </document>
