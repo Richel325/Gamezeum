@@ -25,13 +25,14 @@ class MediumViewController: UIViewController {
         super.viewDidLoad()
         APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
             self.objects = objects!
+            self.artTitle = ArtObject(jsonObject: [])
         })
     }
     
     
     
     @IBAction func submitAnswer(_ sender: UIButton) {
-        var answer = Bool()
+        let answer = true
         
         if answer == true {// ALERT MESSAGES: For right and wrong answers (1 = Wrong, 2 = Right)
             let alertController2 = UIAlertController(title: "Correct Answer!", message:

@@ -24,26 +24,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MuseumBrooklynbuilding" translatesAutoresizingMaskIntoConstraints="NO" id="Siv-T3-cfn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bk-museum-portrait" translatesAutoresizingMaskIntoConstraints="NO" id="Siv-T3-cfn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="D5I-qm-UMt"/>
                                     <constraint firstAttribute="height" constant="667" id="W9D-cS-FUe"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWF-SW-ROp">
-                                <rect key="frame" x="105" y="77" width="177" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MUSEUM MIND MAZE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWF-SW-ROp">
+                                <rect key="frame" x="16" y="72" width="343" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">WELCOME TO 
-MUSEUM MIND MAZE!</string>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSd-id-EGn">
-                                <rect key="frame" x="259" y="591" width="100" height="50"/>
+                                <rect key="frame" x="259" y="623" width="100" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22352941176470589" green="0.75294117647058822" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.82745098039999998" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
@@ -55,9 +53,9 @@ MUSEUM MIND MAZE!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-3i-JDL">
-                                <rect key="frame" x="16" y="591" width="100" height="50"/>
+                                <rect key="frame" x="16" y="623" width="100" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.22352941176470589" green="0.75686274509803919" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.82745098039999998" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="15"/>
                                 <state key="normal" title="PLAY">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -77,7 +75,7 @@ MUSEUM MIND MAZE!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EyZ-tT-x1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="-2700"/>
+            <point key="canvasLocation" x="112.8" y="-2700"/>
         </scene>
         <!--Art Image View Controller-->
         <scene sceneID="CcB-Nk-YBk">
@@ -136,8 +134,8 @@ MUSEUM MIND MAZE!</string>
                     </view>
                     <connections>
                         <outlet property="artImageTableView" destination="C5J-mP-vQP" id="Py7-s5-kJc"/>
-                        <segue destination="aNR-rm-hjg" kind="presentation" identifier="to_find_medium" modalTransitionStyle="coverVertical" id="XXj-dK-GJl"/>
-                        <segue destination="Jv6-gM-1RV" kind="presentation" identifier="to_find_collection" modalTransitionStyle="coverVertical" id="SIZ-8E-Ylk"/>
+                        <segue destination="aNR-rm-hjg" kind="show" identifier="to_find_medium" id="XXj-dK-GJl"/>
+                        <segue destination="Jv6-gM-1RV" kind="show" identifier="to_find_collection" id="SIZ-8E-Ylk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="do1-Ki-jLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -156,38 +154,40 @@ MUSEUM MIND MAZE!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dn-uX-Ng6">
-                                <rect key="frame" x="34" y="116.5" width="307" height="510.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW TO PLAY:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9U-oY-mCZ">
+                                <rect key="frame" x="72" y="72" width="230" height="38"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dn-uX-Ng6">
+                                <rect key="frame" x="34" y="159" width="307" height="488"/>
                                 <string key="text">Begin by clicking the image of the art object you want to select on the "Choose Your Art" page. 
 
 When the object detail pages appear, you can input your answer to the trivia question listed at the top of the page into the field provided at the bottom of the page. If your answer is correct, you can choose another art object to keep playing. If your answer is wrong, you get to keep trying until you get the correct answer. 
 
 Good luck, and have fun exploring the museum!</string>
-                                <fontDescription key="fontDescription" name="Didot-Italic" family="Didot" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW TO PLAY:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9U-oY-mCZ">
-                                <rect key="frame" x="72" y="63.5" width="230" height="38"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.27058823529411763" green="0.73725490196078436" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XTU-M7-z1E" firstAttribute="top" secondItem="5Dn-uX-Ng6" secondAttribute="bottom" constant="40" id="2oJ-Zz-BTI"/>
-                            <constraint firstItem="5Dn-uX-Ng6" firstAttribute="top" secondItem="W9U-oY-mCZ" secondAttribute="bottom" constant="15" id="PRI-be-y6m"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5Dn-uX-Ng6" secondAttribute="trailing" constant="18" id="UOa-S2-Bde"/>
-                            <constraint firstItem="5Dn-uX-Ng6" firstAttribute="leading" secondItem="JdR-ti-IkV" secondAttribute="leadingMargin" constant="18" id="fUe-p0-tcl"/>
-                            <constraint firstItem="W9U-oY-mCZ" firstAttribute="centerX" secondItem="5Dn-uX-Ng6" secondAttribute="centerX" id="rje-lV-2DJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Dn-uX-Ng6" secondAttribute="trailing" constant="18" id="2LA-Tm-OpM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W9U-oY-mCZ" secondAttribute="trailing" constant="57" id="8op-UE-rvf"/>
+                            <constraint firstItem="XTU-M7-z1E" firstAttribute="top" secondItem="5Dn-uX-Ng6" secondAttribute="bottom" constant="20" id="C02-6F-7t0"/>
+                            <constraint firstItem="W9U-oY-mCZ" firstAttribute="leading" secondItem="JdR-ti-IkV" secondAttribute="leadingMargin" constant="56" id="ZfG-C3-KHv"/>
+                            <constraint firstItem="5Dn-uX-Ng6" firstAttribute="top" secondItem="W9U-oY-mCZ" secondAttribute="bottom" constant="49" id="eAa-oe-OzZ"/>
+                            <constraint firstItem="5Dn-uX-Ng6" firstAttribute="leading" secondItem="JdR-ti-IkV" secondAttribute="leadingMargin" constant="18" id="f4C-q2-ZZV"/>
+                            <constraint firstItem="W9U-oY-mCZ" firstAttribute="top" secondItem="eAg-gT-Y4v" secondAttribute="bottom" constant="8" id="yxZ-Vv-jrW"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bG-gr-NmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="182" y="-3448"/>
+            <point key="canvasLocation" x="181.59999999999999" y="-3448.4257871064469"/>
         </scene>
         <!--Medium Question-->
         <scene sceneID="QM7-Kz-iRa">
@@ -227,7 +227,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="f8W-DC-oNL"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="Museum_000000_100"/>
+                                <state key="normal" backgroundImage="museum-building"/>
                                 <connections>
                                     <action selector="submitAnswer:" destination="VLT-54-Nlx" eventType="touchUpInside" id="B8R-PG-PQA"/>
                                 </connections>
@@ -386,7 +386,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Q6o-cL-MGo"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="Museum_000000_100"/>
+                                <state key="normal" backgroundImage="museum-building"/>
                                 <connections>
                                     <action selector="submitAnswer:" destination="7sC-cK-G9H" eventType="touchUpInside" id="mP6-D5-gZs"/>
                                 </connections>
@@ -515,7 +515,8 @@ Good luck, and have fun exploring the museum!</string>
         </scene>
     </scenes>
     <resources>
-        <image name="MuseumBrooklynbuilding" width="1920" height="1088"/>
         <image name="Museum_000000_100" width="100" height="100"/>
+        <image name="bk-museum-portrait" width="1080" height="1920"/>
+        <image name="museum-building" width="105" height="105"/>
     </resources>
 </document>

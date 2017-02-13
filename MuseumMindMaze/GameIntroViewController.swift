@@ -11,10 +11,19 @@ import AVFoundation
 
 class GameIntroViewController: UIViewController {
 
-    var player = AVPlayer()
+    var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Fmaj", ofType: "mp3")!))
+            audioPlayer.play()
+        }
+        catch {
+            print(error)
+        }
+        
         
     }
 }
