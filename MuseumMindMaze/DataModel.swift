@@ -9,35 +9,57 @@
 import Foundation
 import UIKit
 
-var objects = [LocationObject]()
-//add: powered by BrooklynMuseum with a link to the site
+var objects = [ArtObject]()
 
-class LocationObject { //condensed art object listing including museum location and collection
+
+class ArtObject { //condensed art object listing including artist, didactic labels, and collection
     var ID: Int?
     var title: String?
-    var accession_number: String?
+    var object_date: String?
+    var medium: String?
+    var description: String?
     var primary_image: String?
-    var museum_location_id: Int?
-    var collection_id: Int?
-    var floor: Int?
-    var parent_location_id: Int?
-    var parent_location_description: String?
+    
+    var artist: Artist?
+    var collection: Collection?
+    var label: Label?
     
     init(jsonObject : [String : AnyObject]?) {
         self.ID = jsonObject?["id"] as? Int
         self.title = jsonObject?["title"] as? String
-        self.accession_number = jsonObject?["accession_number"] as? String
+        self.object_date = jsonObject?["object_date"] as? String
+        self.medium = jsonObject?["medium"] as? String
+        self.description = jsonObject?["description"] as? String
         self.primary_image = jsonObject?["primary_image"] as? String
-        self.museum_location_id = jsonObject?["museum_location_id"] as? Int
-        self.collection_id = jsonObject?["collection_id"] as? Int
-        self.floor = jsonObject?["floor"] as? Int
-        self.parent_location_id = jsonObject?["parent_location_id"] as? Int
-        self.parent_location_description = jsonObject?["parent_location_description"] as? String
+        
+        let artistJSON = jsonObject?["artists"]
+        if let aj = (artistJSON as? [[String : AnyObject]]) {
+            if aj.count > 0 {
+                artist = Artist(jsonObject: aj[0])}
+        } else {
+            print("Artist Unknown")
+        }
+        
+        let collectionJSON = jsonObject?["collections"]
+        if let co = (collectionJSON as? [[String : AnyObject]]) {
+            if co.count > 0 {
+                collection = Collection(jsonObject: co[0])}
+        } else {
+            print("Collection Unknown")
+        }
+        
+        let labelJSON = jsonObject?["labels"]
+        if let lj = (labelJSON as? [[String : AnyObject]]) {
+            if lj.count > 0 {
+                label = Label(jsonObject: lj[0])}
+        } else {
+            print("Label Unknown")
+        }
     }
 }
 
 
-extension LocationObject {
+extension ArtObject {//to get the URL of the artObjectImage
     var primaryImageURLString : String? {
         if let primary_image = primary_image {
             return "https://d1lfxha3ugu3d4.cloudfront.net/images/opencollection/objects/size2/" + primary_image
@@ -49,4 +71,47 @@ extension LocationObject {
         return URL(string: primaryImageURLString ?? "")
     }
 }
+
+
+class Artist {
+    var prefix: String?
+    var name: String?
+    var nationality: String?
+    var date: String?
+    
+    init(jsonObject : [String : AnyObject]?) {
+        self.prefix = jsonObject?["prefix"] as? String
+        self.name = jsonObject?["name"] as? String
+        self.nationality = jsonObject?["nationality"] as? String
+        self.date = jsonObject?["date"] as? String
+    }
+}
+
+
+class Collection {
+    var ID: Int?
+    var name: String?
+    var folder: String?
+    
+    init(jsonObject : [String : AnyObject]?) {
+        self.ID = jsonObject?["id"] as? Int
+        self.name = jsonObject?["name"] as? String
+        self.folder = jsonObject?["folder"] as? String
+    }
+}
+
+
+class Label {
+    var content: String?
+    
+    init(jsonObject : [String : AnyObject]?) {
+        self.content = jsonObject?["content"] as? String
+    }
+}
+
+
+
+
+
+
 

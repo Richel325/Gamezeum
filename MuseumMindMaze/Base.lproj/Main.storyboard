@@ -1,457 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ef8-RP-Mbg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="646-3b-HYg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--DecorativeArtsViewController-->
-        <scene sceneID="tlK-sz-dqW">
-            <objects>
-                <viewController id="b5K-ao-eA7" userLabel="DecorativeArtsViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="B4f-P8-Ib9"/>
-                        <viewControllerLayoutGuide type="bottom" id="9sa-Ie-VL8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mgR-l3-tJk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yOo-iP-GOi">
-                                <rect key="frame" x="37" y="28" width="300" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e6x-uz-3Qi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3672" y="833"/>
-        </scene>
-        <!--AsianArtViewController-->
-        <scene sceneID="8y3-JA-GZX">
-            <objects>
-                <viewController id="k6o-kQ-Nqt" userLabel="AsianArtViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IYy-dm-qFX"/>
-                        <viewControllerLayoutGuide type="bottom" id="vai-wl-Jpe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ATD-bK-SOA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EsP-jU-8GQ">
-                                <rect key="frame" x="37" y="28" width="300" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7lX-mJ-PLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2896" y="464"/>
-        </scene>
-        <!--PacificIslandsArtViewController-->
-        <scene sceneID="T21-Ws-QNi">
-            <objects>
-                <viewController id="0YY-ul-5pt" userLabel="PacificIslandsArtViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PJt-fb-L1f"/>
-                        <viewControllerLayoutGuide type="bottom" id="TvF-4O-F8k"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3Az-fN-GkH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cn4-uI-kc6">
-                                <rect key="frame" x="37" y="28" width="300" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WD9-Hy-mfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2042" y="72"/>
-        </scene>
-        <!--SelectCollectionViewController-->
-        <scene sceneID="Wag-fy-GLh">
-            <objects>
-                <viewController id="WpF-k6-9xD" userLabel="SelectCollectionViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="a4D-Xt-heU"/>
-                        <viewControllerLayoutGuide type="bottom" id="kGX-WG-FNY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dHU-Z7-NTi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBi-qc-kWv">
-                                <rect key="frame" x="213" y="211" width="146" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="American Art">
-                                    <color key="titleColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="fKE-Lu-TMA" kind="show" identifier="to_american_art" id="xf6-tO-pbv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDF-x3-knN">
-                                <rect key="frame" x="16" y="327" width="168" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Arts of the Americas">
-                                    <color key="titleColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="d08-fo-TWo" kind="show" identifier="to_arts_of_the_americas" id="3vV-CL-AGV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgJ-2x-Apb">
-                                <rect key="frame" x="16" y="211" width="189" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Arts of the Islamic World">
-                                    <color key="titleColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="pdK-ur-Fhr" kind="show" identifier="to_arts_of_the_islamic_world" id="6cD-4J-wck"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vav-I6-YNs">
-                                <rect key="frame" x="16" y="269" width="343" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Arts of the Pacific Islands">
-                                    <color key="titleColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="0YY-ul-5pt" kind="show" identifier="to_pacific" id="YYr-hL-cV0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z73-vP-tvh">
-                                <rect key="frame" x="16" y="385" width="168" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Asian Art">
-                                    <color key="titleColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="k6o-kQ-Nqt" kind="show" identifier="to_asian_art" id="2BP-SE-p0a"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="od8-wN-kVm">
-                                <rect key="frame" x="16" y="443" width="168" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Decorative Arts">
-                                    <color key="titleColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="b5K-ao-eA7" kind="show" identifier="to_decorative_arts" id="jWw-Nn-icC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pme-nt-Leg">
-                                <rect key="frame" x="192" y="443" width="167" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Contemporary Art">
-                                    <color key="titleColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="g2A-ey-VZb" kind="show" identifier="to_contemporary_art" id="doz-BN-EbF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLa-ik-i91">
-                                <rect key="frame" x="16" y="501" width="343" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Egyptian, Classical, Ancient Near Eastern Art">
-                                    <color key="titleColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="4zR-mD-NHx" kind="show" identifier="to_egyptian_art" id="55E-Gd-uKz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8s-Fl-W8G">
-                                <rect key="frame" x="16" y="559" width="343" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Elizabeth A. Sackler Center for Feminist Art">
-                                    <color key="titleColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="iun-7V-8iz" kind="show" identifier="to_eascfa" id="d0K-ec-Jfn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVb-LF-NXV">
-                                <rect key="frame" x="192" y="385" width="167" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="European Art">
-                                    <color key="titleColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Xhd-5b-YPv" kind="show" identifier="to_european_art" id="nhS-TA-AjA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imk-tw-XW6">
-                                <rect key="frame" x="192" y="327" width="167" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Arts of Africa">
-                                    <color key="titleColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="HjC-8o-ORI" kind="show" identifier="to_african_art" id="owZ-wq-Leg"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BK-Museum" translatesAutoresizingMaskIntoConstraints="NO" id="hmp-UF-kTs">
-                                <rect key="frame" x="16" y="72" width="32" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CHOOSE YOUR COLLECTION:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6Z-ZU-2CQ">
-                                <rect key="frame" x="43" y="144" width="289" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="KLt-aK-wrS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ETc-wq-bBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-39.200000000000003" y="73.313343328335833"/>
-        </scene>
-        <!--EgyptianArtViewController-->
-        <scene sceneID="lUG-hB-pJO">
-            <objects>
-                <viewController id="4zR-mD-NHx" userLabel="EgyptianArtViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="P8V-Hp-UTP"/>
-                        <viewControllerLayoutGuide type="bottom" id="f7a-tH-Aus"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZV2-qK-El9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdm-Vc-xlW">
-                                <rect key="frame" x="37" y="28" width="300" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="isU-7x-GnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="912.79999999999995" y="72.413793103448285"/>
-        </scene>
-        <!--FeministArtViewController-->
-        <scene sceneID="kHh-zf-wi7">
-            <objects>
-                <viewController id="iun-7V-8iz" userLabel="FeministArtViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="QX7-ac-4Xe"/>
-                        <viewControllerLayoutGuide type="bottom" id="LUB-JH-Khz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MFH-Q1-fH4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jce-MA-tk4">
-                                <rect key="frame" x="37" y="28" width="300" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BCb-BI-mV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1799.2" y="535.68215892053979"/>
-        </scene>
-        <!--EuropeanArtViewController-->
-        <scene sceneID="5A0-TZ-zUG">
-            <objects>
-                <viewController id="Xhd-5b-YPv" userLabel="EuropeanArtViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7j6-xr-mKF"/>
-                        <viewControllerLayoutGuide type="bottom" id="Fzx-ER-fMX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MAJ-cL-m3N">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vKg-9S-xGy">
-                                <rect key="frame" x="37" y="28" width="300" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4eI-Iq-86Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2732" y="862"/>
-        </scene>
-        <!--ContemporaryArtViewController-->
-        <scene sceneID="ngi-83-ELt">
-            <objects>
-                <viewController id="g2A-ey-VZb" userLabel="ContemporaryArtViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="E5T-gU-ZhK"/>
-                        <viewControllerLayoutGuide type="bottom" id="D5o-r9-TVI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vh8-VY-Uz5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ww6-CO-HQc">
-                                <rect key="frame" x="37" y="28" width="300" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xhu-je-icH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-978" y="863"/>
-        </scene>
-        <!--AmericanArtViewController-->
-        <scene sceneID="zAm-xT-aRy">
-            <objects>
-                <viewController id="fKE-Lu-TMA" userLabel="AmericanArtViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0cM-c5-xud"/>
-                        <viewControllerLayoutGuide type="bottom" id="7VJ-lD-6I1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7qw-wR-LnC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lSO-bj-KPp">
-                                <rect key="frame" x="37" y="20" width="300" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FFd-gU-jyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2898.4000000000001" y="-863.1184407796103"/>
-        </scene>
-        <!--AfricanArtViewController-->
-        <scene sceneID="aDz-vu-5gO">
-            <objects>
-                <viewController id="HjC-8o-ORI" userLabel="AfricanArtViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YM8-3L-Aau"/>
-                        <viewControllerLayoutGuide type="bottom" id="bly-gO-3ro"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dex-7e-FRJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2v7-Le-9MR">
-                                <rect key="frame" x="37" y="20" width="300" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wMn-Je-tiV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2042" y="-863"/>
-        </scene>
-        <!--ArtsOfTheAmericasViewController-->
-        <scene sceneID="Nxz-wy-6qP">
-            <objects>
-                <viewController id="d08-fo-TWo" userLabel="ArtsOfTheAmericasViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="v2Y-rG-1jc"/>
-                        <viewControllerLayoutGuide type="bottom" id="wFG-S0-ccs"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="iND-IV-aKJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f2o-fx-UqV">
-                                <rect key="frame" x="37" y="20" width="300" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g1T-eT-BIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-26" y="-863"/>
-        </scene>
-        <!--ArtsOfTheIslamicWorldViewController-->
-        <scene sceneID="pgz-qv-iC7">
-            <objects>
-                <viewController id="pdK-ur-Fhr" userLabel="ArtsOfTheIslamicWorldViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="My0-LU-n4x"/>
-                        <viewControllerLayoutGuide type="bottom" id="qrh-vb-3mm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="A0t-WO-vQb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OuH-9f-jcI">
-                                <rect key="frame" x="37" y="28" width="300" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bw6-hf-0Bw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="860" y="-863"/>
-        </scene>
-        <!--View Controller-->
+        <!--GameIntroViewController-->
         <scene sceneID="gu1-x5-edo">
             <objects>
-                <viewController id="LMj-HA-f7X" sceneMemberID="viewController">
+                <viewController id="LMj-HA-f7X" userLabel="GameIntroViewController" customClass="GameIntroViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BV0-wm-P0f"/>
                         <viewControllerLayoutGuide type="bottom" id="H7L-xC-Hx4"/>
@@ -459,114 +23,475 @@
                     <view key="view" contentMode="scaleToFill" id="G0z-94-h96">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bk-museum-portrait" translatesAutoresizingMaskIntoConstraints="NO" id="Siv-T3-cfn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MUSEUM MIND MAZE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWF-SW-ROp">
+                                <rect key="frame" x="16" y="72" width="343" height="38"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="30"/>
+                                <color key="textColor" red="0.16862745100000001" green="0.070588235289999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.59215686270000001" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-3i-JDL" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="16" y="118" width="100" height="36"/>
+                                <color key="backgroundColor" red="0.82745098039999998" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="jPa-G0-Iwq"/>
+                                    <constraint firstAttribute="height" constant="36" id="ow3-rP-yAZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="15"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uvJ-tD-UfA" kind="show" id="hxW-CI-wRg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSd-id-EGn" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="259" y="118" width="100" height="36"/>
+                                <color key="backgroundColor" red="0.82745098039999998" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0OS-Zp-zDc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="RULES">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="K39-pb-Ryc" kind="show" id="FNy-bt-NPj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q1L-3i-JDL" firstAttribute="top" secondItem="wWF-SW-ROp" secondAttribute="bottom" constant="8" symbolic="YES" id="Dca-MS-vM8"/>
+                            <constraint firstItem="H7L-xC-Hx4" firstAttribute="top" secondItem="Q1L-3i-JDL" secondAttribute="bottom" constant="513" id="Gxt-HA-p8l"/>
+                            <constraint firstAttribute="trailing" secondItem="Siv-T3-cfn" secondAttribute="trailing" id="OsO-HB-VKW"/>
+                            <constraint firstItem="Siv-T3-cfn" firstAttribute="leading" secondItem="G0z-94-h96" secondAttribute="leading" id="Qyt-wB-hXM"/>
+                            <constraint firstItem="Q1L-3i-JDL" firstAttribute="baseline" secondItem="lSd-id-EGn" secondAttribute="firstBaseline" id="RY5-FR-lAQ"/>
+                            <constraint firstItem="wWF-SW-ROp" firstAttribute="leading" secondItem="Q1L-3i-JDL" secondAttribute="leading" id="S2Z-2Y-4Bg"/>
+                            <constraint firstItem="wWF-SW-ROp" firstAttribute="top" secondItem="BV0-wm-P0f" secondAttribute="bottom" constant="8" symbolic="YES" id="c1f-jC-dLj"/>
+                            <constraint firstItem="wWF-SW-ROp" firstAttribute="trailing" secondItem="lSd-id-EGn" secondAttribute="trailing" id="juF-VV-dSn"/>
+                            <constraint firstItem="lSd-id-EGn" firstAttribute="baseline" secondItem="Q1L-3i-JDL" secondAttribute="firstBaseline" id="k9g-wk-WTd"/>
+                            <constraint firstItem="Siv-T3-cfn" firstAttribute="top" secondItem="G0z-94-h96" secondAttribute="top" id="lSx-8m-fJb"/>
+                            <constraint firstItem="Siv-T3-cfn" firstAttribute="bottom" secondItem="H7L-xC-Hx4" secondAttribute="top" id="oHG-fS-XBD"/>
+                            <constraint firstItem="Siv-T3-cfn" firstAttribute="centerX" secondItem="wWF-SW-ROp" secondAttribute="centerX" id="pNu-Ye-Oc7"/>
+                            <constraint firstItem="Q1L-3i-JDL" firstAttribute="top" secondItem="lSd-id-EGn" secondAttribute="top" id="v4q-KA-qo9"/>
+                            <constraint firstItem="wWF-SW-ROp" firstAttribute="leading" secondItem="G0z-94-h96" secondAttribute="leadingMargin" id="xcx-Mg-adR"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Dwq-dI-UcF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EyZ-tT-x1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2614" y="-1552"/>
+            <point key="canvasLocation" x="-151" y="-2703"/>
         </scene>
-        <!--ObjectViewController-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Art Image View Controller-->
+        <scene sceneID="CcB-Nk-YBk">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="ObjectViewController" customClass="ObjectViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uvJ-tD-UfA" customClass="ArtImageViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="bia-ot-0Ua"/>
+                        <viewControllerLayoutGuide type="bottom" id="dRq-y8-Pdm"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="PJH-v7-MtF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="223" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yoz-lc-nA6">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="204" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C5J-mP-vQP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="e4p-cJ-4Op"/>
-                                    <constraint firstAttribute="height" constant="667" id="hQu-3W-0L9"/>
+                                    <constraint firstAttribute="height" constant="667" id="ZjN-fY-DHU"/>
+                                    <constraint firstAttribute="width" constant="375" id="dqi-9p-ftN"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artObjectCell" rowHeight="223" id="ae9-6G-3zg" customClass="ArtObjectCell" customModule="MuseumMindMaze" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="223"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artImageCell" rowHeight="204" id="ecp-5p-0Ry" customClass="ArtImageTableViewCell" customModule="MuseumMindMaze" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="204"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ae9-6G-3zg" id="y4a-JJ-hSi">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecp-5p-0Ry" id="1lo-zn-Me8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tp3-bc-xXv" userLabel="ObjectImage">
-                                                    <rect key="frame" x="8" y="0.0" width="359" height="186"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="186" id="0Mz-2k-4Wj"/>
-                                                        <constraint firstAttribute="width" constant="359" id="4g5-9v-NLK"/>
-                                                    </constraints>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="flm-8D-zJC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="203.5"/>
                                                 </imageView>
-                                                <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvJ-A0-XHp">
-                                                    <rect key="frame" x="8" y="194" width="359" height="24"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="tp3-bc-xXv" firstAttribute="top" secondItem="y4a-JJ-hSi" secondAttribute="top" id="E2h-KZ-rmo"/>
-                                                <constraint firstItem="tp3-bc-xXv" firstAttribute="leading" secondItem="y4a-JJ-hSi" secondAttribute="leading" constant="8" id="I31-GC-GGc"/>
-                                                <constraint firstItem="wvJ-A0-XHp" firstAttribute="top" secondItem="tp3-bc-xXv" secondAttribute="bottom" constant="8" id="QlT-Mt-A1E"/>
-                                                <constraint firstItem="wvJ-A0-XHp" firstAttribute="trailing" secondItem="tp3-bc-xXv" secondAttribute="trailing" id="Rho-je-dRX"/>
-                                                <constraint firstItem="wvJ-A0-XHp" firstAttribute="width" secondItem="tp3-bc-xXv" secondAttribute="width" id="eoR-l2-S43"/>
-                                                <constraint firstItem="wvJ-A0-XHp" firstAttribute="centerX" secondItem="tp3-bc-xXv" secondAttribute="centerX" id="jaQ-8J-Doy"/>
-                                                <constraint firstItem="wvJ-A0-XHp" firstAttribute="leading" secondItem="tp3-bc-xXv" secondAttribute="leading" id="nRv-Ki-dem"/>
-                                                <constraint firstAttribute="trailing" secondItem="tp3-bc-xXv" secondAttribute="trailing" constant="8" id="wlt-tI-Lle"/>
+                                                <constraint firstAttribute="bottom" secondItem="flm-8D-zJC" secondAttribute="bottom" id="497-uG-wsu"/>
+                                                <constraint firstAttribute="trailing" secondItem="flm-8D-zJC" secondAttribute="trailing" id="6d0-eW-Nbp"/>
+                                                <constraint firstItem="flm-8D-zJC" firstAttribute="leading" secondItem="1lo-zn-Me8" secondAttribute="leading" id="BjS-89-gV7"/>
+                                                <constraint firstItem="flm-8D-zJC" firstAttribute="top" secondItem="1lo-zn-Me8" secondAttribute="top" id="ph5-Ez-o38"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="objectImage" destination="tp3-bc-xXv" id="QrB-VA-2KI"/>
-                                            <outlet property="objectTitle" destination="wvJ-A0-XHp" id="S7J-A8-U1R"/>
+                                            <outlet property="artImage" destination="flm-8D-zJC" id="L8S-NA-iM1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="SjE-2u-J76"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HKj-84-Ynu"/>
+                                    <outlet property="dataSource" destination="uvJ-tD-UfA" id="ky7-8t-1SU"/>
+                                    <outlet property="delegate" destination="uvJ-tD-UfA" id="H71-Y0-nm8"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="yoz-lc-nA6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E9O-dy-W17"/>
-                            <constraint firstItem="yoz-lc-nA6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T4L-ay-FVy"/>
+                            <constraint firstItem="C5J-mP-vQP" firstAttribute="centerX" secondItem="PJH-v7-MtF" secondAttribute="centerX" id="2KP-67-NcL"/>
+                            <constraint firstItem="C5J-mP-vQP" firstAttribute="centerY" secondItem="PJH-v7-MtF" secondAttribute="centerY" id="u4o-8K-r9G"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="objectTableView" destination="yoz-lc-nA6" id="i7L-Vw-wFU"/>
+                        <outlet property="artImageTableView" destination="C5J-mP-vQP" id="Py7-s5-kJc"/>
+                        <segue destination="VLT-54-Nlx" kind="show" identifier="to_find_medium" id="lpY-tF-SBh"/>
+                        <segue destination="7sC-cK-G9H" kind="show" identifier="to_find_collection" id="zxN-uv-mFw"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="do1-Ki-jLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="218" y="-2585"/>
+            <point key="canvasLocation" x="666" y="-2703"/>
+        </scene>
+        <!--InstructionViewController-->
+        <scene sceneID="4H1-2M-GcQ">
+            <objects>
+                <viewController id="K39-pb-Ryc" userLabel="InstructionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eAg-gT-Y4v"/>
+                        <viewControllerLayoutGuide type="bottom" id="XTU-M7-z1E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JdR-ti-IkV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW TO PLAY:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9U-oY-mCZ">
+                                <rect key="frame" x="72" y="72" width="230" height="38"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dn-uX-Ng6">
+                                <rect key="frame" x="34" y="159" width="307" height="488"/>
+                                <string key="text">Begin by clicking the image of the art object you want to select on the "Choose Your Art" page. 
+
+When the object detail pages appear, you can input your answer to the trivia question listed at the top of the page into the field provided at the bottom of the page. If your answer is correct, you can choose another art object to keep playing. If your answer is wrong, you get to keep trying until you get the correct answer. 
+
+Good luck, and have fun exploring the museum!</string>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27058823529411763" green="0.73725490196078436" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Dn-uX-Ng6" secondAttribute="trailing" constant="18" id="2LA-Tm-OpM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W9U-oY-mCZ" secondAttribute="trailing" constant="57" id="8op-UE-rvf"/>
+                            <constraint firstItem="XTU-M7-z1E" firstAttribute="top" secondItem="5Dn-uX-Ng6" secondAttribute="bottom" constant="20" id="C02-6F-7t0"/>
+                            <constraint firstItem="W9U-oY-mCZ" firstAttribute="leading" secondItem="JdR-ti-IkV" secondAttribute="leadingMargin" constant="56" id="ZfG-C3-KHv"/>
+                            <constraint firstItem="5Dn-uX-Ng6" firstAttribute="top" secondItem="W9U-oY-mCZ" secondAttribute="bottom" constant="49" id="eAa-oe-OzZ"/>
+                            <constraint firstItem="5Dn-uX-Ng6" firstAttribute="leading" secondItem="JdR-ti-IkV" secondAttribute="leadingMargin" constant="18" id="f4C-q2-ZZV"/>
+                            <constraint firstItem="W9U-oY-mCZ" firstAttribute="top" secondItem="eAg-gT-Y4v" secondAttribute="bottom" constant="8" id="yxZ-Vv-jrW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bG-gr-NmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.59999999999999" y="-3448.4257871064469"/>
+        </scene>
+        <!--Medium Question-->
+        <scene sceneID="QM7-Kz-iRa">
+            <objects>
+                <viewController title="WHAT'S YOUR ANSWER?" id="VLT-54-Nlx" userLabel="Medium Question" customClass="MediumViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CV7-GF-gYU"/>
+                        <viewControllerLayoutGuide type="bottom" id="uKy-mp-XCb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="keX-RZ-g5k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KeV-mv-htP">
+                                <rect key="frame" x="22.5" y="172" width="331" height="250"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AB-AS-HqZ">
+                                <rect key="frame" x="16" y="455" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9T-00-OW2">
+                                <rect key="frame" x="16" y="484" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OBJECT DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wu8-5X-D1T">
+                                <rect key="frame" x="16" y="512" width="342" height="22"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-Sc-E2K" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="303.5" y="110" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="f8W-DC-oNL"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="museum-building"/>
+                                <connections>
+                                    <action selector="submitAnswer:" destination="VLT-54-Nlx" eventType="touchUpInside" id="B8R-PG-PQA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCr-Qp-ilC">
+                                <rect key="frame" x="22.5" y="129" width="67" height="22"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26Z-Pw-WQx">
+                                <rect key="frame" x="221.5" y="129" width="74" height="22"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="15" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mab-kS-SfH">
+                                <rect key="frame" x="16" y="72" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESCRIPTION" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0N-I5-aoL">
+                                <rect key="frame" x="16" y="542" width="343" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="suf-U1-QcQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ift-xT-7Jc">
+                                <rect key="frame" x="97.5" y="128" width="61" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4sv-Dx-8DY"/>
+                                    <constraint firstAttribute="width" constant="61" id="uha-d1-0Mf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JCr-Qp-ilC" firstAttribute="baseline" secondItem="26Z-Pw-WQx" secondAttribute="baseline" id="0uD-WW-SsA"/>
+                            <constraint firstItem="w9T-00-OW2" firstAttribute="trailing" secondItem="d0N-I5-aoL" secondAttribute="trailing" id="1AR-G4-M0A"/>
+                            <constraint firstItem="w9T-00-OW2" firstAttribute="leading" secondItem="Wu8-5X-D1T" secondAttribute="leading" id="1Wh-TC-a1G"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="top" secondItem="CV7-GF-gYU" secondAttribute="bottom" constant="8" symbolic="YES" id="2np-IM-ryn"/>
+                            <constraint firstAttribute="bottom" secondItem="d0N-I5-aoL" secondAttribute="bottom" constant="20" symbolic="YES" id="3dE-w9-DFR"/>
+                            <constraint firstItem="Ift-xT-7Jc" firstAttribute="leading" secondItem="JCr-Qp-ilC" secondAttribute="trailing" constant="8" symbolic="YES" id="6Xg-ys-u2D"/>
+                            <constraint firstItem="KeV-mv-htP" firstAttribute="centerX" secondItem="9AB-AS-HqZ" secondAttribute="centerX" id="BCb-cp-Ml8"/>
+                            <constraint firstItem="KeV-mv-htP" firstAttribute="top" secondItem="JCr-Qp-ilC" secondAttribute="bottom" constant="21" id="Neo-Zv-UcP"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="trailing" secondItem="9AB-AS-HqZ" secondAttribute="trailing" id="Nf3-ja-aUY"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="trailing" secondItem="keX-RZ-g5k" secondAttribute="trailingMargin" id="PUA-Rh-P5c"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="leading" secondItem="9AB-AS-HqZ" secondAttribute="leading" id="RgT-nW-ne4"/>
+                            <constraint firstItem="Wu8-5X-D1T" firstAttribute="top" secondItem="w9T-00-OW2" secondAttribute="bottom" constant="7" id="Uc1-hr-QwT"/>
+                            <constraint firstItem="w9T-00-OW2" firstAttribute="top" secondItem="9AB-AS-HqZ" secondAttribute="bottom" constant="8" symbolic="YES" id="UpG-XZ-GwM"/>
+                            <constraint firstItem="JCr-Qp-ilC" firstAttribute="leading" secondItem="KeV-mv-htP" secondAttribute="leading" id="a70-7l-Kc0"/>
+                            <constraint firstItem="26Z-Pw-WQx" firstAttribute="leading" secondItem="Ift-xT-7Jc" secondAttribute="trailing" constant="63" id="bZ4-JY-931"/>
+                            <constraint firstItem="Taw-Sc-E2K" firstAttribute="leading" secondItem="26Z-Pw-WQx" secondAttribute="trailing" constant="8" symbolic="YES" id="bdv-VB-C8w"/>
+                            <constraint firstItem="KeV-mv-htP" firstAttribute="top" secondItem="Ift-xT-7Jc" secondAttribute="bottom" constant="23" id="eif-Ql-cPp"/>
+                            <constraint firstItem="Ift-xT-7Jc" firstAttribute="top" secondItem="mab-kS-SfH" secondAttribute="bottom" constant="26" id="fKq-GM-8Xx"/>
+                            <constraint firstItem="Wu8-5X-D1T" firstAttribute="leading" secondItem="d0N-I5-aoL" secondAttribute="leading" id="jML-dM-0Cq"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="leading" secondItem="keX-RZ-g5k" secondAttribute="leadingMargin" id="kI8-2c-X9B"/>
+                            <constraint firstItem="KeV-mv-htP" firstAttribute="top" secondItem="Taw-Sc-E2K" secondAttribute="bottom" constant="12" id="ksS-vZ-U5h"/>
+                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="top" secondItem="KeV-mv-htP" secondAttribute="bottom" constant="33" id="lrj-4z-D3h"/>
+                            <constraint firstItem="w9T-00-OW2" firstAttribute="centerX" secondItem="Wu8-5X-D1T" secondAttribute="centerX" id="n7G-YB-C69"/>
+                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="leading" secondItem="w9T-00-OW2" secondAttribute="leading" id="nrG-9q-LlJ"/>
+                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="trailing" secondItem="w9T-00-OW2" secondAttribute="trailing" id="tHq-Sx-B6B"/>
+                            <constraint firstItem="d0N-I5-aoL" firstAttribute="top" secondItem="Wu8-5X-D1T" secondAttribute="bottom" constant="8" symbolic="YES" id="ugp-SP-2bm"/>
+                            <constraint firstItem="Taw-Sc-E2K" firstAttribute="top" secondItem="mab-kS-SfH" secondAttribute="bottom" constant="8" symbolic="YES" id="yWc-OP-YwU"/>
+                            <constraint firstItem="Taw-Sc-E2K" firstAttribute="trailing" secondItem="KeV-mv-htP" secondAttribute="trailing" id="yZ8-73-yWT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="What medium was used?" id="uTk-6Z-Arh"/>
+                    <connections>
+                        <outlet property="answer" destination="mab-kS-SfH" id="PEN-Mc-EMq"/>
+                        <outlet property="artArtist" destination="w9T-00-OW2" id="ZDT-Pw-CKh"/>
+                        <outlet property="artDescription" destination="d0N-I5-aoL" id="Asz-iS-ZDA"/>
+                        <outlet property="artImage" destination="KeV-mv-htP" id="aHG-Wg-1al"/>
+                        <outlet property="artObjectDate" destination="Wu8-5X-D1T" id="pr3-cQ-ouL"/>
+                        <outlet property="artTitle" destination="9AB-AS-HqZ" id="6AX-zg-OL2"/>
+                        <outlet property="scoreLabel" destination="Ift-xT-7Jc" id="xeA-22-0rj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6t-1G-xlj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676" y="-3144"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="06w-7R-pIX">
+        <scene sceneID="nic-V7-eHg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ef8-RP-Mbg" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="646-3b-HYg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pxu-RW-5zP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="Museum_000000_100" id="FsJ-bb-kG0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="WpF-k6-9xD" kind="relationship" relationship="rootViewController" id="YFi-AM-hrS"/>
+                        <segue destination="LMj-HA-f7X" kind="relationship" relationship="rootViewController" id="Pt2-Ak-l2W"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tM1-3c-96L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYB-p6-cia" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-978.39999999999998" y="73.313343328335833"/>
+            <point key="canvasLocation" x="-945" y="-2702"/>
+        </scene>
+        <!--Collection Question-->
+        <scene sceneID="FFW-Xh-5aA">
+            <objects>
+                <viewController title="WHAT'S YOUR ANSWER?" id="7sC-cK-G9H" userLabel="Collection Question" customClass="FindCollectionViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vCO-dG-bZK"/>
+                        <viewControllerLayoutGuide type="bottom" id="7am-Yj-YUx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lYJ-Vn-WPV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KTZ-8Y-tmd">
+                                <rect key="frame" x="23" y="172" width="331" height="250"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZg-BB-kMJ">
+                                <rect key="frame" x="16" y="455" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dgV-vU-H6O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi7-to-WiG">
+                                <rect key="frame" x="16" y="484" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1w9-1W-0nA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OBJECT DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GL-Wg-ws1">
+                                <rect key="frame" x="16" y="512" width="342" height="22"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-aC-nPP" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="304" y="110" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Q6o-cL-MGo"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="museum-building"/>
+                                <connections>
+                                    <action selector="submitAnswer:" destination="7sC-cK-G9H" eventType="touchUpInside" id="mP6-D5-gZs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3S-Aj-KSP">
+                                <rect key="frame" x="23" y="128" width="67" height="22"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb7-sj-6fx">
+                                <rect key="frame" x="98" y="128" width="61" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="E2M-Sc-1IA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyP-Hr-MAC">
+                                <rect key="frame" x="222" y="128" width="74" height="22"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mXi-fo-IWX">
+                                <rect key="frame" x="16" y="72" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEDIUM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BH-9y-ibJ">
+                                <rect key="frame" x="16" y="542" width="343" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="2a5-fz-50k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hi7-to-WiG" firstAttribute="centerX" secondItem="6GL-Wg-ws1" secondAttribute="centerX" id="1v4-yr-EI4"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="trailing" secondItem="lYJ-Vn-WPV" secondAttribute="trailingMargin" id="2sA-ih-Otq"/>
+                            <constraint firstItem="6GL-Wg-ws1" firstAttribute="leading" secondItem="5BH-9y-ibJ" secondAttribute="leading" id="4K9-uS-wlY"/>
+                            <constraint firstItem="6GL-Wg-ws1" firstAttribute="top" secondItem="Hi7-to-WiG" secondAttribute="bottom" constant="7" id="7wg-bc-P2J"/>
+                            <constraint firstItem="5BH-9y-ibJ" firstAttribute="top" secondItem="6GL-Wg-ws1" secondAttribute="bottom" constant="8" symbolic="YES" id="8xt-i0-BSL"/>
+                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="leading" secondItem="Hi7-to-WiG" secondAttribute="leading" id="9nI-Ij-vjz"/>
+                            <constraint firstItem="hMF-aC-nPP" firstAttribute="top" secondItem="mXi-fo-IWX" secondAttribute="bottom" constant="8" symbolic="YES" id="AuK-4v-lLd"/>
+                            <constraint firstItem="hMF-aC-nPP" firstAttribute="leading" secondItem="gyP-Hr-MAC" secondAttribute="trailing" constant="8" symbolic="YES" id="CVd-b0-07U"/>
+                            <constraint firstItem="jb7-sj-6fx" firstAttribute="leading" secondItem="d3S-Aj-KSP" secondAttribute="trailing" constant="8" symbolic="YES" id="CvO-tB-2ZY"/>
+                            <constraint firstItem="gyP-Hr-MAC" firstAttribute="baseline" secondItem="d3S-Aj-KSP" secondAttribute="firstBaseline" id="Nba-Bv-WJH"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" constant="7" id="QzE-rz-fd5"/>
+                            <constraint firstItem="hMF-aC-nPP" firstAttribute="trailing" secondItem="KTZ-8Y-tmd" secondAttribute="trailing" id="VCN-jz-kjW"/>
+                            <constraint firstItem="Hi7-to-WiG" firstAttribute="top" secondItem="TZg-BB-kMJ" secondAttribute="bottom" constant="8" symbolic="YES" id="VEf-3f-Ddv"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="centerY" secondItem="jb7-sj-6fx" secondAttribute="centerY" id="XIN-pg-dpx"/>
+                            <constraint firstItem="gyP-Hr-MAC" firstAttribute="leading" secondItem="jb7-sj-6fx" secondAttribute="trailing" constant="63" id="aSq-zm-9rV"/>
+                            <constraint firstItem="KTZ-8Y-tmd" firstAttribute="top" secondItem="d3S-Aj-KSP" secondAttribute="bottom" constant="22" id="c3E-21-5qf"/>
+                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="trailing" secondItem="Hi7-to-WiG" secondAttribute="trailing" id="cKd-fj-rjA"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="top" secondItem="mXi-fo-IWX" secondAttribute="bottom" constant="26" id="ctC-aU-5NS"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="top" secondItem="jb7-sj-6fx" secondAttribute="top" id="eSL-nq-REB"/>
+                            <constraint firstItem="Hi7-to-WiG" firstAttribute="leading" secondItem="6GL-Wg-ws1" secondAttribute="leading" id="iRZ-0h-YV0"/>
+                            <constraint firstAttribute="bottom" secondItem="5BH-9y-ibJ" secondAttribute="bottom" constant="20" symbolic="YES" id="oUo-sc-Aqy"/>
+                            <constraint firstItem="Hi7-to-WiG" firstAttribute="trailing" secondItem="5BH-9y-ibJ" secondAttribute="trailing" id="oWV-Mh-1pF"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="leading" secondItem="KTZ-8Y-tmd" secondAttribute="leading" id="pG4-MO-nH4"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="trailing" secondItem="TZg-BB-kMJ" secondAttribute="trailing" id="qjF-BW-t7p"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="leading" secondItem="TZg-BB-kMJ" secondAttribute="leading" id="rCJ-9X-4qU"/>
+                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="top" secondItem="KTZ-8Y-tmd" secondAttribute="bottom" constant="33" id="svf-Qh-lPH"/>
+                            <constraint firstItem="KTZ-8Y-tmd" firstAttribute="top" secondItem="hMF-aC-nPP" secondAttribute="bottom" constant="12" id="tyM-Z5-7pz"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="baseline" secondItem="gyP-Hr-MAC" secondAttribute="baseline" id="wdr-Ch-Nux"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="top" secondItem="vCO-dG-bZK" secondAttribute="bottom" constant="8" symbolic="YES" id="yUR-IM-0wf"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" id="zms-wr-5xE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="What collection does this belong in?" id="9L1-Nh-Cw1"/>
+                    <connections>
+                        <outlet property="answer" destination="mXi-fo-IWX" id="lex-g4-EGX"/>
+                        <outlet property="artArtist" destination="Hi7-to-WiG" id="1qh-HN-QSK"/>
+                        <outlet property="artImage" destination="KTZ-8Y-tmd" id="PxQ-eh-9DN"/>
+                        <outlet property="artMedium" destination="5BH-9y-ibJ" id="yTy-cW-pIc"/>
+                        <outlet property="artObjectDate" destination="6GL-Wg-ws1" id="xaG-u7-Mv0"/>
+                        <outlet property="artTitle" destination="TZg-BB-kMJ" id="b92-qj-C5z"/>
+                        <outlet property="scoreLabel" destination="jb7-sj-6fx" id="bzS-oz-ZM7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RJQ-Ma-4Ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676" y="-2312"/>
         </scene>
     </scenes>
     <resources>
-        <image name="BK-Museum" width="271" height="231"/>
+        <image name="Museum_000000_100" width="100" height="100"/>
+        <image name="bk-museum-portrait" width="1080" height="1920"/>
+        <image name="museum-building" width="105" height="105"/>
     </resources>
 </document>
