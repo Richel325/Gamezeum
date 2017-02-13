@@ -8,3 +8,6 @@ Learn more about the art at the museum, and quiz yourself on:
 * The materials (medium) the object is made of
 
 Listen to relaxing music as you view different objects from the museum's collections, and explore objects on your phone before seeing them inside the museum on your next visit!
+
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/TitleScreen.png)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/ImageSelectScreen.png)
