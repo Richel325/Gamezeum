@@ -11,7 +11,6 @@ import Foundation
 enum QuestionVC: Int {
     case one = 0
     case two
-    case three
     
     static func randomQuestionVC() -> QuestionVC {
         return QuestionVC(rawValue: Int(arc4random_uniform(3)))!

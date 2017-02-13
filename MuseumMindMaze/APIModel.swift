@@ -37,7 +37,7 @@ class APIClient{
         
         var objects = [ArtObject]()
         if let listOfObjects = json["data"] as? [[String: AnyObject]] {
-         _ = Int(arc4random_uniform(UInt32(max(0, listOfObjects.count-1))))
+            _ = Int(arc4random_uniform(UInt32(max(0, listOfObjects.count-1))))
             for jsonObject in listOfObjects {
                 let object = ArtObject(jsonObject: jsonObject)
                 objects.append(object)

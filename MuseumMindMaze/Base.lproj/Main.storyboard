@@ -6,6 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -59,7 +62,7 @@ MUSEUM MIND MAZE!</string>
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fja-UY-k8J" kind="show" id="bV0-Ih-ygP"/>
+                                    <segue destination="uvJ-tD-UfA" kind="show" id="hxW-CI-wRg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,61 +76,68 @@ MUSEUM MIND MAZE!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EyZ-tT-x1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39.200000000000003" y="-2586.6566716641682"/>
+            <point key="canvasLocation" x="114" y="-2700"/>
         </scene>
-        <!--Art Object Collection View Controller-->
-        <scene sceneID="CEf-CO-EYI">
+        <!--Art Image View Controller-->
+        <scene sceneID="CcB-Nk-YBk">
             <objects>
-                <collectionViewController id="fja-UY-k8J" customClass="ArtObjectCollectionViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="YGs-TD-nfZ" customClass="artImageCollectionView">
+                <viewController id="uvJ-tD-UfA" customClass="ArtImageViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bia-ot-0Ua"/>
+                        <viewControllerLayoutGuide type="bottom" id="dRq-y8-Pdm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PJH-v7-MtF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.59215686270000001" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uUP-2u-j79">
-                            <size key="itemSize" width="175" height="160"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artObjectCell" id="fVa-eb-yNn" customClass="ArtObjectCollectionViewCell" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="175" height="160"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="175" height="160"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pWo-oP-FnR">
-                                            <rect key="frame" x="0.0" y="0.0" width="175" height="160"/>
-                                        </imageView>
-                                    </subviews>
-                                </view>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="204" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C5J-mP-vQP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="pWo-oP-FnR" secondAttribute="trailing" id="XlJ-mw-wFu"/>
-                                    <constraint firstItem="pWo-oP-FnR" firstAttribute="top" secondItem="fVa-eb-yNn" secondAttribute="top" id="YGD-WD-CIX"/>
-                                    <constraint firstAttribute="bottom" secondItem="pWo-oP-FnR" secondAttribute="bottom" id="bNQ-dZ-395"/>
-                                    <constraint firstItem="pWo-oP-FnR" firstAttribute="leading" secondItem="fVa-eb-yNn" secondAttribute="leading" id="in5-3Y-re9"/>
+                                    <constraint firstAttribute="height" constant="667" id="ZjN-fY-DHU"/>
+                                    <constraint firstAttribute="width" constant="375" id="dqi-9p-ftN"/>
                                 </constraints>
-                                <connections>
-                                    <outlet property="artImage" destination="pWo-oP-FnR" id="OVS-vI-M0J"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="fja-UY-k8J" id="hUd-sb-QNX"/>
-                            <outlet property="delegate" destination="fja-UY-k8J" id="58b-DG-m0r"/>
-                        </connections>
-                    </collectionView>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artImageCell" rowHeight="204" id="ecp-5p-0Ry" customClass="ArtImageTableViewCell" customModule="MuseumMindMaze" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="204"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecp-5p-0Ry" id="1lo-zn-Me8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="flm-8D-zJC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="203.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="flm-8D-zJC" secondAttribute="bottom" id="497-uG-wsu"/>
+                                                <constraint firstAttribute="trailing" secondItem="flm-8D-zJC" secondAttribute="trailing" id="6d0-eW-Nbp"/>
+                                                <constraint firstItem="flm-8D-zJC" firstAttribute="leading" secondItem="1lo-zn-Me8" secondAttribute="leading" id="BjS-89-gV7"/>
+                                                <constraint firstItem="flm-8D-zJC" firstAttribute="top" secondItem="1lo-zn-Me8" secondAttribute="top" id="ph5-Ez-o38"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="artImage" destination="flm-8D-zJC" id="L8S-NA-iM1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C5J-mP-vQP" firstAttribute="centerX" secondItem="PJH-v7-MtF" secondAttribute="centerX" id="2KP-67-NcL"/>
+                            <constraint firstItem="C5J-mP-vQP" firstAttribute="centerY" secondItem="PJH-v7-MtF" secondAttribute="centerY" id="u4o-8K-r9G"/>
+                        </constraints>
+                    </view>
                     <connections>
-                        <outlet property="artImageCollectionView" destination="YGs-TD-nfZ" id="0W5-u6-qEt"/>
-                        <segue destination="WAj-91-d75" kind="presentation" identifier="to_find_medium" modalPresentationStyle="overCurrentContext" modalTransitionStyle="flipHorizontal" id="NEQ-c2-PdV"/>
-                        <segue destination="BJn-5Z-IMA" kind="presentation" identifier="to_find_collection" modalPresentationStyle="overCurrentContext" modalTransitionStyle="flipHorizontal" id="nhT-k5-CVZ"/>
-                        <segue destination="1VO-Xs-dYt" kind="presentation" identifier="to_find_map_location" modalPresentationStyle="overCurrentContext" modalTransitionStyle="flipHorizontal" id="SNF-yn-h7D"/>
+                        <outlet property="artImageTableView" destination="C5J-mP-vQP" id="Py7-s5-kJc"/>
+                        <segue destination="VLT-54-Nlx" kind="presentation" identifier="to_find_medium" modalPresentationStyle="overCurrentContext" modalTransitionStyle="flipHorizontal" id="XXj-dK-GJl"/>
+                        <segue destination="7sC-cK-G9H" kind="presentation" identifier="to_find_collection" modalPresentationStyle="overCurrentContext" modalTransitionStyle="flipHorizontal" id="SIZ-8E-Ylk"/>
                     </connections>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PF8-Rh-7fR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="do1-Ki-jLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="-2688.3058470764618"/>
+            <point key="canvasLocation" x="1038" y="-2700"/>
         </scene>
         <!--InstructionViewController-->
         <scene sceneID="4H1-2M-GcQ">
@@ -141,33 +151,38 @@ MUSEUM MIND MAZE!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOW TO PLAY:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9U-oY-mCZ">
-                                <rect key="frame" x="111" y="76" width="153" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dn-uX-Ng6">
-                                <rect key="frame" x="34" y="114" width="307" height="514"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dn-uX-Ng6">
+                                <rect key="frame" x="34" y="145" width="307" height="482"/>
                                 <string key="text">Begin by clicking the image of the art object you want to select on the "Choose Your Art" page. 
 
-On the "What's Your Answer?" page, you can input your answer to the trivia question in the field provided. If your answer is correct, you can choose another art object to keep playing. If your answer is wrong, you get to keep trying until you get the correct answer. 
+On the "What's The Medium?" and "What's The Collection?" pages, you can input your answer to the trivia question in the field provided. If your answer is correct, you can choose another art object to keep playing. If your answer is wrong, you get to keep trying until you get the correct answer. 
 
 Good luck, and have fun exploring the museum!</string>
                                 <fontDescription key="fontDescription" name="Didot-Italic" family="Didot" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW TO PLAY:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9U-oY-mCZ">
+                                <rect key="frame" x="72" y="92" width="230" height="38"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XTU-M7-z1E" firstAttribute="top" secondItem="5Dn-uX-Ng6" secondAttribute="bottom" constant="40" id="2oJ-Zz-BTI"/>
+                            <constraint firstItem="5Dn-uX-Ng6" firstAttribute="top" secondItem="W9U-oY-mCZ" secondAttribute="bottom" constant="15" id="PRI-be-y6m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Dn-uX-Ng6" secondAttribute="trailing" constant="18" id="UOa-S2-Bde"/>
+                            <constraint firstItem="5Dn-uX-Ng6" firstAttribute="leading" secondItem="JdR-ti-IkV" secondAttribute="leadingMargin" constant="18" id="fUe-p0-tcl"/>
+                            <constraint firstItem="W9U-oY-mCZ" firstAttribute="centerX" secondItem="5Dn-uX-Ng6" secondAttribute="centerX" id="rje-lV-2DJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bG-gr-NmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.59999999999999" y="-3485.307346326837"/>
+            <point key="canvasLocation" x="182" y="-3448"/>
         </scene>
         <!--WHAT'S YOUR ANSWER?-->
         <scene sceneID="QM7-Kz-iRa">
@@ -181,76 +196,117 @@ Good luck, and have fun exploring the museum!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KeV-mv-htP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KeV-mv-htP">
                                 <rect key="frame" x="37" y="101" width="300" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AB-AS-HqZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AB-AS-HqZ">
                                 <rect key="frame" x="16" y="72" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="UqV-jh-3SY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ARTIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9T-00-OW2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9T-00-OW2">
                                 <rect key="frame" x="16" y="368" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wZL-vD-MOC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OBJECT DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wu8-5X-D1T">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OBJECT DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wu8-5X-D1T">
                                 <rect key="frame" x="16" y="397" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="kj7-sb-eqp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DESCRIPTION" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0N-I5-aoL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESCRIPTION" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0N-I5-aoL">
                                 <rect key="frame" x="16" y="426" width="343" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="xK5-Re-1vM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-Sc-E2K">
-                                <rect key="frame" x="319" y="588" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-Sc-E2K">
+                                <rect key="frame" x="319" y="608" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="L4s-7G-IHL"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="Museum_000000_100"/>
                                 <connections>
                                     <action selector="submitAnswer:" destination="VLT-54-Nlx" eventType="touchUpInside" id="B8R-PG-PQA"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mab-kS-SfH">
-                                <rect key="frame" x="16" y="539" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCr-Qp-ilC">
+                                <rect key="frame" x="16" y="625" width="67" height="22"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ift-xT-7Jc">
-                                <rect key="frame" x="91" y="607" width="61" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ift-xT-7Jc">
+                                <rect key="frame" x="91" y="626" width="61" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="GSf-e0-i4X"/>
+                                    <constraint firstAttribute="height" constant="21" id="vzW-ao-Lrn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26Z-Pw-WQx">
-                                <rect key="frame" x="237" y="607" width="74" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26Z-Pw-WQx">
+                                <rect key="frame" x="237" y="626" width="74" height="22"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCr-Qp-ilC">
-                                <rect key="frame" x="16" y="607" width="67" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mab-kS-SfH">
+                                <rect key="frame" x="16" y="570" width="343" height="30"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wu8-5X-D1T" firstAttribute="top" secondItem="w9T-00-OW2" secondAttribute="bottom" constant="8" symbolic="YES" id="2rN-b8-FNe"/>
+                            <constraint firstItem="d0N-I5-aoL" firstAttribute="top" secondItem="Wu8-5X-D1T" secondAttribute="bottom" constant="8" symbolic="YES" id="4Ym-qS-Qzl"/>
+                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="leading" secondItem="keX-RZ-g5k" secondAttribute="leadingMargin" id="4ke-6l-s6K"/>
+                            <constraint firstItem="w9T-00-OW2" firstAttribute="top" secondItem="KeV-mv-htP" secondAttribute="bottom" constant="17" id="BBn-5R-kad"/>
+                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="trailing" secondItem="w9T-00-OW2" secondAttribute="trailing" id="CIt-TR-0vB"/>
+                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="centerX" secondItem="KeV-mv-htP" secondAttribute="centerX" id="CQK-fg-gmg"/>
+                            <constraint firstItem="26Z-Pw-WQx" firstAttribute="bottom" secondItem="Taw-Sc-E2K" secondAttribute="bottom" id="DRc-1Z-m4C"/>
+                            <constraint firstItem="Wu8-5X-D1T" firstAttribute="trailing" secondItem="d0N-I5-aoL" secondAttribute="trailing" id="E5O-UV-P4j"/>
+                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="trailing" secondItem="keX-RZ-g5k" secondAttribute="trailingMargin" id="FVH-N3-HhW"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="top" secondItem="d0N-I5-aoL" secondAttribute="bottom" constant="69" id="JSa-LD-mKw"/>
+                            <constraint firstItem="Wu8-5X-D1T" firstAttribute="leading" secondItem="d0N-I5-aoL" secondAttribute="leading" id="P2u-AT-KtM"/>
+                            <constraint firstItem="d0N-I5-aoL" firstAttribute="leading" secondItem="mab-kS-SfH" secondAttribute="leading" id="SKa-1q-MAq"/>
+                            <constraint firstItem="Ift-xT-7Jc" firstAttribute="top" secondItem="26Z-Pw-WQx" secondAttribute="top" id="SeF-fR-KFe"/>
+                            <constraint firstItem="Taw-Sc-E2K" firstAttribute="leading" secondItem="26Z-Pw-WQx" secondAttribute="trailing" constant="8" symbolic="YES" id="Sgh-po-GZT"/>
+                            <constraint firstItem="Taw-Sc-E2K" firstAttribute="top" secondItem="mab-kS-SfH" secondAttribute="bottom" constant="8" symbolic="YES" id="T2C-r5-VbD"/>
+                            <constraint firstAttribute="bottom" secondItem="JCr-Qp-ilC" secondAttribute="bottom" constant="20" symbolic="YES" id="Vtv-wx-Ouq"/>
+                            <constraint firstItem="JCr-Qp-ilC" firstAttribute="top" secondItem="mab-kS-SfH" secondAttribute="bottom" constant="25" id="Xrm-2Y-pGh"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="leading" secondItem="JCr-Qp-ilC" secondAttribute="leading" id="ZUz-X0-cJ3"/>
+                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="leading" secondItem="w9T-00-OW2" secondAttribute="leading" id="b4g-TN-FsK"/>
+                            <constraint firstItem="9AB-AS-HqZ" firstAttribute="top" secondItem="CV7-GF-gYU" secondAttribute="bottom" constant="52" id="bla-qf-Ylx"/>
+                            <constraint firstItem="JCr-Qp-ilC" firstAttribute="bottom" secondItem="Ift-xT-7Jc" secondAttribute="bottom" id="epy-ZH-rBg"/>
+                            <constraint firstItem="d0N-I5-aoL" firstAttribute="trailing" secondItem="mab-kS-SfH" secondAttribute="trailing" id="fK0-hX-Cl3"/>
+                            <constraint firstItem="KeV-mv-htP" firstAttribute="leading" secondItem="keX-RZ-g5k" secondAttribute="leadingMargin" constant="21" id="gdA-Vb-4HP"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="trailing" secondItem="Taw-Sc-E2K" secondAttribute="trailing" id="i0n-18-LP2"/>
+                            <constraint firstItem="Ift-xT-7Jc" firstAttribute="centerY" secondItem="26Z-Pw-WQx" secondAttribute="centerY" id="jV9-uJ-cKX"/>
+                            <constraint firstItem="Ift-xT-7Jc" firstAttribute="leading" secondItem="JCr-Qp-ilC" secondAttribute="trailing" constant="8" symbolic="YES" id="mHz-15-ULp"/>
+                            <constraint firstItem="w9T-00-OW2" firstAttribute="leading" secondItem="Wu8-5X-D1T" secondAttribute="leading" id="o6T-2h-2QQ"/>
+                            <constraint firstItem="JCr-Qp-ilC" firstAttribute="centerY" secondItem="Ift-xT-7Jc" secondAttribute="centerY" id="oiM-Qf-Ybf"/>
+                            <constraint firstItem="KeV-mv-htP" firstAttribute="top" secondItem="9AB-AS-HqZ" secondAttribute="bottom" constant="8" symbolic="YES" id="tVh-XB-Nga"/>
+                            <constraint firstItem="w9T-00-OW2" firstAttribute="trailing" secondItem="Wu8-5X-D1T" secondAttribute="trailing" id="x6n-0b-Mgh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="WHAT'S YOUR ANSWER?" id="uTk-6Z-Arh"/>
                     <connections>
@@ -265,7 +321,7 @@ Good luck, and have fun exploring the museum!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6t-1G-xlj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3096.8000000000002" y="-3117.3913043478265"/>
+            <point key="canvasLocation" x="2092" y="-3015"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nic-V7-eHg">
@@ -288,7 +344,7 @@ Good luck, and have fun exploring the museum!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYB-p6-cia" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-978.39999999999998" y="-2586.6566716641682"/>
+            <point key="canvasLocation" x="-711" y="-2700"/>
         </scene>
         <!--WHAT'S YOUR ANSWER?-->
         <scene sceneID="FFW-Xh-5aA">
@@ -302,76 +358,116 @@ Good luck, and have fun exploring the museum!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTZ-8Y-tmd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KTZ-8Y-tmd">
                                 <rect key="frame" x="37" y="101" width="300" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZg-BB-kMJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZg-BB-kMJ">
                                 <rect key="frame" x="16" y="72" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4oE-c8-kfK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ARTIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi7-to-WiG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi7-to-WiG">
                                 <rect key="frame" x="16" y="368" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sia-ib-Xzo"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OBJECT DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GL-Wg-ws1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OBJECT DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GL-Wg-ws1">
                                 <rect key="frame" x="16" y="397" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="s6H-CM-PrD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MEDIUM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BH-9y-ibJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEDIUM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BH-9y-ibJ">
                                 <rect key="frame" x="16" y="426" width="343" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="CG8-gT-AnG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mXi-fo-IWX">
-                                <rect key="frame" x="16" y="535" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-aC-nPP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-aC-nPP">
                                 <rect key="frame" x="319" y="607" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2E8-k4-lcd"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="Museum_000000_100"/>
                                 <connections>
                                     <action selector="submitAnswer:" destination="7sC-cK-G9H" eventType="touchUpInside" id="mP6-D5-gZs"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3S-Aj-KSP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3S-Aj-KSP">
                                 <rect key="frame" x="16" y="625" width="67" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb7-sj-6fx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb7-sj-6fx">
                                 <rect key="frame" x="91" y="625" width="61" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="HpB-jy-s5X"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyP-Hr-MAC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyP-Hr-MAC">
                                 <rect key="frame" x="237" y="625" width="74" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mXi-fo-IWX">
+                                <rect key="frame" x="16" y="569" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="d3S-Aj-KSP" secondAttribute="bottom" constant="20" symbolic="YES" id="00n-se-Szo"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="trailing" secondItem="hMF-aC-nPP" secondAttribute="trailing" id="2f3-th-p3s"/>
+                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="trailing" secondItem="lYJ-Vn-WPV" secondAttribute="trailingMargin" id="44K-tE-0Fy"/>
+                            <constraint firstItem="gyP-Hr-MAC" firstAttribute="bottom" secondItem="hMF-aC-nPP" secondAttribute="bottom" id="4f7-Ys-doD"/>
+                            <constraint firstItem="6GL-Wg-ws1" firstAttribute="leading" secondItem="5BH-9y-ibJ" secondAttribute="leading" id="5Fe-cr-ogn"/>
+                            <constraint firstItem="Hi7-to-WiG" firstAttribute="top" secondItem="KTZ-8Y-tmd" secondAttribute="bottom" constant="17" id="7kh-Uh-SJ4"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="top" secondItem="jb7-sj-6fx" secondAttribute="top" id="9TX-4T-lW3"/>
+                            <constraint firstItem="6GL-Wg-ws1" firstAttribute="top" secondItem="Hi7-to-WiG" secondAttribute="bottom" constant="8" symbolic="YES" id="9zW-5s-a0A"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="baseline" secondItem="gyP-Hr-MAC" secondAttribute="baseline" id="FvR-z0-oCB"/>
+                            <constraint firstItem="5BH-9y-ibJ" firstAttribute="top" secondItem="6GL-Wg-ws1" secondAttribute="bottom" constant="8" symbolic="YES" id="GUG-If-fRh"/>
+                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="top" secondItem="vCO-dG-bZK" secondAttribute="bottom" constant="52" id="H7y-Tv-xR2"/>
+                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" id="IfH-hs-oBS"/>
+                            <constraint firstItem="Hi7-to-WiG" firstAttribute="leading" secondItem="6GL-Wg-ws1" secondAttribute="leading" id="Ol1-Aw-xjv"/>
+                            <constraint firstItem="KTZ-8Y-tmd" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" constant="21" id="Qb8-xe-9vu"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="top" secondItem="5BH-9y-ibJ" secondAttribute="bottom" constant="68" id="UVH-s5-lrD"/>
+                            <constraint firstItem="gyP-Hr-MAC" firstAttribute="baseline" secondItem="d3S-Aj-KSP" secondAttribute="firstBaseline" id="Ufv-J7-G8x"/>
+                            <constraint firstItem="hMF-aC-nPP" firstAttribute="top" secondItem="mXi-fo-IWX" secondAttribute="bottom" constant="8" symbolic="YES" id="W9B-5P-duQ"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="top" secondItem="mXi-fo-IWX" secondAttribute="bottom" constant="26" id="YpT-xO-5ly"/>
+                            <constraint firstItem="Hi7-to-WiG" firstAttribute="trailing" secondItem="6GL-Wg-ws1" secondAttribute="trailing" id="bLG-PD-oRT"/>
+                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="centerX" secondItem="KTZ-8Y-tmd" secondAttribute="centerX" id="ey4-Gm-78Q"/>
+                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="leading" secondItem="Hi7-to-WiG" secondAttribute="leading" id="g4h-O3-ciM"/>
+                            <constraint firstItem="5BH-9y-ibJ" firstAttribute="trailing" secondItem="mXi-fo-IWX" secondAttribute="trailing" id="jvv-8g-Voi"/>
+                            <constraint firstItem="TZg-BB-kMJ" firstAttribute="trailing" secondItem="Hi7-to-WiG" secondAttribute="trailing" id="l9t-z1-drl"/>
+                            <constraint firstItem="6GL-Wg-ws1" firstAttribute="trailing" secondItem="5BH-9y-ibJ" secondAttribute="trailing" id="lNv-U1-jwc"/>
+                            <constraint firstItem="hMF-aC-nPP" firstAttribute="leading" secondItem="gyP-Hr-MAC" secondAttribute="trailing" constant="8" symbolic="YES" id="po0-z9-V6f"/>
+                            <constraint firstItem="KTZ-8Y-tmd" firstAttribute="top" secondItem="TZg-BB-kMJ" secondAttribute="bottom" constant="8" symbolic="YES" id="qmi-ft-QTI"/>
+                            <constraint firstItem="d3S-Aj-KSP" firstAttribute="centerY" secondItem="jb7-sj-6fx" secondAttribute="centerY" id="sNY-jI-Teb"/>
+                            <constraint firstItem="jb7-sj-6fx" firstAttribute="leading" secondItem="d3S-Aj-KSP" secondAttribute="trailing" constant="8" symbolic="YES" id="tx7-6M-6iL"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="leading" secondItem="d3S-Aj-KSP" secondAttribute="leading" id="vhF-Zz-bTk"/>
+                            <constraint firstItem="5BH-9y-ibJ" firstAttribute="leading" secondItem="mXi-fo-IWX" secondAttribute="leading" id="xeH-aC-7cU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="WHAT'S YOUR ANSWER?" id="9L1-Nh-Cw1"/>
                     <connections>
@@ -386,159 +482,7 @@ Good luck, and have fun exploring the museum!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJQ-Ma-4Ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3096.8000000000002" y="-2403.1484257871066"/>
-        </scene>
-        <!--WHAT'S YOUR ANSWER?-->
-        <scene sceneID="LLj-5T-Miu">
-            <objects>
-                <viewController title="WHAT'S YOUR ANSWER?" id="Cim-3u-FER" customClass="MapLocationViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Uyj-EA-gPx"/>
-                        <viewControllerLayoutGuide type="bottom" id="nD4-q1-62e"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ux7-ff-dt9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uVY-eQ-L73">
-                                <rect key="frame" x="37" y="101" width="300" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0i-A8-Jsj">
-                                <rect key="frame" x="16" y="72" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ARTIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1d-kD-vRm">
-                                <rect key="frame" x="16" y="368" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OBJECT DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9d-KS-8l9">
-                                <rect key="frame" x="16" y="397" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LABEL" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE1-bw-0Ua">
-                                <rect key="frame" x="16" y="426" width="343" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J30-aj-cpC">
-                                <rect key="frame" x="16" y="534" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAc-5D-ckH">
-                                <rect key="frame" x="319" y="607" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Museum_000000_100"/>
-                                <connections>
-                                    <action selector="submitAnswer:" destination="Cim-3u-FER" eventType="touchUpInside" id="SsA-Ar-zpM"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MI6-Yq-QvV">
-                                <rect key="frame" x="16" y="625" width="67" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puf-et-62T">
-                                <rect key="frame" x="91" y="625" width="61" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRQ-4M-Mn8">
-                                <rect key="frame" x="237" y="624" width="74" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="WHAT'S YOUR ANSWER?" id="oZH-gx-EAZ"/>
-                    <connections>
-                        <outlet property="answer" destination="J30-aj-cpC" id="Pby-w8-dB0"/>
-                        <outlet property="artArtist" destination="q1d-kD-vRm" id="MxS-Rc-gee"/>
-                        <outlet property="artImage" destination="uVY-eQ-L73" id="ge2-4g-aHk"/>
-                        <outlet property="artLabel" destination="xE1-bw-0Ua" id="h8v-ok-9Qc"/>
-                        <outlet property="artObjectDate" destination="n9d-KS-8l9" id="gD2-bI-uME"/>
-                        <outlet property="artTitle" destination="e0i-A8-Jsj" id="h5u-Gv-3Ma"/>
-                        <outlet property="score" destination="puf-et-62T" id="VNQ-FC-D78"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="heq-UZ-3Jw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3096.8000000000002" y="-1625.0374812593705"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="hHO-Rd-A0u">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WAj-91-d75" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XGD-dd-y8G">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="VLT-54-Nlx" kind="relationship" relationship="rootViewController" id="BWO-0d-T9B"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Iow-QW-SMq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2157.5999999999999" y="-3117.3913043478265"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ov6-ST-05T">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BJn-5Z-IMA" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uWi-K7-nyE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="7sC-cK-G9H" kind="relationship" relationship="rootViewController" id="vlf-fi-WBw"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xBt-9k-ZQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2157.5999999999999" y="-2403.1484257871066"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="6Uf-Pn-tcI">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1VO-Xs-dYt" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D15-IC-dGW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Cim-3u-FER" kind="relationship" relationship="rootViewController" id="oY7-VE-Xzv"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tt5-N8-ne0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2157.5999999999999" y="-1625.0374812593705"/>
+            <point key="canvasLocation" x="2092" y="-2316"/>
         </scene>
     </scenes>
     <resources>

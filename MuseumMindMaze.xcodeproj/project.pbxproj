@@ -13,14 +13,12 @@
 		0CC306271E3F969100790A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306251E3F969100790A85 /* Main.storyboard */; };
 		0CC306291E3F969100790A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306281E3F969100790A85 /* Assets.xcassets */; };
 		0CC3062C1E3F969100790A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC3062A1E3F969100790A85 /* LaunchScreen.storyboard */; };
-		0CF942AB1E4D76BF00E3F563 /* ArtObjectCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942AA1E4D76BF00E3F563 /* ArtObjectCollectionViewController.swift */; };
-		0CF942AE1E4D89CC00E3F563 /* ArtObjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942AD1E4D89CC00E3F563 /* ArtObjectCollectionViewCell.swift */; };
 		0CF942B41E4D8B5700E3F563 /* MediumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */; };
 		0CF942B61E4D8B7700E3F563 /* FindCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */; };
-		0CF942B81E4D8BAE00E3F563 /* MapLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942B71E4D8BAE00E3F563 /* MapLocationViewController.swift */; };
-		0CF942BC1E4F17C500E3F563 /* MuseumBrooklynbuilding.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CF942BB1E4F17C500E3F563 /* MuseumBrooklynbuilding.png */; };
 		0CF942BE1E4F665D00E3F563 /* GameIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942BD1E4F665D00E3F563 /* GameIntroViewController.swift */; };
 		0CF942C01E4F76CA00E3F563 /* QuestionVCEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942BF1E4F76CA00E3F563 /* QuestionVCEnum.swift */; };
+		0CF942C21E5136EA00E3F563 /* ArtImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942C11E5136EA00E3F563 /* ArtImageViewController.swift */; };
+		0CF942C41E51429E00E3F563 /* ArtImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942C31E51429E00E3F563 /* ArtImageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,14 +30,12 @@
 		0CC306281E3F969100790A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CC3062B1E3F969100790A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CC3062D1E3F969100790A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CF942AA1E4D76BF00E3F563 /* ArtObjectCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtObjectCollectionViewController.swift; sourceTree = "<group>"; };
-		0CF942AD1E4D89CC00E3F563 /* ArtObjectCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtObjectCollectionViewCell.swift; sourceTree = "<group>"; };
 		0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumViewController.swift; sourceTree = "<group>"; };
 		0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindCollectionViewController.swift; sourceTree = "<group>"; };
-		0CF942B71E4D8BAE00E3F563 /* MapLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationViewController.swift; sourceTree = "<group>"; };
-		0CF942BB1E4F17C500E3F563 /* MuseumBrooklynbuilding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MuseumBrooklynbuilding.png; sourceTree = "<group>"; };
 		0CF942BD1E4F665D00E3F563 /* GameIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameIntroViewController.swift; sourceTree = "<group>"; };
 		0CF942BF1E4F76CA00E3F563 /* QuestionVCEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionVCEnum.swift; sourceTree = "<group>"; };
+		0CF942C11E5136EA00E3F563 /* ArtImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtImageViewController.swift; sourceTree = "<group>"; };
+		0CF942C31E51429E00E3F563 /* ArtImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtImageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +101,6 @@
 		0CC306201E3F969100790A85 /* MuseumMindMaze */ = {
 			isa = PBXGroup;
 			children = (
-				0CF942BB1E4F17C500E3F563 /* MuseumBrooklynbuilding.png */,
 				0CC306281E3F969100790A85 /* Assets.xcassets */,
 				0CC3062D1E3F969100790A85 /* Info.plist */,
 			);
@@ -115,7 +110,7 @@
 		0CF942B11E4D8B1600E3F563 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				0CF942AD1E4D89CC00E3F563 /* ArtObjectCollectionViewCell.swift */,
+				0CF942C31E51429E00E3F563 /* ArtImageTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -124,10 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				0CF942BD1E4F665D00E3F563 /* GameIntroViewController.swift */,
-				0CF942AA1E4D76BF00E3F563 /* ArtObjectCollectionViewController.swift */,
+				0CF942C11E5136EA00E3F563 /* ArtImageViewController.swift */,
 				0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */,
 				0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */,
-				0CF942B71E4D8BAE00E3F563 /* MapLocationViewController.swift */,
 				0CC306211E3F969100790A85 /* AppDelegate.swift */,
 			);
 			name = ViewControllers;
@@ -196,7 +190,6 @@
 				0CC3062C1E3F969100790A85 /* LaunchScreen.storyboard in Resources */,
 				0CC306291E3F969100790A85 /* Assets.xcassets in Resources */,
 				0CC306271E3F969100790A85 /* Main.storyboard in Resources */,
-				0CF942BC1E4F17C500E3F563 /* MuseumBrooklynbuilding.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,10 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CF942AB1E4D76BF00E3F563 /* ArtObjectCollectionViewController.swift in Sources */,
-				0CF942AE1E4D89CC00E3F563 /* ArtObjectCollectionViewCell.swift in Sources */,
+				0CF942C21E5136EA00E3F563 /* ArtImageViewController.swift in Sources */,
 				0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */,
-				0CF942B81E4D8BAE00E3F563 /* MapLocationViewController.swift in Sources */,
+				0CF942C41E51429E00E3F563 /* ArtImageTableViewCell.swift in Sources */,
 				0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */,
 				0CF942BE1E4F665D00E3F563 /* GameIntroViewController.swift in Sources */,
 				0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */,

@@ -12,16 +12,15 @@ import UIKit
 var objects = [ArtObject]()
 
 
-class ArtObject { //condensed art object listing including museum location and collection
+class ArtObject { //condensed art object listing including artist, didactic labels, and collection
     var ID: Int?
     var title: String?
     var object_date: String?
     var medium: String?
     var description: String?
     var primary_image: String?
-
+    
     var artist: Artist?
-    var museumLocation: MuseumLocation?
     var collection: Collection?
     var label: Label?
     
@@ -40,16 +39,6 @@ class ArtObject { //condensed art object listing including museum location and c
         } else {
             print("Artist Unknown")
         }
-
-        
-        let museumLocationJSON = jsonObject?["museum_location"]
-        if let ml = (museumLocationJSON as? [[String : AnyObject]]) {
-            if ml.count > 0 {
-                museumLocation = MuseumLocation(jsonObject: ml[0])}
-        } else {
-            print("Museum Location Unknown")
-        }
-        
         
         let collectionJSON = jsonObject?["collections"]
         if let co = (collectionJSON as? [[String : AnyObject]]) {
@@ -59,7 +48,6 @@ class ArtObject { //condensed art object listing including museum location and c
             print("Collection Unknown")
         }
         
-        
         let labelJSON = jsonObject?["labels"]
         if let lj = (labelJSON as? [[String : AnyObject]]) {
             if lj.count > 0 {
@@ -67,17 +55,6 @@ class ArtObject { //condensed art object listing including museum location and c
         } else {
             print("Label Unknown")
         }
-        
-        
-        
-//        let museumLocationJSON = jsonObject?["museum_location"] as! [String : AnyObject]
-//        museumLocation = MuseumLocation(jsonObject: museumLocationJSON)
-        
-//        let collectionJSON = jsonObject?["collections"]
-//        collection = Collection(jsonObject: (collectionJSON as! [[String : AnyObject]])[0])
-        
-//        let labelJSON = jsonObject?["labels"]
-//        label = Label(jsonObject: (labelJSON as! [[String : AnyObject]])[0])
     }
 }
 
@@ -92,17 +69,6 @@ extension ArtObject {//to get the URL of the artObjectImage
     }
     var primaryImageURL : URL? {
         return URL(string: primaryImageURLString ?? "")
-    }
-}
-
-
-class MuseumLocation {
-    var name: String?
-    var is_public: Int?
-    
-    init(jsonObject : [String : AnyObject]?) {
-        self.name = jsonObject?["name"] as? String
-        self.is_public = jsonObject?["is_public"] as? Int
     }
 }
 
@@ -127,7 +93,6 @@ class Collection {
     var name: String?
     var folder: String?
     
-
     init(jsonObject : [String : AnyObject]?) {
         self.ID = jsonObject?["id"] as? Int
         self.name = jsonObject?["name"] as? String
