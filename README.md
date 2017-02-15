@@ -51,4 +51,4 @@ MuseumMindMaze is a simple quiz app that uses a very robust museum collection AP
 
 ##Mock App Store Review
 From Richel Cuyler:
-" I love how fun and easy this app makes learning about art! I believe that museum-goers, both young and old, will enjoy quizzing themselves on what they know about the art in the museum. I hope to be able to see objects and collections from other museums from around the world on the app in the future!"
+"I love how fun and easy this app makes learning about art! I believe that museum-goers, both young and old, will enjoy quizzing themselves on what they know about the art in the museum. I hope to be able to see objects and collections from other museums from around the world on the app in the future!"
