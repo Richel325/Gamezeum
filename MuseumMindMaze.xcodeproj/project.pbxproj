@@ -124,8 +124,8 @@
 		0CF942B21E4D8B2A00E3F563 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0CF942C11E5136EA00E3F563 /* ArtImageViewController.swift */,
 				0CF942C51E516EE900E3F563 /* GameIntroViewController.swift */,
+				0CF942C11E5136EA00E3F563 /* ArtImageViewController.swift */,
 				0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */,
 				0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */,
 				0CC306211E3F969100790A85 /* AppDelegate.swift */,
@@ -350,7 +350,7 @@
 				DEVELOPMENT_TEAM = N624RJ86SL;
 				INFOPLIST_FILE = MuseumMindMaze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MJFE.MuseumMindMaze;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MJFE.MuseumMindMaze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -363,7 +363,7 @@
 				DEVELOPMENT_TEAM = N624RJ86SL;
 				INFOPLIST_FILE = MuseumMindMaze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MJFE.MuseumMindMaze;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MJFE.MuseumMindMaze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -19,6 +19,7 @@ class GameIntroViewController: UIViewController {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Fmaj", ofType: "mp3")!))
             audioPlayer.play()
+            audioPlayer.numberOfLoops = -1
         }
         catch {
             print(error)

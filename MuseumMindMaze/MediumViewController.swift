@@ -18,37 +18,41 @@ class MediumViewController: UIViewController {
     @IBOutlet weak var answer: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
     
-    
-    var objects = [ArtObject]()
+    var object: ArtObject?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
-            self.objects = objects!
-        })
+        artArtist.text = object?.artist?.name
+        if let artObjectImageURLString = object?.primaryImageURLString {
+            artImage.downLoadImage(from: artObjectImageURLString)
+            artObjectDate.text = object?.object_date
+            artTitle.text = object?.title
+            artDescription.text = object?.description
+            scoreLabel.text? = String(UserDefaults.standard.score)
+            APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
+                self.object = self.object
+            })
+        }
     }
     
-    var score = 0
     
     @IBAction func submitAnswer(_ sender: UIButton) {
-        if answer == answer {// ALERT MESSAGES: For right and wrong answers
+        if answer.text?.lowercased() == object?.medium?.lowercased() {// ALERT MESSAGES: For right and wrong answers
+            UserDefaults.standard.score += 10
+            scoreLabel.text? = String(UserDefaults.standard.score)
             let alertController2 = UIAlertController(title: "Correct Answer!", message:
                 "You got it right! Click OK to keep playing.", preferredStyle: UIAlertControllerStyle.alert)
-            alertController2.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
+            alertController2.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(alertAction: UIAlertAction) in
+                let _ = self.navigationController?.popViewController(animated: true)}))
             self.present(alertController2, animated: true, completion: nil)
             //Dismisses the segue when the answer is correct
-            self.dismiss(animated: true, completion: nil)
         } else {
             let alertController1 = UIAlertController(title: "Wrong Answer!", message:
                 "Please try answering the question again.", preferredStyle: UIAlertControllerStyle.alert)
             alertController1.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
             self.present(alertController1, animated: true, completion: nil)
-            
-            
         }
-        
     }
-    
 }
 
 

@@ -8,12 +8,17 @@
 
 import UIKit
 
+var selectedCellIndex: Int?
+fileprivate var refreshControl : UIRefreshControl?
+
 class ArtImageViewController: UIViewController {
     
     
     @IBOutlet weak var artImageTableView: UITableView!
     
     var objects = [ArtObject]()
+    let mvc = MediumViewController()
+    let fcv = FindCollectionViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +26,33 @@ class ArtImageViewController: UIViewController {
             self.objects = objects!
             self.artImageTableView.reloadData()
         })
-        
+        let aRefreshControl = UIRefreshControl()
+        aRefreshControl.addTarget(self, action: #selector(refreshControlAction(sender:)), for: .valueChanged)
+        artImageTableView.addSubview(aRefreshControl)
+        artImageTableView.alwaysBounceVertical = true
+        refreshControl = aRefreshControl
+    }
+    
+    
+    func refreshControlAction(sender : Any?) {
+        self.artImageTableView.reloadData()
+        refreshControl?.endRefreshing()
+        APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
+            self.objects = objects!
+        })
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier ?? "" {
+        case "to_find_medium":
+            let mvc = segue.destination as! MediumViewController
+            mvc.object = objects[(artImageTableView.indexPathForSelectedRow?.row) ?? 0]
+        case "to_find_collection":
+            let fcv = segue.destination as! FindCollectionViewController
+            fcv.object = objects[(artImageTableView.indexPathForSelectedRow?.row) ?? 0]
+        default:
+            break
+        }
     }
 }
 
@@ -38,21 +69,6 @@ extension ArtImageViewController: UITableViewDelegate {
 }
 
 
-func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    switch segue.identifier ?? "" {
-    case "to_find_medium":
-        let destination = segue.destination as! UINavigationController
-        destination.viewControllers[0] as! MediumViewController
-    case "to_find_collection":
-        let destination = segue.destination as! UINavigationController
-        destination.viewControllers[1] as! FindCollectionViewController
-    default:
-        break
-    }
-}
-
-
-
 extension ArtImageViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return objects.count
@@ -66,6 +82,7 @@ extension ArtImageViewController: UITableViewDataSource {
         } else {
             cell.artImage.image = nil
         }
+        selectedCellIndex = indexPath.row
         return cell
     }
 }
