@@ -9,9 +9,9 @@ Learn more about the art at the museum, and quiz yourself on:
 Listen to relaxing music as you view different objects from the museum's collections, and explore objects on your phone before seeing them inside the museum on your next visit!
 
 ##Screenshots
-![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/.png)
-![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/.png)
-![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/.png)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/TitleScreen.png)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/ImageSelectScreen.png)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/QuestionScreen.png)
 
 ##Link To TestFlight
 
@@ -49,6 +49,7 @@ My background and work in museums has been a way for me to combine my expertise 
 * Shorten the name so it shows on the phone screen/App Store
 * Share images and scores via social media
 * Location Access inside the museum
+* Cooperation with museum to provide incentives for playing the app (i.e. free admission with high score, etc.)
 
 
 ##Mock App Store Review
