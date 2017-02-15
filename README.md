@@ -30,6 +30,8 @@ MuseumMindMaze is a simple quiz app that uses a very robust museum collection AP
 
 ##Design Process
 
+My background and work in museums has been a way for me to combine my expertise in art history and education with my passion for cultural institutions and creating unique ways to bring communities together around art. Now with multiple VR and AR offerings helping museums become more accessible to diverse audiences, I researched to see if museums I loved had accessible APIs for their collections that could be used for open-source code. I was inspired by an old PC encyclopedia game that helped me to become more interested in learning about the world to create a trivia game for local museums (3 out of 10 researched) based on their collections and changing exhibitions.
+
 
 ##Hurdles
 
