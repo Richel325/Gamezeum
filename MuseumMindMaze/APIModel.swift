@@ -16,8 +16,8 @@ class APIClient{
     
     static func getData(completion: @escaping ([ArtObject]?) -> ()) {
         DispatchQueue.global(qos: .background).async{
-            
-            let endpoint = "https://www.brooklynmuseum.org/api/v2/object"
+            let randomNumber: Int = Int(arc4random_uniform(UInt32(10000)))
+            let endpoint = "https://www.brooklynmuseum.org/api/v2/object?offset=\(randomNumber)"
             var url = URLRequest(url: URL(string: endpoint)!)
             url.addValue(APIKey, forHTTPHeaderField: "api_key")
             let session = URLSession(configuration: URLSessionConfiguration.default)
@@ -37,7 +37,6 @@ class APIClient{
         
         var objects = [ArtObject]()
         if let listOfObjects = json["data"] as? [[String: AnyObject]] {
-            _ = Int(arc4random_uniform(UInt32(max(0, listOfObjects.count-1))))
             for jsonObject in listOfObjects {
                 let object = ArtObject(jsonObject: jsonObject)
                 objects.append(object)

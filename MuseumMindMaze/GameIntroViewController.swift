@@ -13,6 +13,7 @@ class GameIntroViewController: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,4 +28,9 @@ class GameIntroViewController: UIViewController {
         
         
     }
+    
+    @IBAction func resetScore(_ sender: UIButton) {
+        UserDefaults.standard.score = 0
+    }
+    
 }

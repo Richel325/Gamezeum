@@ -14,11 +14,10 @@ class FindCollectionViewController: UIViewController {
     @IBOutlet weak var artImage: UIImageView!
     @IBOutlet weak var artArtist: UILabel!
     @IBOutlet weak var artObjectDate: UILabel!
-    @IBOutlet weak var artMedium: UILabel!
+    @IBOutlet weak var artMedium: UITextView!
     @IBOutlet weak var answer: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
     
-    var score = 0
     var object: ArtObject?
     
     override func viewDidLoad() {
@@ -27,7 +26,7 @@ class FindCollectionViewController: UIViewController {
         if let artObjectImageURLString = object?.primaryImageURLString {
             artImage.downLoadImage(from: artObjectImageURLString)
             artObjectDate.text = object?.object_date
-            artTitle.text = object?.title
+            artTitle?.text = object?.title
             artMedium.text = object?.medium
             scoreLabel.text? = String(UserDefaults.standard.score)
             APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
@@ -38,20 +37,22 @@ class FindCollectionViewController: UIViewController {
     
     
     @IBAction func submitAnswer(_ sender: UIButton) {
-        if answer.text?.lowercased() == object?.collection?.name?.lowercased() {// ALERT MESSAGES: For right and wrong answers
-            UserDefaults.standard.score += 10
-            scoreLabel.text? = String(UserDefaults.standard.score)
-            let alertController2 = UIAlertController(title: "Correct Answer!", message:
-                "You got it right! Click OK to keep playing.", preferredStyle: UIAlertControllerStyle.alert)
-            alertController2.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(alertAction: UIAlertAction) in
-                let _ = self.navigationController?.popViewController(animated: true)}))
-            self.present(alertController2, animated: true, completion: nil)
-            //Dismisses the segue when the answer is correct
-        } else {
-            let alertController1 = UIAlertController(title: "Wrong Answer!", message:
-                "Please try answering the question again.", preferredStyle: UIAlertControllerStyle.alert)
-            alertController1.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
-            self.present(alertController1, animated: true, completion: nil)
+        if let userInput = answer?.text?.lowercased(), let actualAnswer = object?.medium?.lowercased() {
+            if actualAnswer.contains(userInput) {// ALERT MESSAGES: For right and wrong answers
+                UserDefaults.standard.score += 10
+                //Dismisses the segue when the answer is correct
+                let alertController2 = UIAlertController(title: "Correct Answer!", message:
+                    "You got it right! Click OK to keep playing.", preferredStyle: UIAlertControllerStyle.alert)
+                alertController2.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(alertAction: UIAlertAction) in
+                    let _ = self.navigationController?.popViewController(animated: true)}))
+                //Dismisses the segue when the answer is correct
+                self.present(alertController2, animated: true, completion: nil)
+            } else {
+                let alertController1 = UIAlertController(title: "Wrong Answer!", message:
+                    "Please try answering the question again.", preferredStyle: UIAlertControllerStyle.alert)
+                alertController1.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
+                self.present(alertController1, animated: true, completion: nil)
+            }
         }
     }
 }
