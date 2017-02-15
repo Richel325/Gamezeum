@@ -83,6 +83,9 @@
                                 <state key="normal" title="CREDITS">
                                     <color key="titleColor" red="0.16862745100000001" green="0.070588235289999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="m1l-xI-vQM" kind="show" id="hrX-cv-uZP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -109,10 +112,85 @@
             </objects>
             <point key="canvasLocation" x="-151" y="-2703"/>
         </scene>
-        <!--Art Image View Controller-->
+        <!--Credits-->
+        <scene sceneID="JJM-v5-I9p">
+            <objects>
+                <viewController title="Credits" id="m1l-xI-vQM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jOK-NW-VjL"/>
+                        <viewControllerLayoutGuide type="bottom" id="BOe-2l-kpH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zzm-of-HTW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art Collection API Provided By:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4OU-2O-RZe">
+                                <rect key="frame" x="16" y="114" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="j7Y-2W-WbQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdH-rJ-w24">
+                                <rect key="frame" x="16" y="510" width="343" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="2V6-cs-HTR"/>
+                                </constraints>
+                                <string key="text">Music Provided By:
+
+"FMaj" from The Sims (c) 2000 
+Developed by Maxis 
+Published by Electronic Arts</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brooklynmuseumcom" translatesAutoresizingMaskIntoConstraints="NO" id="GlQ-4w-ht3">
+                                <rect key="frame" x="0.0" y="143" width="375" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="L0h-ei-jbD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kf-R3-ZE1">
+                                <rect key="frame" x="16" y="305" width="343" height="146"/>
+                                <string key="text">Pixel Art/Graphics Provided By:
+
+Kostic Milos 
+Fiverr Profile:
+https://www.fiverr.com/harveydentmd</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4OU-2O-RZe" firstAttribute="trailing" secondItem="5Kf-R3-ZE1" secondAttribute="trailing" id="8vV-ho-oOh"/>
+                            <constraint firstItem="5Kf-R3-ZE1" firstAttribute="top" secondItem="GlQ-4w-ht3" secondAttribute="bottom" constant="34" id="DiS-hB-UIa"/>
+                            <constraint firstAttribute="bottom" secondItem="WdH-rJ-w24" secondAttribute="bottom" constant="54" id="Ea5-W9-Vqd"/>
+                            <constraint firstItem="5Kf-R3-ZE1" firstAttribute="leading" secondItem="WdH-rJ-w24" secondAttribute="leading" id="KqR-8e-1ti"/>
+                            <constraint firstItem="4OU-2O-RZe" firstAttribute="leading" secondItem="5Kf-R3-ZE1" secondAttribute="leading" id="Maw-Le-xPV"/>
+                            <constraint firstItem="4OU-2O-RZe" firstAttribute="top" secondItem="jOK-NW-VjL" secondAttribute="bottom" constant="50" id="TCU-aW-Hvv"/>
+                            <constraint firstItem="GlQ-4w-ht3" firstAttribute="leading" secondItem="zzm-of-HTW" secondAttribute="leading" id="Vxu-8Y-kzi"/>
+                            <constraint firstItem="4OU-2O-RZe" firstAttribute="leading" secondItem="zzm-of-HTW" secondAttribute="leadingMargin" id="bDz-rz-eQQ"/>
+                            <constraint firstItem="5Kf-R3-ZE1" firstAttribute="trailing" secondItem="WdH-rJ-w24" secondAttribute="trailing" id="meS-6O-7xb"/>
+                            <constraint firstItem="WdH-rJ-w24" firstAttribute="top" secondItem="5Kf-R3-ZE1" secondAttribute="bottom" constant="59" id="pl1-1L-cK0"/>
+                            <constraint firstItem="GlQ-4w-ht3" firstAttribute="top" secondItem="4OU-2O-RZe" secondAttribute="bottom" constant="8" symbolic="YES" id="rj1-dY-BTc"/>
+                            <constraint firstAttribute="trailing" secondItem="GlQ-4w-ht3" secondAttribute="trailing" id="veT-0O-1Ui"/>
+                            <constraint firstItem="4OU-2O-RZe" firstAttribute="centerX" secondItem="GlQ-4w-ht3" secondAttribute="centerX" id="w8c-5U-VAE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QLG-jN-Goo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="-1831"/>
+        </scene>
+        <!--Choose Your Art:-->
         <scene sceneID="CcB-Nk-YBk">
             <objects>
-                <viewController id="uvJ-tD-UfA" customClass="ArtImageViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Choose Your Art:" id="uvJ-tD-UfA" customClass="ArtImageViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bia-ot-0Ua"/>
                         <viewControllerLayoutGuide type="bottom" id="dRq-y8-Pdm"/>
@@ -177,7 +255,7 @@
         <!--InstructionViewController-->
         <scene sceneID="4H1-2M-GcQ">
             <objects>
-                <viewController id="K39-pb-Ryc" userLabel="InstructionViewController" sceneMemberID="viewController">
+                <viewController title="Rules" id="K39-pb-Ryc" userLabel="InstructionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eAg-gT-Y4v"/>
                         <viewControllerLayoutGuide type="bottom" id="XTU-M7-z1E"/>
@@ -219,7 +297,7 @@ Good luck, and have fun exploring the museum!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bG-gr-NmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="181.59999999999999" y="-3448.4257871064469"/>
+            <point key="canvasLocation" x="322" y="-3662"/>
         </scene>
         <!--Medium Question-->
         <scene sceneID="QM7-Kz-iRa">
@@ -385,26 +463,26 @@ Good luck, and have fun exploring the museum!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTZ-8Y-tmd">
-                                <rect key="frame" x="23" y="172" width="331" height="250"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KTZ-8Y-tmd">
+                                <rect key="frame" x="23" y="172" width="329" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="yY4-4w-8Oa"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ARTIST" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi7-to-WiG">
-                                <rect key="frame" x="23" y="483" width="331" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTIST" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi7-to-WiG">
+                                <rect key="frame" x="23" y="483" width="329" height="21"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="OBJECT DATE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GL-Wg-ws1">
-                                <rect key="frame" x="23" y="512" width="331" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OBJECT DATE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GL-Wg-ws1">
+                                <rect key="frame" x="23" y="512" width="329" height="22"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-aC-nPP" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="304" y="110" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-aC-nPP" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="302" y="110" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="QLg-Et-yja"/>
                                 </constraints>
@@ -429,8 +507,8 @@ Good luck, and have fun exploring the museum!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyP-Hr-MAC">
-                                <rect key="frame" x="222" y="128" width="74" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyP-Hr-MAC">
+                                <rect key="frame" x="220" y="128" width="74" height="22"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -441,16 +519,16 @@ Good luck, and have fun exploring the museum!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="TITLE" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ajj-US-ZK8">
-                                <rect key="frame" x="23" y="430" width="331" height="46"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="TITLE" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ajj-US-ZK8">
+                                <rect key="frame" x="23" y="430" width="329" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="oBj-aa-8m8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="MEDIUM" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AZv-Vn-Q7c">
-                                <rect key="frame" x="23" y="539" width="331" height="108"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="MEDIUM" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AZv-Vn-Q7c">
+                                <rect key="frame" x="23" y="539" width="329" height="108"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -495,6 +573,7 @@ Good luck, and have fun exploring the museum!</string>
                         <outlet property="artImage" destination="KTZ-8Y-tmd" id="PxQ-eh-9DN"/>
                         <outlet property="artMedium" destination="AZv-Vn-Q7c" id="g0d-r4-uPY"/>
                         <outlet property="artObjectDate" destination="6GL-Wg-ws1" id="xaG-u7-Mv0"/>
+                        <outlet property="artTitle" destination="Ajj-US-ZK8" id="RZT-Ub-6QX"/>
                         <outlet property="scoreLabel" destination="jb7-sj-6fx" id="bzS-oz-ZM7"/>
                     </connections>
                 </viewController>
@@ -506,6 +585,7 @@ Good luck, and have fun exploring the museum!</string>
     <resources>
         <image name="Museum_000000_100" width="100" height="100"/>
         <image name="bk-museum-portrait" width="1080" height="1920"/>
+        <image name="brooklynmuseumcom" width="2000" height="500"/>
         <image name="museum-building" width="105" height="105"/>
     </resources>
 </document>

@@ -47,7 +47,6 @@ class MediumViewController: UIViewController {
                 alertController2.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(alertAction: UIAlertAction) in
                     let _ = self.navigationController?.popViewController(animated: true)}))
                 self.present(alertController2, animated: true, completion: nil)
-                
             } else {
                 let alertController1 = UIAlertController(title: "Wrong Answer!", message:
                     "Please try answering the question again.", preferredStyle: UIAlertControllerStyle.alert)
