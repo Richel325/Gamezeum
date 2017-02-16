@@ -29,6 +29,9 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MUSEUM MIND MAZE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWF-SW-ROp">
                                 <rect key="frame" x="16" y="72" width="343" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="S43-e4-0ys"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="30"/>
                                 <color key="textColor" red="0.16862745100000001" green="0.070588235289999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.59215686270000001" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -38,8 +41,8 @@
                                 <rect key="frame" x="16" y="118" width="100" height="36"/>
                                 <color key="backgroundColor" red="0.82745098039999998" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="jPa-G0-Iwq"/>
-                                    <constraint firstAttribute="height" constant="36" id="ow3-rP-yAZ"/>
+                                    <constraint firstAttribute="width" constant="100" id="CcP-1F-BUg"/>
+                                    <constraint firstAttribute="height" constant="36" id="o1h-9K-Ked"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="15"/>
                                 <state key="normal" title="PLAY">
@@ -53,7 +56,7 @@
                                 <rect key="frame" x="259" y="118" width="100" height="36"/>
                                 <color key="backgroundColor" red="0.82745098039999998" green="0.49803921569999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="0OS-Zp-zDc"/>
+                                    <constraint firstAttribute="width" constant="100" id="f5f-H6-MLS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,9 +68,8 @@
                                     <segue destination="K39-pb-Ryc" kind="show" id="FNy-bt-NPj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgw-1z-REr">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgw-1z-REr">
                                 <rect key="frame" x="16" y="627" width="127" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
                                 <state key="normal" title="RESET SCORE">
                                     <color key="titleColor" red="0.16862745100000001" green="0.070588235289999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,9 +78,8 @@
                                     <action selector="resetScore:" destination="LMj-HA-f7X" eventType="touchUpInside" id="hbY-ju-V8d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klz-yR-b39">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klz-yR-b39">
                                 <rect key="frame" x="278" y="627" width="81" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
                                 <state key="normal" title="CREDITS">
                                     <color key="titleColor" red="0.16862745100000001" green="0.070588235289999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -90,20 +91,23 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Q1L-3i-JDL" firstAttribute="top" secondItem="wWF-SW-ROp" secondAttribute="bottom" constant="8" symbolic="YES" id="Dca-MS-vM8"/>
-                            <constraint firstItem="H7L-xC-Hx4" firstAttribute="top" secondItem="Q1L-3i-JDL" secondAttribute="bottom" constant="513" id="Gxt-HA-p8l"/>
-                            <constraint firstAttribute="trailing" secondItem="Siv-T3-cfn" secondAttribute="trailing" id="OsO-HB-VKW"/>
-                            <constraint firstItem="Siv-T3-cfn" firstAttribute="leading" secondItem="G0z-94-h96" secondAttribute="leading" id="Qyt-wB-hXM"/>
-                            <constraint firstItem="Q1L-3i-JDL" firstAttribute="baseline" secondItem="lSd-id-EGn" secondAttribute="firstBaseline" id="RY5-FR-lAQ"/>
-                            <constraint firstItem="wWF-SW-ROp" firstAttribute="leading" secondItem="Q1L-3i-JDL" secondAttribute="leading" id="S2Z-2Y-4Bg"/>
-                            <constraint firstItem="wWF-SW-ROp" firstAttribute="top" secondItem="BV0-wm-P0f" secondAttribute="bottom" constant="8" symbolic="YES" id="c1f-jC-dLj"/>
-                            <constraint firstItem="wWF-SW-ROp" firstAttribute="trailing" secondItem="lSd-id-EGn" secondAttribute="trailing" id="juF-VV-dSn"/>
-                            <constraint firstItem="lSd-id-EGn" firstAttribute="baseline" secondItem="Q1L-3i-JDL" secondAttribute="firstBaseline" id="k9g-wk-WTd"/>
-                            <constraint firstItem="Siv-T3-cfn" firstAttribute="top" secondItem="G0z-94-h96" secondAttribute="top" id="lSx-8m-fJb"/>
-                            <constraint firstItem="Siv-T3-cfn" firstAttribute="bottom" secondItem="H7L-xC-Hx4" secondAttribute="top" id="oHG-fS-XBD"/>
-                            <constraint firstItem="Siv-T3-cfn" firstAttribute="centerX" secondItem="wWF-SW-ROp" secondAttribute="centerX" id="pNu-Ye-Oc7"/>
-                            <constraint firstItem="Q1L-3i-JDL" firstAttribute="top" secondItem="lSd-id-EGn" secondAttribute="top" id="v4q-KA-qo9"/>
-                            <constraint firstItem="wWF-SW-ROp" firstAttribute="leading" secondItem="G0z-94-h96" secondAttribute="leadingMargin" id="xcx-Mg-adR"/>
+                            <constraint firstItem="Q1L-3i-JDL" firstAttribute="top" secondItem="wWF-SW-ROp" secondAttribute="bottom" constant="8" symbolic="YES" id="4UH-IL-oEM"/>
+                            <constraint firstItem="lSd-id-EGn" firstAttribute="baseline" secondItem="Q1L-3i-JDL" secondAttribute="firstBaseline" id="5pm-Dl-XiD"/>
+                            <constraint firstItem="Q1L-3i-JDL" firstAttribute="leading" secondItem="Pgw-1z-REr" secondAttribute="leading" id="GX7-Ea-TBX"/>
+                            <constraint firstItem="Pgw-1z-REr" firstAttribute="baseline" secondItem="Klz-yR-b39" secondAttribute="baseline" id="Ift-2X-wW3"/>
+                            <constraint firstItem="Siv-T3-cfn" firstAttribute="leading" secondItem="G0z-94-h96" secondAttribute="leading" id="MXp-yU-sE8"/>
+                            <constraint firstItem="H7L-xC-Hx4" firstAttribute="top" secondItem="Pgw-1z-REr" secondAttribute="bottom" constant="6" id="OyM-VW-rSk"/>
+                            <constraint firstItem="Siv-T3-cfn" firstAttribute="centerX" secondItem="wWF-SW-ROp" secondAttribute="centerX" id="Qc0-av-8r4"/>
+                            <constraint firstItem="Siv-T3-cfn" firstAttribute="top" secondItem="G0z-94-h96" secondAttribute="top" id="acB-NH-rHM"/>
+                            <constraint firstItem="lSd-id-EGn" firstAttribute="trailing" secondItem="Klz-yR-b39" secondAttribute="trailing" id="gze-4s-4jj"/>
+                            <constraint firstItem="Siv-T3-cfn" firstAttribute="bottom" secondItem="H7L-xC-Hx4" secondAttribute="top" id="jiQ-IP-tN6"/>
+                            <constraint firstAttribute="trailing" secondItem="Siv-T3-cfn" secondAttribute="trailing" id="kZw-5r-sHL"/>
+                            <constraint firstItem="wWF-SW-ROp" firstAttribute="leading" secondItem="G0z-94-h96" secondAttribute="leadingMargin" id="nZW-Zx-DdO"/>
+                            <constraint firstItem="wWF-SW-ROp" firstAttribute="trailing" secondItem="lSd-id-EGn" secondAttribute="trailing" id="p5k-MJ-wGr"/>
+                            <constraint firstItem="Q1L-3i-JDL" firstAttribute="baseline" secondItem="lSd-id-EGn" secondAttribute="firstBaseline" id="pY8-zI-Qol"/>
+                            <constraint firstItem="Q1L-3i-JDL" firstAttribute="top" secondItem="lSd-id-EGn" secondAttribute="top" id="rqb-Db-TT0"/>
+                            <constraint firstItem="wWF-SW-ROp" firstAttribute="top" secondItem="BV0-wm-P0f" secondAttribute="bottom" constant="8" symbolic="YES" id="wI2-d1-Ec4"/>
+                            <constraint firstItem="wWF-SW-ROp" firstAttribute="leading" secondItem="Q1L-3i-JDL" secondAttribute="leading" id="whG-3j-jRb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Dwq-dI-UcF"/>
@@ -345,7 +349,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="15" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mab-kS-SfH">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="15" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mab-kS-SfH">
                                 <rect key="frame" x="16" y="72" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -513,7 +517,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mXi-fo-IWX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="15" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mXi-fo-IWX">
                                 <rect key="frame" x="16" y="72" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
