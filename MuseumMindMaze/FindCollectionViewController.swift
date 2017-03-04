@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FindCollectionViewController: UIViewController {
+class FindCollectionViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var artTitle: UITextView!
     @IBOutlet weak var artImage: UIImageView!
@@ -22,6 +22,8 @@ class FindCollectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.answer.delegate = self
+        
         artArtist.text = object?.artist?.name
         if let artObjectImageURLString = object?.primaryImageURLString {
             artImage.downLoadImage(from: artObjectImageURLString)
@@ -54,5 +56,17 @@ class FindCollectionViewController: UIViewController {
                 self.present(alertController1, animated: true, completion: nil)
             }
         }
+    }
+    
+    //Hide keyboard when user touches outside of keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
+    //Resign keyboard when "Done" button is pressed
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        answer.resignFirstResponder()
+        return true
     }
 }
