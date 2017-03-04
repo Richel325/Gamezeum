@@ -1,8 +1,8 @@
 # MuseumMindMaze
 
 Museum Mind Maze is a trivia game based on art objects received by using Brooklyn Museum's art collection API. 
-Learn more about the art at the museum, and quiz yourself on: 
-[;'nbv
+Learn more about the art at the museum, and quiz yourself on:
+
 * The collection the object belongs to
 * The materials (medium) the object is made of
 
@@ -13,7 +13,8 @@ Listen to relaxing music as you view different objects from the museum's collect
 ![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/ImageSelectScreen.png)
 ![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/QuestionScreen.png)
 
-##Link To TestFlight
+##TestFlight
+Available on TestFlight - contact for more details.
 
 
 ##Description
