@@ -49,6 +49,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="checkAction:" destination="LMj-HA-f7X" eventType="touchUpInside" id="TCL-BA-cQK"/>
                                     <segue destination="uvJ-tD-UfA" kind="show" id="hxW-CI-wRg"/>
                                 </connections>
                             </button>
@@ -363,7 +364,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ift-xT-7Jc">
-                                <rect key="frame" x="86" y="128" width="40" height="20"/>
+                                <rect key="frame" x="99" y="128" width="40" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="GF5-96-8kw"/>
                                     <constraint firstAttribute="height" constant="20" id="eoA-Nz-xKt"/>
@@ -409,7 +410,7 @@ Good luck, and have fun exploring the museum!</string>
                             <constraint firstItem="Wu8-5X-D1T" firstAttribute="trailing" secondItem="2d9-fr-8Y3" secondAttribute="trailing" id="185-b4-Trl"/>
                             <constraint firstItem="mab-kS-SfH" firstAttribute="trailing" secondItem="Taw-Sc-E2K" secondAttribute="trailing" id="27d-Pd-nwz"/>
                             <constraint firstItem="KeV-mv-htP" firstAttribute="top" secondItem="Ift-xT-7Jc" secondAttribute="bottom" constant="20" id="7lm-I0-nf4"/>
-                            <constraint firstItem="Ift-xT-7Jc" firstAttribute="leading" secondItem="JCr-Qp-ilC" secondAttribute="trailing" id="8pZ-JH-vUp"/>
+                            <constraint firstItem="Ift-xT-7Jc" firstAttribute="leading" secondItem="JCr-Qp-ilC" secondAttribute="trailing" constant="13" id="8pZ-JH-vUp"/>
                             <constraint firstItem="mab-kS-SfH" firstAttribute="top" secondItem="CV7-GF-gYU" secondAttribute="bottom" constant="8" symbolic="YES" id="ALZ-Rb-k1f"/>
                             <constraint firstItem="wdf-El-kXA" firstAttribute="leading" secondItem="keX-RZ-g5k" secondAttribute="leadingMargin" constant="-4" id="GFE-an-vO7"/>
                             <constraint firstItem="w9T-00-OW2" firstAttribute="leading" secondItem="Wu8-5X-D1T" secondAttribute="leading" id="Ig0-wk-Zep"/>
