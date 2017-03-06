@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="646-3b-HYg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ylB-To-mvK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -330,10 +330,10 @@ Good luck, and have fun exploring the museum!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KeV-mv-htP">
-                                <rect key="frame" x="48" y="168" width="279" height="268"/>
+                                <rect key="frame" x="52" y="168" width="279" height="268"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OBJECT DATE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wu8-5X-D1T">
-                                <rect key="frame" x="12" y="510" width="350" height="25"/>
+                                <rect key="frame" x="24" y="510" width="343" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="1hT-6h-jGL"/>
                                 </constraints>
@@ -352,7 +352,7 @@ Good luck, and have fun exploring the museum!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCr-Qp-ilC">
-                                <rect key="frame" x="19" y="128" width="67" height="22"/>
+                                <rect key="frame" x="24" y="128" width="67" height="22"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -374,7 +374,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="TITLE" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdf-El-kXA">
-                                <rect key="frame" x="12" y="444" width="350" height="25"/>
+                                <rect key="frame" x="24" y="444" width="343" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="rno-sd-1fb"/>
                                 </constraints>
@@ -382,7 +382,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTIST" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9T-00-OW2">
-                                <rect key="frame" x="12" y="477" width="350" height="25"/>
+                                <rect key="frame" x="24" y="477" width="343" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="073-Bn-Ac8"/>
                                 </constraints>
@@ -391,9 +391,9 @@ Good luck, and have fun exploring the museum!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="DESCRIPTION" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2d9-fr-8Y3">
-                                <rect key="frame" x="12" y="543" width="350" height="104"/>
+                                <rect key="frame" x="24" y="543" width="343" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="104" id="iMh-UG-N3h"/>
+                                    <constraint firstAttribute="height" constant="100" id="iMh-UG-N3h"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -410,9 +410,9 @@ Good luck, and have fun exploring the museum!</string>
                             <constraint firstItem="Wu8-5X-D1T" firstAttribute="trailing" secondItem="2d9-fr-8Y3" secondAttribute="trailing" id="185-b4-Trl"/>
                             <constraint firstItem="mab-kS-SfH" firstAttribute="trailing" secondItem="Taw-Sc-E2K" secondAttribute="trailing" id="27d-Pd-nwz"/>
                             <constraint firstItem="KeV-mv-htP" firstAttribute="top" secondItem="Ift-xT-7Jc" secondAttribute="bottom" constant="20" id="7lm-I0-nf4"/>
-                            <constraint firstItem="Ift-xT-7Jc" firstAttribute="leading" secondItem="JCr-Qp-ilC" secondAttribute="trailing" constant="13" id="8pZ-JH-vUp"/>
+                            <constraint firstItem="Ift-xT-7Jc" firstAttribute="leading" secondItem="JCr-Qp-ilC" secondAttribute="trailing" constant="8" id="8pZ-JH-vUp"/>
                             <constraint firstItem="mab-kS-SfH" firstAttribute="top" secondItem="CV7-GF-gYU" secondAttribute="bottom" constant="8" symbolic="YES" id="ALZ-Rb-k1f"/>
-                            <constraint firstItem="wdf-El-kXA" firstAttribute="leading" secondItem="keX-RZ-g5k" secondAttribute="leadingMargin" constant="-4" id="GFE-an-vO7"/>
+                            <constraint firstItem="wdf-El-kXA" firstAttribute="leading" secondItem="keX-RZ-g5k" secondAttribute="leadingMargin" constant="8" id="GFE-an-vO7"/>
                             <constraint firstItem="w9T-00-OW2" firstAttribute="leading" secondItem="Wu8-5X-D1T" secondAttribute="leading" id="Ig0-wk-Zep"/>
                             <constraint firstItem="w9T-00-OW2" firstAttribute="trailing" secondItem="Wu8-5X-D1T" secondAttribute="trailing" id="Ix9-Dx-35A"/>
                             <constraint firstItem="Taw-Sc-E2K" firstAttribute="top" secondItem="mab-kS-SfH" secondAttribute="bottom" constant="8" symbolic="YES" id="MWS-ub-WTa"/>
@@ -420,21 +420,21 @@ Good luck, and have fun exploring the museum!</string>
                             <constraint firstItem="Wu8-5X-D1T" firstAttribute="top" secondItem="w9T-00-OW2" secondAttribute="bottom" constant="8" symbolic="YES" id="OQx-s9-cmZ"/>
                             <constraint firstItem="Taw-Sc-E2K" firstAttribute="leading" secondItem="26Z-Pw-WQx" secondAttribute="trailing" constant="8" symbolic="YES" id="Om6-Aj-sci"/>
                             <constraint firstItem="JCr-Qp-ilC" firstAttribute="top" secondItem="Ift-xT-7Jc" secondAttribute="top" id="RU5-Nw-o0s"/>
-                            <constraint firstItem="mab-kS-SfH" firstAttribute="centerX" secondItem="KeV-mv-htP" secondAttribute="centerX" constant="1" id="Sgk-aP-brx"/>
-                            <constraint firstItem="KeV-mv-htP" firstAttribute="centerX" secondItem="wdf-El-kXA" secondAttribute="centerX" id="Tja-Gz-64X"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="centerX" secondItem="KeV-mv-htP" secondAttribute="centerX" constant="-3" id="Sgk-aP-brx"/>
+                            <constraint firstItem="KeV-mv-htP" firstAttribute="centerX" secondItem="wdf-El-kXA" secondAttribute="centerX" constant="-4" id="Tja-Gz-64X"/>
                             <constraint firstItem="KeV-mv-htP" firstAttribute="top" secondItem="Taw-Sc-E2K" secondAttribute="bottom" constant="8" symbolic="YES" id="Tks-Gk-PJg"/>
-                            <constraint firstItem="KeV-mv-htP" firstAttribute="centerX" secondItem="keX-RZ-g5k" secondAttribute="centerX" id="VBN-mK-55n"/>
+                            <constraint firstItem="KeV-mv-htP" firstAttribute="centerX" secondItem="keX-RZ-g5k" secondAttribute="centerX" constant="4" id="VBN-mK-55n"/>
                             <constraint firstItem="Wu8-5X-D1T" firstAttribute="leading" secondItem="2d9-fr-8Y3" secondAttribute="leading" id="ZcW-6O-xus"/>
-                            <constraint firstAttribute="bottom" secondItem="2d9-fr-8Y3" secondAttribute="bottom" constant="20" symbolic="YES" id="cpf-x5-kVp"/>
+                            <constraint firstAttribute="bottom" secondItem="2d9-fr-8Y3" secondAttribute="bottom" constant="24" id="cpf-x5-kVp"/>
                             <constraint firstItem="wdf-El-kXA" firstAttribute="top" secondItem="KeV-mv-htP" secondAttribute="bottom" constant="8" symbolic="YES" id="e9g-AJ-5V3"/>
                             <constraint firstItem="mab-kS-SfH" firstAttribute="leading" secondItem="keX-RZ-g5k" secondAttribute="leadingMargin" constant="4" id="jNJ-oO-vg4"/>
-                            <constraint firstItem="mab-kS-SfH" firstAttribute="leading" secondItem="JCr-Qp-ilC" secondAttribute="leading" constant="1" id="lq5-GG-dIx"/>
+                            <constraint firstItem="mab-kS-SfH" firstAttribute="leading" secondItem="JCr-Qp-ilC" secondAttribute="leading" constant="-4" id="lq5-GG-dIx"/>
                             <constraint firstItem="wdf-El-kXA" firstAttribute="leading" secondItem="w9T-00-OW2" secondAttribute="leading" id="nhX-5m-iD2"/>
                             <constraint firstItem="2d9-fr-8Y3" firstAttribute="top" secondItem="Wu8-5X-D1T" secondAttribute="bottom" constant="8" symbolic="YES" id="ojr-6d-bpS"/>
                             <constraint firstItem="JCr-Qp-ilC" firstAttribute="baseline" secondItem="26Z-Pw-WQx" secondAttribute="baseline" id="qbl-U6-O3T"/>
                             <constraint firstItem="wdf-El-kXA" firstAttribute="trailing" secondItem="w9T-00-OW2" secondAttribute="trailing" id="slq-eq-mM6"/>
                             <constraint firstItem="w9T-00-OW2" firstAttribute="top" secondItem="wdf-El-kXA" secondAttribute="bottom" constant="8" symbolic="YES" id="uIg-g1-fo7"/>
-                            <constraint firstItem="KeV-mv-htP" firstAttribute="leading" secondItem="keX-RZ-g5k" secondAttribute="leadingMargin" constant="32" id="zab-hY-1so"/>
+                            <constraint firstItem="KeV-mv-htP" firstAttribute="leading" secondItem="keX-RZ-g5k" secondAttribute="leadingMargin" constant="36" id="zab-hY-1so"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="What medium was used?" id="uTk-6Z-Arh"/>
@@ -488,7 +488,7 @@ Good luck, and have fun exploring the museum!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KTZ-8Y-tmd">
-                                <rect key="frame" x="52" y="168" width="272" height="268"/>
+                                <rect key="frame" x="52" y="168" width="279" height="268"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTIST" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi7-to-WiG">
                                 <rect key="frame" x="24" y="477" width="343" height="25"/>
@@ -500,7 +500,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OBJECT DATE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GL-Wg-ws1">
-                                <rect key="frame" x="23" y="510" width="343" height="25"/>
+                                <rect key="frame" x="24" y="510" width="343" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Lrm-Xf-SFl"/>
                                 </constraints>
@@ -509,7 +509,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-aC-nPP" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="303" y="110" width="50" height="50"/>
+                                <rect key="frame" x="307" y="110" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="0lq-I5-O1A"/>
                                 </constraints>
@@ -535,13 +535,13 @@ Good luck, and have fun exploring the museum!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBMIT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyP-Hr-MAC">
-                                <rect key="frame" x="221" y="128" width="74" height="22"/>
+                                <rect key="frame" x="225" y="128" width="74" height="22"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="15" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mXi-fo-IWX">
-                                <rect key="frame" x="24" y="72" width="329" height="30"/>
+                                <rect key="frame" x="20" y="72" width="337" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
@@ -555,9 +555,9 @@ Good luck, and have fun exploring the museum!</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="MEDIUM" translatesAutoresizingMaskIntoConstraints="NO" id="AZv-Vn-Q7c">
-                                <rect key="frame" x="16" y="543" width="343" height="104"/>
+                                <rect key="frame" x="24" y="543" width="343" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="104" id="BDG-SP-Zji"/>
+                                    <constraint firstAttribute="height" constant="100" id="BDG-SP-Zji"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -565,34 +565,34 @@ Good luck, and have fun exploring the museum!</string>
                         </subviews>
                         <color key="backgroundColor" red="0.59215686270000001" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6GL-Wg-ws1" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" constant="7" id="2wS-Vp-lfg"/>
+                            <constraint firstItem="6GL-Wg-ws1" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" constant="8" id="2wS-Vp-lfg"/>
                             <constraint firstItem="6GL-Wg-ws1" firstAttribute="top" secondItem="Hi7-to-WiG" secondAttribute="bottom" constant="8" symbolic="YES" id="5QQ-jw-nzn"/>
                             <constraint firstItem="hMF-aC-nPP" firstAttribute="top" secondItem="mXi-fo-IWX" secondAttribute="bottom" constant="8" symbolic="YES" id="75x-nz-vbh"/>
                             <constraint firstItem="KTZ-8Y-tmd" firstAttribute="top" secondItem="jb7-sj-6fx" secondAttribute="bottom" constant="20" id="D3i-6c-jfR"/>
-                            <constraint firstAttribute="bottom" secondItem="AZv-Vn-Q7c" secondAttribute="bottom" constant="20" symbolic="YES" id="EeQ-bV-GRo"/>
+                            <constraint firstAttribute="bottom" secondItem="AZv-Vn-Q7c" secondAttribute="bottom" constant="24" id="EeQ-bV-GRo"/>
                             <constraint firstItem="d3S-Aj-KSP" firstAttribute="top" secondItem="mXi-fo-IWX" secondAttribute="bottom" constant="26" id="FhS-7w-bam"/>
                             <constraint firstItem="Ajj-US-ZK8" firstAttribute="trailing" secondItem="Hi7-to-WiG" secondAttribute="trailing" id="Fsk-Mh-ost"/>
                             <constraint firstItem="d3S-Aj-KSP" firstAttribute="baseline" secondItem="gyP-Hr-MAC" secondAttribute="baseline" id="Jhs-1U-gBX"/>
                             <constraint firstItem="Hi7-to-WiG" firstAttribute="top" secondItem="Ajj-US-ZK8" secondAttribute="bottom" constant="8" symbolic="YES" id="KK2-Mt-lEG"/>
-                            <constraint firstItem="mXi-fo-IWX" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" constant="8" id="KTV-wH-9am"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" constant="4" id="KTV-wH-9am"/>
                             <constraint firstItem="d3S-Aj-KSP" firstAttribute="leading" secondItem="Ajj-US-ZK8" secondAttribute="leading" id="Lv5-AF-d68"/>
                             <constraint firstItem="Ajj-US-ZK8" firstAttribute="top" secondItem="KTZ-8Y-tmd" secondAttribute="bottom" constant="8" symbolic="YES" id="M5a-Db-uA5"/>
                             <constraint firstItem="hMF-aC-nPP" firstAttribute="leading" secondItem="gyP-Hr-MAC" secondAttribute="trailing" constant="8" symbolic="YES" id="MeX-H2-BKr"/>
-                            <constraint firstItem="mXi-fo-IWX" firstAttribute="centerX" secondItem="KTZ-8Y-tmd" secondAttribute="centerX" id="QC7-wX-WpO"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="centerX" secondItem="KTZ-8Y-tmd" secondAttribute="centerX" constant="-3" id="QC7-wX-WpO"/>
                             <constraint firstItem="AZv-Vn-Q7c" firstAttribute="top" secondItem="6GL-Wg-ws1" secondAttribute="bottom" constant="8" symbolic="YES" id="Swj-7i-1aI"/>
                             <constraint firstItem="hMF-aC-nPP" firstAttribute="trailing" secondItem="mXi-fo-IWX" secondAttribute="trailing" id="WNo-vR-EOk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ajj-US-ZK8" secondAttribute="trailing" constant="-8" id="gwZ-2B-eEt"/>
                             <constraint firstItem="KTZ-8Y-tmd" firstAttribute="top" secondItem="hMF-aC-nPP" secondAttribute="bottom" constant="8" symbolic="YES" id="hGk-Mp-CgP"/>
                             <constraint firstItem="Ajj-US-ZK8" firstAttribute="leading" secondItem="Hi7-to-WiG" secondAttribute="leading" id="iTc-NB-Ip2"/>
                             <constraint firstItem="jb7-sj-6fx" firstAttribute="leading" secondItem="d3S-Aj-KSP" secondAttribute="trailing" constant="8" symbolic="YES" id="jD6-qX-RCI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6GL-Wg-ws1" secondAttribute="trailing" constant="-7" id="jhO-z3-MQs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6GL-Wg-ws1" secondAttribute="trailing" constant="-8" id="jhO-z3-MQs"/>
                             <constraint firstItem="d3S-Aj-KSP" firstAttribute="top" secondItem="jb7-sj-6fx" secondAttribute="top" id="k1C-JM-hlH"/>
-                            <constraint firstItem="AZv-Vn-Q7c" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" id="pDe-f2-NXU"/>
+                            <constraint firstItem="AZv-Vn-Q7c" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" constant="8" id="pDe-f2-NXU"/>
                             <constraint firstItem="KTZ-8Y-tmd" firstAttribute="leading" secondItem="lYJ-Vn-WPV" secondAttribute="leadingMargin" constant="36" id="vGs-7f-pqt"/>
                             <constraint firstItem="mXi-fo-IWX" firstAttribute="top" secondItem="vCO-dG-bZK" secondAttribute="bottom" constant="8" symbolic="YES" id="x65-AB-X9F"/>
-                            <constraint firstItem="AZv-Vn-Q7c" firstAttribute="trailing" secondItem="lYJ-Vn-WPV" secondAttribute="trailingMargin" id="xWg-9Y-7Ps"/>
-                            <constraint firstItem="mXi-fo-IWX" firstAttribute="leading" secondItem="d3S-Aj-KSP" secondAttribute="leading" id="zMr-DL-jgE"/>
-                            <constraint firstItem="KTZ-8Y-tmd" firstAttribute="centerX" secondItem="AZv-Vn-Q7c" secondAttribute="centerX" id="zoE-dM-RX6"/>
+                            <constraint firstItem="AZv-Vn-Q7c" firstAttribute="trailing" secondItem="lYJ-Vn-WPV" secondAttribute="trailingMargin" constant="8" id="xWg-9Y-7Ps"/>
+                            <constraint firstItem="mXi-fo-IWX" firstAttribute="leading" secondItem="d3S-Aj-KSP" secondAttribute="leading" constant="-4" id="zMr-DL-jgE"/>
+                            <constraint firstItem="KTZ-8Y-tmd" firstAttribute="centerX" secondItem="AZv-Vn-Q7c" secondAttribute="centerX" constant="-4" id="zoE-dM-RX6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="What collection is this from?" id="9L1-Nh-Cw1"/>
@@ -610,10 +610,46 @@ Good luck, and have fun exploring the museum!</string>
             </objects>
             <point key="canvasLocation" x="1676" y="-2313.1934032983509"/>
         </scene>
+        <!--SplashScreenViewController-->
+        <scene sceneID="OIj-CL-YuT">
+            <objects>
+                <viewController id="ylB-To-mvK" userLabel="SplashScreenViewController" customClass="SplashScreenViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0gq-mp-bmV"/>
+                        <viewControllerLayoutGuide type="bottom" id="NsA-V2-0ko"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="679-Mm-UfB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="museum-map" translatesAutoresizingMaskIntoConstraints="NO" id="Ef7-iU-cCy">
+                                <rect key="frame" x="125" y="271" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="FZs-KN-YzZ"/>
+                                    <constraint firstAttribute="width" constant="125" id="a83-YR-o2b"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ef7-iU-cCy" firstAttribute="centerY" secondItem="679-Mm-UfB" secondAttribute="centerY" id="ghb-n2-hnd"/>
+                            <constraint firstItem="Ef7-iU-cCy" firstAttribute="centerX" secondItem="679-Mm-UfB" secondAttribute="centerX" id="owN-aP-rlB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="objectImage" destination="Ef7-iU-cCy" id="7lw-ar-wHU"/>
+                        <segue destination="646-3b-HYg" kind="show" identifier="appHomeScreen" id="8sS-le-nkg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oYJ-6T-Lcj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1929" y="-2703"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bk-museum-portrait" width="1080" height="1920"/>
         <image name="brooklynmuseumcom" width="2000" height="500"/>
         <image name="museum-building" width="105" height="105"/>
+        <image name="museum-map" width="336" height="336"/>
     </resources>
 </document>
