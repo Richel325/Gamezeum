@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ylB-To-mvK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ylB-To-mvK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -181,15 +181,33 @@ Published by Electronic Arts</string>
                                     <constraint firstAttribute="height" constant="128" id="v7p-9H-QMO"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BD4-Tt-fJQ">
+                                <rect key="frame" x="8" y="244" width="351" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="dP6-P3-kkv"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="While this application makes use of the Brooklyn Museum API, it is not an official product of the Brooklyn Museum.">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.59215686270000001" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="5Kf-R3-ZE1" firstAttribute="top" secondItem="BD4-Tt-fJQ" secondAttribute="bottom" constant="68" id="1xb-nr-BqK"/>
                             <constraint firstItem="4OU-2O-RZe" firstAttribute="leading" secondItem="5Kf-R3-ZE1" secondAttribute="leading" id="9qo-Ba-2g6"/>
                             <constraint firstItem="GlQ-4w-ht3" firstAttribute="top" secondItem="4OU-2O-RZe" secondAttribute="bottom" constant="8" symbolic="YES" id="B9H-rx-t0n"/>
                             <constraint firstItem="4OU-2O-RZe" firstAttribute="leading" secondItem="zzm-of-HTW" secondAttribute="leadingMargin" constant="-8" id="HTr-Yw-xgo"/>
                             <constraint firstAttribute="bottom" secondItem="WdH-rJ-w24" secondAttribute="bottom" constant="20" symbolic="YES" id="LiN-9J-IC4"/>
                             <constraint firstItem="5Kf-R3-ZE1" firstAttribute="leading" secondItem="WdH-rJ-w24" secondAttribute="leading" id="OHx-Ni-Z3H"/>
+                            <constraint firstItem="BD4-Tt-fJQ" firstAttribute="leading" secondItem="4OU-2O-RZe" secondAttribute="leading" id="PVU-3w-dR1"/>
                             <constraint firstItem="4OU-2O-RZe" firstAttribute="trailing" secondItem="5Kf-R3-ZE1" secondAttribute="trailing" id="W9h-RB-PAi"/>
+                            <constraint firstItem="BD4-Tt-fJQ" firstAttribute="trailing" secondItem="4OU-2O-RZe" secondAttribute="trailing" id="jQW-tf-XBa"/>
                             <constraint firstItem="WdH-rJ-w24" firstAttribute="top" secondItem="5Kf-R3-ZE1" secondAttribute="bottom" constant="8" symbolic="YES" id="lMm-Iy-AnI"/>
                             <constraint firstItem="4OU-2O-RZe" firstAttribute="trailing" secondItem="zzm-of-HTW" secondAttribute="trailingMargin" id="rPE-eV-wqX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WdH-rJ-w24" secondAttribute="trailing" constant="7" id="sib-9F-zHt"/>
@@ -227,10 +245,10 @@ Published by Electronic Arts</string>
                                         <rect key="frame" x="0.0" y="28" width="375" height="204"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecp-5p-0Ry" id="1lo-zn-Me8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="204"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="flm-8D-zJC">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="flm-8D-zJC">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="203.5"/>
                                                 </imageView>
                                             </subviews>
@@ -280,7 +298,7 @@ Published by Electronic Arts</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oMP-lC-6Tp">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oMP-lC-6Tp">
                                 <rect key="frame" x="40" y="160" width="295" height="414"/>
                                 <string key="text">After selecting the "Play" button, begin by clicking the image of the art object you want to select. 
 
@@ -329,7 +347,7 @@ Good luck, and have fun exploring the museum!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KeV-mv-htP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KeV-mv-htP">
                                 <rect key="frame" x="52" y="168" width="279" height="268"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OBJECT DATE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wu8-5X-D1T">
@@ -487,7 +505,7 @@ Good luck, and have fun exploring the museum!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KTZ-8Y-tmd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KTZ-8Y-tmd">
                                 <rect key="frame" x="52" y="168" width="279" height="268"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTIST" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi7-to-WiG">

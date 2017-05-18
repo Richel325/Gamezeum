@@ -22,10 +22,7 @@ class ArtImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
-            self.objects = objects!
-            self.artImageTableView.reloadData()
-        })
+        reload()
         let aRefreshControl = UIRefreshControl()
         aRefreshControl.addTarget(self, action: #selector(refreshControlAction(sender:)), for: .valueChanged)
         artImageTableView.addSubview(aRefreshControl)
@@ -37,8 +34,15 @@ class ArtImageViewController: UIViewController {
     func refreshControlAction(sender : Any?) {
         self.artImageTableView.reloadData()
         refreshControl?.endRefreshing()
+        reload()
+    }
+    
+    func reload() {
         APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
-            self.objects = objects!
+            self.objects = objects!.filter({ (obj:ArtObject) -> Bool in
+                return obj.primary_image != nil
+            })
+            self.artImageTableView.reloadData()
         })
     }
     

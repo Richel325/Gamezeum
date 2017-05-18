@@ -24,7 +24,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.answer.delegate = self
         
-        artArtist.text = object?.artist?.name
+        artArtist.text = object?.artist?.name ?? "Artist Unknown"
         if let artObjectImageURLString = object?.primaryImageURLString {
             artImage.downLoadImage(from: artObjectImageURLString)
             artObjectDate.text = object?.object_date

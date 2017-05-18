@@ -37,6 +37,8 @@ class ArtObject { //condensed art object listing including artist, didactic labe
             if aj.count > 0 {
                 artist = Artist(jsonObject: aj[0])}
         } else {
+            let artist = Artist(jsonObject: nil)
+            artist.name = "Unknown";
             print("Artist Unknown")
         }
         
