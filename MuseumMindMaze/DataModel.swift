@@ -38,7 +38,7 @@ class ArtObject { //condensed art object listing including artist, didactic labe
                 artist = Artist(jsonObject: aj[0])}
         } else {
             let artist = Artist(jsonObject: nil)
-            artist.name = "Unknown";
+            artist.name = "Unknown"
             print("Artist Unknown")
         }
         
@@ -47,6 +47,8 @@ class ArtObject { //condensed art object listing including artist, didactic labe
             if co.count > 0 {
                 collection = Collection(jsonObject: co[0])}
         } else {
+            let collection = Collection(jsonObject: nil)
+            collection.name = "Unknown"
             print("Collection Unknown")
         }
         
@@ -55,6 +57,8 @@ class ArtObject { //condensed art object listing including artist, didactic labe
             if lj.count > 0 {
                 label = Label(jsonObject: lj[0])}
         } else {
+            let label = Label(jsonObject: nil)
+            label.content = "Unknown"
             print("Label Unknown")
         }
     }

@@ -8,21 +8,43 @@
 
 import UIKit
 
-class FindCollectionViewController: UIViewController, UITextFieldDelegate {
+class FindCollectionViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var artTitle: UITextView!
     @IBOutlet weak var artImage: UIImageView!
     @IBOutlet weak var artArtist: UILabel!
     @IBOutlet weak var artObjectDate: UILabel!
     @IBOutlet weak var artMedium: UITextView!
-    @IBOutlet weak var answer: UITextField!
+    @IBOutlet weak var answer: UILabel!
+    @IBOutlet weak var collectionPickerView: UIPickerView!
     @IBOutlet weak var scoreLabel: UILabel!
     
     var object: ArtObject?
     
+    
+    //Collection Picker View Answer Modular
+    let collectionPicker = ["American Art", "Arts of Africa", "Arts of the Americas", "Arts of the Islamic World", "Arts of the Pacific Islands", "Asian Art", "Contemporary Art", "Decorative Arts", "Egyptian, Classical, Ancient Near Eastern Art", "Elizabeth A. Sackler Center for Feminist Art", "European Art", "Libraries and Archives"]
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return collectionPicker[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return collectionPicker.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        answer.text = collectionPicker[row]
+    }
+    
+    //Begin viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.answer.delegate = self
+        //self.answer.delegate = self
         
         artArtist.text = object?.artist?.name
         if let artObjectImageURLString = object?.primaryImageURLString {
