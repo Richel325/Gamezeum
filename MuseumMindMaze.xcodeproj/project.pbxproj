@@ -10,8 +10,12 @@
 		0C0E4F661E6D2B800038A17C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E4F651E6D2B800038A17C /* Reachability.swift */; };
 		0C0E4F681E6D632A0038A17C /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E4F671E6D632A0038A17C /* SplashScreenViewController.swift */; };
 		0C82ADD31E53F14800F12A97 /* ScoreUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C82ADD21E53F14800F12A97 /* ScoreUserDefaults.swift */; };
+		0CA6FB411FE1216F00539E5F /* Delicia Melted.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6FB401FE1216F00539E5F /* Delicia Melted.otf */; };
 		0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */; };
 		0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */; };
+		0CB67FA11FDA4B640072E039 /* FullScreenObjectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB67FA01FDA4B640072E039 /* FullScreenObjectImageViewController.swift */; };
+		0CB67FA31FDA4CD50072E039 /* ObjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB67FA21FDA4CD50072E039 /* ObjectDetailsViewController.swift */; };
+		0CB67FA51FDA93260072E039 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB67FA41FDA93260072E039 /* TakePhotoViewController.swift */; };
 		0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC306211E3F969100790A85 /* AppDelegate.swift */; };
 		0CC306271E3F969100790A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306251E3F969100790A85 /* Main.storyboard */; };
 		0CC306291E3F969100790A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306281E3F969100790A85 /* Assets.xcassets */; };
@@ -30,10 +34,15 @@
 		0C0E4F651E6D2B800038A17C /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		0C0E4F671E6D632A0038A17C /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		0C82ADD21E53F14800F12A97 /* ScoreUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreUserDefaults.swift; sourceTree = "<group>"; };
+		0CA6FB401FE1216F00539E5F /* Delicia Melted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delicia Melted.otf"; sourceTree = "<group>"; };
+		0CA6FB421FE1231400539E5F /* Delicia Melted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delicia Melted.otf"; sourceTree = "<group>"; };
 		0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		0CB67FA01FDA4B640072E039 /* FullScreenObjectImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenObjectImageViewController.swift; sourceTree = "<group>"; };
+		0CB67FA21FDA4CD50072E039 /* ObjectDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectDetailsViewController.swift; sourceTree = "<group>"; };
+		0CB67FA41FDA93260072E039 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
 		0CC3061E1E3F969100790A85 /* MuseumMindMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumMindMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CC306211E3F969100790A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CC306211E3F969100790A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MuseumMindMaze/AppDelegate.swift; sourceTree = "<group>"; };
 		0CC306261E3F969100790A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CC306281E3F969100790A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CC3062B1E3F969100790A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,16 +94,36 @@
 		0CA60EC31E468FA000CAA9B5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0CA6FB401FE1216F00539E5F /* Delicia Melted.otf */,
 				0CC306251E3F969100790A85 /* Main.storyboard */,
 				0CC3062A1E3F969100790A85 /* LaunchScreen.storyboard */,
 				0CF942CA1E51837000E3F563 /* CustomButton.swift */,
+				0CC306211E3F969100790A85 /* AppDelegate.swift */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		0CB67FA61FDBB9A90072E039 /* Old VCs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Old VCs";
+			sourceTree = "<group>";
+		};
+		0CB67FA71FDBB9B70072E039 /* Black VCs */ = {
+			isa = PBXGroup;
+			children = (
+				0CB67FA01FDA4B640072E039 /* FullScreenObjectImageViewController.swift */,
+				0CB67FA21FDA4CD50072E039 /* ObjectDetailsViewController.swift */,
+				0CB67FA41FDA93260072E039 /* TakePhotoViewController.swift */,
+			);
+			name = "Black VCs";
 			sourceTree = "<group>";
 		};
 		0CC306151E3F969100790A85 = {
 			isa = PBXGroup;
 			children = (
+				0CA6FB421FE1231400539E5F /* Delicia Melted.otf */,
 				0CF942C71E51704400E3F563 /* Music */,
 				0CA60EC31E468FA000CAA9B5 /* UI */,
 				0CA60EC21E468F8B00CAA9B5 /* Logic */,
@@ -132,12 +161,13 @@
 		0CF942B21E4D8B2A00E3F563 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0CB67FA71FDBB9B70072E039 /* Black VCs */,
+				0CB67FA61FDBB9A90072E039 /* Old VCs */,
 				0C0E4F671E6D632A0038A17C /* SplashScreenViewController.swift */,
 				0CF942C51E516EE900E3F563 /* GameIntroViewController.swift */,
 				0CF942C11E5136EA00E3F563 /* ArtImageViewController.swift */,
 				0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */,
 				0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */,
-				0CC306211E3F969100790A85 /* AppDelegate.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -210,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA6FB411FE1216F00539E5F /* Delicia Melted.otf in Resources */,
 				0CF942C91E51705600E3F563 /* Fmaj.mp3 in Resources */,
 				0CC3062C1E3F969100790A85 /* LaunchScreen.storyboard in Resources */,
 				0CC306291E3F969100790A85 /* Assets.xcassets in Resources */,
@@ -227,7 +258,10 @@
 				0CF942C21E5136EA00E3F563 /* ArtImageViewController.swift in Sources */,
 				0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */,
 				0CF942C41E51429E00E3F563 /* ArtImageTableViewCell.swift in Sources */,
+				0CB67FA31FDA4CD50072E039 /* ObjectDetailsViewController.swift in Sources */,
 				0C0E4F681E6D632A0038A17C /* SplashScreenViewController.swift in Sources */,
+				0CB67FA11FDA4B640072E039 /* FullScreenObjectImageViewController.swift in Sources */,
+				0CB67FA51FDA93260072E039 /* TakePhotoViewController.swift in Sources */,
 				0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */,
 				0CF942CB1E51837000E3F563 /* CustomButton.swift in Sources */,
 				0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */,
@@ -304,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -347,8 +381,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -366,6 +401,7 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = MuseumMindMaze/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MJFE.MuseumMindMaze;
@@ -388,8 +424,9 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = MuseumMindMaze/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MJFE.MuseumMindMaze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

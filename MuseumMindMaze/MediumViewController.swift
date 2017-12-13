@@ -15,8 +15,18 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var artArtist: UILabel!
     @IBOutlet weak var artObjectDate: UILabel!
     @IBOutlet weak var artDescription: UITextView!
+    
+    
+    
+    
     @IBOutlet weak var answer: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var paintingTitleLabel: UILabel!
+    @IBOutlet weak var paintingImageView: UIImageView!
+    @IBOutlet weak var paintingArtistLabel: UILabel!
+    @IBOutlet weak var paintingDateLabel: UILabel!
+
+    
     
     var object: ArtObject?
     

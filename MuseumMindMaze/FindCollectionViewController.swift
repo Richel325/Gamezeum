@@ -16,8 +16,18 @@ class FindCollectionViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBOutlet weak var artObjectDate: UILabel!
     @IBOutlet weak var artMedium: UITextView!
     @IBOutlet weak var answer: UILabel!
+    
+    
+    
+    
+    
     @IBOutlet weak var collectionPickerView: UIPickerView!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var paintingTitleLabel: UILabel!
+    @IBOutlet weak var paintingImageView: UIImageView!
+    @IBOutlet weak var paintingArtistLabel: UILabel!
+    @IBOutlet weak var paintingDateLabel: UILabel!
+
     
     var object: ArtObject?
     

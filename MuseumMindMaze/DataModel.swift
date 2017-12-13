@@ -19,6 +19,8 @@ class ArtObject { //condensed art object listing including artist, didactic labe
     var medium: String?
     var description: String?
     var primary_image: String?
+    var has_images: Int?
+    var on_view_only: Int?
     
     var artist: Artist?
     var collection: Collection?
@@ -31,6 +33,8 @@ class ArtObject { //condensed art object listing including artist, didactic labe
         self.medium = jsonObject?["medium"] as? String
         self.description = jsonObject?["description"] as? String
         self.primary_image = jsonObject?["primary_image"] as? String
+        self.has_images = jsonObject?["has_images"] as? Int
+        self.on_view_only = jsonObject?["on_view_only"] as? Int
         
         let artistJSON = jsonObject?["artists"]
         if let aj = (artistJSON as? [[String : AnyObject]]) {
