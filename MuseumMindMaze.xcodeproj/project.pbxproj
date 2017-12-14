@@ -14,7 +14,6 @@
 		0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */; };
 		0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */; };
 		0CB67FA11FDA4B640072E039 /* FullScreenObjectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB67FA01FDA4B640072E039 /* FullScreenObjectImageViewController.swift */; };
-		0CB67FA31FDA4CD50072E039 /* ObjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB67FA21FDA4CD50072E039 /* ObjectDetailsViewController.swift */; };
 		0CB67FA51FDA93260072E039 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB67FA41FDA93260072E039 /* TakePhotoViewController.swift */; };
 		0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC306211E3F969100790A85 /* AppDelegate.swift */; };
 		0CC306271E3F969100790A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306251E3F969100790A85 /* Main.storyboard */; };
@@ -39,7 +38,6 @@
 		0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		0CB67FA01FDA4B640072E039 /* FullScreenObjectImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenObjectImageViewController.swift; sourceTree = "<group>"; };
-		0CB67FA21FDA4CD50072E039 /* ObjectDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectDetailsViewController.swift; sourceTree = "<group>"; };
 		0CB67FA41FDA93260072E039 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
 		0CC3061E1E3F969100790A85 /* MuseumMindMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumMindMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC306211E3F969100790A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MuseumMindMaze/AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				0CF942B21E4D8B2A00E3F563 /* ViewControllers */,
-				0CF942B11E4D8B1600E3F563 /* Cells */,
 			);
 			name = Logic;
 			path = MuseumMindMaze;
@@ -103,19 +100,23 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
-		0CB67FA61FDBB9A90072E039 /* Old VCs */ = {
+		0CB67FA61FDBB9A90072E039 /* Intro VCs */ = {
 			isa = PBXGroup;
 			children = (
+				0C0E4F671E6D632A0038A17C /* SplashScreenViewController.swift */,
+				0CF942C51E516EE900E3F563 /* GameIntroViewController.swift */,
 			);
-			name = "Old VCs";
+			name = "Intro VCs";
 			sourceTree = "<group>";
 		};
 		0CB67FA71FDBB9B70072E039 /* Black VCs */ = {
 			isa = PBXGroup;
 			children = (
+				0CF942B11E4D8B1600E3F563 /* Cells */,
 				0CB67FA01FDA4B640072E039 /* FullScreenObjectImageViewController.swift */,
-				0CB67FA21FDA4CD50072E039 /* ObjectDetailsViewController.swift */,
 				0CB67FA41FDA93260072E039 /* TakePhotoViewController.swift */,
+				0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */,
+				0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */,
 			);
 			name = "Black VCs";
 			sourceTree = "<group>";
@@ -153,6 +154,7 @@
 		0CF942B11E4D8B1600E3F563 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				0CF942C11E5136EA00E3F563 /* ArtImageViewController.swift */,
 				0CF942C31E51429E00E3F563 /* ArtImageTableViewCell.swift */,
 			);
 			name = Cells;
@@ -162,12 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				0CB67FA71FDBB9B70072E039 /* Black VCs */,
-				0CB67FA61FDBB9A90072E039 /* Old VCs */,
-				0C0E4F671E6D632A0038A17C /* SplashScreenViewController.swift */,
-				0CF942C51E516EE900E3F563 /* GameIntroViewController.swift */,
-				0CF942C11E5136EA00E3F563 /* ArtImageViewController.swift */,
-				0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */,
-				0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */,
+				0CB67FA61FDBB9A90072E039 /* Intro VCs */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -258,7 +255,6 @@
 				0CF942C21E5136EA00E3F563 /* ArtImageViewController.swift in Sources */,
 				0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */,
 				0CF942C41E51429E00E3F563 /* ArtImageTableViewCell.swift in Sources */,
-				0CB67FA31FDA4CD50072E039 /* ObjectDetailsViewController.swift in Sources */,
 				0C0E4F681E6D632A0038A17C /* SplashScreenViewController.swift in Sources */,
 				0CB67FA11FDA4B640072E039 /* FullScreenObjectImageViewController.swift in Sources */,
 				0CB67FA51FDA93260072E039 /* TakePhotoViewController.swift in Sources */,

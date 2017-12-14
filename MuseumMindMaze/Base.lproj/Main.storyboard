@@ -186,7 +186,7 @@ Published by Electronic Arts</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brooklynmuseumcom" translatesAutoresizingMaskIntoConstraints="NO" id="GlQ-4w-ht3">
-                                <rect key="frame" x="0.0" y="72" width="320" height="128"/>
+                                <rect key="frame" x="47" y="72" width="320" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -313,9 +313,9 @@ Good luck, and have fun exploring the museum!</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="FsJ-bb-kG0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -439,6 +439,9 @@ Good luck, and have fun exploring the museum!</string>
                                     <constraint firstAttribute="width" constant="50" id="iNM-f8-29H"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="icons8-start_filled"/>
+                                <connections>
+                                    <action selector="submitAnswer:" destination="jxr-m7-1dN" eventType="touchUpInside" id="RJm-cY-Eh0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb7-sj-6fx">
                                 <rect key="frame" x="81" y="617" width="126" height="20"/>
@@ -487,7 +490,10 @@ Good luck, and have fun exploring the museum!</string>
                     </view>
                     <navigationItem key="navigationItem" title="What collection does this object belong to?" id="esP-ri-yG1"/>
                     <connections>
-                        <outlet property="paintingImageView" destination="ugi-gM-PVS" id="iHX-vc-b4I"/>
+                        <outlet property="answer" destination="VyO-oh-mQC" id="86w-8U-O5F"/>
+                        <outlet property="artImage" destination="ugi-gM-PVS" id="GNc-CF-fUt"/>
+                        <outlet property="collectionPickerView" destination="AgV-QQ-Es1" id="lBU-Gh-aRZ"/>
+                        <outlet property="scoreLabel" destination="jb7-sj-6fx" id="RDr-Yy-UVX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="llY-Qa-EzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -509,10 +515,10 @@ Good luck, and have fun exploring the museum!</string>
             </objects>
             <point key="canvasLocation" x="3447.826086956522" y="-2224.7282608695655"/>
         </scene>
-        <!--Full Screen PaintingVC-->
+        <!--Full Screen Object Image View Controller-->
         <scene sceneID="sTg-hr-Zg3">
             <objects>
-                <viewController id="vAq-Ez-QhB" customClass="FullScreenPaintingVC" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vAq-Ez-QhB" customClass="FullScreenObjectImageViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FRN-Q2-Mnr"/>
                         <viewControllerLayoutGuide type="bottom" id="pg7-xh-4Xy"/>
@@ -536,7 +542,7 @@ Good luck, and have fun exploring the museum!</string>
                                 </constraints>
                                 <state key="normal" image="close"/>
                                 <connections>
-                                    <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="vaP-gI-IoO"/>
+                                    <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="Pty-3r-kwC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -586,7 +592,7 @@ Good luck, and have fun exploring the museum!</string>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="paintingScrollView" destination="N8q-fT-wov" id="0yB-1l-Ih9"/>
+                        <outlet property="paintingScrollView" destination="N8q-fT-wov" id="s1k-Yn-eUZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgU-y9-iHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -624,16 +630,10 @@ Good luck, and have fun exploring the museum!</string>
                                 <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1MZ-RH-3De">
-                                <rect key="frame" x="26" y="583" width="36" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZE1-ht-7bt" userLabel="DismissButton">
-                                <rect key="frame" x="21" y="675" width="41" height="42"/>
+                                <rect key="frame" x="21" y="675" width="25" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="ywo-E8-U0T"/>
+                                    <constraint firstAttribute="height" constant="42" id="39T-bA-ul4"/>
                                 </constraints>
                                 <state key="normal" image="close"/>
                                 <connections>
@@ -643,7 +643,7 @@ Good luck, and have fun exploring the museum!</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byt-GR-ykH" userLabel="OnlineReferenceButton">
                                 <rect key="frame" x="186" y="670" width="207" height="52"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="207" id="IWf-bL-dsu"/>
+                                    <constraint firstAttribute="width" constant="207" id="VGR-X3-1wr"/>
                                 </constraints>
                                 <state key="normal" image="brooklynmuseumcom"/>
                                 <connections>
@@ -659,7 +659,7 @@ Good luck, and have fun exploring the museum!</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXO-jl-C3y">
                                 <rect key="frame" x="26" y="622" width="67" height="22"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="mLP-Qm-r3N"/>
+                                    <constraint firstAttribute="width" constant="67" id="9jz-sT-3S9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -668,16 +668,16 @@ Good luck, and have fun exploring the museum!</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjA-GV-RAn" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
                                 <rect key="frame" x="344" y="594" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="Nd7-F0-qEd"/>
-                                    <constraint firstAttribute="height" constant="50" id="uTp-Ox-KgB"/>
+                                    <constraint firstAttribute="width" constant="50" id="5OB-yV-zyS"/>
+                                    <constraint firstAttribute="height" constant="50" id="b42-13-o7g"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="icons8-start_filled"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8p-YG-a5S">
                                 <rect key="frame" x="89" y="623" width="126" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="9LY-v6-v4S"/>
-                                    <constraint firstAttribute="width" constant="126" id="f17-uE-QzC"/>
+                                    <constraint firstAttribute="height" constant="20" id="ayE-To-39K"/>
+                                    <constraint firstAttribute="width" constant="126" id="q7O-7h-RKg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -688,31 +688,28 @@ Good luck, and have fun exploring the museum!</string>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="aBN-Uh-c9s" firstAttribute="centerX" secondItem="Dqy-Yr-p7Z" secondAttribute="centerX" id="2Kg-N8-G4G"/>
-                            <constraint firstItem="1MZ-RH-3De" firstAttribute="leading" secondItem="CXO-jl-C3y" secondAttribute="leading" id="2eo-9P-mBg"/>
-                            <constraint firstItem="b8y-Oc-JXr" firstAttribute="leading" secondItem="gIz-mf-1XM" secondAttribute="leadingMargin" constant="6" id="4Oe-6Y-Wz4"/>
-                            <constraint firstItem="CXO-jl-C3y" firstAttribute="bottom" secondItem="RjA-GV-RAn" secondAttribute="bottom" id="6JU-fG-8le"/>
-                            <constraint firstItem="Dqy-Yr-p7Z" firstAttribute="top" secondItem="aBN-Uh-c9s" secondAttribute="bottom" constant="5" id="A8v-jo-vCs"/>
-                            <constraint firstItem="aBN-Uh-c9s" firstAttribute="trailing" secondItem="gIz-mf-1XM" secondAttribute="trailingMargin" id="DIU-hh-rF1"/>
-                            <constraint firstItem="ZE1-ht-7bt" firstAttribute="centerY" secondItem="Byt-GR-ykH" secondAttribute="centerY" id="DWa-Hq-BW9"/>
-                            <constraint firstItem="Byt-GR-ykH" firstAttribute="top" secondItem="h8p-YG-a5S" secondAttribute="bottom" constant="27" id="HCV-b8-0Xe"/>
-                            <constraint firstItem="CXO-jl-C3y" firstAttribute="centerY" secondItem="h8p-YG-a5S" secondAttribute="centerY" id="K3b-ks-QLO"/>
-                            <constraint firstItem="h8p-YG-a5S" firstAttribute="leading" secondItem="gIz-mf-1XM" secondAttribute="leadingMargin" constant="69" id="Le3-6e-fdd"/>
-                            <constraint firstItem="CXO-jl-C3y" firstAttribute="top" secondItem="1MZ-RH-3De" secondAttribute="bottom" constant="18" id="Ll6-fc-HgV"/>
-                            <constraint firstItem="7g7-ko-eBA" firstAttribute="top" secondItem="Byt-GR-ykH" secondAttribute="bottom" constant="14" id="Nen-CC-W90"/>
-                            <constraint firstItem="1MZ-RH-3De" firstAttribute="top" secondItem="r53-Do-C6p" secondAttribute="bottom" constant="27" id="Nkj-kN-ifd"/>
-                            <constraint firstItem="r53-Do-C6p" firstAttribute="top" secondItem="b8y-Oc-JXr" secondAttribute="bottom" constant="27" id="Qg4-Xg-ZRD"/>
-                            <constraint firstItem="1MZ-RH-3De" firstAttribute="trailing" secondItem="ZE1-ht-7bt" secondAttribute="trailing" id="Vdc-Ps-6Dc"/>
-                            <constraint firstItem="aBN-Uh-c9s" firstAttribute="top" secondItem="gIz-mf-1XM" secondAttribute="topMargin" constant="35" id="Yv4-H1-0hT"/>
-                            <constraint firstItem="b8y-Oc-JXr" firstAttribute="leading" secondItem="r53-Do-C6p" secondAttribute="leading" id="ad3-2s-H33"/>
-                            <constraint firstItem="aBN-Uh-c9s" firstAttribute="trailing" secondItem="RjA-GV-RAn" secondAttribute="trailing" id="eDq-MA-kY3"/>
-                            <constraint firstItem="aBN-Uh-c9s" firstAttribute="leading" secondItem="ZE1-ht-7bt" secondAttribute="leading" id="isD-Aa-RcK"/>
-                            <constraint firstItem="Byt-GR-ykH" firstAttribute="top" secondItem="RjA-GV-RAn" secondAttribute="bottom" constant="26" id="pWb-p5-Ju9"/>
-                            <constraint firstItem="aBN-Uh-c9s" firstAttribute="centerX" secondItem="gIz-mf-1XM" secondAttribute="centerX" id="rRL-D4-IPy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Byt-GR-ykH" secondAttribute="trailing" constant="1" id="uK2-A3-a00"/>
-                            <constraint firstItem="r53-Do-C6p" firstAttribute="leading" secondItem="1MZ-RH-3De" secondAttribute="leading" id="y2C-bh-jO4"/>
-                            <constraint firstItem="7g7-ko-eBA" firstAttribute="top" secondItem="ZE1-ht-7bt" secondAttribute="bottom" constant="19" id="y3V-02-WTM"/>
-                            <constraint firstItem="b8y-Oc-JXr" firstAttribute="top" secondItem="aBN-Uh-c9s" secondAttribute="bottom" constant="73" id="yJI-t2-v7M"/>
+                            <constraint firstItem="Byt-GR-ykH" firstAttribute="top" secondItem="RjA-GV-RAn" secondAttribute="bottom" constant="26" id="2jL-0i-AFC"/>
+                            <constraint firstItem="b8y-Oc-JXr" firstAttribute="leading" secondItem="r53-Do-C6p" secondAttribute="leading" id="5fT-YB-gAs"/>
+                            <constraint firstItem="CXO-jl-C3y" firstAttribute="top" secondItem="r53-Do-C6p" secondAttribute="bottom" constant="66" id="68i-mm-TXA"/>
+                            <constraint firstItem="Byt-GR-ykH" firstAttribute="top" secondItem="h8p-YG-a5S" secondAttribute="bottom" constant="27" id="8vV-N0-1dr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Byt-GR-ykH" secondAttribute="trailing" constant="1" id="Hwp-fH-Nf6"/>
+                            <constraint firstItem="b8y-Oc-JXr" firstAttribute="top" secondItem="aBN-Uh-c9s" secondAttribute="bottom" constant="73" id="NPz-1y-n6c"/>
+                            <constraint firstItem="7g7-ko-eBA" firstAttribute="top" secondItem="Byt-GR-ykH" secondAttribute="bottom" constant="14" id="QYg-hy-R8I"/>
+                            <constraint firstItem="aBN-Uh-c9s" firstAttribute="leading" secondItem="ZE1-ht-7bt" secondAttribute="leading" id="RJ3-To-KFt"/>
+                            <constraint firstItem="b8y-Oc-JXr" firstAttribute="leading" secondItem="gIz-mf-1XM" secondAttribute="leadingMargin" constant="6" id="UiT-Xg-8DL"/>
+                            <constraint firstItem="aBN-Uh-c9s" firstAttribute="centerX" secondItem="gIz-mf-1XM" secondAttribute="centerX" id="Yg7-dL-bvP"/>
+                            <constraint firstItem="aBN-Uh-c9s" firstAttribute="centerX" secondItem="Dqy-Yr-p7Z" secondAttribute="centerX" id="a6k-DP-HSL"/>
+                            <constraint firstItem="CXO-jl-C3y" firstAttribute="bottom" secondItem="RjA-GV-RAn" secondAttribute="bottom" id="cmz-Qd-43k"/>
+                            <constraint firstItem="ZE1-ht-7bt" firstAttribute="centerY" secondItem="Byt-GR-ykH" secondAttribute="centerY" id="cvo-Ax-hiO"/>
+                            <constraint firstItem="7g7-ko-eBA" firstAttribute="top" secondItem="ZE1-ht-7bt" secondAttribute="bottom" constant="19" id="hck-e3-Hfm"/>
+                            <constraint firstItem="aBN-Uh-c9s" firstAttribute="trailing" secondItem="RjA-GV-RAn" secondAttribute="trailing" id="k0d-9n-Bgp"/>
+                            <constraint firstItem="CXO-jl-C3y" firstAttribute="centerY" secondItem="h8p-YG-a5S" secondAttribute="centerY" id="kXN-7f-14M"/>
+                            <constraint firstItem="r53-Do-C6p" firstAttribute="leading" secondItem="CXO-jl-C3y" secondAttribute="leading" id="meA-Og-zYO"/>
+                            <constraint firstItem="aBN-Uh-c9s" firstAttribute="top" secondItem="gIz-mf-1XM" secondAttribute="topMargin" constant="35" id="mxn-JC-gL6"/>
+                            <constraint firstItem="h8p-YG-a5S" firstAttribute="leading" secondItem="gIz-mf-1XM" secondAttribute="leadingMargin" constant="69" id="pnV-rQ-oXa"/>
+                            <constraint firstItem="aBN-Uh-c9s" firstAttribute="trailing" secondItem="gIz-mf-1XM" secondAttribute="trailingMargin" id="sP0-L7-xIj"/>
+                            <constraint firstItem="r53-Do-C6p" firstAttribute="top" secondItem="b8y-Oc-JXr" secondAttribute="bottom" constant="27" id="v8v-gC-cCL"/>
+                            <constraint firstItem="Dqy-Yr-p7Z" firstAttribute="top" secondItem="aBN-Uh-c9s" secondAttribute="bottom" constant="5" id="zX0-jY-Jg8"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="kmm-vW-7ze" appends="YES" id="09w-7r-xoB"/>
@@ -722,7 +719,6 @@ Good luck, and have fun exploring the museum!</string>
                     <navigationItem key="navigationItem" title="Find this object and take its photo:" id="HIb-LY-Kyy"/>
                     <connections>
                         <outlet property="paintingArtistLabel" destination="r53-Do-C6p" id="PQi-3C-0us"/>
-                        <outlet property="paintingDateLabel" destination="1MZ-RH-3De" id="CY3-Kd-gmb"/>
                         <outlet property="paintingImageView" destination="aBN-Uh-c9s" id="XAe-nb-Xxu"/>
                         <outlet property="paintingTitleLabel" destination="b8y-Oc-JXr" id="CJA-4T-YO7"/>
                     </connections>
@@ -759,37 +755,28 @@ Good luck, and have fun exploring the museum!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fdf-Rm-qyl" userLabel="paintingImageView">
-                                <rect key="frame" x="20.666666666666657" y="34.666666666666657" width="372.66666666666663" height="372.33333333333337"/>
+                                <rect key="frame" x="21" y="35" width="373" height="372"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="fdf-Rm-qyl" secondAttribute="height" id="Hw0-OQ-DXP"/>
-                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ukM-6y-3mN" appends="YES" id="kV6-Ax-sjx"/>
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap image to zoom; swipe for next" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USi-YU-7Cs">
-                                <rect key="frame" x="89.666666666666686" y="412" width="235" height="18"/>
+                                <rect key="frame" x="90" y="412" width="235" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YLI-u5-JEQ">
-                                <rect key="frame" x="26" y="534.66666666666663" width="41.666666666666671" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PEK-ia-cyB">
-                                <rect key="frame" x="26" y="583" width="36" height="21"/>
+                                <rect key="frame" x="26" y="506" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvh-c7-Rcp" userLabel="DismissButton">
-                                <rect key="frame" x="20.666666666666664" y="674.66666666666663" width="41.333333333333329" height="41.666666666666742"/>
+                                <rect key="frame" x="21" y="675" width="25" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="yvh-c7-Rcp" secondAttribute="height" id="wPl-x8-0Qo"/>
+                                    <constraint firstAttribute="height" constant="42" id="vUS-Vb-bC1"/>
                                 </constraints>
                                 <state key="normal" image="close"/>
                                 <connections>
@@ -797,9 +784,9 @@ Good luck, and have fun exploring the museum!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccF-z5-3G4" userLabel="OnlineReferenceButton">
-                                <rect key="frame" x="186.33333333333331" y="670" width="206.99999999999994" height="51.666666666666629"/>
+                                <rect key="frame" x="186" y="670" width="207" height="52"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ccF-z5-3G4" secondAttribute="height" multiplier="4" id="FZe-qu-acA"/>
+                                    <constraint firstAttribute="width" constant="207" id="0rl-2X-P5B"/>
                                 </constraints>
                                 <state key="normal" image="brooklynmuseumcom"/>
                                 <connections>
@@ -807,34 +794,76 @@ Good luck, and have fun exploring the museum!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ynq-Pg-QLg">
-                                <rect key="frame" x="26" y="480.33333333333331" width="48.333333333333329" height="28"/>
+                                <rect key="frame" x="23" y="448" width="48" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbg-ze-CjX">
+                                <rect key="frame" x="26" y="633" width="53" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Olv-HJ-w36"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cp-FP-jih">
+                                <rect key="frame" x="87" y="633" width="126" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="Lbs-Hs-p0t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdP-F1-FFX" userLabel="SubmitButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="349" y="603" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Zk0-a7-x9Q"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="icons8-start_filled"/>
+                                <connections>
+                                    <action selector="submitAnswer:" destination="VVQ-D3-jcv" eventType="touchUpInside" id="9x3-YQ-Nab"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ekv-sZ-X9w">
+                                <rect key="frame" x="26" y="558" width="368" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="ccF-z5-3G4" firstAttribute="centerY" secondItem="yvh-c7-Rcp" secondAttribute="centerY" id="Dvg-Ie-pks"/>
-                            <constraint firstItem="fdf-Rm-qyl" firstAttribute="centerY" secondItem="U8J-6B-UzB" secondAttribute="centerY" multiplier="0.6" id="GYn-Tb-0GG"/>
-                            <constraint firstItem="ccF-z5-3G4" firstAttribute="centerX" secondItem="U8J-6B-UzB" secondAttribute="centerX" multiplier="1.4" id="JK5-MF-wre"/>
-                            <constraint firstItem="YLI-u5-JEQ" firstAttribute="leading" secondItem="ynq-Pg-QLg" secondAttribute="leading" id="PGZ-Nt-CdB"/>
-                            <constraint firstItem="YLI-u5-JEQ" firstAttribute="top" secondItem="ynq-Pg-QLg" secondAttribute="bottom" multiplier="1.05" id="Unq-3M-Uj2"/>
-                            <constraint firstItem="USi-YU-7Cs" firstAttribute="top" secondItem="fdf-Rm-qyl" secondAttribute="bottom" multiplier="1.01" constant="1" id="UoI-de-ddq"/>
-                            <constraint firstItem="ynq-Pg-QLg" firstAttribute="width" relation="lessThanOrEqual" secondItem="U8J-6B-UzB" secondAttribute="width" multiplier="0.86" id="YZJ-Vr-WG4"/>
-                            <constraint firstItem="USi-YU-7Cs" firstAttribute="centerX" secondItem="U8J-6B-UzB" secondAttribute="centerX" id="YqL-uW-lLF"/>
-                            <constraint firstItem="PEK-ia-cyB" firstAttribute="leading" secondItem="YLI-u5-JEQ" secondAttribute="leading" id="d28-UJ-o9F"/>
-                            <constraint firstItem="fdf-Rm-qyl" firstAttribute="width" secondItem="U8J-6B-UzB" secondAttribute="width" multiplier="0.9" id="mQ0-Bb-VdJ"/>
-                            <constraint firstItem="fdf-Rm-qyl" firstAttribute="centerX" secondItem="U8J-6B-UzB" secondAttribute="centerX" id="q6A-b1-og9"/>
-                            <constraint firstItem="yvh-c7-Rcp" firstAttribute="centerX" secondItem="U8J-6B-UzB" secondAttribute="centerX" multiplier="0.2" id="qf8-fB-Ra7"/>
-                            <constraint firstItem="ynq-Pg-QLg" firstAttribute="top" secondItem="fdf-Rm-qyl" secondAttribute="bottom" multiplier="1.18" id="qva-3d-Xhg"/>
-                            <constraint firstItem="ynq-Pg-QLg" firstAttribute="leading" secondItem="U8J-6B-UzB" secondAttribute="leadingMargin" multiplier="1.3" id="qvr-ar-6uQ"/>
-                            <constraint firstItem="PEK-ia-cyB" firstAttribute="top" secondItem="YLI-u5-JEQ" secondAttribute="bottom" multiplier="1.05" id="skv-Yl-QEW"/>
-                            <constraint firstItem="yvh-c7-Rcp" firstAttribute="centerY" secondItem="U8J-6B-UzB" secondAttribute="centerY" multiplier="1.89" id="uJK-dT-OQQ"/>
-                            <constraint firstItem="yvh-c7-Rcp" firstAttribute="width" secondItem="U8J-6B-UzB" secondAttribute="width" multiplier="0.1" id="wRZ-wX-Ucy"/>
-                            <constraint firstItem="ccF-z5-3G4" firstAttribute="width" secondItem="U8J-6B-UzB" secondAttribute="width" multiplier="0.5" id="wXw-h8-B9j"/>
+                            <constraint firstItem="YLI-u5-JEQ" firstAttribute="top" secondItem="ynq-Pg-QLg" secondAttribute="bottom" constant="30" id="1BW-As-EAQ"/>
+                            <constraint firstItem="ynq-Pg-QLg" firstAttribute="centerX" secondItem="YLI-u5-JEQ" secondAttribute="centerX" id="2hs-ei-vsV"/>
+                            <constraint firstItem="USi-YU-7Cs" firstAttribute="top" secondItem="fdf-Rm-qyl" secondAttribute="bottom" constant="5" id="3SS-0q-LOW"/>
+                            <constraint firstItem="hdP-F1-FFX" firstAttribute="top" secondItem="ekv-sZ-X9w" secondAttribute="bottom" constant="15" id="8Ui-BN-B1M"/>
+                            <constraint firstItem="fdf-Rm-qyl" firstAttribute="top" secondItem="U8J-6B-UzB" secondAttribute="topMargin" constant="35" id="EQo-hd-500"/>
+                            <constraint firstItem="fdf-Rm-qyl" firstAttribute="centerX" secondItem="USi-YU-7Cs" secondAttribute="centerX" id="FP8-q1-bcQ"/>
+                            <constraint firstItem="ynq-Pg-QLg" firstAttribute="leading" secondItem="U8J-6B-UzB" secondAttribute="leadingMargin" constant="3" id="H7p-P8-gHp"/>
+                            <constraint firstItem="Tbg-ze-CjX" firstAttribute="top" secondItem="2cp-FP-jih" secondAttribute="top" id="IT0-Q4-JuF"/>
+                            <constraint firstItem="2cp-FP-jih" firstAttribute="leading" secondItem="Tbg-ze-CjX" secondAttribute="trailing" constant="8" symbolic="YES" id="JmE-q8-pol"/>
+                            <constraint firstItem="ekv-sZ-X9w" firstAttribute="leading" secondItem="Tbg-ze-CjX" secondAttribute="leading" id="L5m-aC-yWL"/>
+                            <constraint firstItem="fdf-Rm-qyl" firstAttribute="leading" secondItem="yvh-c7-Rcp" secondAttribute="leading" id="LeG-vE-xXS"/>
+                            <constraint firstItem="fdf-Rm-qyl" firstAttribute="centerX" secondItem="U8J-6B-UzB" secondAttribute="centerX" id="M0Q-l1-Q7b"/>
+                            <constraint firstItem="yvh-c7-Rcp" firstAttribute="centerY" secondItem="ccF-z5-3G4" secondAttribute="centerY" id="P6x-zZ-kI6"/>
+                            <constraint firstItem="fdf-Rm-qyl" firstAttribute="trailing" secondItem="U8J-6B-UzB" secondAttribute="trailingMargin" id="SiF-WS-u6W"/>
+                            <constraint firstItem="fdf-Rm-qyl" firstAttribute="trailing" secondItem="ekv-sZ-X9w" secondAttribute="trailing" id="VMV-gH-0Fi"/>
+                            <constraint firstItem="ynq-Pg-QLg" firstAttribute="top" secondItem="fdf-Rm-qyl" secondAttribute="bottom" constant="41" id="XyB-ZZ-NMX"/>
+                            <constraint firstItem="Tbg-ze-CjX" firstAttribute="bottom" secondItem="2cp-FP-jih" secondAttribute="bottom" id="eqV-uG-lGl"/>
+                            <constraint firstItem="ccF-z5-3G4" firstAttribute="top" secondItem="2cp-FP-jih" secondAttribute="bottom" constant="17" id="lgc-Ea-DIL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hdP-F1-FFX" secondAttribute="trailing" constant="-5" id="mNt-d7-p4S"/>
+                            <constraint firstItem="faL-cZ-YSV" firstAttribute="top" secondItem="yvh-c7-Rcp" secondAttribute="bottom" constant="19" id="mch-E4-XOA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ccF-z5-3G4" secondAttribute="trailing" constant="1" id="mx5-Yk-P7j"/>
+                            <constraint firstItem="ekv-sZ-X9w" firstAttribute="top" secondItem="YLI-u5-JEQ" secondAttribute="bottom" constant="31" id="p23-sm-xSo"/>
+                            <constraint firstItem="2cp-FP-jih" firstAttribute="bottom" secondItem="hdP-F1-FFX" secondAttribute="bottom" id="qG6-z4-zzb"/>
+                            <constraint firstItem="YLI-u5-JEQ" firstAttribute="leading" secondItem="ekv-sZ-X9w" secondAttribute="leading" id="qmH-Dz-7Tv"/>
+                            <constraint firstItem="faL-cZ-YSV" firstAttribute="top" secondItem="ccF-z5-3G4" secondAttribute="bottom" constant="14" id="uih-RY-bKi"/>
+                            <constraint firstItem="Tbg-ze-CjX" firstAttribute="top" secondItem="ekv-sZ-X9w" secondAttribute="bottom" constant="45" id="zWf-gk-4Aj"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="NCw-On-PrN" appends="YES" id="OXl-Nl-IYz"/>
@@ -843,10 +872,11 @@ Good luck, and have fun exploring the museum!</string>
                     </view>
                     <navigationItem key="navigationItem" title="What medium is this object made of?" id="bIE-yF-uJJ"/>
                     <connections>
-                        <outlet property="paintingArtistLabel" destination="YLI-u5-JEQ" id="qh3-2O-znH"/>
-                        <outlet property="paintingDateLabel" destination="PEK-ia-cyB" id="dOu-Na-t5i"/>
-                        <outlet property="paintingImageView" destination="fdf-Rm-qyl" id="aOa-zM-W28"/>
-                        <outlet property="paintingTitleLabel" destination="ynq-Pg-QLg" id="JfC-nP-QPE"/>
+                        <outlet property="answer" destination="ekv-sZ-X9w" id="sLJ-B0-vsi"/>
+                        <outlet property="artArtist" destination="YLI-u5-JEQ" id="eRQ-1o-5hY"/>
+                        <outlet property="artImage" destination="fdf-Rm-qyl" id="aCM-sG-hHX"/>
+                        <outlet property="artTitle" destination="ynq-Pg-QLg" id="sks-Kx-JDs"/>
+                        <outlet property="scoreLabel" destination="2cp-FP-jih" id="aca-5B-V1w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wmf-J8-acU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -866,7 +896,7 @@ Good luck, and have fun exploring the museum!</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3448" y="-3663"/>
+            <point key="canvasLocation" x="3447.826086956522" y="-3663.5869565217395"/>
         </scene>
     </scenes>
     <resources>

@@ -14,6 +14,6 @@ enum QuestionVC: Int {//Enum to randomize question storyboard segue
     case three
     
     static func randomQuestionVC() -> QuestionVC {
-        return QuestionVC(rawValue: Int(arc4random_uniform(2)))!
+        return QuestionVC(rawValue: Int(arc4random_uniform(3)))!
     }
 }

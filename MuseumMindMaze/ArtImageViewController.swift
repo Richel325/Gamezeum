@@ -54,7 +54,7 @@ class ArtImageViewController: UIViewController {
             mvc.object = objects[(artImageTableView.indexPathForSelectedRow?.row) ?? 0]
         case "to_take_image":
             let tvc = segue.destination as! TakePhotoViewController
-            //tvc.object = objects[(artImageTableView.indexPathForSelectedRow?.row) ?? 0]
+            tvc.object = objects[(artImageTableView.indexPathForSelectedRow?.row) ?? 0]
         case "to_find_collection":
             let fcv = segue.destination as! FindCollectionViewController
             fcv.object = objects[(artImageTableView.indexPathForSelectedRow?.row) ?? 0]

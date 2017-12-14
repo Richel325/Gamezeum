@@ -18,9 +18,28 @@ class TakePhotoViewController: UIViewController {
     
 
     
+    var object: ArtObject?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-}
+        //self.answer.delegate = self
 
    }
+    
+    
+    @IBAction func dismissToGallery(_ sender: Any) {
+    }
+    
+    
+    @IBAction func lookupOnlineReference(_ sender: Any) {
+    }
+    
+    @IBAction func presentFullScreenPaintingVC(_ sender: Any) {
+    }
+    
+    @IBAction func swipeToNextPainting(_ sender: Any) {
+    }
+    
+    @IBAction func swipeToPreviousPainting(_ sender: Any) {
+    }
+}
