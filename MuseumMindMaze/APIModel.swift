@@ -14,10 +14,10 @@ class APIClient{
     
     static let APIKey = "YxAQk6MfcwSMr6k1Grrh1drvIz6afNzm"
     
-    static func getData(completion: @escaping ([ArtObject]?) -> ()) {
+    static func getData(onViewOnly: Bool = false, completion: @escaping ([ArtObject]?) -> ()) {
         DispatchQueue.global(qos: .background).async{
-            let randomNumber: Int = Int(arc4random_uniform(UInt32(92290-35)))
-            let endpoint = "https://www.brooklynmuseum.org/api/v2/object?offset=\(randomNumber)"
+            //let randomNumber: Int = Int(arc4random_uniform(UInt32(92290-35)))
+            let endpoint = "https://www.brooklynmuseum.org/api/v2/object?on_view_only=\(onViewOnly ? 1 : 0)&has_images=1"
             var url = URLRequest(url: URL(string: endpoint)!)
             url.addValue(APIKey, forHTTPHeaderField: "api_key")
             let session = URLSession(configuration: URLSessionConfiguration.default)

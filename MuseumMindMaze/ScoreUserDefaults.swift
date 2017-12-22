@@ -14,4 +14,7 @@ extension UserDefaults {
         get { return UserDefaults.standard.integer(forKey: UserDefaults.scoreID) }
         set { UserDefaults.standard.set(newValue, forKey: UserDefaults.scoreID) }
     }
+    
+    //userdefaults for music and sound effects
+    
 }

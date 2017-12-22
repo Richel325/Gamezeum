@@ -17,11 +17,16 @@ class TakePhotoViewController: UIViewController {
     @IBOutlet weak var cameraButton: UIButton!
     
 
+    //question answered for camera shutter sound: 1108
+    
     
     var object: ArtObject?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        APIClient.getData(onViewOnly: true) { (_: [ArtObject]?) in
+        }
+        
         //self.answer.delegate = self
 
    }

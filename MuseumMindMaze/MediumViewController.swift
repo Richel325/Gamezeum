@@ -26,7 +26,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.answer.delegate = self
-        
+            
         artArtist.text = object?.artist?.name ?? "Artist Unknown"
         if let artObjectImageURLString = object?.primaryImageURLString {
             artImage.downLoadImage(from: artObjectImageURLString)
@@ -53,7 +53,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
                     let _ = self.navigationController?.popViewController(animated: true)}))
                 self.present(alertController2, animated: true, completion: nil)
             } else {
-                AudioServicesPlayAlertSound(1073)
+                AudioServicesPlayAlertSound(1024)
                 let alertController1 = UIAlertController(title: "Wrong Answer!", message:
                     "Please try answering the question again.", preferredStyle: UIAlertControllerStyle.alert)
                 alertController1.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))

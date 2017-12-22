@@ -69,7 +69,7 @@ class FindCollectionViewController: UIViewController, UIPickerViewDelegate, UIPi
                     let _ = self.navigationController?.popViewController(animated: true)}))
                 self.present(alertController2, animated: true, completion: nil)
             } else {
-                AudioServicesPlayAlertSound(1073)
+                AudioServicesPlayAlertSound(1024)
                 let alertController1 = UIAlertController(title: "Wrong Answer!", message:
                     "Please try answering the question again.", preferredStyle: UIAlertControllerStyle.alert)
                 alertController1.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
