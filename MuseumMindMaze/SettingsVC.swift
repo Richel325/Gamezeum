@@ -7,43 +7,48 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SettingsVC: UIViewController {
-
-
+    
+    
+    @IBOutlet weak var soundsSwitch: UISwitch!
+    
+    @IBOutlet weak var musicSwitch: UISwitch!
+    
+    
+    var audioPlayer = AVAudioPlayer()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //UserDefaults.standard.s
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Fmaj", ofType: "mp3")!))
+        }
+        catch {
+            print(error)
+        }
         
-//        var defaults = UserDefaults.standardUserDefaults()
-//        
-//        if (defaults.objectForKey("SwitchState") != nil) {
-//            musicSwitch.on = defaults.boolForKey("SwitchState")
-//            soundsSwitch.on = defaults.boolForKey("SwitchState")
-//        }
-
+        
     }
-
     
     
-//    @IBAction func saveMusicSwitchState(sender: AnyObject) {
-//        var defaults = UserDefaults.standardUserDefaults()
-//        
-//        if musicSwitch.on {
-//            defaults.setBool(true, forKey: "SwitchState")
-//        } else {
-//            defaults.setBool(false, forKey: "SwitchState")
-//        }
-//    }
-//    
-//    @IBAction func saveSoundSwitchState(sender: AnyObject) {
-//        var defaults = UserDefaults.standardUserDefaults()
-//        
-//        if soundsSwitch.on {
-//            defaults.setBool(true, forKey: "SwitchState")
-//        } else {
-//            defaults.setBool(false, forKey: "SwitchState")
-//        }
-//    }
+    @IBAction func soundOnOff(_ sender: Any) {
+        
+    }
+    
+    @IBAction func musicOnOff(_ sender: Any) {
+        if musicSwitch.isOn {
+            audioPlayer.play()
+            audioPlayer.numberOfLoops = -1
+        } else {
+            audioPlayer.stop()
+        }
+    }
+    
+    
+    @IBAction func resetScore(_ sender: UIButton) {
+        UserDefaults.standard.score = 0
+    }
 }

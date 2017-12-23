@@ -7,32 +7,14 @@
 //
 
 import UIKit
-import AVFoundation
+
 
 class GameIntroViewController: UIViewController {
-    
-    var audioPlayer = AVAudioPlayer()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Fmaj", ofType: "mp3")!))
-            audioPlayer.play()
-            audioPlayer.numberOfLoops = -1
-        }
-        catch {
-            print(error)
-        }
-        
-        
     }
-    
-    @IBAction func resetScore(_ sender: UIButton) {
-        UserDefaults.standard.score = 0
-    }
-    
     
     @IBAction func checkAction(_ sender: Any) {
         checkReachability()
