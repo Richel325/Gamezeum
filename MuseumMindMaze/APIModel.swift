@@ -16,7 +16,7 @@ class APIClient{
     
     static func getData(completion: @escaping ([ArtObject]?) -> ()) {
         DispatchQueue.global(qos: .background).async{
-            let randomNumber: Int = Int(arc4random_uniform(UInt32(92290-35)))
+            let randomNumber: Int = Int(arc4random_uniform(UInt32(10000)))
             let endpoint = "https://www.brooklynmuseum.org/api/v2/object?offset=\(randomNumber)"
             var url = URLRequest(url: URL(string: endpoint)!)
             url.addValue(APIKey, forHTTPHeaderField: "api_key")

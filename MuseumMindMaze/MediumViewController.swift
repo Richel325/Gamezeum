@@ -7,19 +7,16 @@
 //
 
 import UIKit
-import AVFoundation
-import AudioToolbox
 
 class MediumViewController: UIViewController, UITextFieldDelegate {
     
-    
-    @IBOutlet weak var artTitle: UILabel!
+    @IBOutlet weak var artTitle: UITextView!
     @IBOutlet weak var artImage: UIImageView!
     @IBOutlet weak var artArtist: UILabel!
+    @IBOutlet weak var artObjectDate: UILabel!
+    @IBOutlet weak var artDescription: UITextView!
     @IBOutlet weak var answer: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
-
-    
     
     var object: ArtObject?
     
@@ -30,7 +27,9 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
         artArtist.text = object?.artist?.name ?? "Artist Unknown"
         if let artObjectImageURLString = object?.primaryImageURLString {
             artImage.downLoadImage(from: artObjectImageURLString)
+            artObjectDate.text = object?.object_date
             artTitle?.text = object?.title
+            artDescription.text = object?.description
             scoreLabel.text? = String(UserDefaults.standard.score)
             APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
                 self.object = self.object
@@ -42,9 +41,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
     @IBAction func submitAnswer(_ sender: UIButton) {
         if let userInput = answer?.text?.lowercased(), let actualAnswer = object?.medium?.lowercased() {
             if actualAnswer.contains(userInput) {// ALERT MESSAGES: For right and wrong answers
-                AudioServicesPlayAlertSound(1325)
                 UserDefaults.standard.score += 10
-                
                 //Dismisses the segue when the answer is correct
                 scoreLabel.text? = String(UserDefaults.standard.score)
                 let alertController2 = UIAlertController(title: "Correct Answer!", message:
@@ -53,7 +50,6 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
                     let _ = self.navigationController?.popViewController(animated: true)}))
                 self.present(alertController2, animated: true, completion: nil)
             } else {
-                AudioServicesPlayAlertSound(1073)
                 let alertController1 = UIAlertController(title: "Wrong Answer!", message:
                     "Please try answering the question again.", preferredStyle: UIAlertControllerStyle.alert)
                 alertController1.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
@@ -75,22 +71,5 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    
-    
-    @IBAction func dismissToGallery(_ sender: Any) {
-    }
-    
-    
-    @IBAction func lookupOnlineReference(_ sender: Any) {
-    }
-    
-    @IBAction func presentFullScreenPaintingVC(_ sender: Any) {
-    }
-    
-    @IBAction func swipeToNextPainting(_ sender: Any) {
-    }
-    
-    @IBAction func swipeToPreviousPainting(_ sender: Any) {
-    }
     
 }

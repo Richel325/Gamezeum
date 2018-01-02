@@ -19,7 +19,6 @@ class ArtImageViewController: UIViewController {
     var objects = [ArtObject]()
     let mvc = MediumViewController()
     let fcv = FindCollectionViewController()
-    var tvc = TakePhotoViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,9 +51,6 @@ class ArtImageViewController: UIViewController {
         case "to_find_medium":
             let mvc = segue.destination as! MediumViewController
             mvc.object = objects[(artImageTableView.indexPathForSelectedRow?.row) ?? 0]
-        case "to_take_image":
-            let tvc = segue.destination as! TakePhotoViewController
-            tvc.object = objects[(artImageTableView.indexPathForSelectedRow?.row) ?? 0]
         case "to_find_collection":
             let fcv = segue.destination as! FindCollectionViewController
             fcv.object = objects[(artImageTableView.indexPathForSelectedRow?.row) ?? 0]
@@ -71,8 +67,6 @@ extension ArtImageViewController: UITableViewDelegate {
         case .one:
             performSegue(withIdentifier: "to_find_medium", sender: nil)
         case .two:
-            performSegue(withIdentifier: "to_take_image", sender: nil)
-        case .three:
             performSegue(withIdentifier: "to_find_collection", sender: nil)
         }
     }
