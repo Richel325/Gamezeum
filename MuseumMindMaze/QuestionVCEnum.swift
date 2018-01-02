@@ -11,9 +11,8 @@ import Foundation
 enum QuestionVC: Int {//Enum to randomize question storyboard segue
     case one = 0
     case two
-    case three
     
     static func randomQuestionVC() -> QuestionVC {
-        return QuestionVC(rawValue: Int(arc4random_uniform(3)))!
+        return QuestionVC(rawValue: Int(arc4random_uniform(2)))!
     }
 }

@@ -7,17 +7,17 @@
 //
 
 import UIKit
-import AVFoundation
-import AudioToolbox
 
 class FindCollectionViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-
+    @IBOutlet weak var artTitle: UITextView!
     @IBOutlet weak var artImage: UIImageView!
+    @IBOutlet weak var artArtist: UILabel!
+    @IBOutlet weak var artObjectDate: UILabel!
+    @IBOutlet weak var artMedium: UITextView!
     @IBOutlet weak var answer: UILabel!
     @IBOutlet weak var collectionPickerView: UIPickerView!
     @IBOutlet weak var scoreLabel: UILabel!
-
     
     var object: ArtObject?
     
@@ -46,8 +46,12 @@ class FindCollectionViewController: UIViewController, UIPickerViewDelegate, UIPi
         super.viewDidLoad()
         //self.answer.delegate = self
         
+        artArtist.text = object?.artist?.name
         if let artObjectImageURLString = object?.primaryImageURLString {
             artImage.downLoadImage(from: artObjectImageURLString)
+            artObjectDate.text = object?.object_date
+            artTitle?.text = object?.title
+            artMedium.text = object?.medium
             scoreLabel.text? = String(UserDefaults.standard.score)
             APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
                 self.object = self.object
@@ -59,7 +63,6 @@ class FindCollectionViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBAction func submitAnswer(_ sender: UIButton) {
         if let userInput = answer?.text?.lowercased(), let actualAnswer = object?.collection?.name?.lowercased() {
             if actualAnswer.contains(userInput) {// ALERT MESSAGES: For right and wrong answers
-                AudioServicesPlayAlertSound(1325)
                 UserDefaults.standard.score += 10
                 //Dismisses the segue when the answer is correct
                 scoreLabel.text? = String(UserDefaults.standard.score)
@@ -69,7 +72,6 @@ class FindCollectionViewController: UIViewController, UIPickerViewDelegate, UIPi
                     let _ = self.navigationController?.popViewController(animated: true)}))
                 self.present(alertController2, animated: true, completion: nil)
             } else {
-                AudioServicesPlayAlertSound(1073)
                 let alertController1 = UIAlertController(title: "Wrong Answer!", message:
                     "Please try answering the question again.", preferredStyle: UIAlertControllerStyle.alert)
                 alertController1.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
@@ -88,21 +90,5 @@ class FindCollectionViewController: UIViewController, UIPickerViewDelegate, UIPi
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         answer.resignFirstResponder()
         return true
-    }
-    
-    @IBAction func dismissToGallery(_ sender: Any) {
-    }
-    
-    
-    @IBAction func lookupOnlineReference(_ sender: Any) {
-    }
-    
-    @IBAction func presentFullScreenPaintingVC(_ sender: Any) {
-    }
-    
-    @IBAction func swipeToNextPainting(_ sender: Any) {
-    }
-    
-    @IBAction func swipeToPreviousPainting(_ sender: Any) {
     }
 }
