@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="17C88" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,18 +21,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="museum-building" translatesAutoresizingMaskIntoConstraints="NO" id="4CS-XG-XTh">
-                                <rect key="frame" x="125" y="271" width="125" height="125"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BK-MUS-Watermark" translatesAutoresizingMaskIntoConstraints="NO" id="4CS-XG-XTh">
+                                <rect key="frame" x="87" y="233" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="iGU-Go-2Ud"/>
-                                    <constraint firstAttribute="width" constant="125" id="xZ0-rc-hJe"/>
+                                    <constraint firstAttribute="width" constant="200" id="5yI-H6-WB7"/>
+                                    <constraint firstAttribute="height" constant="200" id="UKO-WD-BJF"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4CS-XG-XTh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XeU-Wj-FXZ"/>
-                            <constraint firstItem="4CS-XG-XTh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="skH-2Z-UET"/>
+                            <constraint firstItem="4CS-XG-XTh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="DRH-w8-pVG"/>
+                            <constraint firstItem="4CS-XG-XTh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QUQ-hJ-LMZ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -42,6 +42,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="museum-building" width="105" height="105"/>
+        <image name="BK-MUS-Watermark" width="100" height="100"/>
     </resources>
 </document>
