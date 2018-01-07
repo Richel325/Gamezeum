@@ -10,36 +10,29 @@ import UIKit
 import AVFoundation
 import AudioToolbox
 
-class FindCollectionViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class FindCollectionViewController: UIViewController {
     
-
     @IBOutlet weak var artImage: UIImageView!
-    @IBOutlet weak var answer: UILabel!
-    @IBOutlet weak var collectionPickerView: UIPickerView!
     @IBOutlet weak var scoreLabel: UILabel!
-
+    @IBOutlet weak var answer1: UIButton!
+    @IBOutlet weak var answer2: UIButton!
+    @IBOutlet weak var answer3: UIButton!
+    @IBOutlet weak var answer4: UIButton!
+    
+    
+    
+    
+    
+    
+    
     
     var object: ArtObject?
     
     
-    //Collection Picker View Answer Modular
-    let collectionPicker = ["American Art", "Arts of Africa", "Arts of the Americas", "Arts of the Islamic World", "Arts of the Pacific Islands", "Asian Art", "Contemporary Art", "Decorative Arts", "Egyptian, Classical, Ancient Near Eastern Art", "Elizabeth A. Sackler Center for Feminist Art", "European Art", "Libraries and Archives"]
+    //Collection Array for Button Answers
+    let collectionArray = ["American Art", "Arts of Africa", "Arts of the Americas", "Arts of the Islamic World", "Arts of the Pacific Islands", "Asian Art", "Contemporary Art", "Decorative Arts", "Egyptian, Classical, Ancient Near Eastern Art", "Elizabeth A. Sackler Center for Feminist Art", "European Art", "Libraries and Archives"]
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return collectionPicker[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return collectionPicker.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        answer.text = collectionPicker[row]
-    }
+   
     
     //Begin viewDidLoad
     override func viewDidLoad() {
@@ -57,7 +50,9 @@ class FindCollectionViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     
     @IBAction func submitAnswer(_ sender: UIButton) {
-        if let userInput = answer?.text?.lowercased(), let actualAnswer = object?.collection?.name?.lowercased() {
+        if let userInput =
+            
+        answer1.currentTitle?.lowercased(), let actualAnswer = object?.collection?.name?.lowercased() {
             if actualAnswer.contains(userInput) {// ALERT MESSAGES: For right and wrong answers
                 AudioServicesPlayAlertSound(1325)
                 UserDefaults.standard.score += 10
@@ -100,9 +95,4 @@ class FindCollectionViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBAction func presentFullScreenPaintingVC(_ sender: Any) {
     }
     
-    @IBAction func swipeToNextPainting(_ sender: Any) {
-    }
-    
-    @IBAction func swipeToPreviousPainting(_ sender: Any) {
-    }
 }

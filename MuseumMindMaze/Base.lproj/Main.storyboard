@@ -175,13 +175,13 @@
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JB9-ZJ-ojH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JB9-ZJ-ojH">
                                 <rect key="frame" x="20" y="560" width="374" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ZhC-rT-JQg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Reset Score">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -234,6 +234,22 @@
                                 </constraints>
                                 <state key="normal" image="close"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xO8-ML-iIJ">
+                                <rect key="frame" x="0.0" y="273" width="414" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Design: 
+John Carimando
+johncarimando.com
+tornotluk.in
+
+Music:
+Richel Cuyler
+"Fugue #1" (c)2006</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -272,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6h-HJ-RFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1094" y="-3461"/>
+            <point key="canvasLocation" x="-1094.2028985507247" y="-3461.413043478261"/>
         </scene>
         <!--InstructionViewController-->
         <scene sceneID="4H1-2M-GcQ">
@@ -481,20 +497,6 @@ Good luck, and have fun exploring the museum!</string>
                                 <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZE1-ht-7bt" userLabel="SubmitButton">
-                                <rect key="frame" x="20" y="674" width="374" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="fDX-IT-UxF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <state key="normal" title="SUBMIT">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="dismissToGallery:" destination="tV4-6m-fmt" eventType="touchUpInside" id="E0E-tw-h05"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byt-GR-ykH" userLabel="SettingsButton">
                                 <rect key="frame" x="20" y="287" width="50" height="50"/>
                                 <constraints>
@@ -506,6 +508,13 @@ Good luck, and have fun exploring the museum!</string>
                                     <action selector="lookupOnlineReference:" destination="tV4-6m-fmt" eventType="touchUpInside" id="gsK-tj-dzf"/>
                                     <segue destination="pk2-Ns-iYd" kind="presentation" id="JNC-gi-elK"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjA-GV-RAn" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="344" y="7" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="dpR-oa-pod"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="BK-MUS-Watermark"/>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Find this object and take its photo." textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lry-XZ-QoZ" userLabel="Question">
                                 <rect key="frame" x="0.0" y="350" width="414" height="64"/>
@@ -533,12 +542,27 @@ Good luck, and have fun exploring the museum!</string>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjA-GV-RAn" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="344" y="7" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLB-uI-R0k" userLabel="DismissButton">
+                                <rect key="frame" x="19" y="671" width="41.666666666666657" height="44.333333333333371"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="HB7-LY-L86"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZE1-ht-7bt" userLabel="SubmitButton">
+                                <rect key="frame" x="84" y="672" width="310" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="dpR-oa-pod"/>
+                                    <constraint firstAttribute="height" constant="42" id="fDX-IT-UxF"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="BK-MUS-Watermark"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissToGallery:" destination="tV4-6m-fmt" eventType="touchUpInside" id="E0E-tw-h05"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -582,7 +606,7 @@ Good luck, and have fun exploring the museum!</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2299" y="-2703"/>
+            <point key="canvasLocation" x="2298.5507246376815" y="-2703.2608695652175"/>
         </scene>
         <!--CollectionQuestion-->
         <scene sceneID="sWy-zg-n2s">
@@ -624,20 +648,6 @@ Good luck, and have fun exploring the museum!</string>
                                 <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huH-ii-gr1" userLabel="SubmitButton">
-                                <rect key="frame" x="20" y="674" width="374" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="0PD-dz-psX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <state key="normal" title="SUBMIT">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="dismissToGallery:" destination="s1f-hd-btD" eventType="touchUpInside" id="kpK-er-qPS"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-dn-CTx" userLabel="SettingsButton">
                                 <rect key="frame" x="20" y="287" width="50" height="50"/>
                                 <constraints>
@@ -675,27 +685,71 @@ Good luck, and have fun exploring the museum!</string>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ano-kE-TqB" userLabel="Button1">
+                                <rect key="frame" x="20" y="500" width="374" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Delicia-Melted" family="Delicia" pointSize="20"/>
+                                <state key="normal" title="Answer1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6r-Fy-1AM" userLabel="Button2">
+                                <rect key="frame" x="20" y="550" width="374" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Delicia-Melted" family="Delicia" pointSize="20"/>
+                                <state key="normal" title="Answer2">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xQ-v4-jHZ" userLabel="Button3">
+                                <rect key="frame" x="20" y="600" width="374" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Delicia-Melted" family="Delicia" pointSize="20"/>
+                                <state key="normal" title="Answer3">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJS-65-5WM" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
                                 <rect key="frame" x="344" y="7" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="dCp-oe-Xgy"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="BK-MUS-Watermark"/>
+                                <connections>
+                                    <action selector="lookupOnlineReference:" destination="s1f-hd-btD" eventType="touchUpInside" id="QRF-27-VSe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBW-uR-dd5" userLabel="Button4">
+                                <rect key="frame" x="20" y="650" width="374" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Delicia-Melted" family="Delicia" pointSize="20"/>
+                                <state key="normal" title="Answer4">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imy-su-5EA" userLabel="DismissButton">
+                                <rect key="frame" x="19" y="691" width="41.666666666666657" height="44.333333333333371"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="8JZ-OD-rhb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="3t4-YI-rUc" firstAttribute="centerX" secondItem="huH-ii-gr1" secondAttribute="centerX" id="7RI-in-60l"/>
                             <constraint firstItem="QOv-I2-vFn" firstAttribute="top" secondItem="YJd-ll-NHx" secondAttribute="topMargin" constant="-23" id="9vN-4K-aUX"/>
                             <constraint firstItem="QOv-I2-vFn" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-39" id="JGI-Sx-3SV"/>
                             <constraint firstItem="lWa-UZ-QEK" firstAttribute="leading" secondItem="XYF-dn-CTx" secondAttribute="leading" id="JmE-Bh-wZG"/>
                             <constraint firstItem="3t4-YI-rUc" firstAttribute="top" secondItem="shu-y1-NmB" secondAttribute="bottom" constant="8" symbolic="YES" id="Qtk-id-0Aw"/>
                             <constraint firstItem="shu-y1-NmB" firstAttribute="centerX" secondItem="3t4-YI-rUc" secondAttribute="centerX" id="Sda-4t-86n"/>
                             <constraint firstItem="90h-LE-80V" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-1" id="X7b-g3-HzA"/>
-                            <constraint firstAttribute="bottom" secondItem="huH-ii-gr1" secondAttribute="bottom" constant="20" symbolic="YES" id="Xxg-4D-bvg"/>
-                            <constraint firstItem="XYF-dn-CTx" firstAttribute="leading" secondItem="huH-ii-gr1" secondAttribute="leading" id="anp-F3-UyD"/>
                             <constraint firstItem="QOv-I2-vFn" firstAttribute="centerX" secondItem="shu-y1-NmB" secondAttribute="centerX" id="bwx-8g-SYq"/>
                             <constraint firstItem="shu-y1-NmB" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leading" id="cF9-65-Uv7"/>
                             <constraint firstItem="shu-y1-NmB" firstAttribute="top" secondItem="XYF-dn-CTx" secondAttribute="bottom" constant="13" id="dOS-qn-Kfy"/>
@@ -712,9 +766,15 @@ Good luck, and have fun exploring the museum!</string>
                     </view>
                     <navigationItem key="navigationItem" title="Find this object and take its photo:" id="PHE-2c-LjT"/>
                     <connections>
+                        <outlet property="answer1" destination="ano-kE-TqB" id="EyO-cV-szt"/>
+                        <outlet property="answer2" destination="k6r-Fy-1AM" id="Nbe-sb-lvK"/>
+                        <outlet property="answer3" destination="6xQ-v4-jHZ" id="LJm-5x-g7a"/>
+                        <outlet property="answer4" destination="lBW-uR-dd5" id="Phw-zJ-VFG"/>
+                        <outlet property="artImage" destination="QOv-I2-vFn" id="gXu-kJ-MhG"/>
                         <outlet property="paintingArtistLabel" destination="lWa-UZ-QEK" id="OLG-Pe-eBc"/>
                         <outlet property="paintingImageView" destination="QOv-I2-vFn" id="lul-mO-c6b"/>
                         <outlet property="paintingTitleLabel" destination="90h-LE-80V" id="NW2-o3-y2d"/>
+                        <outlet property="scoreLabel" destination="TGr-dA-1Km" id="Ifv-z6-VNd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zbz-3q-zIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -724,7 +784,7 @@ Good luck, and have fun exploring the museum!</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2299" y="-3461"/>
+            <point key="canvasLocation" x="2298.5507246376815" y="-3461.413043478261"/>
         </scene>
         <!--MaterialsQuestion-->
         <scene sceneID="Vul-UM-fcr">
@@ -766,8 +826,8 @@ Good luck, and have fun exploring the museum!</string>
                                 <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHH-Dm-jl4" userLabel="SubmitButton">
-                                <rect key="frame" x="20" y="674" width="374" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHH-Dm-jl4" userLabel="SubmitButton">
+                                <rect key="frame" x="84" y="674" width="310" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="e1S-RE-VVI"/>
@@ -791,6 +851,13 @@ Good luck, and have fun exploring the museum!</string>
                                     <action selector="lookupOnlineReference:" destination="DrB-iI-GJ6" eventType="touchUpInside" id="l9c-p3-QNf"/>
                                     <segue destination="pk2-Ns-iYd" kind="presentation" id="XYc-Tw-rYz"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pk2-gh-iPE" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="344" y="7" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="x95-1p-pq7"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="BK-MUS-Watermark"/>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What materials is this object made of?" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q3J-Cr-FPm" userLabel="Question">
                                 <rect key="frame" x="0.0" y="350" width="414" height="64"/>
@@ -818,12 +885,13 @@ Good luck, and have fun exploring the museum!</string>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pk2-gh-iPE" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="344" y="7" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="x95-1p-pq7"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="BK-MUS-Watermark"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8u8-7m-fLY" userLabel="DismissButton">
+                                <rect key="frame" x="20" y="674" width="41.666666666666657" height="44.333333333333371"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="ixG-i5-T0y"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -878,6 +946,6 @@ Good luck, and have fun exploring the museum!</string>
         <image name="gradientview2" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XYc-Tw-rYz"/>
+        <segue reference="eCI-Rr-RLY"/>
     </inferredMetricsTieBreakers>
 </document>
