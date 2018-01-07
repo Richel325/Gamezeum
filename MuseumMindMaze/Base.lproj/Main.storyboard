@@ -15,9 +15,6 @@
         <array key="Delicia Melted.otf">
             <string>Delicia-Melted</string>
         </array>
-        <array key="Didot.ttc">
-            <string>Didot-Bold</string>
-        </array>
     </customFonts>
     <scenes>
         <!--GameIntroViewController-->
@@ -233,6 +230,9 @@
                                     <constraint firstAttribute="width" constant="25" id="SkP-EM-y5W"/>
                                 </constraints>
                                 <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="dismissToGallery:" destination="pk2-Ns-iYd" eventType="touchUpInside" id="e9w-81-ieM"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xO8-ML-iIJ">
                                 <rect key="frame" x="0.0" y="273" width="414" height="148"/>
@@ -317,7 +317,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="MS3-lZ-cZo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -693,6 +693,9 @@ Good luck, and have fun exploring the museum!</string>
                                 <state key="normal" title="Answer1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitAnswer:" destination="s1f-hd-btD" eventType="touchUpInside" id="rGg-o0-ZeL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6r-Fy-1AM" userLabel="Button2">
                                 <rect key="frame" x="20" y="550" width="374" height="40"/>
@@ -702,6 +705,9 @@ Good luck, and have fun exploring the museum!</string>
                                 <state key="normal" title="Answer2">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitAnswer:" destination="s1f-hd-btD" eventType="touchUpInside" id="4uf-FW-wC1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xQ-v4-jHZ" userLabel="Button3">
                                 <rect key="frame" x="20" y="600" width="374" height="40"/>
@@ -711,6 +717,9 @@ Good luck, and have fun exploring the museum!</string>
                                 <state key="normal" title="Answer3">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitAnswer:" destination="s1f-hd-btD" eventType="touchUpInside" id="ybx-r2-s7U"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJS-65-5WM" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
                                 <rect key="frame" x="344" y="7" width="50" height="50"/>
@@ -730,12 +739,16 @@ Good luck, and have fun exploring the museum!</string>
                                 <state key="normal" title="Answer4">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitAnswer:" destination="s1f-hd-btD" eventType="touchUpInside" id="0YI-Yd-dF9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imy-su-5EA" userLabel="DismissButton">
                                 <rect key="frame" x="19" y="691" width="41.666666666666657" height="44.333333333333371"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="close"/>
                                 <connections>
+                                    <action selector="dismissToGallery:" destination="s1f-hd-btD" eventType="touchUpInside" id="0TF-bt-9VY"/>
                                     <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="8JZ-OD-rhb"/>
                                 </connections>
                             </button>
@@ -838,6 +851,7 @@ Good luck, and have fun exploring the museum!</string>
                                 </state>
                                 <connections>
                                     <action selector="dismissToGallery:" destination="DrB-iI-GJ6" eventType="touchUpInside" id="tlb-Ir-V1q"/>
+                                    <action selector="submitAnswer:" destination="DrB-iI-GJ6" eventType="touchUpInside" id="LGA-70-tTh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47E-ja-ICJ" userLabel="SettingsButton">
@@ -893,6 +907,13 @@ Good luck, and have fun exploring the museum!</string>
                                     <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="ixG-i5-T0y"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JiY-kc-7yl">
+                                <rect key="frame" x="20" y="486" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -923,9 +944,14 @@ Good luck, and have fun exploring the museum!</string>
                     </view>
                     <navigationItem key="navigationItem" title="Find this object and take its photo:" id="FND-NV-fA9"/>
                     <connections>
+                        <outlet property="answer" destination="JiY-kc-7yl" id="5QN-lS-XHt"/>
+                        <outlet property="artArtist" destination="HqJ-BY-mI3" id="tYb-uw-sf2"/>
+                        <outlet property="artImage" destination="iAo-5G-Q5d" id="FBZ-0F-wBK"/>
+                        <outlet property="artTitle" destination="VCn-rh-Enx" id="13e-ph-Hpl"/>
                         <outlet property="paintingArtistLabel" destination="HqJ-BY-mI3" id="lcL-d7-gIM"/>
                         <outlet property="paintingImageView" destination="iAo-5G-Q5d" id="069-Qt-IgH"/>
                         <outlet property="paintingTitleLabel" destination="VCn-rh-Enx" id="SED-he-Gai"/>
+                        <outlet property="scoreLabel" destination="Rxd-no-qlQ" id="yj2-Yx-7xG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VKV-Di-Lvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -935,7 +961,7 @@ Good luck, and have fun exploring the museum!</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2300" y="-1972"/>
+            <point key="canvasLocation" x="2298.5507246376815" y="-1972.0108695652175"/>
         </scene>
     </scenes>
     <resources>
@@ -946,6 +972,6 @@ Good luck, and have fun exploring the museum!</string>
         <image name="gradientview2" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eCI-Rr-RLY"/>
+        <segue reference="XYc-Tw-rYz"/>
     </inferredMetricsTieBreakers>
 </document>

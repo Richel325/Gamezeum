@@ -12,10 +12,9 @@ import AudioToolbox
 
 class MediumViewController: UIViewController, UITextFieldDelegate {
     
-    
+    @IBOutlet weak var artArtist: UILabel!
     @IBOutlet weak var artTitle: UILabel!
     @IBOutlet weak var artImage: UIImageView!
-    @IBOutlet weak var artArtist: UILabel!
     @IBOutlet weak var answer: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
 
@@ -85,12 +84,6 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func presentFullScreenPaintingVC(_ sender: Any) {
-    }
-    
-    @IBAction func swipeToNextPainting(_ sender: Any) {
-    }
-    
-    @IBAction func swipeToPreviousPainting(_ sender: Any) {
     }
     
 }

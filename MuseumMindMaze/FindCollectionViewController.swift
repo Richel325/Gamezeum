@@ -11,21 +11,16 @@ import AVFoundation
 import AudioToolbox
 
 class FindCollectionViewController: UIViewController {
-    
+   
+    @IBOutlet weak var artArtist: UILabel!
+    @IBOutlet weak var artTitle: UILabel!
     @IBOutlet weak var artImage: UIImageView!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var answer1: UIButton!
     @IBOutlet weak var answer2: UIButton!
     @IBOutlet weak var answer3: UIButton!
     @IBOutlet weak var answer4: UIButton!
-    
-    
-    
-    
-    
-    
-    
-    
+
     var object: ArtObject?
     
     
@@ -33,7 +28,6 @@ class FindCollectionViewController: UIViewController {
     let collectionArray = ["American Art", "Arts of Africa", "Arts of the Americas", "Arts of the Islamic World", "Arts of the Pacific Islands", "Asian Art", "Contemporary Art", "Decorative Arts", "Egyptian, Classical, Ancient Near Eastern Art", "Elizabeth A. Sackler Center for Feminist Art", "European Art", "Libraries and Archives"]
     
    
-    
     //Begin viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,21 +67,11 @@ class FindCollectionViewController: UIViewController {
         }
     }
     
-    //Hide keyboard when user touches outside of keyboard
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
-    
-    //Resign keyboard when "Done" button is pressed
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        answer.resignFirstResponder()
-        return true
-    }
-    
+
     @IBAction func dismissToGallery(_ sender: Any) {
     }
     
+
     
     @IBAction func lookupOnlineReference(_ sender: Any) {
     }
