@@ -12,8 +12,6 @@ import AVFoundation
 class SettingsVC: UIViewController {
     
     
-    @IBOutlet weak var soundsSwitch: UISwitch!
-    
     @IBOutlet weak var musicSwitch: UISwitch!
     
     
@@ -33,10 +31,6 @@ class SettingsVC: UIViewController {
         
     }
     
-    
-    @IBAction func soundOnOff(_ sender: Any) {
-        
-    }
     
     @IBAction func musicOnOff(_ sender: Any) {
         if musicSwitch.isOn {

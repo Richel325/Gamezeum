@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ylB-To-mvK">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -26,7 +26,7 @@
                         <viewControllerLayoutGuide type="bottom" id="H7L-xC-Hx4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="G0z-94-h96">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GAMEZEUM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWF-SW-ROp">
@@ -70,22 +70,22 @@
                         <viewControllerLayoutGuide type="bottom" id="dRq-y8-Pdm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PJH-v7-MtF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="204" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C5J-mP-vQP">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artImageCell" rowHeight="204" id="ecp-5p-0Ry" customClass="ArtImageTableViewCell" customModule="MuseumMindMaze" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="204"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artImageCell" rowHeight="204" id="ecp-5p-0Ry" customClass="ArtImageTableViewCell" customModule="MuseumMindMaze" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="204"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecp-5p-0Ry" id="1lo-zn-Me8">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="203.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="203.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="flm-8D-zJC">
-                                                    <rect key="frame" x="-26" y="-24" width="467" height="250"/>
+                                                    <rect key="frame" x="-26" y="-24" width="428" height="250"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradientview2" translatesAutoresizingMaskIntoConstraints="NO" id="pXC-Zu-ctm" userLabel="Gradient View">
                                                     <rect key="frame" x="-26" y="-24" width="467" height="250"/>
@@ -137,20 +137,36 @@
                         <viewControllerLayoutGuide type="bottom" id="DkT-gW-Sq6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SzC-2V-Jrr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Settings" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLg-mj-x98">
+                                <rect key="frame" x="132" y="20" width="135" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="uwT-hx-DAa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPU-DK-NfO">
+                                <rect key="frame" x="5" y="620" width="40" height="40"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="dismissToGallery:" destination="pk2-Ns-iYd" eventType="touchUpInside" id="e9w-81-ieM"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I33-pV-0nW">
-                                <rect key="frame" x="20" y="497" width="45.666666666666657" height="21"/>
+                                <rect key="frame" x="16" y="54" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhd-up-S0l">
-                                <rect key="frame" x="20" y="631" width="374" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhd-up-S0l" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="16" y="188" width="343" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="svd-G5-Q6W"/>
+                                    <constraint firstAttribute="height" constant="50" id="6B9-ko-NpH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <state key="normal" title="Reset Tutorial">
@@ -158,11 +174,11 @@
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JB9-ZJ-ojH">
-                                <rect key="frame" x="20" y="552" width="374" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JB9-ZJ-ojH" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="16" y="109" width="343" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="ZhC-rT-JQg"/>
+                                    <constraint firstAttribute="height" constant="50" id="aEh-Eb-B3D"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Reset Score">
@@ -173,10 +189,17 @@
                                     <action selector="resetScore:" destination="pk2-Ns-iYd" eventType="touchUpInside" id="Tkn-7N-vA8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BD4-Tt-fJQ">
-                                <rect key="frame" x="0.0" y="198" width="414" height="67"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFX-yM-0oE">
+                                <rect key="frame" x="310" y="49" width="51" height="31"/>
+                                <connections>
+                                    <action selector="musicOnOff:" destination="pk2-Ns-iYd" eventType="valueChanged" id="v4k-Qp-eDT"/>
+                                    <action selector="saveMusicSwitchStateWithSender:" destination="pk2-Ns-iYd" eventType="valueChanged" id="7qH-J4-VpD"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQb-gW-HbU">
+                                <rect key="frame" x="0.0" y="379" width="375" height="67"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="zMZ-yR-0kq"/>
+                                    <constraint firstAttribute="height" constant="67" id="2w5-rk-R46"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="While this application makes use of the Brooklyn Museum API, it is not an official product of the Brooklyn Museum.">
@@ -188,34 +211,14 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brooklynmuseumcom" translatesAutoresizingMaskIntoConstraints="NO" id="GlQ-4w-ht3">
-                                <rect key="frame" x="0.0" y="88" width="414" height="115"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="brooklynmuseumcom" translatesAutoresizingMaskIntoConstraints="NO" id="SzV-aa-HCW">
+                                <rect key="frame" x="0.0" y="269" width="375" height="115"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="115" id="Wvx-6Q-OH0"/>
+                                    <constraint firstAttribute="height" constant="115" id="XLX-tx-o0o"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Settings" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLg-mj-x98">
-                                <rect key="frame" x="132" y="20" width="150" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="QoK-mx-1QC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPU-DK-NfO">
-                                <rect key="frame" x="20" y="20" width="25" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="SkP-EM-y5W"/>
-                                </constraints>
-                                <state key="normal" image="close"/>
-                                <connections>
-                                    <action selector="dismissToGallery:" destination="pk2-Ns-iYd" eventType="touchUpInside" id="e9w-81-ieM"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xO8-ML-iIJ">
-                                <rect key="frame" x="0.0" y="273" width="414" height="148"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GgD-oS-n3g">
+                                <rect key="frame" x="0.0" y="454" width="375" height="166"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Design: 
 John Carimando
@@ -229,36 +232,33 @@ Richel Cuyler
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFX-yM-0oE">
-                                <rect key="frame" x="345" y="492" width="50.999999999999972" height="31"/>
-                                <connections>
-                                    <action selector="musicOnOff:" destination="pk2-Ns-iYd" eventType="valueChanged" id="v4k-Qp-eDT"/>
-                                    <action selector="saveMusicSwitchStateWithSender:" destination="pk2-Ns-iYd" eventType="valueChanged" id="7qH-J4-VpD"/>
-                                </connections>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="I33-pV-0nW" firstAttribute="centerY" secondItem="iFX-yM-0oE" secondAttribute="centerY" id="1Rs-fA-gGy"/>
-                            <constraint firstItem="GlQ-4w-ht3" firstAttribute="top" secondItem="SPU-DK-NfO" secondAttribute="bottom" constant="43" id="5LK-rJ-d6S"/>
-                            <constraint firstItem="SPU-DK-NfO" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leadingMargin" id="8Jl-Qx-SNK"/>
-                            <constraint firstItem="SPU-DK-NfO" firstAttribute="top" secondItem="yLg-mj-x98" secondAttribute="top" id="K7e-6w-N5T"/>
-                            <constraint firstItem="BD4-Tt-fJQ" firstAttribute="top" secondItem="SzC-2V-Jrr" secondAttribute="top" constant="198" id="Ns6-eN-eUj"/>
-                            <constraint firstItem="DkT-gW-Sq6" firstAttribute="top" secondItem="uhd-up-S0l" secondAttribute="bottom" constant="55" id="PKs-ph-PhX"/>
-                            <constraint firstItem="JB9-ZJ-ojH" firstAttribute="trailing" secondItem="uhd-up-S0l" secondAttribute="trailing" id="RhW-Nc-lD4"/>
-                            <constraint firstItem="yLg-mj-x98" firstAttribute="centerX" secondItem="GlQ-4w-ht3" secondAttribute="centerX" id="SBL-ac-ArW"/>
-                            <constraint firstItem="JB9-ZJ-ojH" firstAttribute="top" secondItem="iFX-yM-0oE" secondAttribute="bottom" constant="20" id="YFK-1n-6Mq"/>
-                            <constraint firstItem="GlQ-4w-ht3" firstAttribute="trailing" secondItem="BD4-Tt-fJQ" secondAttribute="trailing" id="ZJD-3P-elV"/>
-                            <constraint firstItem="iFX-yM-0oE" firstAttribute="trailing" secondItem="JB9-ZJ-ojH" secondAttribute="trailing" id="b0q-uu-Rsd"/>
-                            <constraint firstItem="JB9-ZJ-ojH" firstAttribute="leading" secondItem="uhd-up-S0l" secondAttribute="leading" id="eql-9r-enH"/>
-                            <constraint firstItem="SPU-DK-NfO" firstAttribute="top" secondItem="Xzw-kT-Fs7" secondAttribute="bottom" id="fuZ-hZ-vsd"/>
-                            <constraint firstItem="BD4-Tt-fJQ" firstAttribute="centerX" secondItem="JB9-ZJ-ojH" secondAttribute="centerX" id="gdj-h4-KxC"/>
-                            <constraint firstItem="uhd-up-S0l" firstAttribute="top" secondItem="JB9-ZJ-ojH" secondAttribute="bottom" constant="21" id="h9A-Qx-lpA"/>
-                            <constraint firstItem="GlQ-4w-ht3" firstAttribute="leading" secondItem="BD4-Tt-fJQ" secondAttribute="leading" id="jDw-Sd-JG5"/>
-                            <constraint firstItem="I33-pV-0nW" firstAttribute="leading" secondItem="JB9-ZJ-ojH" secondAttribute="leading" id="jZM-cH-svB"/>
-                            <constraint firstAttribute="trailing" secondItem="GlQ-4w-ht3" secondAttribute="trailing" id="kA8-R9-1Cx"/>
-                            <constraint firstItem="GlQ-4w-ht3" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leading" id="ohV-Hp-CJD"/>
-                            <constraint firstItem="yLg-mj-x98" firstAttribute="leading" secondItem="SPU-DK-NfO" secondAttribute="trailing" constant="87" id="orf-Tr-ama"/>
+                            <constraint firstItem="DkT-gW-Sq6" firstAttribute="top" secondItem="SPU-DK-NfO" secondAttribute="bottom" constant="7" id="1hG-bO-LxG"/>
+                            <constraint firstItem="JB9-ZJ-ojH" firstAttribute="leading" secondItem="uhd-up-S0l" secondAttribute="leading" id="2YF-qX-MOV"/>
+                            <constraint firstItem="JB9-ZJ-ojH" firstAttribute="trailing" secondItem="uhd-up-S0l" secondAttribute="trailing" id="46C-ar-8je"/>
+                            <constraint firstItem="SPU-DK-NfO" firstAttribute="top" secondItem="GgD-oS-n3g" secondAttribute="bottom" constant="40" id="82p-OJ-0TI"/>
+                            <constraint firstItem="PQb-gW-HbU" firstAttribute="leading" secondItem="GgD-oS-n3g" secondAttribute="leading" id="9et-QU-FWm"/>
+                            <constraint firstItem="SzV-aa-HCW" firstAttribute="leading" secondItem="PQb-gW-HbU" secondAttribute="leading" id="ASN-27-L2O"/>
+                            <constraint firstItem="uhd-up-S0l" firstAttribute="centerX" secondItem="SzV-aa-HCW" secondAttribute="centerX" id="CUm-5x-euO"/>
+                            <constraint firstItem="SzV-aa-HCW" firstAttribute="top" secondItem="uhd-up-S0l" secondAttribute="bottom" constant="31" id="H43-UG-Ufo"/>
+                            <constraint firstItem="yLg-mj-x98" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leading" constant="132" id="I16-WL-UG0"/>
+                            <constraint firstItem="SzV-aa-HCW" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leading" id="Iey-L4-BwC"/>
+                            <constraint firstItem="yLg-mj-x98" firstAttribute="top" secondItem="Xzw-kT-Fs7" secondAttribute="bottom" id="KgZ-oc-nLs"/>
+                            <constraint firstItem="iFX-yM-0oE" firstAttribute="trailing" secondItem="JB9-ZJ-ojH" secondAttribute="trailing" id="L8E-eN-WL2"/>
+                            <constraint firstItem="JB9-ZJ-ojH" firstAttribute="top" secondItem="iFX-yM-0oE" secondAttribute="bottom" constant="29" id="LTr-5N-NQH"/>
+                            <constraint firstItem="uhd-up-S0l" firstAttribute="leading" secondItem="SPU-DK-NfO" secondAttribute="leading" constant="11" id="MPI-vJ-3IX"/>
+                            <constraint firstItem="iFX-yM-0oE" firstAttribute="top" secondItem="Xzw-kT-Fs7" secondAttribute="bottom" constant="76" id="Pby-UZ-xkp"/>
+                            <constraint firstItem="uhd-up-S0l" firstAttribute="top" secondItem="JB9-ZJ-ojH" secondAttribute="bottom" constant="29" id="ULA-5P-Y4B"/>
+                            <constraint firstAttribute="trailing" secondItem="SzV-aa-HCW" secondAttribute="trailing" id="ceG-II-GaF"/>
+                            <constraint firstItem="I33-pV-0nW" firstAttribute="centerY" secondItem="iFX-yM-0oE" secondAttribute="centerY" id="ed1-CW-zKq"/>
+                            <constraint firstItem="SzV-aa-HCW" firstAttribute="trailing" secondItem="PQb-gW-HbU" secondAttribute="trailing" id="euU-4M-lIg"/>
+                            <constraint firstItem="I33-pV-0nW" firstAttribute="leading" secondItem="JB9-ZJ-ojH" secondAttribute="leading" id="fzA-Rt-5Ag"/>
+                            <constraint firstItem="GgD-oS-n3g" firstAttribute="top" secondItem="SzV-aa-HCW" secondAttribute="bottom" constant="70" id="mdp-MC-Nao"/>
+                            <constraint firstItem="I33-pV-0nW" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leadingMargin" id="sff-JR-J4Y"/>
+                            <constraint firstItem="GgD-oS-n3g" firstAttribute="top" secondItem="PQb-gW-HbU" secondAttribute="bottom" constant="8" symbolic="YES" id="tdx-S3-Df6"/>
+                            <constraint firstItem="PQb-gW-HbU" firstAttribute="trailing" secondItem="GgD-oS-n3g" secondAttribute="trailing" id="uua-Bf-how"/>
                         </constraints>
                     </view>
                     <connections>
@@ -267,7 +267,7 @@ Richel Cuyler
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6h-HJ-RFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1094.2028985507247" y="-3461.413043478261"/>
+            <point key="canvasLocation" x="1240.8" y="-3461.0194902548728"/>
         </scene>
         <!--InstructionViewController-->
         <scene sceneID="4H1-2M-GcQ">
@@ -278,11 +278,11 @@ Richel Cuyler
                         <viewControllerLayoutGuide type="bottom" id="XTU-M7-z1E"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JdR-ti-IkV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oMP-lC-6Tp">
-                                <rect key="frame" x="44" y="116" width="326" height="527"/>
+                                <rect key="frame" x="40" y="116" width="295" height="458"/>
                                 <string key="text">After selecting the "Play" button, begin by clicking the image of the art object you want to select. Scroll down to see more objects, and pull down to refresh the view at the top to get a brand new set of objects to play.
 
 When the object detail page appears, input your answer to the trivia question listed at the top of the page. If your answer is correct, you can choose another art object to keep playing. If your answer is incorrect, you get to keep trying until you get the correct answer. 
@@ -292,7 +292,7 @@ Good luck, and have fun exploring the museum!</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW TO PLAY:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9U-oY-mCZ">
-                                <rect key="frame" x="49" y="70" width="316" height="38"/>
+                                <rect key="frame" x="45" y="70" width="285" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="MS3-lZ-cZo"/>
                                 </constraints>
@@ -315,7 +315,7 @@ Good luck, and have fun exploring the museum!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bG-gr-NmG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-152" y="-3461"/>
+            <point key="canvasLocation" x="264" y="-3461"/>
         </scene>
         <!--SplashScreenViewController-->
         <scene sceneID="OIj-CL-YuT">
@@ -326,11 +326,11 @@ Good luck, and have fun exploring the museum!</string>
                         <viewControllerLayoutGuide type="bottom" id="NsA-V2-0ko"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="679-Mm-UfB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BK-MUS-Watermark" translatesAutoresizingMaskIntoConstraints="NO" id="Ef7-iU-cCy">
-                                <rect key="frame" x="107" y="268" width="200" height="200"/>
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="dE6-xv-VCA"/>
                                     <constraint firstAttribute="width" constant="200" id="gxR-rd-QXX"/>
@@ -361,11 +361,11 @@ Good luck, and have fun exploring the museum!</string>
                         <viewControllerLayoutGuide type="bottom" id="pg7-xh-4Xy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gFI-qJ-kYP" userLabel="superView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8q-fT-wov">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -373,7 +373,7 @@ Good luck, and have fun exploring the museum!</string>
                                 </connections>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veV-W9-wIV" userLabel="DismissButton">
-                                <rect key="frame" x="22.666666666666668" y="669.66666666666663" width="41.666666666666657" height="44.333333333333371"/>
+                                <rect key="frame" x="20.5" y="607" width="37.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="veV-W9-wIV" secondAttribute="height" multiplier="101:106" id="hvA-nh-LjO"/>
                                 </constraints>
@@ -434,109 +434,7 @@ Good luck, and have fun exploring the museum!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgU-y9-iHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3600" y="-2703"/>
-        </scene>
-        <!--ObjectPhotoQuestion-->
-        <scene sceneID="0ss-gx-k2h">
-            <objects>
-                <viewController id="tV4-6m-fmt" userLabel="ObjectPhotoQuestion" customClass="TakePhotoViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="39e-GO-UxD"/>
-                        <viewControllerLayoutGuide type="bottom" id="7g7-ko-eBA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gIz-mf-1XM" userLabel="superView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aBN-Uh-c9s" userLabel="paintingImageView">
-                                <rect key="frame" x="-19" y="-3" width="453" height="352"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="qL6-eG-fBM" appends="YES" id="B4d-Ol-2tI"/>
-                                </connections>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b8y-Oc-JXr">
-                                <rect key="frame" x="19.000000000000004" y="7" width="47.333333333333343" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="r53-Do-C6p">
-                                <rect key="frame" x="19.999999999999996" y="36" width="41.666666666666657" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byt-GR-ykH" userLabel="SettingsButton">
-                                <rect key="frame" x="20" y="287" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="SETTING-Watermark"/>
-                                <connections>
-                                    <action selector="lookupOnlineReference:" destination="tV4-6m-fmt" eventType="touchUpInside" id="gsK-tj-dzf"/>
-                                    <segue destination="pk2-Ns-iYd" kind="presentation" id="JNC-gi-elK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjA-GV-RAn" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="344" y="7" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="BK-MUS-Watermark"/>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Find this object and take its photo." textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lry-XZ-QoZ" userLabel="Question">
-                                <rect key="frame" x="0.0" y="350" width="414" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLB-uI-R0k" userLabel="DismissButton">
-                                <rect key="frame" x="19" y="671" width="41.666666666666657" height="44.333333333333371"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="close"/>
-                                <connections>
-                                    <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="HB7-LY-L86"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="325 PTS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8p-YG-a5S">
-                                <rect key="frame" x="196" y="668" width="198" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZE1-ht-7bt" userLabel="SubmitButton">
-                                <rect key="frame" x="20" y="610" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <state key="normal" title="SUBMIT">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="dismissToGallery:" destination="tV4-6m-fmt" eventType="touchUpInside" id="E0E-tw-h05"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <gestureRecognizers/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Find this object and take its photo:" id="HIb-LY-Kyy"/>
-                    <connections>
-                        <outlet property="paintingArtistLabel" destination="r53-Do-C6p" id="PQi-3C-0us"/>
-                        <outlet property="paintingImageView" destination="aBN-Uh-c9s" id="XAe-nb-Xxu"/>
-                        <outlet property="paintingTitleLabel" destination="b8y-Oc-JXr" id="CJA-4T-YO7"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m2d-Cx-ITZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="qL6-eG-fBM" userLabel="FullPaintingTGR">
-                    <connections>
-                        <action selector="presentFullScreenPaintingVC:" destination="tV4-6m-fmt" id="SyT-W8-2jv"/>
-                    </connections>
-                </tapGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="2298.5507246376815" y="-2703.2608695652175"/>
+            <point key="canvasLocation" x="3277" y="-2703"/>
         </scene>
         <!--CollectionQuestion-->
         <scene sceneID="sWy-zg-n2s">
@@ -547,86 +445,85 @@ Good luck, and have fun exploring the museum!</string>
                         <viewControllerLayoutGuide type="bottom" id="inx-x5-mcQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YJd-ll-NHx" userLabel="superView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QOv-I2-vFn" userLabel="paintingImageView">
-                                <rect key="frame" x="-19" y="-3" width="453" height="352"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QOv-I2-vFn" userLabel="paintingImageView">
+                                <rect key="frame" x="-23" y="-3" width="421" height="352"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="tWT-L4-3Dm" appends="YES" id="WCt-8o-AFV"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="90h-LE-80V">
-                                <rect key="frame" x="19.000000000000004" y="7" width="47.333333333333343" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="90h-LE-80V">
+                                <rect key="frame" x="15" y="7" width="47" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lWa-UZ-QEK">
-                                <rect key="frame" x="19.999999999999996" y="36" width="41.666666666666657" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lWa-UZ-QEK">
+                                <rect key="frame" x="16" y="36" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-dn-CTx" userLabel="SettingsButton">
-                                <rect key="frame" x="7" y="292" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-dn-CTx" userLabel="SettingsButton">
+                                <rect key="frame" x="5" y="290" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="s03-QR-U2U"/>
+                                    <constraint firstAttribute="width" constant="50" id="ysE-kg-Izl"/>
+                                </constraints>
                                 <state key="normal" image="SETTING-Watermark"/>
                                 <connections>
                                     <segue destination="pk2-Ns-iYd" kind="presentation" id="eCI-Rr-RLY"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="What collection does this object belong to?" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shu-y1-NmB" userLabel="Question">
-                                <rect key="frame" x="0.0" y="350" width="414" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What collection does this object belong to?" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shu-y1-NmB" userLabel="Question">
+                                <rect key="frame" x="-2" y="349" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BKc-Rv-zt8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJS-65-5WM" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="358" y="7" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJS-65-5WM" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="320" y="5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="KWa-RP-8Hn"/>
+                                    <constraint firstAttribute="height" constant="50" id="RoW-HP-gB9"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="BK-MUS-Watermark"/>
                                 <connections>
                                     <action selector="lookupOnlineReference:" destination="s1f-hd-btD" eventType="touchUpInside" id="QRF-27-VSe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="D8w-YX-FWy">
-                                <rect key="frame" x="6" y="578" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="D8w-YX-FWy" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="11" y="509" width="175" height="100"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="LXc-zJ-d5O"/>
+                                </constraints>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Elizabeth A. Sackler Center for Feminist Art">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vda-g5-bue">
-                                <rect key="frame" x="208" y="578" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyU-vc-zeS" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="11" y="407" width="175" height="100"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="Art of the Pacific Islands">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyU-vc-zeS">
-                                <rect key="frame" x="6" y="476" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Qlh-0U-R89"/>
+                                    <constraint firstAttribute="width" constant="175" id="aXA-MZ-wC7"/>
+                                </constraints>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Arts of Asia">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TMh-YT-3SB">
-                                <rect key="frame" x="208" y="476" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TMh-YT-3SB" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="191" y="407" width="175" height="100"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
@@ -634,26 +531,73 @@ Good luck, and have fun exploring the museum!</string>
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="325 PTS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGr-dA-1Km">
-                                <rect key="frame" x="208" y="680" width="200" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="325 PTS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGr-dA-1Km">
+                                <rect key="frame" x="45" y="615" width="325" height="50"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imy-su-5EA" userLabel="DismissButton">
-                                <rect key="frame" x="6" y="682" width="42" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imy-su-5EA" userLabel="DismissButton">
+                                <rect key="frame" x="5" y="620" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="SWj-xF-BLg"/>
+                                    <constraint firstAttribute="height" constant="40" id="u4d-Hm-UQm"/>
+                                </constraints>
                                 <state key="normal" image="close"/>
                                 <connections>
                                     <action selector="dismissToGallery:" destination="s1f-hd-btD" eventType="touchUpInside" id="0TF-bt-9VY"/>
                                     <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="8JZ-OD-rhb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vda-g5-bue" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="191" y="509" width="175" height="100"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Art of the Pacific Islands">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="QOv-I2-vFn" firstAttribute="top" secondItem="YJd-ll-NHx" secondAttribute="topMargin" constant="-23" id="0Rz-Q2-wht"/>
+                            <constraint firstItem="TJS-65-5WM" firstAttribute="top" secondItem="YJd-ll-NHx" secondAttribute="topMargin" constant="-15" id="5GR-cA-cYj"/>
+                            <constraint firstItem="NyU-vc-zeS" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-5" id="7pv-2f-br2"/>
+                            <constraint firstItem="TMh-YT-3SB" firstAttribute="leading" secondItem="Vda-g5-bue" secondAttribute="leading" id="8Dt-Sv-xB8"/>
+                            <constraint firstItem="lWa-UZ-QEK" firstAttribute="top" secondItem="90h-LE-80V" secondAttribute="bottom" constant="1" id="D2O-56-E40"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TJS-65-5WM" secondAttribute="trailing" constant="-11" id="E7V-3y-IFY"/>
+                            <constraint firstItem="D8w-YX-FWy" firstAttribute="top" secondItem="Vda-g5-bue" secondAttribute="top" id="EI7-BC-Gp7"/>
+                            <constraint firstItem="D8w-YX-FWy" firstAttribute="top" secondItem="NyU-vc-zeS" secondAttribute="bottom" constant="2" id="FU2-cR-pR1"/>
+                            <constraint firstItem="shu-y1-NmB" firstAttribute="top" secondItem="QOv-I2-vFn" secondAttribute="bottom" id="FeC-UZ-HAR"/>
+                            <constraint firstItem="NyU-vc-zeS" firstAttribute="trailing" secondItem="D8w-YX-FWy" secondAttribute="trailing" id="GnI-00-F65"/>
+                            <constraint firstItem="inx-x5-mcQ" firstAttribute="top" secondItem="TGr-dA-1Km" secondAttribute="bottom" constant="2" id="IdD-lS-fzH"/>
+                            <constraint firstItem="NyU-vc-zeS" firstAttribute="bottom" secondItem="TMh-YT-3SB" secondAttribute="bottom" id="Npn-kv-9y2"/>
+                            <constraint firstItem="shu-y1-NmB" firstAttribute="top" secondItem="XYF-dn-CTx" secondAttribute="bottom" constant="9" id="Pxv-q2-DT5"/>
+                            <constraint firstItem="lWa-UZ-QEK" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" id="R3J-TQ-VNO"/>
+                            <constraint firstItem="Imy-su-5EA" firstAttribute="centerY" secondItem="TGr-dA-1Km" secondAttribute="centerY" id="RRv-nY-to5"/>
+                            <constraint firstItem="TMh-YT-3SB" firstAttribute="trailing" secondItem="Vda-g5-bue" secondAttribute="trailing" id="V9P-Cs-7DR"/>
+                            <constraint firstItem="NyU-vc-zeS" firstAttribute="leading" secondItem="D8w-YX-FWy" secondAttribute="leading" id="VVw-oF-qvb"/>
+                            <constraint firstItem="D8w-YX-FWy" firstAttribute="bottom" secondItem="Vda-g5-bue" secondAttribute="bottom" id="WPg-DZ-yAk"/>
+                            <constraint firstItem="90h-LE-80V" firstAttribute="top" secondItem="YJd-ll-NHx" secondAttribute="topMargin" constant="-13" id="Wai-pv-RiY"/>
+                            <constraint firstItem="90h-LE-80V" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-1" id="WmS-Gw-U9Q"/>
+                            <constraint firstItem="TGr-dA-1Km" firstAttribute="top" secondItem="D8w-YX-FWy" secondAttribute="bottom" constant="6" id="XYf-UW-g0D"/>
+                            <constraint firstItem="QOv-I2-vFn" firstAttribute="centerX" secondItem="YJd-ll-NHx" secondAttribute="centerX" id="ae9-Fz-vu6"/>
+                            <constraint firstItem="QOv-I2-vFn" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-39" id="c84-TO-vlV"/>
+                            <constraint firstItem="NyU-vc-zeS" firstAttribute="top" secondItem="TMh-YT-3SB" secondAttribute="top" id="djO-9i-nxv"/>
+                            <constraint firstItem="inx-x5-mcQ" firstAttribute="top" secondItem="Imy-su-5EA" secondAttribute="bottom" constant="7" id="hN3-bV-uuY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="shu-y1-NmB" secondAttribute="trailing" constant="-14" id="i3I-oK-Ql2"/>
+                            <constraint firstItem="XYF-dn-CTx" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-11" id="jDP-G7-HE3"/>
+                            <constraint firstItem="XYF-dn-CTx" firstAttribute="leading" secondItem="Imy-su-5EA" secondAttribute="leading" id="l2h-PH-49Q"/>
+                            <constraint firstItem="TGr-dA-1Km" firstAttribute="leading" secondItem="Imy-su-5EA" secondAttribute="trailing" id="ny9-FN-GiK"/>
+                            <constraint firstItem="TMh-YT-3SB" firstAttribute="leading" secondItem="NyU-vc-zeS" secondAttribute="trailing" constant="5" id="orf-pE-Pdm"/>
+                            <constraint firstItem="shu-y1-NmB" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-18" id="qX6-He-N9b"/>
+                            <constraint firstItem="TJS-65-5WM" firstAttribute="trailing" secondItem="TGr-dA-1Km" secondAttribute="trailing" id="yI3-BN-Bgf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TMh-YT-3SB" secondAttribute="trailing" constant="-7" id="z9H-Pd-H07"/>
+                            <constraint firstItem="NyU-vc-zeS" firstAttribute="top" secondItem="shu-y1-NmB" secondAttribute="bottom" constant="8" symbolic="YES" id="zrJ-mh-vxg"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="answer1" destination="NyU-vc-zeS" id="1kl-Yb-YeD"/>
@@ -673,7 +617,7 @@ Good luck, and have fun exploring the museum!</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2298.5507246376815" y="-3461.413043478261"/>
+            <point key="canvasLocation" x="2298.4000000000001" y="-3098.5007496251878"/>
         </scene>
         <!--MaterialsQuestion-->
         <scene sceneID="Vul-UM-fcr">
@@ -684,70 +628,71 @@ Good luck, and have fun exploring the museum!</string>
                         <viewControllerLayoutGuide type="bottom" id="jIk-am-LYw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V7U-2b-JnQ" userLabel="superView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iAo-5G-Q5d" userLabel="paintingImageView">
-                                <rect key="frame" x="-19" y="-3" width="453" height="352"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iAo-5G-Q5d" userLabel="paintingImageView">
+                                <rect key="frame" x="-23" y="-3" width="420" height="352"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="352" id="OPG-Mg-DFP"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="mbV-Hn-5ML" appends="YES" id="86e-QN-3lT"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VCn-rh-Enx">
-                                <rect key="frame" x="19.000000000000004" y="7" width="47.333333333333343" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VCn-rh-Enx">
+                                <rect key="frame" x="15" y="7" width="47" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HqJ-BY-mI3">
-                                <rect key="frame" x="19.999999999999996" y="36" width="41.666666666666657" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HqJ-BY-mI3">
+                                <rect key="frame" x="16" y="36" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47E-ja-ICJ" userLabel="SettingsButton">
-                                <rect key="frame" x="20" y="287" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47E-ja-ICJ" userLabel="SettingsButton">
+                                <rect key="frame" x="5" y="290" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EKD-h9-EJe"/>
+                                    <constraint firstAttribute="width" constant="50" id="mTP-97-NSt"/>
+                                </constraints>
                                 <state key="normal" image="SETTING-Watermark"/>
                                 <connections>
                                     <action selector="lookupOnlineReference:" destination="DrB-iI-GJ6" eventType="touchUpInside" id="l9c-p3-QNf"/>
                                     <segue destination="pk2-Ns-iYd" kind="presentation" id="XYc-Tw-rYz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pk2-gh-iPE" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="344" y="7" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pk2-gh-iPE" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="320" y="5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="CE2-i4-tyo"/>
+                                    <constraint firstAttribute="height" constant="50" id="uJd-rI-HBb"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="BK-MUS-Watermark"/>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="What materials is this object made of?" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q3J-Cr-FPm" userLabel="Question">
-                                <rect key="frame" x="0.0" y="350" width="414" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What materials is this object made of?" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q3J-Cr-FPm" userLabel="Question">
+                                <rect key="frame" x="0.0" y="350" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kkg-zf-tXt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8u8-7m-fLY" userLabel="DismissButton">
-                                <rect key="frame" x="20" y="674" width="42" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="close"/>
-                                <connections>
-                                    <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="ixG-i5-T0y"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="325 PTS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxd-no-qlQ">
-                                <rect key="frame" x="177" y="675" width="229" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="325 PTS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxd-no-qlQ">
+                                <rect key="frame" x="45" y="615" width="325" height="50"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHH-Dm-jl4" userLabel="SubmitButton">
-                                <rect key="frame" x="20" y="617" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHH-Dm-jl4" userLabel="SubmitButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="16" y="541" width="344" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EVf-bl-g3p"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="SUBMIT">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -757,17 +702,55 @@ Good luck, and have fun exploring the museum!</string>
                                     <action selector="submitAnswer:" destination="DrB-iI-GJ6" eventType="touchUpInside" id="LGA-70-tTh"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JiY-kc-7yl">
-                                <rect key="frame" x="20" y="408" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JiY-kc-7yl">
+                                <rect key="frame" x="16" y="400" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8u8-7m-fLY" userLabel="DismissButton">
+                                <rect key="frame" x="5" y="620" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h6b-HN-vpb"/>
+                                    <constraint firstAttribute="width" constant="40" id="zxK-MA-DaY"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="ixG-i5-T0y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="HqJ-BY-mI3" firstAttribute="leading" secondItem="V7U-2b-JnQ" secondAttribute="leadingMargin" id="5Pv-aa-2XX"/>
+                            <constraint firstItem="47E-ja-ICJ" firstAttribute="leading" secondItem="V7U-2b-JnQ" secondAttribute="leadingMargin" constant="-11" id="6WB-5C-bpY"/>
+                            <constraint firstItem="Q3J-Cr-FPm" firstAttribute="leading" secondItem="V7U-2b-JnQ" secondAttribute="leading" id="95M-01-El9"/>
+                            <constraint firstItem="Q3J-Cr-FPm" firstAttribute="top" secondItem="47E-ja-ICJ" secondAttribute="bottom" constant="10" id="Ak0-Va-BbI"/>
+                            <constraint firstItem="iAo-5G-Q5d" firstAttribute="top" secondItem="V7U-2b-JnQ" secondAttribute="topMargin" constant="-23" id="Cxl-vU-gOo"/>
+                            <constraint firstItem="Q3J-Cr-FPm" firstAttribute="top" secondItem="iAo-5G-Q5d" secondAttribute="bottom" constant="1" id="DHk-NG-gvz"/>
+                            <constraint firstItem="Q3J-Cr-FPm" firstAttribute="centerX" secondItem="JiY-kc-7yl" secondAttribute="centerX" id="F2A-mK-TQQ"/>
+                            <constraint firstItem="jIk-am-LYw" firstAttribute="top" secondItem="Rxd-no-qlQ" secondAttribute="bottom" constant="2" id="H2L-mM-YBO"/>
+                            <constraint firstItem="Rxd-no-qlQ" firstAttribute="top" secondItem="cHH-Dm-jl4" secondAttribute="bottom" constant="24" id="NcH-ea-Pbc"/>
+                            <constraint firstItem="8u8-7m-fLY" firstAttribute="centerY" secondItem="Rxd-no-qlQ" secondAttribute="centerY" id="Ouo-BW-mN1"/>
+                            <constraint firstItem="VCn-rh-Enx" firstAttribute="leading" secondItem="V7U-2b-JnQ" secondAttribute="leadingMargin" constant="-1" id="PXz-Gu-GCC"/>
+                            <constraint firstItem="jIk-am-LYw" firstAttribute="top" secondItem="8u8-7m-fLY" secondAttribute="bottom" constant="7" id="Pgm-X4-cFL"/>
+                            <constraint firstItem="HqJ-BY-mI3" firstAttribute="leading" secondItem="JiY-kc-7yl" secondAttribute="leading" id="SYG-3w-3tg"/>
+                            <constraint firstItem="pk2-gh-iPE" firstAttribute="top" secondItem="V7U-2b-JnQ" secondAttribute="topMargin" constant="-15" id="VVD-YG-gLf"/>
+                            <constraint firstItem="JiY-kc-7yl" firstAttribute="centerX" secondItem="cHH-Dm-jl4" secondAttribute="centerX" id="YUj-rL-e1v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pk2-gh-iPE" secondAttribute="trailing" constant="-11" id="aDl-aP-YQC"/>
+                            <constraint firstItem="pk2-gh-iPE" firstAttribute="trailing" secondItem="Rxd-no-qlQ" secondAttribute="trailing" id="b5A-WU-Ml6"/>
+                            <constraint firstAttribute="trailing" secondItem="Q3J-Cr-FPm" secondAttribute="trailing" id="e9P-78-gRJ"/>
+                            <constraint firstItem="JiY-kc-7yl" firstAttribute="top" secondItem="Q3J-Cr-FPm" secondAttribute="bottom" id="f4Z-AH-tIu"/>
+                            <constraint firstItem="47E-ja-ICJ" firstAttribute="leading" secondItem="8u8-7m-fLY" secondAttribute="leading" id="hul-Es-IzB"/>
+                            <constraint firstItem="HqJ-BY-mI3" firstAttribute="top" secondItem="VCn-rh-Enx" secondAttribute="bottom" constant="1" id="jBl-RI-y8f"/>
+                            <constraint firstItem="Rxd-no-qlQ" firstAttribute="leading" secondItem="8u8-7m-fLY" secondAttribute="trailing" id="l5U-V1-egq"/>
+                            <constraint firstItem="iAo-5G-Q5d" firstAttribute="leading" secondItem="V7U-2b-JnQ" secondAttribute="leadingMargin" constant="-39" id="pAh-nj-Yml"/>
+                            <constraint firstItem="JiY-kc-7yl" firstAttribute="leading" secondItem="cHH-Dm-jl4" secondAttribute="leading" id="qPs-7h-kA7"/>
+                            <constraint firstItem="VCn-rh-Enx" firstAttribute="top" secondItem="V7U-2b-JnQ" secondAttribute="topMargin" constant="-13" id="ubY-cQ-i09"/>
+                            <constraint firstItem="iAo-5G-Q5d" firstAttribute="centerX" secondItem="Q3J-Cr-FPm" secondAttribute="centerX" id="zVx-i1-28Z"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Find this object and take its photo:" id="FND-NV-fA9"/>
                     <connections>
@@ -775,8 +758,6 @@ Good luck, and have fun exploring the museum!</string>
                         <outlet property="artArtist" destination="HqJ-BY-mI3" id="tYb-uw-sf2"/>
                         <outlet property="artImage" destination="iAo-5G-Q5d" id="FBZ-0F-wBK"/>
                         <outlet property="artTitle" destination="VCn-rh-Enx" id="13e-ph-Hpl"/>
-                        <outlet property="paintingArtistLabel" destination="HqJ-BY-mI3" id="lcL-d7-gIM"/>
-                        <outlet property="paintingTitleLabel" destination="VCn-rh-Enx" id="SED-he-Gai"/>
                         <outlet property="scoreLabel" destination="Rxd-no-qlQ" id="yj2-Yx-7xG"/>
                     </connections>
                 </viewController>
@@ -787,7 +768,7 @@ Good luck, and have fun exploring the museum!</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2298.5507246376815" y="-1856.2500000000002"/>
+            <point key="canvasLocation" x="2299" y="-2398"/>
         </scene>
     </scenes>
     <resources>
@@ -798,6 +779,6 @@ Good luck, and have fun exploring the museum!</string>
         <image name="gradientview2" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JNC-gi-elK"/>
+        <segue reference="eCI-Rr-RLY"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -17,7 +17,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var artImage: UIImageView!
     @IBOutlet weak var answer: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
-
+    
     
     
     var object: ArtObject?
@@ -25,9 +25,10 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.answer.delegate = self
-            
-        artArtist.text = object?.artist?.name ?? "Artist Unknown"
+        
+        
         if let artObjectImageURLString = object?.primaryImageURLString {
+            artArtist.text = object?.artist?.name ?? "Artist Unknown"
             artImage.downLoadImage(from: artObjectImageURLString)
             artTitle?.text = object?.title
             scoreLabel.text? = String(UserDefaults.standard.score)

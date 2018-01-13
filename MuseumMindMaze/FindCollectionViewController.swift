@@ -34,7 +34,9 @@ class FindCollectionViewController: UIViewController {
         //self.answer.delegate = self
         
         if let artObjectImageURLString = object?.primaryImageURLString {
+            artArtist.text = object?.artist?.name ?? "Artist Unknown"
             artImage.downLoadImage(from: artObjectImageURLString)
+            artTitle?.text = object?.title
             scoreLabel.text? = String(UserDefaults.standard.score)
             APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
                 self.object = self.object

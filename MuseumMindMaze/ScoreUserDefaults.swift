@@ -15,17 +15,11 @@ extension UserDefaults {
         set { UserDefaults.standard.set(newValue, forKey: UserDefaults.scoreID) }
     }
     
-    //userdefaults for music and sound effects
+    //userdefaults for music
     fileprivate static let musicStatus = "musicStatus"
     var music : Bool {
         get { return UserDefaults.standard.bool(forKey: "musicStatus") }
         set { UserDefaults.standard.set(bool, forKey: "musicStatus") }
-    }
-    
-    fileprivate static let soundStatus = "soundStatus"
-    var sound : Bool {
-        get { return UserDefaults.standard.bool(forKey: "soundStatus") }
-        set { UserDefaults.standard.set(bool, forKey: "soundStatus") }
     }
     
 }
