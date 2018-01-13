@@ -77,6 +77,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func dismissToGallery(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     

@@ -69,6 +69,7 @@ class FindCollectionViewController: UIViewController {
     
 
     @IBAction func dismissToGallery(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 
