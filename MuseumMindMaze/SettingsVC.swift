@@ -20,7 +20,8 @@ class SettingsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //UserDefaults.standard.s
+        musicSwitch.addTarget(self, action: #selector(musicOnOff(_:)), for: UIControlEvents.valueChanged)
+        //UserDefaults.standard.music
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Fmaj", ofType: "mp3")!))
         }
@@ -33,12 +34,18 @@ class SettingsVC: UIViewController {
     
     
     @IBAction func musicOnOff(_ sender: Any) {
-        if musicSwitch.isOn {
-            audioPlayer.play()
-            audioPlayer.numberOfLoops = -1
-        } else {
-            audioPlayer.stop()
+        
+        var myMusicSwitch : Bool = true // game starts with switch on so music feature is clear
+        
+        if musicSwitch.isOn == true { // when user turns or when it is turned on at game start, set the value to `true`
+            myMusicSwitch = true
         }
+        else { // else set the value to 'false'
+            myMusicSwitch = false
+        }
+        
+        // finally set the value to user default like this
+        UserDefaults.standard.set(myMusicSwitch, forKey: "musicSwitch")
     }
     
     

@@ -15,7 +15,6 @@
 		0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */; };
 		0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */; };
 		0CB67FA11FDA4B640072E039 /* FullScreenObjectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB67FA01FDA4B640072E039 /* FullScreenObjectImageViewController.swift */; };
-		0CB67FA51FDA93260072E039 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB67FA41FDA93260072E039 /* TakePhotoViewController.swift */; };
 		0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC306211E3F969100790A85 /* AppDelegate.swift */; };
 		0CC306271E3F969100790A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306251E3F969100790A85 /* Main.storyboard */; };
 		0CC306291E3F969100790A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306281E3F969100790A85 /* Assets.xcassets */; };
@@ -40,7 +39,6 @@
 		0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		0CB67FA01FDA4B640072E039 /* FullScreenObjectImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenObjectImageViewController.swift; sourceTree = "<group>"; };
-		0CB67FA41FDA93260072E039 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
 		0CC3061E1E3F969100790A85 /* MuseumMindMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumMindMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC306211E3F969100790A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MuseumMindMaze/AppDelegate.swift; sourceTree = "<group>"; };
 		0CC306261E3F969100790A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 			children = (
 				0CF942B11E4D8B1600E3F563 /* Cells */,
 				0CB67FA01FDA4B640072E039 /* FullScreenObjectImageViewController.swift */,
-				0CB67FA41FDA93260072E039 /* TakePhotoViewController.swift */,
 				0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */,
 				0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */,
 				0C73E0871FEA36F4006E1FAA /* SettingsVC.swift */,
@@ -261,7 +258,6 @@
 				0C0E4F681E6D632A0038A17C /* SplashScreenViewController.swift in Sources */,
 				0CB67FA11FDA4B640072E039 /* FullScreenObjectImageViewController.swift in Sources */,
 				0C73E0881FEA36F4006E1FAA /* SettingsVC.swift in Sources */,
-				0CB67FA51FDA93260072E039 /* TakePhotoViewController.swift in Sources */,
 				0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */,
 				0CF942CB1E51837000E3F563 /* CustomButton.swift in Sources */,
 				0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */,
