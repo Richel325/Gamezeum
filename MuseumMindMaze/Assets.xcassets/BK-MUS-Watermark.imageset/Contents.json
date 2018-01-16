@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "BK-MUS-Watermark.png",
+      "filename" : "muse_logo.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "BK-MUS-Watermark.png",
       "scale" : "2x"
     },
     {

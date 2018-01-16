@@ -28,7 +28,6 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
         
         
         if let artObjectImageURLString = object?.primaryImageURLString {
-            artArtist.text = object?.artist?.name ?? "Artist Unknown"
             artImage.downLoadImage(from: artObjectImageURLString)
             artTitle?.text = object?.title
             scoreLabel.text? = String(UserDefaults.standard.score)
@@ -83,7 +82,9 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func lookupOnlineReference(_ sender: Any) {
+        application.open(URL(string: (object?.ID)!)!, options: [:], completionHandler:nil)
     }
+    
     
     @IBAction func presentFullScreenPaintingVC(_ sender: Any) {
     }

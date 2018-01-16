@@ -34,7 +34,6 @@ class FindCollectionViewController: UIViewController {
         //self.answer.delegate = self
         
         if let artObjectImageURLString = object?.primaryImageURLString {
-            artArtist.text = object?.artist?.name ?? "Artist Unknown"
             artImage.downLoadImage(from: artObjectImageURLString)
             artTitle?.text = object?.title
             scoreLabel.text? = String(UserDefaults.standard.score)
@@ -46,9 +45,7 @@ class FindCollectionViewController: UIViewController {
     
     
     @IBAction func submitAnswer(_ sender: UIButton) {
-        if let userInput =
-            
-        answer1.currentTitle?.lowercased(), let actualAnswer = object?.collection?.name?.lowercased() {
+        if let userInput = answer1.currentTitle?.lowercased(), let actualAnswer = object?.collection?.name?.lowercased() {
             if actualAnswer.contains(userInput) {// ALERT MESSAGES: For right and wrong answers
                 AudioServicesPlayAlertSound(1325)
                 UserDefaults.standard.score += 10

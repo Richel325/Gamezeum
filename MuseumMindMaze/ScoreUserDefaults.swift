@@ -16,10 +16,10 @@ extension UserDefaults {
     }
     
     //userdefaults for music
-    fileprivate static let musicStatus = "musicStatus"
+    fileprivate static let musicSwitch = "musicSwitch"
     var music : Bool {
-        get { return UserDefaults.standard.bool(forKey: "musicStatus") }
-        set { UserDefaults.standard.set(bool, forKey: "musicStatus") }
+        get { return UserDefaults.standard.bool(forKey: "musicSwitch") }
+        set { UserDefaults.standard.set(bool, forKey: "musicSwitch") }
     }
     
 }

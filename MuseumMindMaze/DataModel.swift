@@ -11,9 +11,13 @@ import UIKit
 
 var objects = [ArtObject]()
 
+// MARK: - GLOBAL VARIABLES ------------------------
+let application = UIApplication.shared
 
+
+//MARK: - DATA MODEL -------------------------
 class ArtObject { //condensed art object listing including artist, didactic labels, and collection
-    var ID: Int?
+    var ID: String?
     var title: String?
     var object_date: String?
     var medium: String?
@@ -24,7 +28,7 @@ class ArtObject { //condensed art object listing including artist, didactic labe
     var label: Label?
     
     init(jsonObject : [String : AnyObject]?) {
-        self.ID = jsonObject?["id"] as? Int
+        self.ID = jsonObject?["id"] as? String
         self.title = jsonObject?["title"] as? String
         self.object_date = jsonObject?["object_date"] as? String
         self.medium = jsonObject?["medium"] as? String
@@ -94,12 +98,12 @@ class Artist {
 
 
 class Collection {
-    var ID: Int?
+    var ID: String?
     var name: String?
     var folder: String?
     
     init(jsonObject : [String : AnyObject]?) {
-        self.ID = jsonObject?["id"] as? Int
+        self.ID = jsonObject?["id"] as? String
         self.name = jsonObject?["name"] as? String
         self.folder = jsonObject?["folder"] as? String
     }
