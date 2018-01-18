@@ -12,7 +12,6 @@ import AudioToolbox
 
 class MediumViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var artArtist: UILabel!
     @IBOutlet weak var artTitle: UILabel!
     @IBOutlet weak var artImage: UIImageView!
     @IBOutlet weak var answer: UITextField!
@@ -82,7 +81,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func lookupOnlineReference(_ sender: Any) {
-        application.open(URL(string: (object?.ID)!)!, options: [:], completionHandler:nil)
+       print(application.open(URL(string: (object?.ID)!)!, options: [:], completionHandler: nil))
     }
     
     
