@@ -9,8 +9,9 @@
 import UIKit
 import AVFoundation
 import AudioToolbox
+import SafariServices
 
-class MediumViewController: UIViewController, UITextFieldDelegate {
+class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewControllerDelegate {
     
     @IBOutlet weak var artTitle: UILabel!
     @IBOutlet weak var artImage: UIImageView!
@@ -20,6 +21,8 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
     
     
     var object: ArtObject?
+    var objectID: Int?
+    var museumURL : String = "https://www.brooklynmuseum.org/opencollection/objects/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +33,13 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
             artImage.downLoadImage(from: artObjectImageURLString)
             artTitle?.text = object?.title
             scoreLabel.text? = String(UserDefaults.standard.score)
+            objectID? = object!.id!
             APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
                 self.object = self.object
             })
         }
     }
+    
     
     
     @IBAction func submitAnswer(_ sender: UIButton) {
@@ -79,11 +84,13 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
-    
     @IBAction func lookupOnlineReference(_ sender: Any) {
-       print(application.open(URL(string: (object?.ID)!)!, options: [:], completionHandler: nil))
+        let url = URL(string: "\(museumURL)\(object!.id!)")
+        let svc = SFSafariViewController(url: url!)
+                self.present(svc, animated: true, completion: nil)
+        print(url!)
     }
-    
+
     
     @IBAction func presentFullScreenPaintingVC(_ sender: Any) {
     }

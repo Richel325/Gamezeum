@@ -15,21 +15,8 @@ class SettingsVC: UIViewController {
     @IBOutlet weak var musicSwitch: UISwitch!
     
     
-    var audioPlayer = AVAudioPlayer()
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //UserDefaults.standard.music
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Fmaj", ofType: "mp3")!))
-        }
-        catch {
-            print(error)
-        }
-        musicSwitch.addTarget(self, action: #selector(musicOnOff(_:)), for: UIControlEvents.valueChanged)
-        
     }
     
     

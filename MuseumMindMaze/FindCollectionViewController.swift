@@ -9,9 +9,10 @@
 import UIKit
 import AVFoundation
 import AudioToolbox
+import SafariServices
 
 
-class FindCollectionViewController: UIViewController {
+class FindCollectionViewController: UIViewController, SFSafariViewControllerDelegate {
     
     @IBOutlet weak var artTitle: UILabel!
     @IBOutlet weak var artImage: UIImageView!
@@ -22,7 +23,8 @@ class FindCollectionViewController: UIViewController {
     @IBOutlet weak var answer4: UIButton!
     
     var object: ArtObject?
-    
+    var objectID: Int?
+    var museumURL : String = "https://www.brooklynmuseum.org/opencollection/objects/"
     
     //Collection Array for Button Answers
     var collectionArray = ["American Art", "Arts of Africa", "Arts of the Americas", "Arts of the Islamic World", "Arts of the Pacific Islands", "Asian Art", "Contemporary Art", "Decorative Arts", "Egyptian, Classical, Ancient Near Eastern Art", "Elizabeth A. Sackler Center for Feminist Art", "European Art", "Libraries and Archives"]
@@ -38,25 +40,21 @@ class FindCollectionViewController: UIViewController {
             artImage.downLoadImage(from: artObjectImageURLString)
             artTitle?.text = object?.title
             scoreLabel.text? = String(UserDefaults.standard.score)
+            objectID? = object!.id!
             APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
                 self.object = self.object
             })
         }
         
+        //populate buttons with random string from array of museum collections
         let buttons = [answer1, answer2, answer3, answer4]
         
         for button in buttons {
             let index = Int(arc4random_uniform(UInt32(collectionArray.count)))
             button!.setTitle(collectionArray[index], for: .normal)
-            //            print(collectionArray[index])
             collectionArray.remove(at: index)
             }
-            
-            
-            print("Answer1 title: \(String(describing: answer1.title(for: .normal)))")
-            print("Answer2 title: \(String(describing: answer2.title(for: .normal)))")
-            print("Answer3 title: \(String(describing: answer3.title(for: .normal)))")
-            print("Answer4 title: \(String(describing: answer4.title(for: .normal)))")
+        //TODO: make sure correct answer is always randomly assigned to one of four buttons
         }
         
         
@@ -163,6 +161,10 @@ class FindCollectionViewController: UIViewController {
         
         
         @IBAction func lookupOnlineReference(_ sender: Any) {
+            let url = URL(string: "\(museumURL)\(object!.id!)")
+            let svc = SFSafariViewController(url: url!)
+            self.present(svc, animated: true, completion: nil)
+            print(url!)
         }
         
         @IBAction func presentFullScreenPaintingVC(_ sender: Any) {

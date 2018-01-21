@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
 
 
 class GameIntroViewController: UIViewController {
     
+    var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Fugue#1_RichelCuyler_2005", ofType: "mp3")!))
+        }
+        catch {
+            print(error)
+        }
     }
     
     @IBAction func checkAction(_ sender: Any) {
