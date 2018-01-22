@@ -20,6 +20,8 @@
 		0CC306271E3F969100790A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306251E3F969100790A85 /* Main.storyboard */; };
 		0CC306291E3F969100790A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306281E3F969100790A85 /* Assets.xcassets */; };
 		0CC3062C1E3F969100790A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC3062A1E3F969100790A85 /* LaunchScreen.storyboard */; };
+		0CF8C6922015AC1A00B07F89 /* SegueToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF8C6912015AC1A00B07F89 /* SegueToLeft.swift */; };
+		0CF8C6962015BCA600B07F89 /* CustomSpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF8C6952015BCA600B07F89 /* CustomSpinnerViewController.swift */; };
 		0CF942B41E4D8B5700E3F563 /* MediumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */; };
 		0CF942B61E4D8B7700E3F563 /* FindCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */; };
 		0CF942C01E4F76CA00E3F563 /* QuestionVCEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942BF1E4F76CA00E3F563 /* QuestionVCEnum.swift */; };
@@ -46,6 +48,8 @@
 		0CC306281E3F969100790A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CC3062B1E3F969100790A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CC3062D1E3F969100790A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CF8C6912015AC1A00B07F89 /* SegueToLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueToLeft.swift; sourceTree = "<group>"; };
+		0CF8C6952015BCA600B07F89 /* CustomSpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpinnerViewController.swift; sourceTree = "<group>"; };
 		0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumViewController.swift; sourceTree = "<group>"; };
 		0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindCollectionViewController.swift; sourceTree = "<group>"; };
 		0CF942BF1E4F76CA00E3F563 /* QuestionVCEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionVCEnum.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 				0CC306251E3F969100790A85 /* Main.storyboard */,
 				0CC3062A1E3F969100790A85 /* LaunchScreen.storyboard */,
 				0CF942CA1E51837000E3F563 /* CustomButton.swift */,
+				0CF8C6912015AC1A00B07F89 /* SegueToLeft.swift */,
+				0CF8C6952015BCA600B07F89 /* CustomSpinnerViewController.swift */,
 				0CC306211E3F969100790A85 /* AppDelegate.swift */,
 			);
 			name = UI;
@@ -255,12 +261,14 @@
 				0CF942C21E5136EA00E3F563 /* ArtImageViewController.swift in Sources */,
 				0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */,
 				0CF942C41E51429E00E3F563 /* ArtImageTableViewCell.swift in Sources */,
+				0CF8C6922015AC1A00B07F89 /* SegueToLeft.swift in Sources */,
 				0C0E4F681E6D632A0038A17C /* SplashScreenViewController.swift in Sources */,
 				0CB67FA11FDA4B640072E039 /* FullScreenObjectImageViewController.swift in Sources */,
 				0C73E0881FEA36F4006E1FAA /* SettingsVC.swift in Sources */,
 				0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */,
 				0CF942CB1E51837000E3F563 /* CustomButton.swift in Sources */,
 				0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */,
+				0CF8C6962015BCA600B07F89 /* CustomSpinnerViewController.swift in Sources */,
 				0CF942C61E516EE900E3F563 /* GameIntroViewController.swift in Sources */,
 				0CF942B41E4D8B5700E3F563 /* MediumViewController.swift in Sources */,
 				0C82ADD31E53F14800F12A97 /* ScoreUserDefaults.swift in Sources */,

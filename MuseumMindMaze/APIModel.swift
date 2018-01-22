@@ -16,7 +16,7 @@ class APIClient{
     
     static func getData(onViewOnly: Bool = false, completion: @escaping ([ArtObject]?) -> ()) {
         DispatchQueue.global(qos: .background).async{
-            let randomNumber: Int = Int(arc4random_uniform(UInt32(92290-35)))
+            let randomNumber: Int = Int(arc4random_uniform(UInt32(92290-35))) //TO DO: how many objects are there? Is this correct?
             let endpoint = "https://www.brooklynmuseum.org/api/v2/object?&has_images=1&offset=\(randomNumber)"
             //commented out for on view only works; use for new picture question //on_view_only=\(onViewOnly ? 1 : 0)&has_images=1"
             var url = URLRequest(url: URL(string: endpoint)!)

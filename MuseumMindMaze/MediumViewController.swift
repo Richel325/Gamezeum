@@ -21,7 +21,6 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
     
     
     var object: ArtObject?
-    var objectID: Int?
     var museumURL : String = "https://www.brooklynmuseum.org/opencollection/objects/"
     
     override func viewDidLoad() {
@@ -33,7 +32,6 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
             artImage.downLoadImage(from: artObjectImageURLString)
             artTitle?.text = object?.title
             scoreLabel.text? = String(UserDefaults.standard.score)
-            objectID? = object!.id!
             APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
                 self.object = self.object
             })

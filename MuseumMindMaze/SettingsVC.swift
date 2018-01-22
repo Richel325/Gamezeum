@@ -20,18 +20,21 @@ class SettingsVC: UIViewController {
     }
     
     
-    @IBAction func musicOnOff(_ sender: Any) {
+    @IBAction func musicOnOff(sender: UISwitch) {
+        print("music switch toggled and value changed")
+        NotificationCenter.default.post(name: NSNotification.Name("musicOnOffSwitchToggled"), object: nil)// let game settings page know that the music switch has been toggled
         
-        var myMusicSwitch : Bool = false // game starts with switch on so music feature is clear
+        var myMusicSwitch : Bool = true // game starts with switch on so music feature is clear
         
         if musicSwitch.isOn == true { // when user turns or when it is turned on at game start, set the value to `true`
             myMusicSwitch = true
         }
         else { // else set the value to 'false'
+            musicSwitch.isOn == false
             myMusicSwitch = false
         }
         
-        // finally set the value to user default like this
+        // set the value to user default like this
         UserDefaults.standard.set(myMusicSwitch, forKey: "musicSwitch")
     }
     

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 var selectedCellIndex: Int?
 fileprivate var refreshControl : UIRefreshControl?
@@ -22,6 +23,9 @@ class ArtImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        self.view.addSubview(UIView().loadingAlertView(view: self.view, widthView: nil, backgroundColor: nil, textColor: .white, message: "Loading something"))
+//        
         reload()
         let aRefreshControl = UIRefreshControl()
         aRefreshControl.addTarget(self, action: #selector(refreshControlAction(sender:)), for: .valueChanged)

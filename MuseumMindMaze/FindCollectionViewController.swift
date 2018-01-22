@@ -23,7 +23,6 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
     @IBOutlet weak var answer4: UIButton!
     
     var object: ArtObject?
-    var objectID: Int?
     var museumURL : String = "https://www.brooklynmuseum.org/opencollection/objects/"
     
     //Collection Array for Button Answers
@@ -40,7 +39,6 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
             artImage.downLoadImage(from: artObjectImageURLString)
             artTitle?.text = object?.title
             scoreLabel.text? = String(UserDefaults.standard.score)
-            objectID? = object!.id!
             APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
                 self.object = self.object
             })
@@ -51,10 +49,14 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
         
         for button in buttons {
             let index = Int(arc4random_uniform(UInt32(collectionArray.count)))
+            button?.setTitle(object?.collection?.name, for: .normal)
+            if object!.collection!.name == collectionArray[index] {
+                collectionArray.remove(at: index)
+            }
             button!.setTitle(collectionArray[index], for: .normal)
             collectionArray.remove(at: index)
             }
-        //TODO: make sure correct answer is always randomly assigned to one of four buttons
+        //TODO: make sure correct answer is always randomly assigned to one of four buttons; a different button each time
         }
         
         
@@ -85,7 +87,8 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
         }
         
         @IBAction func submitAnswer2(_ sender: UIButton) {
-            if let userInput = answer2.currentTitle?.lowercased(), let actualAnswer = object?.collection?.name?.lowercased() {
+            if let userInput = answer2.currentTitle?.lowercased(),
+                let actualAnswer = object?.collection?.name?.lowercased() {
                 if actualAnswer.contains(userInput) {// ALERT MESSAGES: For right and wrong answers
                     AudioServicesPlayAlertSound(1325)
                     UserDefaults.standard.score += 10
