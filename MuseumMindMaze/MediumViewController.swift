@@ -51,7 +51,8 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
                 let alertController2 = UIAlertController(title: "Correct Answer!", message:
                     "You got it right! Click OK to keep playing.", preferredStyle: UIAlertControllerStyle.alert)
                 alertController2.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(alertAction: UIAlertAction) in
-                    let _ = self.navigationController?.popViewController(animated: true)}))
+                    let _ =
+                    self.dismiss(animated: true)}))
                 self.present(alertController2, animated: true, completion: nil)
             } else {
                 AudioServicesPlayAlertSound(1024)

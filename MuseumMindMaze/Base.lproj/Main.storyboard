@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -456,27 +455,38 @@ Good luck, and have fun exploring the museum!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QOv-I2-vFn" userLabel="paintingImageView">
-                                <rect key="frame" x="-23" y="-3" width="421" height="352"/>
+                                <rect key="frame" x="-23" y="0.0" width="422" height="340"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="tWT-L4-3Dm" appends="YES" id="WCt-8o-AFV"/>
                                 </connections>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button-shadow" translatesAutoresizingMaskIntoConstraints="NO" id="J98-6L-ykF">
-                                <rect key="frame" x="0.0" y="415" width="375" height="192"/>
+                                <rect key="frame" x="31" y="409" width="315" height="174"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="90h-LE-80V">
-                                <rect key="frame" x="85" y="318.5" width="286" height="13.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="90h-LE-80V">
+                                <rect key="frame" x="85" y="317" width="286" height="15"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shu-y1-NmB" userLabel="Question">
+                                <rect key="frame" x="-23" y="359" width="422" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kyQ-uI-0Is"/>
+                                </constraints>
+                                <string key="text">What collection does this 
+object belong to?</string>
+                                <color key="textColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-dn-CTx" userLabel="SettingsButton">
                                 <rect key="frame" x="4" y="282" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="4YI-Rr-zpQ"/>
-                                    <constraint firstAttribute="width" constant="50" id="qgE-Wb-eGv"/>
+                                    <constraint firstAttribute="height" constant="50" id="02s-Wb-WSg"/>
+                                    <constraint firstAttribute="width" constant="50" id="hBB-qw-zoN"/>
                                 </constraints>
                                 <state key="normal" image="SETTING-Watermark"/>
                                 <connections>
@@ -484,39 +494,23 @@ Good luck, and have fun exploring the museum!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NyU-vc-zeS" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="10" y="415" width="175" height="100"/>
+                                <rect key="frame" x="17" y="410" width="175" height="100"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="Jmr-jl-qnF"/>
-                                    <constraint firstAttribute="height" constant="100" id="KPv-EG-JhO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="0I5-h8-xx0"/>
+                                    <constraint firstAttribute="height" constant="100" id="KO1-tN-PiA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="TEST">
+                                <state key="normal" title="Libraries and Archives">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="submitAnswer1:" destination="s1f-hd-btD" eventType="touchUpInside" id="6Z8-Vu-CaD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TMh-YT-3SB" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="188" y="517" width="175" height="101"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="Egyptian, Classical, Ancient Near Eastern Art">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="submitAnswer2:" destination="s1f-hd-btD" eventType="touchUpInside" id="daA-W2-4Wv"/>
-                                    <action selector="submitAnswer4:" destination="s1f-hd-btD" eventType="touchUpInside" id="K5D-kg-svt"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="325 PTS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGr-dA-1Km">
-                                <rect key="frame" x="45" y="620" width="325" height="37"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="PMz-ae-fKE"/>
-                                </constraints>
+                                <rect key="frame" x="217" y="620" width="138" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -526,7 +520,8 @@ Good luck, and have fun exploring the museum!</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imy-su-5EA" userLabel="DismissButton">
                                 <rect key="frame" x="5" y="620" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="dUZ-Mf-NY7"/>
+                                    <constraint firstAttribute="height" constant="40" id="VEo-eu-dFO"/>
+                                    <constraint firstAttribute="width" constant="40" id="mYK-t6-LEt"/>
                                 </constraints>
                                 <state key="normal" image="close"/>
                                 <connections>
@@ -535,34 +530,30 @@ Good luck, and have fun exploring the museum!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vda-g5-bue" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="188" y="415" width="175" height="100"/>
+                                <rect key="frame" x="193" y="410" width="175" height="100"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Art of the Pacific Islands">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitAnswer2:" destination="s1f-hd-btD" eventType="touchUpOutside" id="SNv-c3-qUK"/>
+                                </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shu-y1-NmB" userLabel="Question">
-                                <rect key="frame" x="-5" y="357" width="375" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="tpM-vx-221"/>
-                                </constraints>
-                                <string key="text">What collection does this 
-object belong to?</string>
-                                <color key="textColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJS-65-5WM" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
                                 <rect key="frame" x="321" y="22" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lVD-9G-SPk"/>
+                                    <constraint firstAttribute="width" constant="50" id="vyv-W0-T1o"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="BK-MUS-Watermark"/>
                                 <connections>
                                     <action selector="lookupOnlineReference:" destination="s1f-hd-btD" eventType="touchUpInside" id="QRF-27-VSe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="D8w-YX-FWy" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="10" y="517" width="175" height="100"/>
+                                <rect key="frame" x="17" y="511" width="175" height="100"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
@@ -573,57 +564,74 @@ object belong to?</string>
                                     <action selector="submitAnswer3:" destination="s1f-hd-btD" eventType="touchUpInside" id="rI6-Wv-pvX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TMh-YT-3SB" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                <rect key="frame" x="193" y="511" width="175" height="100"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Egyptian, Classical, Ancient Near Eastern Art">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitAnswer4:" destination="s1f-hd-btD" eventType="touchUpInside" id="K5D-kg-svt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="J98-6L-ykF" firstAttribute="top" secondItem="NyU-vc-zeS" secondAttribute="top" id="0ep-om-Qq6"/>
-                            <constraint firstItem="Imy-su-5EA" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-11" id="0zO-Ih-k1f"/>
-                            <constraint firstItem="Imy-su-5EA" firstAttribute="top" secondItem="D8w-YX-FWy" secondAttribute="bottom" constant="3" id="6PN-Wx-DRU"/>
-                            <constraint firstAttribute="trailing" secondItem="J98-6L-ykF" secondAttribute="trailing" id="89z-rG-jUu"/>
-                            <constraint firstItem="XYF-dn-CTx" firstAttribute="bottom" secondItem="90h-LE-80V" secondAttribute="bottom" id="B3s-h7-6Xf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="shu-y1-NmB" secondAttribute="trailing" constant="-11" id="Dej-OW-oMf"/>
-                            <constraint firstItem="Imy-su-5EA" firstAttribute="top" secondItem="TGr-dA-1Km" secondAttribute="top" id="EEI-F4-P3q"/>
-                            <constraint firstItem="inx-x5-mcQ" firstAttribute="top" secondItem="Imy-su-5EA" secondAttribute="bottom" constant="7" id="Fry-U3-7kx"/>
-                            <constraint firstItem="NyU-vc-zeS" firstAttribute="leading" secondItem="D8w-YX-FWy" secondAttribute="leading" id="G1O-4S-KqL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Vda-g5-bue" secondAttribute="trailing" constant="-4" id="HfG-qf-X2G"/>
-                            <constraint firstItem="NyU-vc-zeS" firstAttribute="bottom" secondItem="Vda-g5-bue" secondAttribute="bottom" id="HqM-bc-O2x"/>
-                            <constraint firstItem="QOv-I2-vFn" firstAttribute="top" secondItem="YJd-ll-NHx" secondAttribute="topMargin" constant="-23" id="NBy-zK-B0f"/>
-                            <constraint firstItem="inx-x5-mcQ" firstAttribute="top" secondItem="TGr-dA-1Km" secondAttribute="bottom" constant="10" id="OBR-9F-uUV"/>
-                            <constraint firstItem="J98-6L-ykF" firstAttribute="trailing" secondItem="TGr-dA-1Km" secondAttribute="trailing" constant="5" id="P2f-75-0Qy"/>
-                            <constraint firstItem="J98-6L-ykF" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leading" id="R1b-wM-TeV"/>
-                            <constraint firstItem="NyU-vc-zeS" firstAttribute="top" secondItem="Vda-g5-bue" secondAttribute="top" id="SKQ-um-6qu"/>
-                            <constraint firstItem="Vda-g5-bue" firstAttribute="leading" secondItem="NyU-vc-zeS" secondAttribute="trailing" constant="3" id="VLm-fS-70k"/>
-                            <constraint firstItem="NyU-vc-zeS" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-6" id="W7W-dI-zXX"/>
-                            <constraint firstItem="TJS-65-5WM" firstAttribute="trailing" secondItem="90h-LE-80V" secondAttribute="trailing" id="Wdx-B3-5Nh"/>
-                            <constraint firstItem="QOv-I2-vFn" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-39" id="ZOQ-IS-ypZ"/>
-                            <constraint firstItem="TJS-65-5WM" firstAttribute="top" secondItem="MVL-gO-EDb" secondAttribute="bottom" constant="2" id="ZPg-GW-wsb"/>
-                            <constraint firstItem="D8w-YX-FWy" firstAttribute="top" secondItem="NyU-vc-zeS" secondAttribute="bottom" constant="2" id="bCP-gd-Czc"/>
-                            <constraint firstItem="D8w-YX-FWy" firstAttribute="firstBaseline" secondItem="TMh-YT-3SB" secondAttribute="firstBaseline" id="byQ-1R-O5e"/>
-                            <constraint firstItem="90h-LE-80V" firstAttribute="leading" secondItem="XYF-dn-CTx" secondAttribute="trailing" constant="31" id="cVo-gh-YE8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TJS-65-5WM" secondAttribute="trailing" constant="-12" id="dLT-OP-JVI"/>
-                            <constraint firstItem="XYF-dn-CTx" firstAttribute="top" secondItem="MVL-gO-EDb" secondAttribute="bottom" constant="262" id="fTN-aj-ttB"/>
-                            <constraint firstItem="TGr-dA-1Km" firstAttribute="leading" secondItem="Imy-su-5EA" secondAttribute="trailing" id="hEe-DE-nes"/>
-                            <constraint firstItem="Vda-g5-bue" firstAttribute="leading" secondItem="TMh-YT-3SB" secondAttribute="leading" id="kno-K9-8pF"/>
-                            <constraint firstItem="XYF-dn-CTx" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-12" id="m8B-Oc-Lnu"/>
-                            <constraint firstItem="NyU-vc-zeS" firstAttribute="trailing" secondItem="D8w-YX-FWy" secondAttribute="trailing" id="pAF-Bo-ZCz"/>
-                            <constraint firstItem="shu-y1-NmB" firstAttribute="top" secondItem="XYF-dn-CTx" secondAttribute="bottom" constant="25" id="qbs-9K-0mr"/>
-                            <constraint firstItem="shu-y1-NmB" firstAttribute="top" secondItem="QOv-I2-vFn" secondAttribute="bottom" constant="8" symbolic="YES" id="rKn-yq-4dB"/>
-                            <constraint firstItem="shu-y1-NmB" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-21" id="rpK-q1-5Ya"/>
-                            <constraint firstItem="NyU-vc-zeS" firstAttribute="top" secondItem="shu-y1-NmB" secondAttribute="bottom" constant="8" symbolic="YES" id="tKJ-7m-XHY"/>
-                            <constraint firstItem="Vda-g5-bue" firstAttribute="trailing" secondItem="TMh-YT-3SB" secondAttribute="trailing" id="wCB-Qi-rDa"/>
-                            <constraint firstItem="D8w-YX-FWy" firstAttribute="top" secondItem="TMh-YT-3SB" secondAttribute="top" id="x4U-tm-7Xe"/>
-                            <constraint firstItem="TGr-dA-1Km" firstAttribute="top" secondItem="J98-6L-ykF" secondAttribute="bottom" constant="13" id="xIS-71-TDp"/>
-                            <constraint firstItem="QOv-I2-vFn" firstAttribute="centerX" secondItem="J98-6L-ykF" secondAttribute="centerX" id="xUF-Qh-MBv"/>
-                            <constraint firstItem="D8w-YX-FWy" firstAttribute="baseline" secondItem="TMh-YT-3SB" secondAttribute="baseline" id="xzb-zk-zd3"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="90h-LE-80V" secondAttribute="trailing" constant="4" id="0Qk-vu-rWD"/>
+                            <constraint firstItem="J98-6L-ykF" firstAttribute="top" secondItem="shu-y1-NmB" secondAttribute="bottom" id="2DC-Wy-3A8"/>
+                            <constraint firstItem="shu-y1-NmB" firstAttribute="centerX" secondItem="QOv-I2-vFn" secondAttribute="centerX" id="2Pq-Bh-hJs"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TMh-YT-3SB" secondAttribute="trailing" constant="7" id="4c7-LB-hhF"/>
+                            <constraint firstItem="90h-LE-80V" firstAttribute="leading" secondItem="XYF-dn-CTx" secondAttribute="trailing" constant="31" id="6hk-j4-tqw"/>
+                            <constraint firstItem="90h-LE-80V" firstAttribute="top" secondItem="TJS-65-5WM" secondAttribute="bottom" constant="245" id="8pd-Rk-V8V"/>
+                            <constraint firstItem="TMh-YT-3SB" firstAttribute="leading" secondItem="D8w-YX-FWy" secondAttribute="trailing" constant="1" id="9JL-uH-IO6"/>
+                            <constraint firstAttribute="trailing" secondItem="TJS-65-5WM" secondAttribute="trailing" constant="4" id="AZB-xq-hzD"/>
+                            <constraint firstItem="D8w-YX-FWy" firstAttribute="leading" secondItem="NyU-vc-zeS" secondAttribute="leading" id="DmU-eS-5IV"/>
+                            <constraint firstItem="TMh-YT-3SB" firstAttribute="height" secondItem="D8w-YX-FWy" secondAttribute="height" id="EiB-0e-LOE"/>
+                            <constraint firstItem="D8w-YX-FWy" firstAttribute="width" secondItem="NyU-vc-zeS" secondAttribute="width" id="Frk-ka-ozX"/>
+                            <constraint firstItem="Vda-g5-bue" firstAttribute="top" secondItem="shu-y1-NmB" secondAttribute="bottom" constant="1" id="Len-sk-xx8"/>
+                            <constraint firstItem="Imy-su-5EA" firstAttribute="top" secondItem="TGr-dA-1Km" secondAttribute="top" id="OlQ-rb-Nen"/>
+                            <constraint firstItem="D8w-YX-FWy" firstAttribute="top" secondItem="NyU-vc-zeS" secondAttribute="bottom" constant="1" id="T7x-2f-3kb"/>
+                            <constraint firstItem="D8w-YX-FWy" firstAttribute="height" secondItem="NyU-vc-zeS" secondAttribute="height" id="Uee-3T-pY5"/>
+                            <constraint firstItem="inx-x5-mcQ" firstAttribute="top" secondItem="Imy-su-5EA" secondAttribute="bottom" constant="7" id="VRA-au-PEC"/>
+                            <constraint firstItem="TGr-dA-1Km" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Imy-su-5EA" secondAttribute="trailing" constant="8" symbolic="YES" id="Vgs-3R-Ygr"/>
+                            <constraint firstItem="TMh-YT-3SB" firstAttribute="top" secondItem="Vda-g5-bue" secondAttribute="bottom" constant="1" id="Vvp-4P-gjx"/>
+                            <constraint firstAttribute="trailing" secondItem="QOv-I2-vFn" secondAttribute="trailing" constant="-24" id="WEC-c5-I1v"/>
+                            <constraint firstItem="XYF-dn-CTx" firstAttribute="top" secondItem="MVL-gO-EDb" secondAttribute="bottom" constant="262" id="XO1-nJ-258"/>
+                            <constraint firstItem="Vda-g5-bue" firstAttribute="width" secondItem="NyU-vc-zeS" secondAttribute="width" id="Yg6-bV-3u2"/>
+                            <constraint firstItem="TJS-65-5WM" firstAttribute="top" secondItem="MVL-gO-EDb" secondAttribute="bottom" constant="2" id="YmB-WJ-Ce7"/>
+                            <constraint firstItem="NyU-vc-zeS" firstAttribute="top" secondItem="shu-y1-NmB" secondAttribute="bottom" constant="1" id="ZmC-Rs-4gH"/>
+                            <constraint firstItem="shu-y1-NmB" firstAttribute="width" secondItem="QOv-I2-vFn" secondAttribute="width" id="Zua-Wd-bnu"/>
+                            <constraint firstItem="TJS-65-5WM" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leading" constant="321" id="aZb-Nd-6oK"/>
+                            <constraint firstItem="XYF-dn-CTx" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leading" constant="4" id="ahN-bD-2a9"/>
+                            <constraint firstItem="D8w-YX-FWy" firstAttribute="trailing" secondItem="NyU-vc-zeS" secondAttribute="trailing" id="ayh-P5-kgY"/>
+                            <constraint firstItem="TGr-dA-1Km" firstAttribute="top" secondItem="D8w-YX-FWy" secondAttribute="bottom" constant="9" id="dXM-o6-9iE"/>
+                            <constraint firstItem="Vda-g5-bue" firstAttribute="baseline" secondItem="NyU-vc-zeS" secondAttribute="baseline" id="keM-TO-b9L"/>
+                            <constraint firstItem="shu-y1-NmB" firstAttribute="centerX" secondItem="J98-6L-ykF" secondAttribute="centerX" id="lO7-pZ-dWb"/>
+                            <constraint firstItem="TMh-YT-3SB" firstAttribute="height" secondItem="Vda-g5-bue" secondAttribute="height" id="nFx-lv-BQL"/>
+                            <constraint firstItem="NyU-vc-zeS" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="1" id="oOt-4h-pyN"/>
+                            <constraint firstItem="Vda-g5-bue" firstAttribute="leading" secondItem="NyU-vc-zeS" secondAttribute="trailing" constant="1" id="pur-Se-Nyv"/>
+                            <constraint firstItem="shu-y1-NmB" firstAttribute="trailing" secondItem="QOv-I2-vFn" secondAttribute="trailing" id="sSV-p1-Ftq"/>
+                            <constraint firstItem="QOv-I2-vFn" firstAttribute="top" secondItem="YJd-ll-NHx" secondAttribute="top" id="uju-ZY-wrs"/>
+                            <constraint firstItem="Imy-su-5EA" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-11" id="vJK-zF-SWj"/>
+                            <constraint firstItem="shu-y1-NmB" firstAttribute="leading" secondItem="QOv-I2-vFn" secondAttribute="leading" id="wu1-sV-87k"/>
+                            <constraint firstAttribute="trailing" secondItem="TGr-dA-1Km" secondAttribute="trailing" constant="20" symbolic="YES" id="xT3-Cq-PfK"/>
+                            <constraint firstItem="Vda-g5-bue" firstAttribute="height" secondItem="NyU-vc-zeS" secondAttribute="height" id="xe5-qJ-kGt"/>
+                            <constraint firstItem="QOv-I2-vFn" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leading" constant="-23" id="yAu-Wj-WDs"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Vda-g5-bue" secondAttribute="trailing" constant="7" id="yqq-0f-K5c"/>
+                            <constraint firstItem="shu-y1-NmB" firstAttribute="top" secondItem="QOv-I2-vFn" secondAttribute="bottom" constant="19" id="zSR-jp-IOE"/>
+                            <constraint firstItem="TMh-YT-3SB" firstAttribute="width" secondItem="D8w-YX-FWy" secondAttribute="width" id="zTE-0D-YUU"/>
+                            <constraint firstItem="TMh-YT-3SB" firstAttribute="width" secondItem="Vda-g5-bue" secondAttribute="width" id="zan-EZ-pM0"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answer1" destination="NyU-vc-zeS" id="1kl-Yb-YeD"/>
-                        <outlet property="answer2" destination="TMh-YT-3SB" id="ZbQ-2e-zdP"/>
+                        <outlet property="answer2" destination="Vda-g5-bue" id="BJ2-YM-YIs"/>
                         <outlet property="answer3" destination="D8w-YX-FWy" id="CD0-hV-Z8V"/>
-                        <outlet property="answer4" destination="Vda-g5-bue" id="xgT-6Y-LBW"/>
+                        <outlet property="answer4" destination="TMh-YT-3SB" id="zeQ-g2-lA3"/>
                         <outlet property="artImage" destination="QOv-I2-vFn" id="gXu-kJ-MhG"/>
                         <outlet property="artTitle" destination="90h-LE-80V" id="qnR-ax-8SH"/>
                         <outlet property="scoreLabel" destination="TGr-dA-1Km" id="Ifv-z6-VNd"/>
@@ -657,7 +665,7 @@ object belong to?</string>
                                     <outletCollection property="gestureRecognizers" destination="mbV-Hn-5ML" appends="YES" id="86e-QN-3lT"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VCn-rh-Enx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VCn-rh-Enx">
                                 <rect key="frame" x="85" y="317" width="286" height="15"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -790,6 +798,6 @@ object belong to?</string>
         <image name="loading_0000_01" width="144" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XYc-Tw-rYz"/>
+        <segue reference="m6w-3j-vrF"/>
     </inferredMetricsTieBreakers>
 </document>
