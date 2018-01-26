@@ -42,7 +42,7 @@ class SplashScreenViewController: UIViewController {
     
     override func viewDidLoad() {//TODO: Add pictures and animations for Brooklyn Museum logo (per link sent to John)
         super.viewDidLoad()
-        loading_1 = UIImage(named: "loading_0000_01")!
+        loading_1 = UIImage(named: "loading_0000_01")!//should run after 23 in a loop
         loading_2 = UIImage(named: "loading_0001_02")!
         loading_3 = UIImage(named: "loading_0002_03")!
         loading_4 = UIImage(named: "loading_0003_04")!
@@ -64,7 +64,7 @@ class SplashScreenViewController: UIViewController {
         loading_20 = UIImage(named: "loading_0019_20")!
         loading_21 = UIImage(named: "loading_0020_21")!
         loading_22 = UIImage(named: "loading_0021_22")!
-        loading_23 = UIImage(named: "loading_0022_23")!
+        loading_23 = UIImage(named: "loading_0022_23")!//should run with 01
         
         images = [loading_1, loading_2, loading_3, loading_4, loading_5, loading_6, loading_7, loading_8, loading_9, loading_10, loading_11, loading_12, loading_13, loading_14, loading_15, loading_16, loading_17, loading_18, loading_19, loading_20, loading_21, loading_22, loading_23]
         animatedImage = UIImage.animatedImage(with: images, duration: 1.00)
@@ -78,3 +78,6 @@ class SplashScreenViewController: UIViewController {
     }
     
 }
+
+//key frames should be .5 seconds - key frames should last longer so they can be seen fully and acknowledge
+//in between frames should be .01 seconds

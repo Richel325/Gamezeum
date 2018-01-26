@@ -17,6 +17,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
     @IBOutlet weak var artImage: UIImageView!
     @IBOutlet weak var answer: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var modalAnswerText: UITextField!
     
     
     
@@ -25,6 +26,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        modalAnswerText.isHidden = true
         self.answer.delegate = self
         
         

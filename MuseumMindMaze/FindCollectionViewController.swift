@@ -22,6 +22,9 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
     @IBOutlet weak var answer3: UIButton!
     @IBOutlet weak var answer4: UIButton!
     
+    @IBOutlet weak var answerStackView: UIStackView!
+    
+    
     var object: ArtObject?
     var museumURL : String = "https://www.brooklynmuseum.org/opencollection/objects/"
     
@@ -35,6 +38,9 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
         super.viewDidLoad()
         //self.answer.delegate = self
         
+        self.answerStackView.layer.cornerRadius = 4.75
+        
+        
         if let artObjectImageURLString = object?.primaryImageURLString {
             artImage.downLoadImage(from: artObjectImageURLString)
             artTitle?.text = object?.title
@@ -43,6 +49,7 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
                 self.object = self.object
             })
         }
+        
         
         //populate buttons with random string from array of museum collections
         let buttons = [answer1, answer2, answer3, answer4]
