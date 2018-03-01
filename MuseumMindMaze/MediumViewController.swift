@@ -17,7 +17,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
     @IBOutlet weak var artImage: UIImageView!
     @IBOutlet weak var answer: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet weak var modalAnswerText: UITextField!
+    
     
     
     
@@ -26,9 +26,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        modalAnswerText.isHidden = true
         self.answer.delegate = self
-        
         
         if let artObjectImageURLString = object?.primaryImageURLString {
             artImage.downLoadImage(from: artObjectImageURLString)
@@ -38,8 +36,8 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
                 self.object = self.object
             })
         }
+        
     }
-    
     
     
     @IBAction func submitAnswer(_ sender: UIButton) {
@@ -67,6 +65,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
     }
     
     
+    
     //Hide keyboard when user touches outside of keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
@@ -81,6 +80,8 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
     
     
     
+    
+    
     @IBAction func dismissToGallery(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -88,12 +89,15 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
     @IBAction func lookupOnlineReference(_ sender: Any) {
         let url = URL(string: "\(museumURL)\(object!.id!)")
         let svc = SFSafariViewController(url: url!)
-                self.present(svc, animated: true, completion: nil)
+        self.present(svc, animated: true, completion: nil)
         print(url!)
     }
-
+    
     
     @IBAction func presentFullScreenPaintingVC(_ sender: Any) {
+        let fullScreenObjectImageViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FullScreenObjectImageViewController") as! FullScreenObjectImageViewController
+        fullScreenObjectImageViewController.paintingImageView = UIImageView(image: UIImage(named: (object!.primaryImageURLString)!))
+        present(fullScreenObjectImageViewController, animated: true, completion: nil)
     }
-    
 }
+

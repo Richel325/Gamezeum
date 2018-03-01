@@ -12,6 +12,7 @@
 		0C2141FB2012F42C00778B17 /* Fugue#1_RichelCuyler_2005.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C2141FA2012F42B00778B17 /* Fugue#1_RichelCuyler_2005.mp3 */; };
 		0C73E0881FEA36F4006E1FAA /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C73E0871FEA36F4006E1FAA /* SettingsVC.swift */; };
 		0C82ADD31E53F14800F12A97 /* ScoreUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C82ADD21E53F14800F12A97 /* ScoreUserDefaults.swift */; };
+		0C91ACE020203E2600AB3692 /* InstructionWizardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C91ACDF20203E2600AB3692 /* InstructionWizardViewController.swift */; };
 		0CA6FB411FE1216F00539E5F /* Delicia Melted.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6FB401FE1216F00539E5F /* Delicia Melted.otf */; };
 		0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */; };
 		0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */; };
@@ -37,6 +38,7 @@
 		0C2141FA2012F42B00778B17 /* Fugue#1_RichelCuyler_2005.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fugue#1_RichelCuyler_2005.mp3"; sourceTree = "<group>"; };
 		0C73E0871FEA36F4006E1FAA /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		0C82ADD21E53F14800F12A97 /* ScoreUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreUserDefaults.swift; sourceTree = "<group>"; };
+		0C91ACDF20203E2600AB3692 /* InstructionWizardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionWizardViewController.swift; sourceTree = "<group>"; };
 		0CA6FB401FE1216F00539E5F /* Delicia Melted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delicia Melted.otf"; sourceTree = "<group>"; };
 		0CA6FB421FE1231400539E5F /* Delicia Melted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delicia Melted.otf"; sourceTree = "<group>"; };
 		0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */,
 				0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */,
 				0C73E0871FEA36F4006E1FAA /* SettingsVC.swift */,
+				0C91ACDF20203E2600AB3692 /* InstructionWizardViewController.swift */,
 			);
 			name = "Black VCs";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */,
 				0CF8C6962015BCA600B07F89 /* CustomSpinnerViewController.swift in Sources */,
 				0CF942C61E516EE900E3F563 /* GameIntroViewController.swift in Sources */,
+				0C91ACE020203E2600AB3692 /* InstructionWizardViewController.swift in Sources */,
 				0CF942B41E4D8B5700E3F563 /* MediumViewController.swift in Sources */,
 				0C82ADD31E53F14800F12A97 /* ScoreUserDefaults.swift in Sources */,
 				0CF942B61E4D8B7700E3F563 /* FindCollectionViewController.swift in Sources */,

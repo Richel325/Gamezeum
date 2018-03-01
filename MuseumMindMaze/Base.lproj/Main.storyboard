@@ -278,7 +278,7 @@ Richel Cuyler
         <!--InstructionWizard-->
         <scene sceneID="tHV-E9-5A9">
             <objects>
-                <viewController id="CJ6-Vs-VrA" userLabel="InstructionWizard" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InstructionWizard" id="CJ6-Vs-VrA" userLabel="InstructionWizard" customClass="InstructionWizardViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RRI-cI-ED3"/>
                         <viewControllerLayoutGuide type="bottom" id="Iag-5l-XZy"/>
@@ -287,45 +287,95 @@ Richel Cuyler
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E6s-Nf-ze0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTG-8P-2Qh">
+                                <rect key="frame" x="16" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SKIP"/>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mea-Je-in8" userLabel="Instruction1">
-                                <rect key="frame" x="16" y="28" width="343" height="96"/>
+                                <rect key="frame" x="16" y="28" width="345" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">1) Tap the image of the art object you want to select. Scroll down to see more objects, and pull down to refresh the view and get a brand new set of objects to play.</string>
                                 <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wj-HC-Umx" userLabel="close1">
+                                <rect key="frame" x="313" y="103" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="close"/>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="2) When the question page appears, input your answer, or choose the correct answer button. " textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1K-wc-cG5" userLabel="Instruction2">
-                                <rect key="frame" x="16" y="144" width="343" height="70"/>
+                                <rect key="frame" x="16" y="144" width="345" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="3) If your answer is correct, you can choose another art object to keep playing. " textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1G-Sf-cgQ" userLabel="Instruction4">
-                                <rect key="frame" x="16" y="222" width="343" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DML-jW-Ob5" userLabel="close2">
+                                <rect key="frame" x="313" y="193" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Good luck, and have fun exploring the museum!" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IE-2F-wDd" userLabel="Instruction5">
-                                <rect key="frame" x="16" y="597" width="343" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <state key="normal" image="close"/>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="4) If your answer is incorrect, you get to keep trying until you get the correct answer. " textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQQ-vL-m10" userLabel="Instruction3">
-                                <rect key="frame" x="16" y="280" width="343" height="50"/>
+                                <rect key="frame" x="16" y="391" width="345" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgv-JR-9ii" userLabel="close3">
+                                <rect key="frame" x="313" y="289" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="close"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="3) If your answer is correct, you can choose another art object to keep playing. " textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1G-Sf-cgQ" userLabel="Instruction4">
+                                <rect key="frame" x="14" y="261" width="345" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfZ-Hx-IVv" userLabel="close4">
+                                <rect key="frame" x="313" y="454" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="close"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Good luck, and have fun exploring the museum!" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IE-2F-wDd" userLabel="Instruction5">
+                                <rect key="frame" x="32" y="497" width="345" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bws-Kn-8S6" userLabel="close5">
+                                <rect key="frame" x="313" y="538" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="close"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="1" alpha="0.2517925941780822" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="0.29331656678082191" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="E6s-Nf-ze0" firstAttribute="centerY" secondItem="m9M-LY-Eyo" secondAttribute="centerY" id="408-qy-zAl"/>
+                            <constraint firstItem="E6s-Nf-ze0" firstAttribute="top" secondItem="m9M-LY-Eyo" secondAttribute="top" id="JT2-6E-3qc"/>
+                            <constraint firstItem="Iag-5l-XZy" firstAttribute="top" secondItem="E6s-Nf-ze0" secondAttribute="bottom" id="NW5-ST-Bjm"/>
+                            <constraint firstItem="E6s-Nf-ze0" firstAttribute="leading" secondItem="m9M-LY-Eyo" secondAttribute="leading" id="OnU-CQ-tu7"/>
+                            <constraint firstItem="E6s-Nf-ze0" firstAttribute="centerX" secondItem="m9M-LY-Eyo" secondAttribute="centerX" id="b9E-eq-dqa"/>
+                            <constraint firstAttribute="trailing" secondItem="E6s-Nf-ze0" secondAttribute="trailing" id="o7h-m1-0dJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="instruction1" destination="mea-Je-in8" id="YEm-Tb-VjC"/>
+                        <outlet property="instruction2" destination="m1K-wc-cG5" id="Vqs-6g-jkz"/>
+                        <outlet property="instruction3" destination="t1G-Sf-cgQ" id="5HD-EJ-kvc"/>
+                        <outlet property="instruction4" destination="DQQ-vL-m10" id="XRQ-Ho-YKr"/>
+                        <outlet property="instruction5" destination="6IE-2F-wDd" id="JaB-uM-qO0"/>
+                        <outlet property="instructionImage" destination="E6s-Nf-ze0" id="0je-TP-rvl"/>
+                        <outlet property="skip" destination="VTG-8P-2Qh" id="0T5-6N-lkC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l3P-TS-9Zl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -508,22 +558,26 @@ Richel Cuyler
                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QOv-I2-vFn" userLabel="paintingImageView">
                                 <rect key="frame" x="-23" y="-3" width="421" height="342"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="QOv-I2-vFn" secondAttribute="height" multiplier="421:342" id="MIZ-Cc-64G"/>
-                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="tWT-L4-3Dm" appends="YES" id="WCt-8o-AFV"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="90h-LE-80V">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="90h-LE-80V">
                                 <rect key="frame" x="85" y="317" width="286" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="gyR-Y2-DD6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-dn-CTx" userLabel="SettingsButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYF-dn-CTx" userLabel="SettingsButton">
                                 <rect key="frame" x="4" y="282" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Lgm-A7-c4x"/>
+                                    <constraint firstAttribute="width" constant="50" id="fKj-D8-r3R"/>
+                                </constraints>
                                 <state key="normal" image="SETTING-Watermark"/>
                                 <connections>
                                     <segue destination="pk2-Ns-iYd" kind="show" id="m6w-3j-vrF"/>
@@ -532,7 +586,7 @@ Richel Cuyler
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="325 PTS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGr-dA-1Km">
                                 <rect key="frame" x="65" y="623" width="300" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="y1z-47-Gpp"/>
+                                    <constraint firstAttribute="height" constant="35" id="doa-er-iMg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="highlightedColor"/>
@@ -542,7 +596,7 @@ Richel Cuyler
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imy-su-5EA" userLabel="DismissButton">
                                 <rect key="frame" x="13" y="620" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="mLs-F3-a0Y"/>
+                                    <constraint firstAttribute="width" constant="40" id="pZP-gi-wJM"/>
                                 </constraints>
                                 <state key="normal" image="close"/>
                                 <connections>
@@ -550,7 +604,7 @@ Richel Cuyler
                                     <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="8JZ-OD-rhb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJS-65-5WM" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJS-65-5WM" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
                                 <rect key="frame" x="321" y="22" width="50" height="50"/>
                                 <state key="normal" backgroundImage="BK-MUS-Watermark"/>
                                 <connections>
@@ -609,13 +663,12 @@ Richel Cuyler
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="210" id="j5V-AS-LXE"/>
-                                    <constraint firstAttribute="width" constant="349" id="t7f-bs-tjG"/>
-                                </constraints>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shu-y1-NmB" userLabel="Question">
                                 <rect key="frame" x="0.0" y="340" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rww-WH-CsM"/>
+                                </constraints>
                                 <string key="text">What collection does this 
 object belong to?</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -627,29 +680,30 @@ object belong to?</string>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="90h-LE-80V" firstAttribute="trailing" secondItem="QOv-I2-vFn" secondAttribute="trailing" id="0Y0-ED-RXi"/>
-                            <constraint firstItem="shu-y1-NmB" firstAttribute="centerX" secondItem="Vcn-dK-B9I" secondAttribute="centerX" id="4Xu-e4-DKb"/>
-                            <constraint firstItem="shu-y1-NmB" firstAttribute="centerX" secondItem="QOv-I2-vFn" secondAttribute="centerX" id="6hc-lJ-eJe"/>
-                            <constraint firstItem="Imy-su-5EA" firstAttribute="centerY" secondItem="TGr-dA-1Km" secondAttribute="centerY" id="87b-zC-PER"/>
-                            <constraint firstItem="Vcn-dK-B9I" firstAttribute="top" secondItem="shu-y1-NmB" secondAttribute="bottom" constant="8" symbolic="YES" id="Ao5-ma-97X"/>
-                            <constraint firstItem="Imy-su-5EA" firstAttribute="top" secondItem="Vcn-dK-B9I" secondAttribute="bottom" constant="12" id="FJ0-sa-ILh"/>
-                            <constraint firstItem="TGr-dA-1Km" firstAttribute="leading" secondItem="Imy-su-5EA" secondAttribute="trailing" constant="12" id="GAf-VC-PfX"/>
-                            <constraint firstItem="TJS-65-5WM" firstAttribute="top" secondItem="MVL-gO-EDb" secondAttribute="bottom" constant="2" id="GWd-fx-Yz9"/>
-                            <constraint firstItem="Vcn-dK-B9I" firstAttribute="leading" secondItem="Imy-su-5EA" secondAttribute="leading" id="Ho0-MP-N9S"/>
-                            <constraint firstItem="inx-x5-mcQ" firstAttribute="top" secondItem="TGr-dA-1Km" secondAttribute="bottom" constant="9" id="Mbw-pP-eE8"/>
-                            <constraint firstItem="90h-LE-80V" firstAttribute="leading" secondItem="QOv-I2-vFn" secondAttribute="leading" id="PWb-k0-LKQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TGr-dA-1Km" secondAttribute="trailing" constant="-6" id="eHc-uE-MT3"/>
-                            <constraint firstItem="90h-LE-80V" firstAttribute="leading" secondItem="XYF-dn-CTx" secondAttribute="trailing" constant="31" id="hvG-9T-yr0"/>
-                            <constraint firstItem="shu-y1-NmB" firstAttribute="top" secondItem="QOv-I2-vFn" secondAttribute="bottom" constant="1" id="kGJ-Eq-hlh"/>
-                            <constraint firstItem="inx-x5-mcQ" firstAttribute="top" secondItem="Imy-su-5EA" secondAttribute="bottom" constant="7" id="lGH-yQ-Dqm"/>
-                            <constraint firstItem="QOv-I2-vFn" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leading" constant="-23" id="lIh-L2-cyD"/>
-                            <constraint firstItem="shu-y1-NmB" firstAttribute="top" secondItem="XYF-dn-CTx" secondAttribute="bottom" constant="8" symbolic="YES" id="n5l-qi-r8O"/>
-                            <constraint firstItem="90h-LE-80V" firstAttribute="top" secondItem="QOv-I2-vFn" secondAttribute="top" id="oF0-QZ-dN9"/>
-                            <constraint firstItem="shu-y1-NmB" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leading" id="pGI-Mh-kxU"/>
-                            <constraint firstItem="90h-LE-80V" firstAttribute="bottom" secondItem="QOv-I2-vFn" secondAttribute="bottom" id="pJN-DV-zQJ"/>
-                            <constraint firstItem="TJS-65-5WM" firstAttribute="trailing" secondItem="90h-LE-80V" secondAttribute="trailing" id="tFE-pN-WX5"/>
-                            <constraint firstItem="QOv-I2-vFn" firstAttribute="top" secondItem="YJd-ll-NHx" secondAttribute="top" constant="-3" id="trV-xx-LeD"/>
-                            <constraint firstAttribute="trailing" secondItem="QOv-I2-vFn" secondAttribute="trailing" constant="-23" id="veX-QG-EJZ"/>
+                            <constraint firstItem="shu-y1-NmB" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leading" id="0hz-jN-si9"/>
+                            <constraint firstItem="Vcn-dK-B9I" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-3" id="9Ji-vV-9XP"/>
+                            <constraint firstItem="inx-x5-mcQ" firstAttribute="top" secondItem="TGr-dA-1Km" secondAttribute="bottom" constant="9" id="9ms-CE-PBm"/>
+                            <constraint firstItem="shu-y1-NmB" firstAttribute="top" secondItem="QOv-I2-vFn" secondAttribute="bottom" constant="1" id="AQB-ps-G2d"/>
+                            <constraint firstAttribute="trailing" secondItem="shu-y1-NmB" secondAttribute="trailing" id="Ahe-Nh-aK0"/>
+                            <constraint firstItem="90h-LE-80V" firstAttribute="leading" secondItem="XYF-dn-CTx" secondAttribute="trailing" constant="31" id="CQJ-oO-oXM"/>
+                            <constraint firstItem="XYF-dn-CTx" firstAttribute="top" secondItem="MVL-gO-EDb" secondAttribute="bottom" constant="262" id="GYp-ig-waB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TGr-dA-1Km" secondAttribute="trailing" constant="-6" id="LuL-yG-yna"/>
+                            <constraint firstItem="QOv-I2-vFn" firstAttribute="top" secondItem="YJd-ll-NHx" secondAttribute="topMargin" constant="-23" id="ORa-Cg-GPo"/>
+                            <constraint firstItem="Imy-su-5EA" firstAttribute="centerY" secondItem="TGr-dA-1Km" secondAttribute="centerY" id="QD2-cj-3Z8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TJS-65-5WM" secondAttribute="trailing" constant="-12" id="Qf1-IF-bUH"/>
+                            <constraint firstItem="shu-y1-NmB" firstAttribute="top" secondItem="XYF-dn-CTx" secondAttribute="bottom" constant="8" symbolic="YES" id="THI-zT-0wU"/>
+                            <constraint firstItem="TJS-65-5WM" firstAttribute="top" secondItem="MVL-gO-EDb" secondAttribute="bottom" constant="2" id="UWS-Gy-c2a"/>
+                            <constraint firstItem="Vcn-dK-B9I" firstAttribute="top" secondItem="shu-y1-NmB" secondAttribute="bottom" constant="8" symbolic="YES" id="XcL-UO-UVp"/>
+                            <constraint firstItem="Imy-su-5EA" firstAttribute="top" secondItem="Vcn-dK-B9I" secondAttribute="bottom" constant="12" id="a15-K1-Bcd"/>
+                            <constraint firstItem="inx-x5-mcQ" firstAttribute="top" secondItem="Imy-su-5EA" secondAttribute="bottom" constant="7" id="aiz-dA-3yZ"/>
+                            <constraint firstItem="Vcn-dK-B9I" firstAttribute="leading" secondItem="Imy-su-5EA" secondAttribute="leading" id="gAh-fL-Hb5"/>
+                            <constraint firstItem="QOv-I2-vFn" firstAttribute="centerX" secondItem="shu-y1-NmB" secondAttribute="centerX" id="gEj-0Y-6YG"/>
+                            <constraint firstItem="TJS-65-5WM" firstAttribute="trailing" secondItem="90h-LE-80V" secondAttribute="trailing" id="imB-ho-axw"/>
+                            <constraint firstItem="TGr-dA-1Km" firstAttribute="leading" secondItem="Imy-su-5EA" secondAttribute="trailing" constant="12" id="pno-nP-ZjZ"/>
+                            <constraint firstItem="shu-y1-NmB" firstAttribute="top" secondItem="90h-LE-80V" secondAttribute="bottom" constant="8" symbolic="YES" id="sXA-4E-i5F"/>
+                            <constraint firstItem="shu-y1-NmB" firstAttribute="centerX" secondItem="Vcn-dK-B9I" secondAttribute="centerX" id="sg3-Ty-M0O"/>
+                            <constraint firstItem="QOv-I2-vFn" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-39" id="xXg-n9-xBG"/>
+                            <constraint firstItem="XYF-dn-CTx" firstAttribute="leading" secondItem="YJd-ll-NHx" secondAttribute="leadingMargin" constant="-12" id="zwg-R5-hDf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -774,12 +828,6 @@ object belong to?</string>
                                     <action selector="submitAnswer:" destination="DrB-iI-GJ6" eventType="touchUpInside" id="LGA-70-tTh"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="92W-9z-5cm">
-                                <rect key="frame" x="16" y="153" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -790,20 +838,17 @@ object belong to?</string>
                             <constraint firstItem="pk2-gh-iPE" firstAttribute="top" secondItem="m6J-L0-5Nz" secondAttribute="bottom" constant="2" id="2zw-6L-2QS"/>
                             <constraint firstItem="jIk-am-LYw" firstAttribute="top" secondItem="8u8-7m-fLY" secondAttribute="bottom" constant="12" id="3nu-Eb-iIZ"/>
                             <constraint firstItem="VCn-rh-Enx" firstAttribute="leading" secondItem="47E-ja-ICJ" secondAttribute="trailing" constant="31" id="6nu-Bd-bah"/>
-                            <constraint firstItem="92W-9z-5cm" firstAttribute="trailing" secondItem="AQa-jq-ugG" secondAttribute="trailing" id="7h3-0i-Sk9"/>
                             <constraint firstItem="Rxd-no-qlQ" firstAttribute="top" secondItem="cHH-Dm-jl4" secondAttribute="bottom" constant="12" id="Gzj-K4-dNp"/>
                             <constraint firstItem="cHH-Dm-jl4" firstAttribute="leading" secondItem="8u8-7m-fLY" secondAttribute="leading" id="IkY-Q8-oWu"/>
                             <constraint firstItem="8u8-7m-fLY" firstAttribute="top" secondItem="cHH-Dm-jl4" secondAttribute="bottom" constant="9" id="Lk0-Iq-etk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pk2-gh-iPE" secondAttribute="trailing" constant="-12" id="Lqt-bD-4g8"/>
                             <constraint firstItem="47E-ja-ICJ" firstAttribute="bottom" secondItem="VCn-rh-Enx" secondAttribute="bottom" id="Ne7-2B-JEk"/>
-                            <constraint firstItem="92W-9z-5cm" firstAttribute="centerY" secondItem="iAo-5G-Q5d" secondAttribute="centerY" id="OTf-Yj-Fbv"/>
                             <constraint firstItem="AQa-jq-ugG" firstAttribute="leading" secondItem="cHH-Dm-jl4" secondAttribute="leading" id="QHr-Zs-aXx"/>
                             <constraint firstItem="AQa-jq-ugG" firstAttribute="centerX" secondItem="iAo-5G-Q5d" secondAttribute="centerX" id="Sv2-l7-6Iu"/>
                             <constraint firstItem="47E-ja-ICJ" firstAttribute="leading" secondItem="V7U-2b-JnQ" secondAttribute="leadingMargin" constant="-12" id="URi-S5-1c2"/>
                             <constraint firstItem="AQa-jq-ugG" firstAttribute="top" secondItem="47E-ja-ICJ" secondAttribute="bottom" constant="18" id="Vqg-Jx-riN"/>
                             <constraint firstItem="AQa-jq-ugG" firstAttribute="trailing" secondItem="cHH-Dm-jl4" secondAttribute="trailing" id="edj-YI-BR6"/>
                             <constraint firstItem="pk2-gh-iPE" firstAttribute="trailing" secondItem="VCn-rh-Enx" secondAttribute="trailing" id="mkY-5O-NCQ"/>
-                            <constraint firstItem="92W-9z-5cm" firstAttribute="leading" secondItem="AQa-jq-ugG" secondAttribute="leading" id="ox5-1c-NVf"/>
                             <constraint firstItem="iAo-5G-Q5d" firstAttribute="leading" secondItem="V7U-2b-JnQ" secondAttribute="leading" constant="-23" id="rxO-cn-1FG"/>
                             <constraint firstItem="VCn-rh-Enx" firstAttribute="trailing" secondItem="Rxd-no-qlQ" secondAttribute="trailing" id="shd-0M-zjR"/>
                             <constraint firstItem="iAo-5G-Q5d" firstAttribute="top" secondItem="V7U-2b-JnQ" secondAttribute="top" constant="-3" id="vk6-71-V28"/>
@@ -817,7 +862,6 @@ object belong to?</string>
                         <outlet property="answer" destination="JiY-kc-7yl" id="5QN-lS-XHt"/>
                         <outlet property="artImage" destination="iAo-5G-Q5d" id="FBZ-0F-wBK"/>
                         <outlet property="artTitle" destination="VCn-rh-Enx" id="13e-ph-Hpl"/>
-                        <outlet property="modalAnswerText" destination="92W-9z-5cm" id="xUb-qI-n7P"/>
                         <outlet property="scoreLabel" destination="Rxd-no-qlQ" id="yj2-Yx-7xG"/>
                     </connections>
                 </viewController>

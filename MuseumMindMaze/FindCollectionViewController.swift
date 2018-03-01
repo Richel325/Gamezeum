@@ -54,18 +54,22 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
         //populate buttons with random string from array of museum collections
         let buttons = [answer1, answer2, answer3, answer4]
         let answerIndex = Int(arc4random_uniform(UInt32(3)))
+        print(answerIndex)
+        let index = Int(arc4random_uniform(UInt32(collectionArray.count)))
+        print(index)
         for button in buttons {
-            if buttons.count == answerIndex {
-                button!.setTitle(object?.collection?.name, for: .normal)
-            } else {
-                let index = Int(arc4random_uniform(UInt32(collectionArray.count)))
                 button!.setTitle(collectionArray[index], for: .normal)
-                collectionArray.remove(at: index)
+            collectionArray.remove(at: index)
+            if button?.title(for: .normal) == object?.collection?.name {
+                print(button!.title(for: .normal)!)
+                return
+            } else {
+                button!.setTitle(object?.collection?.name!, for: .normal)
+                print(object!.collection!.name!)
             }
-            
         }
-        
     }
+
     
     
     
@@ -76,6 +80,7 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
                 AudioServicesPlayAlertSound(1325)
                 UserDefaults.standard.score += 10
                 //Dismisses the segue when the answer is correct
+                //TODO: Also delete the row in the tableview and replace with a new object
                 scoreLabel.text? = String(UserDefaults.standard.score)
                 let alertController2 = UIAlertController(title: "Correct Answer!", message:
                     "You got it right! Click OK to keep playing.", preferredStyle: UIAlertControllerStyle.alert)
@@ -178,6 +183,10 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
     }
     
     @IBAction func presentFullScreenPaintingVC(_ sender: Any) {
+        let fullScreenObjectImageViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FullScreenObjectImageViewController") as! FullScreenObjectImageViewController
+        fullScreenObjectImageViewController.paintingImageView = UIImageView(image: UIImage(named: (object!.primaryImageURLString)!))
+        print("\(String(describing: object?.primaryImageURLString!))")
+        present(fullScreenObjectImageViewController, animated: true, completion: nil)
     }
     
 }

@@ -8,17 +8,22 @@
 
 import UIKit
 
-class FullScreenObjectImageViewController: UIViewController {
+class FullScreenObjectImageViewController: UIViewController, UIScrollViewDelegate {
+    
+    @IBOutlet weak var paintingScrollView: UIScrollView!
     
     var object: ArtObject?
     var paintingImageView: UIImageView!
-
-    @IBOutlet weak var paintingScrollView: UIScrollView!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        paintingScrollView.contentSize = CGSize(width: paintingImageView.frame.width, height: paintingImageView.frame.height)
+        paintingScrollView.bounces = false
+        paintingScrollView.bouncesZoom = true
+        paintingScrollView.minimumZoomScale = 0.3
+        paintingScrollView.maximumZoomScale = 2
         
         if let artObjectImageURLString = object?.primaryImageURLString {
             paintingImageView.downLoadImage(from: artObjectImageURLString)
@@ -27,14 +32,7 @@ class FullScreenObjectImageViewController: UIViewController {
             })
         }
         
-    }
-    
-    
-    @IBAction func presentFullScreenPaintingVC(_ sender: Any) {
-        let fullScreenObjectImageViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FullScreenObjectImageViewController") as! FullScreenObjectImageViewController
-        //fullScreenObjectImageViewController.paintingIndex = indexPath.item
-        fullScreenObjectImageViewController.paintingImageView = UIImageView(image: UIImage(named: ""))
-        present(fullScreenObjectImageViewController, animated: true, completion: nil)
+        paintingScrollView.addSubview(paintingImageView)
     }
     
     
@@ -42,5 +40,7 @@ class FullScreenObjectImageViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? { return paintingImageView }
+    
 }
