@@ -53,23 +53,23 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
         
         //populate buttons with random string from array of museum collections
         let buttons = [answer1, answer2, answer3, answer4]
-        let answerIndex = Int(arc4random_uniform(UInt32(3)))
-        print(answerIndex)
-        let index = Int(arc4random_uniform(UInt32(collectionArray.count)))
-        print(index)
+        var isAnswerInButtons: Bool = false
+        
         for button in buttons {
-                button!.setTitle(collectionArray[index], for: .normal)
+            let index = Int(arc4random_uniform(UInt32(collectionArray.count-1)))
+            button!.setTitle(collectionArray[index], for: .normal)
             collectionArray.remove(at: index)
             if button?.title(for: .normal) == object?.collection?.name {
                 print(button!.title(for: .normal)!)
-                return
-            } else {
-                button!.setTitle(object?.collection?.name!, for: .normal)
-                print(object!.collection!.name!)
+                isAnswerInButtons = true
             }
         }
+        if isAnswerInButtons == false {
+        let index = Int(arc4random_uniform(UInt32(buttons.count-1)))
+        buttons[index]?.setTitle(object?.collection?.name, for: .normal)
+            print(buttons[index]?.title(for: .normal)!)
+        }
     }
-
     
     
     
