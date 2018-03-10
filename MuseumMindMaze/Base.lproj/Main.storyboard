@@ -25,41 +25,62 @@
                         <viewControllerLayoutGuide type="top" id="BV0-wm-P0f"/>
                         <viewControllerLayoutGuide type="bottom" id="H7L-xC-Hx4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="G0z-94-h96">
+                    <view key="view" contentMode="scaleToFill" id="G0z-94-h96" userLabel="superView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GAMEZEUM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWF-SW-ROp">
-                                <rect key="frame" x="101" y="159" width="212" height="100"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O5v-Su-3ns" userLabel="backgroundImageView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Delicia-Melted" family="Delicia" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-3i-JDL" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="107" y="529" width="200" height="36"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BK-MUS-Watermark" translatesAutoresizingMaskIntoConstraints="NO" id="mhd-0p-7mu">
+                                        <rect key="frame" x="-1.7040179097227792" y="5.9413981309330666" width="374.99999999999994" height="658"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ro5-de-aDn" userLabel="startButtonView">
+                                <rect key="frame" x="94" y="600" width="200" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
-                                <state key="normal" title="PLAY">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkAction:" destination="LMj-HA-f7X" eventType="touchUpInside" id="TCL-BA-cQK"/>
-                                    <segue destination="uvJ-tD-UfA" kind="show" id="hxW-CI-wRg"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loading_0000_01" translatesAutoresizingMaskIntoConstraints="NO" id="c3L-2j-B7L">
-                                <rect key="frame" x="107" y="268" width="200" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-3i-JDL" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                        <rect key="frame" x="-1.7040179097227792" y="0.72605306829746041" width="199.99999999999997" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
+                                        <state key="normal" title="PLAY">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="checkAction:" destination="LMj-HA-f7X" eventType="touchUpInside" id="TCL-BA-cQK"/>
+                                            <segue destination="uvJ-tD-UfA" kind="show" id="hxW-CI-wRg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1D1-Gv-tdC" userLabel="logoView">
+                                <rect key="frame" x="0.0" y="140" width="375" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gamezeum-raster-logo-sample" translatesAutoresizingMaskIntoConstraints="NO" id="Djg-DK-jIY">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Dwq-dI-UcF"/>
+                    <connections>
+                        <outlet property="gamezeumLogo" destination="Djg-DK-jIY" id="6Y2-dx-oXi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EyZ-tT-x1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-152.17391304347828" y="-2703.2608695652175"/>
+            <point key="canvasLocation" x="-152.80000000000001" y="-2704.4977511244379"/>
         </scene>
         <!--Choose Your Art:-->
         <scene sceneID="CcB-Nk-YBk">
@@ -877,6 +898,7 @@ object belong to?</string>
     </scenes>
     <resources>
         <image name="BK-MUS-Watermark" width="50" height="50"/>
+        <image name="Gamezeum-raster-logo-sample" width="500" height="144"/>
         <image name="SETTING-Watermark" width="50" height="50"/>
         <image name="brooklynmuseumcom" width="2000" height="500"/>
         <image name="close" width="25" height="25"/>

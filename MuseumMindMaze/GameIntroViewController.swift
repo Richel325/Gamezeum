@@ -14,8 +14,27 @@ class GameIntroViewController: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
     
+    
+    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var gamezeumLogo: UIImageView!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+//
+//
+//        let animationOpacity = CABasicAnimation(keyPath: "opacity")
+//        animationOpacity.fromValue = 0
+//        animationOpacity.toValue = 1
+//
+//        let animationPosition = CABasicAnimation(keyPath: "position")
+//        animationPosition.fromValue = [0, 0]
+//        animationPosition.toValue = [100, 100]
+        
         
         NotificationCenter.default.addObserver(self, selector: #selector(musicOnOffSwitchToggled),
                                                name: NSNotification.Name("musicOnOffSwitchToggled"),
@@ -31,12 +50,20 @@ class GameIntroViewController: UIViewController {
         }
     }
     
-    @IBAction func checkAction(_ sender: Any) {
-        checkReachability()
+    
+    
+    func animateLogo(view: UIImageView) {
+        
+        
+        
     }
     
     
     
+    @IBAction func checkAction(_ sender: Any) {
+        checkReachability()
+    }
+
     func checkReachability() {
         if currentReachabilityStatus == .reachableViaWiFi || currentReachabilityStatus == .reachableViaWWAN {
             //proceed as usual to tableview of art objects
@@ -46,6 +73,11 @@ class GameIntroViewController: UIViewController {
             alertController1.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
             self.present(alertController1, animated: true, completion: nil)        }
     }
+    
+    
+    
+    
+    
     
     @objc func musicOnOffSwitchToggled () {
         var myMusicSwitch : Bool = true // game starts with switch on so music feature is clear
