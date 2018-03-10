@@ -66,11 +66,11 @@ class SplashScreenViewController: UIViewController {
         loading_22 = UIImage(named: "loading_0021_22")!
         loading_23 = UIImage(named: "loading_0022_23")!//should run with 01
         
-        images = [loading_1, loading_2, loading_3, loading_4, loading_5, loading_6, loading_7, loading_8, loading_9, loading_10, loading_11, loading_12, loading_13, loading_14, loading_15, loading_16, loading_17, loading_18, loading_19, loading_20, loading_21, loading_22, loading_23]
-        animatedImage = UIImage.animatedImage(with: images, duration: 1.00)
+        images = [loading_1, loading_1,loading_1,loading_1,loading_1,loading_1, loading_1,loading_1,loading_1,loading_1,loading_1, loading_1,loading_1,loading_1,loading_1, loading_2,loading_2,loading_2, loading_3,loading_3,loading_3, loading_4,loading_4,loading_4, loading_5,loading_5,loading_5, loading_6,loading_6,loading_6, loading_7,loading_7,loading_7, loading_8,loading_8,loading_8, loading_9, loading_9, loading_9, loading_9, loading_9,loading_9, loading_9, loading_9, loading_9, loading_9,loading_9, loading_9, loading_9, loading_9, loading_9, loading_10,loading_10,loading_10, loading_11,loading_11,loading_11, loading_12, loading_12, loading_12, loading_13, loading_13, loading_13, loading_14, loading_14, loading_14, loading_15,loading_15,loading_15, loading_16,loading_16,loading_16, loading_17, loading_17, loading_17, loading_17, loading_17,loading_17, loading_17, loading_17, loading_17, loading_17,loading_17, loading_17, loading_17, loading_17, loading_17, loading_18, loading_18, loading_18, loading_19, loading_19,loading_19,loading_20,loading_20,loading_20, loading_21,loading_21,loading_21, loading_22,loading_22,loading_22, loading_23, loading_23, loading_23]
+        animatedImage = UIImage.animatedImage(with: images, duration: 1.80)
         objectImage.image = animatedImage
         
-        perform(#selector(SplashScreenViewController.showSplashScreenVC), with: nil, afterDelay: 1)
+        perform(#selector(SplashScreenViewController.showSplashScreenVC), with: nil, afterDelay: 5)
     }
     
     func showSplashScreenVC() {
