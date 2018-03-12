@@ -75,7 +75,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Dwq-dI-UcF"/>
                     <connections>
-                        <outlet property="gamezeumLogo" destination="Djg-DK-jIY" id="6Y2-dx-oXi"/>
+                        <outlet property="backgroundImageView" destination="O5v-Su-3ns" id="Dfl-ay-2Iw"/>
+                        <outlet property="logoView" destination="1D1-Gv-tdC" id="yqu-E5-U8V"/>
+                        <outlet property="startButtonView" destination="ro5-de-aDn" id="D1j-Ss-bv1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EyZ-tT-x1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -243,7 +245,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="uwT-hx-DAa"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Delicia-Melted" family="Delicia" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
