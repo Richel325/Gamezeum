@@ -77,7 +77,7 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
     @IBAction func submitAnswer1(_ sender: UIButton) {
         if let userInput = answer1.currentTitle?.lowercased(), let actualAnswer = object?.collection?.name?.lowercased() {
             if actualAnswer.contains(userInput) {// ALERT MESSAGES: For right and wrong answers
-                AudioServicesPlayAlertSound(1325)
+                //AudioServicesPlayAlertSound(1325)
                 UserDefaults.standard.score += 10
                 //Dismisses the segue when the answer is correct
                 //TODO: Also delete the row in the tableview and replace with a new object
@@ -88,7 +88,7 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
                     let _ = self.dismiss(animated: true)}))
                 self.present(alertController2, animated: true, completion: nil)
             } else {
-                AudioServicesPlayAlertSound(1024)
+                //AudioServicesPlayAlertSound(1024)
                 let alertController1 = UIAlertController(title: "Wrong Answer!", message:
                     "Please try answering the question again.", preferredStyle: UIAlertControllerStyle.alert)
                 alertController1.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))

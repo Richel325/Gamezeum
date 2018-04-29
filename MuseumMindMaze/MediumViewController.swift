@@ -43,7 +43,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
     @IBAction func submitAnswer(_ sender: UIButton) {
         if let userInput = answer?.text?.lowercased(), let actualAnswer = object?.medium?.lowercased() {
             if actualAnswer.contains(userInput) {// ALERT MESSAGES: For right and wrong answers
-                AudioServicesPlayAlertSound(1325)
+                //AudioServicesPlayAlertSound(1325)
                 UserDefaults.standard.score += 10
                 
                 //Dismisses the segue when the answer is correct
@@ -55,7 +55,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
                     self.dismiss(animated: true)}))
                 self.present(alertController2, animated: true, completion: nil)
             } else {
-                AudioServicesPlayAlertSound(1024)
+                //AudioServicesPlayAlertSound(1024)
                 let alertController1 = UIAlertController(title: "Wrong Answer!", message:
                     "Please try answering the question again.", preferredStyle: UIAlertControllerStyle.alert)
                 alertController1.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))

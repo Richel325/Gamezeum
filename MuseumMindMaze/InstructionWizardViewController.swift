@@ -25,6 +25,12 @@ class InstructionWizardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        instruction2.isHidden = true
+        instruction3.isHidden = true
+        instruction4.isHidden = true
+        instruction5.isHidden = true
+        instructionImage.image = #imageLiteral(resourceName: "title_museum_bg")
 
        
     }
