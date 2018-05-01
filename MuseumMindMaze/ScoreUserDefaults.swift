@@ -14,12 +14,4 @@ extension UserDefaults {
         get { return UserDefaults.standard.integer(forKey: UserDefaults.scoreID) }
         set { UserDefaults.standard.set(newValue, forKey: UserDefaults.scoreID) }
     }
-    
-    //userdefaults for music
-    fileprivate static let musicSwitch = "musicSwitch"
-    var music : Bool {
-        get { return UserDefaults.standard.bool(forKey: "musicSwitch") }
-        set { UserDefaults.standard.set(bool, forKey: "musicSwitch") }
-    }
-    
 }

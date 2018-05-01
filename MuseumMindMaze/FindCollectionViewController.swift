@@ -78,7 +78,6 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
                 
                 UserDefaults.standard.score += 10
                 //Dismisses the segue when the answer is correct
-                //TODO: Also delete the row in the tableview and replace with a new object
                 scoreLabel.text? = String(UserDefaults.standard.score)
                 let alertController2 = UIAlertController(title: "Correct Answer!", message:
                     "You got it right! Click OK to keep playing.", preferredStyle: UIAlertControllerStyle.alert)

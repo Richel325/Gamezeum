@@ -79,5 +79,3 @@ class SplashScreenViewController: UIViewController {
     
 }
 
-//key frames should be .5 seconds - key frames should last longer so they can be seen fully and acknowledge
-//in between frames should be .01 seconds
