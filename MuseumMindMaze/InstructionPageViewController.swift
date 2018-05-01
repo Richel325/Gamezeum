@@ -14,11 +14,11 @@ class InstructionPageViewController: UIPageViewController, UIPageViewControllerD
     
     var subViewControllers: [UIViewController] = {
         return [
-            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController1") as! WelcomeViewController1,
-            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController2") as! WelcomeViewController2,
-            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController3") as! WelcomeViewController3,
-            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController4") as! WelcomeViewController4,
-            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController5") as! WelcomeViewController5
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Instruction1ViewController") as! Instruction1ViewController,
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Instruction2ViewController") as! Instruction2ViewController,
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Instruction3ViewController") as! Instruction3ViewController,
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Instruction4ViewController") as! Instruction4ViewController,
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Instruction5ViewController") as! Instruction5ViewController
         ]
     }()
     
