@@ -329,48 +329,6 @@ tornotluk.in</string>
             </objects>
             <point key="canvasLocation" x="1240.5" y="-3461.5"/>
         </scene>
-        <!--InstructionWizard-->
-        <scene sceneID="tHV-E9-5A9">
-            <objects>
-                <viewController storyboardIdentifier="InstructionWizard" id="CJ6-Vs-VrA" userLabel="InstructionWizard" customClass="InstructionWizardViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RRI-cI-ED3"/>
-                        <viewControllerLayoutGuide type="bottom" id="Iag-5l-XZy"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="m9M-LY-Eyo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E6s-Nf-ze0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTG-8P-2Qh">
-                                <rect key="frame" x="16" y="617" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SKIP">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="0.29331656678082191" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="E6s-Nf-ze0" firstAttribute="centerY" secondItem="m9M-LY-Eyo" secondAttribute="centerY" id="408-qy-zAl"/>
-                            <constraint firstItem="E6s-Nf-ze0" firstAttribute="top" secondItem="m9M-LY-Eyo" secondAttribute="top" id="JT2-6E-3qc"/>
-                            <constraint firstItem="Iag-5l-XZy" firstAttribute="top" secondItem="E6s-Nf-ze0" secondAttribute="bottom" id="NW5-ST-Bjm"/>
-                            <constraint firstItem="E6s-Nf-ze0" firstAttribute="leading" secondItem="m9M-LY-Eyo" secondAttribute="leading" id="OnU-CQ-tu7"/>
-                            <constraint firstItem="E6s-Nf-ze0" firstAttribute="centerX" secondItem="m9M-LY-Eyo" secondAttribute="centerX" id="b9E-eq-dqa"/>
-                            <constraint firstAttribute="trailing" secondItem="E6s-Nf-ze0" secondAttribute="trailing" id="o7h-m1-0dJ"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="instructionImage" destination="E6s-Nf-ze0" id="0je-TP-rvl"/>
-                        <outlet property="skip" destination="VTG-8P-2Qh" id="0T5-6N-lkC"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l3P-TS-9Zl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-415.19999999999999" y="-3465.5172413793107"/>
-        </scene>
         <!--SplashScreenViewController-->
         <scene sceneID="OIj-CL-YuT">
             <objects>
