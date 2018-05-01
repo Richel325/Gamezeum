@@ -13,16 +13,15 @@
 		0C73E0881FEA36F4006E1FAA /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C73E0871FEA36F4006E1FAA /* SettingsVC.swift */; };
 		0C82ADD31E53F14800F12A97 /* ScoreUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C82ADD21E53F14800F12A97 /* ScoreUserDefaults.swift */; };
 		0C91ACE020203E2600AB3692 /* InstructionWizardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C91ACDF20203E2600AB3692 /* InstructionWizardViewController.swift */; };
-		0CA6FB411FE1216F00539E5F /* Delicia Melted.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6FB401FE1216F00539E5F /* Delicia Melted.otf */; };
 		0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */; };
 		0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */; };
 		0CB67FA11FDA4B640072E039 /* FullScreenObjectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB67FA01FDA4B640072E039 /* FullScreenObjectImageViewController.swift */; };
+		0CB99E23209826C200C60D43 /* Delicia Melted.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CB99E22209826C200C60D43 /* Delicia Melted.otf */; };
 		0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC306211E3F969100790A85 /* AppDelegate.swift */; };
 		0CC306271E3F969100790A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306251E3F969100790A85 /* Main.storyboard */; };
 		0CC306291E3F969100790A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306281E3F969100790A85 /* Assets.xcassets */; };
 		0CC3062C1E3F969100790A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC3062A1E3F969100790A85 /* LaunchScreen.storyboard */; };
 		0CF8C6922015AC1A00B07F89 /* SegueToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF8C6912015AC1A00B07F89 /* SegueToLeft.swift */; };
-		0CF8C6962015BCA600B07F89 /* CustomSpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF8C6952015BCA600B07F89 /* CustomSpinnerViewController.swift */; };
 		0CF942B41E4D8B5700E3F563 /* MediumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */; };
 		0CF942B61E4D8B7700E3F563 /* FindCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */; };
 		0CF942C01E4F76CA00E3F563 /* QuestionVCEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942BF1E4F76CA00E3F563 /* QuestionVCEnum.swift */; };
@@ -39,11 +38,11 @@
 		0C73E0871FEA36F4006E1FAA /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		0C82ADD21E53F14800F12A97 /* ScoreUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreUserDefaults.swift; sourceTree = "<group>"; };
 		0C91ACDF20203E2600AB3692 /* InstructionWizardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionWizardViewController.swift; sourceTree = "<group>"; };
-		0CA6FB401FE1216F00539E5F /* Delicia Melted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delicia Melted.otf"; sourceTree = "<group>"; };
 		0CA6FB421FE1231400539E5F /* Delicia Melted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delicia Melted.otf"; sourceTree = "<group>"; };
 		0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		0CB67FA01FDA4B640072E039 /* FullScreenObjectImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenObjectImageViewController.swift; sourceTree = "<group>"; };
+		0CB99E22209826C200C60D43 /* Delicia Melted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delicia Melted.otf"; sourceTree = "<group>"; };
 		0CC3061E1E3F969100790A85 /* MuseumMindMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumMindMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC306211E3F969100790A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MuseumMindMaze/AppDelegate.swift; sourceTree = "<group>"; };
 		0CC306261E3F969100790A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,7 +50,6 @@
 		0CC3062B1E3F969100790A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CC3062D1E3F969100790A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CF8C6912015AC1A00B07F89 /* SegueToLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueToLeft.swift; sourceTree = "<group>"; };
-		0CF8C6952015BCA600B07F89 /* CustomSpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpinnerViewController.swift; sourceTree = "<group>"; };
 		0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumViewController.swift; sourceTree = "<group>"; };
 		0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindCollectionViewController.swift; sourceTree = "<group>"; };
 		0CF942BF1E4F76CA00E3F563 /* QuestionVCEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionVCEnum.swift; sourceTree = "<group>"; };
@@ -97,12 +95,10 @@
 		0CA60EC31E468FA000CAA9B5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				0CA6FB401FE1216F00539E5F /* Delicia Melted.otf */,
 				0CC306251E3F969100790A85 /* Main.storyboard */,
 				0CC3062A1E3F969100790A85 /* LaunchScreen.storyboard */,
 				0CF942CA1E51837000E3F563 /* CustomButton.swift */,
 				0CF8C6912015AC1A00B07F89 /* SegueToLeft.swift */,
-				0CF8C6952015BCA600B07F89 /* CustomSpinnerViewController.swift */,
 				0CC306211E3F969100790A85 /* AppDelegate.swift */,
 			);
 			name = UI;
@@ -133,6 +129,7 @@
 		0CC306151E3F969100790A85 = {
 			isa = PBXGroup;
 			children = (
+				0CB99E22209826C200C60D43 /* Delicia Melted.otf */,
 				0CA6FB421FE1231400539E5F /* Delicia Melted.otf */,
 				0CF942C71E51704400E3F563 /* Music */,
 				0CA60EC31E468FA000CAA9B5 /* UI */,
@@ -246,10 +243,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CA6FB411FE1216F00539E5F /* Delicia Melted.otf in Resources */,
 				0CC3062C1E3F969100790A85 /* LaunchScreen.storyboard in Resources */,
 				0C2141FB2012F42C00778B17 /* Fugue#1_RichelCuyler_2005.mp3 in Resources */,
 				0CC306291E3F969100790A85 /* Assets.xcassets in Resources */,
+				0CB99E23209826C200C60D43 /* Delicia Melted.otf in Resources */,
 				0CC306271E3F969100790A85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +268,6 @@
 				0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */,
 				0CF942CB1E51837000E3F563 /* CustomButton.swift in Sources */,
 				0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */,
-				0CF8C6962015BCA600B07F89 /* CustomSpinnerViewController.swift in Sources */,
 				0CF942C61E516EE900E3F563 /* GameIntroViewController.swift in Sources */,
 				0C91ACE020203E2600AB3692 /* InstructionWizardViewController.swift in Sources */,
 				0CF942B41E4D8B5700E3F563 /* MediumViewController.swift in Sources */,
