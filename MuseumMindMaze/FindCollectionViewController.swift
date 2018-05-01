@@ -35,7 +35,6 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
     //Begin viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.answer.delegate = self
         
         self.answerStackView.layer.cornerRadius = 4.75
         
@@ -66,7 +65,7 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
         if isAnswerInButtons == false {
         let index = Int(arc4random_uniform(UInt32(buttons.count-1)))
         buttons[index]?.setTitle(object?.collection?.name, for: .normal)
-            print(buttons[index]?.title(for: .normal)!)
+            print(buttons[index]?.title(for: .normal)! as Any)
         }
     }
     
