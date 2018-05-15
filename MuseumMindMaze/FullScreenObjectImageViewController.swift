@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class FullScreenObjectImageViewController: UIViewController, UIScrollViewDelegate {
     
@@ -17,13 +18,13 @@ class FullScreenObjectImageViewController: UIViewController, UIScrollViewDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        paintingScrollView.addSubview(paintingImageView)
         paintingScrollView.contentSize = CGSize(width: paintingImageView.frame.width, height: paintingImageView.frame.height)
         paintingScrollView.bounces = false
         paintingScrollView.bouncesZoom = true
         paintingScrollView.minimumZoomScale = 0.3
         paintingScrollView.maximumZoomScale = 2
+        
         
         if let artObjectImageURLString = object?.primaryImageURLString {
             paintingImageView.downLoadImage(from: artObjectImageURLString)
@@ -32,7 +33,14 @@ class FullScreenObjectImageViewController: UIViewController, UIScrollViewDelegat
             })
         }
         
+
+        //paintingImageView.contentMode = .scaleAspectFit
+        //paintingImageView.image = object?.primaryImageURLString
+        paintingImageView.sizeThatFits(CGSize.init(width: 375, height: 667))
         paintingScrollView.addSubview(paintingImageView)
+        
+        
+
     }
     
     

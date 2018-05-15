@@ -468,7 +468,7 @@ tornotluk.in</string>
         <!--Full Screen Object Image View Controller-->
         <scene sceneID="sTg-hr-Zg3">
             <objects>
-                <viewController storyboardIdentifier="FullScreenObjectImageViewController" id="vAq-Ez-QhB" customClass="FullScreenObjectImageViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FullScreenObjectImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vAq-Ez-QhB" customClass="FullScreenObjectImageViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FRN-Q2-Mnr"/>
                         <viewControllerLayoutGuide type="bottom" id="pg7-xh-4Xy"/>
