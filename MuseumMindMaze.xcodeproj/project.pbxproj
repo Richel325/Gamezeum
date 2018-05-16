@@ -14,7 +14,6 @@
 		0C82ADD31E53F14800F12A97 /* ScoreUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C82ADD21E53F14800F12A97 /* ScoreUserDefaults.swift */; };
 		0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */; };
 		0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */; };
-		0CB67FA11FDA4B640072E039 /* FullScreenObjectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB67FA01FDA4B640072E039 /* FullScreenObjectImageViewController.swift */; };
 		0CB99E23209826C200C60D43 /* Delicia Melted.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CB99E22209826C200C60D43 /* Delicia Melted.otf */; };
 		0CB99E272098590100C60D43 /* Instruction1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E262098590100C60D43 /* Instruction1ViewController.swift */; };
 		0CB99E292098591300C60D43 /* Instruction2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E282098591200C60D43 /* Instruction2ViewController.swift */; };
@@ -45,7 +44,6 @@
 		0CA6FB421FE1231400539E5F /* Delicia Melted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delicia Melted.otf"; sourceTree = "<group>"; };
 		0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		0CB67FA01FDA4B640072E039 /* FullScreenObjectImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenObjectImageViewController.swift; sourceTree = "<group>"; };
 		0CB99E22209826C200C60D43 /* Delicia Melted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delicia Melted.otf"; sourceTree = "<group>"; };
 		0CB99E262098590100C60D43 /* Instruction1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction1ViewController.swift; sourceTree = "<group>"; };
 		0CB99E282098591200C60D43 /* Instruction2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction2ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +117,7 @@
 			children = (
 				0C0E4F671E6D632A0038A17C /* SplashScreenViewController.swift */,
 				0CF942C51E516EE900E3F563 /* GameIntroViewController.swift */,
+				0CB99E25209858CF00C60D43 /* Instructions */,
 			);
 			name = "Intro VCs";
 			sourceTree = "<group>";
@@ -127,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				0CF942B11E4D8B1600E3F563 /* Cells */,
-				0CB67FA01FDA4B640072E039 /* FullScreenObjectImageViewController.swift */,
 				0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */,
 				0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */,
 				0C73E0871FEA36F4006E1FAA /* SettingsVC.swift */,
@@ -191,9 +189,8 @@
 		0CF942B21E4D8B2A00E3F563 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0CB99E25209858CF00C60D43 /* Instructions */,
-				0CB67FA71FDBB9B70072E039 /* Black VCs */,
 				0CB67FA61FDBB9A90072E039 /* Intro VCs */,
+				0CB67FA71FDBB9B70072E039 /* Black VCs */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -289,7 +286,6 @@
 				0CF8C6922015AC1A00B07F89 /* SegueToLeft.swift in Sources */,
 				0CB99E3120985B1F00C60D43 /* InstructionPageViewController.swift in Sources */,
 				0C0E4F681E6D632A0038A17C /* SplashScreenViewController.swift in Sources */,
-				0CB67FA11FDA4B640072E039 /* FullScreenObjectImageViewController.swift in Sources */,
 				0C73E0881FEA36F4006E1FAA /* SettingsVC.swift in Sources */,
 				0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */,
 				0CF942CB1E51837000E3F563 /* CustomButton.swift in Sources */,

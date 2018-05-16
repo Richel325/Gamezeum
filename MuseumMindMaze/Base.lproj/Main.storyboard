@@ -6,9 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,9 +28,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title_museum_bg" translatesAutoresizingMaskIntoConstraints="NO" id="dxw-cL-QkX" userLabel="colorfulImageView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5v-Su-3ns" userLabel="backgroundImageView">
                                 <rect key="frame" x="0.0" y="70" width="375" height="667"/>
                                 <subviews>
@@ -48,25 +43,45 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ro5-de-aDn" userLabel="startButtonView">
-                                <rect key="frame" x="94" y="600" width="200" height="36"/>
+                                <rect key="frame" x="94" y="500" width="200" height="136"/>
                                 <subviews>
-                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-3i-JDL" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                        <rect key="frame" x="-2" y="1" width="200" height="36"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-3i-JDL" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="2" width="200" height="32"/>
                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Delicia-Melted" family="Delicia" pointSize="20"/>
                                         <size key="titleShadowOffset" width="2" height="2"/>
                                         <state key="normal" title="PLAY">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.10588235294117647" green="0.27058823529411763" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="checkAction:" destination="LMj-HA-f7X" eventType="touchUpInside" id="TCL-BA-cQK"/>
                                             <segue destination="uvJ-tD-UfA" kind="show" id="hxW-CI-wRg"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVd-AA-RK3" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="52" width="200" height="32"/>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Delicia-Melted" family="Delicia" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="2" height="2"/>
+                                        <state key="normal" title="SETTINGS">
+                                            <color key="titleColor" red="0.1058823529" green="0.27058823529999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="pk2-Ns-iYd" kind="custom" customClass="SegueToLeft" customModule="MuseumMindMaze" customModuleProvider="target" id="Zus-UQ-eBj"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xVd-AA-RK3" secondAttribute="trailing" id="BVM-y1-t8v"/>
+                                    <constraint firstItem="xVd-AA-RK3" firstAttribute="leading" secondItem="ro5-de-aDn" secondAttribute="leading" id="HWw-OR-hDW"/>
+                                    <constraint firstItem="xVd-AA-RK3" firstAttribute="centerY" secondItem="ro5-de-aDn" secondAttribute="centerY" id="aCA-cA-5iR"/>
+                                    <constraint firstItem="xVd-AA-RK3" firstAttribute="leading" secondItem="Q1L-3i-JDL" secondAttribute="leading" id="fBX-V0-Nq8"/>
+                                    <constraint firstItem="xVd-AA-RK3" firstAttribute="trailing" secondItem="Q1L-3i-JDL" secondAttribute="trailing" id="oX4-5K-buv"/>
+                                    <constraint firstItem="xVd-AA-RK3" firstAttribute="top" secondItem="Q1L-3i-JDL" secondAttribute="bottom" constant="18" id="tBT-WL-0hf"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1D1-Gv-tdC" userLabel="logoView">
                                 <rect key="frame" x="0.0" y="140" width="375" height="128"/>
@@ -83,17 +98,13 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="1D1-Gv-tdC" secondAttribute="bottom" constant="399" id="0GS-0b-DAe"/>
                             <constraint firstItem="ro5-de-aDn" firstAttribute="leading" secondItem="G0z-94-h96" secondAttribute="leadingMargin" constant="78" id="5Ls-n2-kHS"/>
-                            <constraint firstItem="dxw-cL-QkX" firstAttribute="trailing" secondItem="1D1-Gv-tdC" secondAttribute="trailing" id="60j-KV-yMr"/>
                             <constraint firstAttribute="trailing" secondItem="1D1-Gv-tdC" secondAttribute="trailing" id="7x6-Ad-GU4"/>
-                            <constraint firstItem="dxw-cL-QkX" firstAttribute="top" secondItem="G0z-94-h96" secondAttribute="top" id="BRm-On-AuB"/>
-                            <constraint firstItem="ro5-de-aDn" firstAttribute="top" secondItem="G0z-94-h96" secondAttribute="top" constant="600" id="Cqx-GM-7GR"/>
+                            <constraint firstItem="ro5-de-aDn" firstAttribute="top" secondItem="G0z-94-h96" secondAttribute="top" constant="500" id="Cqx-GM-7GR"/>
                             <constraint firstAttribute="trailing" secondItem="O5v-Su-3ns" secondAttribute="trailing" id="PQ0-kq-eLH"/>
                             <constraint firstItem="1D1-Gv-tdC" firstAttribute="top" secondItem="BV0-wm-P0f" secondAttribute="bottom" constant="120" id="QnR-Yl-h0C"/>
                             <constraint firstItem="1D1-Gv-tdC" firstAttribute="leading" secondItem="O5v-Su-3ns" secondAttribute="leading" id="Z56-T5-SUa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ro5-de-aDn" secondAttribute="trailing" constant="65" id="bQN-xI-Bja"/>
-                            <constraint firstItem="dxw-cL-QkX" firstAttribute="leading" secondItem="1D1-Gv-tdC" secondAttribute="leading" id="dPv-Hn-jVw"/>
                             <constraint firstItem="1D1-Gv-tdC" firstAttribute="trailing" secondItem="O5v-Su-3ns" secondAttribute="trailing" id="edZ-yK-8Rt"/>
-                            <constraint firstItem="dxw-cL-QkX" firstAttribute="bottom" secondItem="1D1-Gv-tdC" secondAttribute="bottom" constant="-28" id="esW-04-SBJ"/>
                             <constraint firstItem="O5v-Su-3ns" firstAttribute="leading" secondItem="G0z-94-h96" secondAttribute="leading" id="m8T-CN-FRj"/>
                             <constraint firstItem="1D1-Gv-tdC" firstAttribute="leading" secondItem="G0z-94-h96" secondAttribute="leading" id="o1G-0B-fIO"/>
                             <constraint firstItem="O5v-Su-3ns" firstAttribute="top" secondItem="BV0-wm-P0f" secondAttribute="bottom" constant="50" id="s8I-1u-hYA"/>
@@ -351,12 +362,35 @@ tornotluk.in</string>
                     <view key="view" contentMode="scaleToFill" id="bRr-uA-gUp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.054512985049999997" green="0.60681575539999999" blue="0.83420056099999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IHX-2z-41J">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXO-1T-wzL">
+                                <rect key="frame" x="16" y="20" width="343" height="119.5"/>
+                                <string key="text">Tap the image of the art object you want to select. Scroll down to see more objects, and pull down to refresh the view and get a brand new set of objects to play.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14117647058823529" green="0.60784313725490191" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IHX-2z-41J" firstAttribute="centerX" secondItem="bRr-uA-gUp" secondAttribute="centerX" id="10n-EW-dd4"/>
+                            <constraint firstItem="eXO-1T-wzL" firstAttribute="trailing" secondItem="bRr-uA-gUp" secondAttribute="trailingMargin" id="5U3-kP-mnk"/>
+                            <constraint firstItem="IHX-2z-41J" firstAttribute="top" secondItem="bRr-uA-gUp" secondAttribute="top" id="KnX-pa-UUi"/>
+                            <constraint firstItem="eXO-1T-wzL" firstAttribute="leading" secondItem="bRr-uA-gUp" secondAttribute="leadingMargin" id="Mnr-Te-kpg"/>
+                            <constraint firstItem="IHX-2z-41J" firstAttribute="leading" secondItem="bRr-uA-gUp" secondAttribute="leading" id="QZJ-0Z-Lwk"/>
+                            <constraint firstItem="ed7-ve-bvi" firstAttribute="top" secondItem="IHX-2z-41J" secondAttribute="bottom" id="cYo-uy-jDJ"/>
+                            <constraint firstItem="IHX-2z-41J" firstAttribute="centerY" secondItem="bRr-uA-gUp" secondAttribute="centerY" id="jT1-mz-jTh"/>
+                            <constraint firstItem="eXO-1T-wzL" firstAttribute="top" secondItem="Wiv-kZ-JIR" secondAttribute="bottom" id="st3-DQ-Kbp"/>
+                            <constraint firstAttribute="trailing" secondItem="IHX-2z-41J" secondAttribute="trailing" id="ulb-a2-32o"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mXq-Mb-QCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1491" y="-4377"/>
+            <point key="canvasLocation" x="-1492" y="-4377.6611694152925"/>
         </scene>
         <!--Instruction4 View Controller-->
         <scene sceneID="X0G-qb-LRd">
@@ -369,12 +403,34 @@ tornotluk.in</string>
                     <view key="view" contentMode="scaleToFill" id="gFt-NO-HC9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z8z-Ev-Lek">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If your answer is correct, you can choose another art object to keep playing. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbN-G9-dC6">
+                                <rect key="frame" x="16" y="28" width="343" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z8z-Ev-Lek" firstAttribute="centerY" secondItem="gFt-NO-HC9" secondAttribute="centerY" id="4Q1-6g-0Yh"/>
+                            <constraint firstItem="kbN-G9-dC6" firstAttribute="top" secondItem="6NQ-df-Ous" secondAttribute="bottom" constant="8" id="5Mn-Uh-v7j"/>
+                            <constraint firstAttribute="trailing" secondItem="Z8z-Ev-Lek" secondAttribute="trailing" id="GFe-zY-CLa"/>
+                            <constraint firstItem="Z8z-Ev-Lek" firstAttribute="top" secondItem="gFt-NO-HC9" secondAttribute="top" id="Tof-NO-pSp"/>
+                            <constraint firstItem="Z8z-Ev-Lek" firstAttribute="centerX" secondItem="gFt-NO-HC9" secondAttribute="centerX" id="b1z-gg-gbx"/>
+                            <constraint firstItem="Esh-pu-YOz" firstAttribute="top" secondItem="Z8z-Ev-Lek" secondAttribute="bottom" id="gBn-f4-SHl"/>
+                            <constraint firstItem="kbN-G9-dC6" firstAttribute="leading" secondItem="gFt-NO-HC9" secondAttribute="leadingMargin" id="oOW-8T-JfR"/>
+                            <constraint firstItem="Z8z-Ev-Lek" firstAttribute="leading" secondItem="gFt-NO-HC9" secondAttribute="leading" id="pKM-Cl-T55"/>
+                            <constraint firstItem="kbN-G9-dC6" firstAttribute="trailing" secondItem="gFt-NO-HC9" secondAttribute="trailingMargin" id="wMG-GU-30h"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pav-sj-mIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1095" y="-3597"/>
+            <point key="canvasLocation" x="-1095.2" y="-3597.7511244377815"/>
         </scene>
         <!--Instruction5 View Controller-->
         <scene sceneID="YFT-VN-9Tc">
@@ -387,12 +443,48 @@ tornotluk.in</string>
                     <view key="view" contentMode="scaleToFill" id="cWm-dO-uGv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zKf-P4-M8C">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good luck, and have fun exploring the museum!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pB9-HU-EFJ">
+                                <rect key="frame" x="16" y="28" width="343" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0g-gH-lmK" userLabel="Close">
+                                <rect key="frame" x="16" y="619" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="CRr-L4-maM"/>
+                                    <constraint firstAttribute="height" constant="40" id="sVh-ri-991"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="dismissToGallery:" destination="SrQ-Hz-IB4" eventType="touchUpInside" id="fIp-MY-Uzx"/>
+                                    <action selector="dismissToGallery:" destination="pk2-Ns-iYd" eventType="touchUpInside" id="zL7-rV-XLP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14117647059999999" green="0.60784313729999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ho2-Pg-QlC" firstAttribute="top" secondItem="f0g-gH-lmK" secondAttribute="bottom" constant="8" symbolic="YES" id="3rC-7B-qbe"/>
+                            <constraint firstItem="zKf-P4-M8C" firstAttribute="leading" secondItem="cWm-dO-uGv" secondAttribute="leading" id="5v7-Cv-qvE"/>
+                            <constraint firstItem="f0g-gH-lmK" firstAttribute="leading" secondItem="pB9-HU-EFJ" secondAttribute="leading" id="CE5-cS-89T"/>
+                            <constraint firstItem="pB9-HU-EFJ" firstAttribute="top" secondItem="blG-LJ-yve" secondAttribute="bottom" constant="8" id="OFQ-4u-hSY"/>
+                            <constraint firstItem="zKf-P4-M8C" firstAttribute="top" secondItem="cWm-dO-uGv" secondAttribute="top" id="Qe9-r6-eO7"/>
+                            <constraint firstAttribute="trailing" secondItem="zKf-P4-M8C" secondAttribute="trailing" id="Vm4-QE-1Sm"/>
+                            <constraint firstItem="ho2-Pg-QlC" firstAttribute="top" secondItem="zKf-P4-M8C" secondAttribute="bottom" id="d3i-R9-tov"/>
+                            <constraint firstItem="pB9-HU-EFJ" firstAttribute="trailing" secondItem="cWm-dO-uGv" secondAttribute="trailingMargin" id="e05-35-K8X"/>
+                            <constraint firstItem="pB9-HU-EFJ" firstAttribute="leading" secondItem="cWm-dO-uGv" secondAttribute="leadingMargin" id="l8J-C6-mZ1"/>
+                            <constraint firstItem="zKf-P4-M8C" firstAttribute="centerX" secondItem="cWm-dO-uGv" secondAttribute="centerX" id="v6u-sX-OrD"/>
+                            <constraint firstItem="zKf-P4-M8C" firstAttribute="centerY" secondItem="cWm-dO-uGv" secondAttribute="centerY" id="whf-Er-Wjl"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nv8-Nn-zfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-224" y="-3596"/>
+            <point key="canvasLocation" x="-224.80000000000001" y="-3596.8515742128939"/>
         </scene>
         <!--Instruction2 View Controller-->
         <scene sceneID="yBA-Rv-MjU">
@@ -405,12 +497,29 @@ tornotluk.in</string>
                     <view key="view" contentMode="scaleToFill" id="v2S-Tf-fFW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="som-Oe-bg4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When the question page appears, input your answer, or choose the correct answer button. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZC-et-kv6">
+                                <rect key="frame" x="16" y="28" width="343" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MZC-et-kv6" firstAttribute="trailing" secondItem="v2S-Tf-fFW" secondAttribute="trailingMargin" id="EGk-dv-w1E"/>
+                            <constraint firstItem="MZC-et-kv6" firstAttribute="top" secondItem="9oU-gO-ZbW" secondAttribute="bottom" constant="8" id="IJc-kG-TsU"/>
+                            <constraint firstItem="MZC-et-kv6" firstAttribute="leading" secondItem="v2S-Tf-fFW" secondAttribute="leadingMargin" id="Ws4-fP-oES"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bt6-Ja-oAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-682" y="-4377"/>
+            <point key="canvasLocation" x="-682.39999999999998" y="-4377.6611694152925"/>
         </scene>
         <!--Instruction3 View Controller-->
         <scene sceneID="JmD-Q4-rDx">
@@ -423,12 +532,34 @@ tornotluk.in</string>
                     <view key="view" contentMode="scaleToFill" id="kKn-qx-4Eq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hT8-l6-Fvv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If your answer is incorrect, you get to keep trying until you get the correct answer. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="827-Ap-Z72">
+                                <rect key="frame" x="16" y="28" width="343" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14117647059999999" green="0.60784313729999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="827-Ap-Z72" firstAttribute="leading" secondItem="kKn-qx-4Eq" secondAttribute="leadingMargin" id="0yf-7u-Mo1"/>
+                            <constraint firstItem="827-Ap-Z72" firstAttribute="trailing" secondItem="kKn-qx-4Eq" secondAttribute="trailingMargin" id="98j-6I-wQ7"/>
+                            <constraint firstAttribute="trailing" secondItem="hT8-l6-Fvv" secondAttribute="trailing" id="M3m-Qk-3KE"/>
+                            <constraint firstItem="hT8-l6-Fvv" firstAttribute="top" secondItem="kKn-qx-4Eq" secondAttribute="top" id="MkB-EB-M4Z"/>
+                            <constraint firstItem="wel-pO-OhJ" firstAttribute="top" secondItem="hT8-l6-Fvv" secondAttribute="bottom" id="QiT-oc-yB7"/>
+                            <constraint firstItem="hT8-l6-Fvv" firstAttribute="leading" secondItem="kKn-qx-4Eq" secondAttribute="leading" id="WHN-Pe-Rc9"/>
+                            <constraint firstItem="hT8-l6-Fvv" firstAttribute="centerY" secondItem="kKn-qx-4Eq" secondAttribute="centerY" id="Ziu-Uz-FMP"/>
+                            <constraint firstItem="827-Ap-Z72" firstAttribute="top" secondItem="2BB-DZ-2Tq" secondAttribute="bottom" constant="8" id="yCx-Cw-to4"/>
+                            <constraint firstItem="hT8-l6-Fvv" firstAttribute="centerX" secondItem="kKn-qx-4Eq" secondAttribute="centerX" id="yoC-Ri-zHO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdE-u7-GiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="-4378"/>
+            <point key="canvasLocation" x="136.80000000000001" y="-4378.5607196401807"/>
         </scene>
         <!--SplashScreenViewController-->
         <scene sceneID="OIj-CL-YuT">
@@ -465,90 +596,6 @@ tornotluk.in</string>
             </objects>
             <point key="canvasLocation" x="-1094" y="-2703"/>
         </scene>
-        <!--Full Screen Object Image View Controller-->
-        <scene sceneID="sTg-hr-Zg3">
-            <objects>
-                <viewController storyboardIdentifier="FullScreenObjectImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vAq-Ez-QhB" customClass="FullScreenObjectImageViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FRN-Q2-Mnr"/>
-                        <viewControllerLayoutGuide type="bottom" id="pg7-xh-4Xy"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gFI-qJ-kYP" userLabel="superView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8q-fT-wov">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="delegate" destination="vAq-Ez-QhB" id="OGD-F2-vdT"/>
-                                </connections>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veV-W9-wIV" userLabel="DismissButton">
-                                <rect key="frame" x="20.5" y="607" width="37.5" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="veV-W9-wIV" secondAttribute="height" multiplier="101:106" id="hvA-nh-LjO"/>
-                                </constraints>
-                                <state key="normal" image="close"/>
-                                <connections>
-                                    <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="Pty-3r-kwC"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="veV-W9-wIV" firstAttribute="width" secondItem="gFI-qJ-kYP" secondAttribute="width" multiplier="0.1" id="2tB-fx-ide"/>
-                            <constraint firstItem="N8q-fT-wov" firstAttribute="height" secondItem="gFI-qJ-kYP" secondAttribute="height" id="6rS-JY-HnR"/>
-                            <constraint firstItem="veV-W9-wIV" firstAttribute="centerX" secondItem="gFI-qJ-kYP" secondAttribute="centerX" multiplier="0.21" id="A61-9R-nRM"/>
-                            <constraint firstItem="veV-W9-wIV" firstAttribute="centerX" secondItem="gFI-qJ-kYP" secondAttribute="centerX" multiplier="0.12" id="CcV-t0-KEi"/>
-                            <constraint firstItem="N8q-fT-wov" firstAttribute="centerX" secondItem="gFI-qJ-kYP" secondAttribute="centerX" id="HeI-ey-5kL"/>
-                            <constraint firstItem="N8q-fT-wov" firstAttribute="centerY" secondItem="gFI-qJ-kYP" secondAttribute="centerY" id="LWS-SY-7Cg"/>
-                            <constraint firstItem="veV-W9-wIV" firstAttribute="height" secondItem="gFI-qJ-kYP" secondAttribute="height" multiplier="0.1" id="OkB-8v-5w5"/>
-                            <constraint firstItem="N8q-fT-wov" firstAttribute="width" secondItem="gFI-qJ-kYP" secondAttribute="width" id="bMp-l3-Pwf"/>
-                            <constraint firstItem="veV-W9-wIV" firstAttribute="centerY" secondItem="gFI-qJ-kYP" secondAttribute="centerY" multiplier="1.88" id="dX0-UM-77o"/>
-                            <constraint firstItem="veV-W9-wIV" firstAttribute="centerY" secondItem="gFI-qJ-kYP" secondAttribute="centerY" multiplier="1.79" id="wCq-BV-uIv"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="2tB-fx-ide"/>
-                                <exclude reference="A61-9R-nRM"/>
-                                <exclude reference="CcV-t0-KEi"/>
-                                <exclude reference="OkB-8v-5w5"/>
-                                <exclude reference="dX0-UM-77o"/>
-                                <exclude reference="wCq-BV-uIv"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="CcV-t0-KEi"/>
-                                <include reference="OkB-8v-5w5"/>
-                                <include reference="wCq-BV-uIv"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact-widthClass=regular">
-                            <mask key="constraints">
-                                <include reference="CcV-t0-KEi"/>
-                                <include reference="OkB-8v-5w5"/>
-                                <include reference="wCq-BV-uIv"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="2tB-fx-ide"/>
-                                <include reference="A61-9R-nRM"/>
-                                <include reference="dX0-UM-77o"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <connections>
-                        <outlet property="paintingScrollView" destination="N8q-fT-wov" id="s1k-Yn-eUZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QgU-y9-iHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3277" y="-2703"/>
-        </scene>
         <!--CollectionQuestion-->
         <scene sceneID="sWy-zg-n2s">
             <objects>
@@ -564,9 +611,6 @@ tornotluk.in</string>
                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QOv-I2-vFn" userLabel="paintingImageView">
                                 <rect key="frame" x="-23" y="-3" width="421" height="342"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="tWT-L4-3Dm" appends="YES" id="WCt-8o-AFV"/>
-                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="90h-LE-80V">
                                 <rect key="frame" x="85" y="317" width="286" height="15"/>
@@ -607,7 +651,6 @@ tornotluk.in</string>
                                 <state key="normal" image="close"/>
                                 <connections>
                                     <action selector="dismissToGallery:" destination="s1f-hd-btD" eventType="touchUpInside" id="0TF-bt-9VY"/>
-                                    <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="8JZ-OD-rhb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJS-65-5WM" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
@@ -724,11 +767,6 @@ object belong to?</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zbz-3q-zIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="tWT-L4-3Dm" userLabel="FullPaintingTGR">
-                    <connections>
-                        <action selector="presentFullScreenPaintingVC:" destination="s1f-hd-btD" id="dF0-IP-xKL"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2298.4000000000001" y="-3098.5007496251878"/>
         </scene>
@@ -751,9 +789,6 @@ object belong to?</string>
                                     <constraint firstAttribute="height" constant="342" id="7nT-Iy-dB8"/>
                                     <constraint firstAttribute="width" constant="421" id="9lY-5O-YRB"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="mbV-Hn-5ML" appends="YES" id="86e-QN-3lT"/>
-                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VCn-rh-Enx">
                                 <rect key="frame" x="85" y="317.5" width="286" height="14.5"/>
@@ -817,7 +852,6 @@ object belong to?</string>
                                 <state key="normal" image="close"/>
                                 <connections>
                                     <action selector="dismissToGallery:" destination="DrB-iI-GJ6" eventType="touchUpInside" id="abF-H6-8fA"/>
-                                    <action selector="dismissToPaintingDetail:" destination="vAq-Ez-QhB" eventType="touchUpInside" id="ixG-i5-T0y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHH-Dm-jl4" userLabel="SubmitButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
@@ -872,11 +906,6 @@ object belong to?</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VKV-Di-Lvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="mbV-Hn-5ML" userLabel="FullPaintingTGR">
-                    <connections>
-                        <action selector="presentFullScreenPaintingVC:" destination="DrB-iI-GJ6" id="9dd-5j-wR2"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2298.4000000000001" y="-2398.6506746626687"/>
         </scene>
@@ -889,10 +918,9 @@ object belong to?</string>
         <image name="close" width="25" height="25"/>
         <image name="gradientview2" width="200" height="200"/>
         <image name="loading_0000_01" width="144" height="200"/>
-        <image name="title_museum_bg" width="1225" height="2536"/>
         <image name="title_museum_front" width="1454" height="950"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="m6w-3j-vrF"/>
+        <segue reference="Zus-UQ-eBj"/>
     </inferredMetricsTieBreakers>
 </document>

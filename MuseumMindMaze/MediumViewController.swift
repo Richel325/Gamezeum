@@ -91,11 +91,6 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
         print(url!)
     }
     
-    
-    @IBAction func presentFullScreenPaintingVC(_ sender: Any) {
-        let fullScreenObjectImageViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FullScreenObjectImageViewController") as! FullScreenObjectImageViewController
-        fullScreenObjectImageViewController.paintingImageView = UIImageView(image: UIImage(named: (object!.primaryImageURLString)!))
-        present(fullScreenObjectImageViewController, animated: true, completion: nil)
-    }
+
 }
 
