@@ -38,7 +38,7 @@ class InstructionPageViewController: UIPageViewController, UIPageViewControllerD
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
     }
     func configurePageControl() {
-        // The total number of pages that are available is based on how many available colors we have.
+        // The total number of pages that are available is based on how many available subViewControllers we have.
         pageControl = UIPageControl(frame: CGRect(x: 0,y: UIScreen.main.bounds.maxY - 50,width: UIScreen.main.bounds.width,height: 50))
         self.pageControl.numberOfPages = subViewControllers.count
         self.pageControl.currentPage = 0

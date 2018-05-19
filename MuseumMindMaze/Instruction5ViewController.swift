@@ -16,10 +16,4 @@ class Instruction5ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
-    @IBAction func dismissToGallery(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-
 }

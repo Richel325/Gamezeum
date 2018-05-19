@@ -31,7 +31,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5v-Su-3ns" userLabel="backgroundImageView">
                                 <rect key="frame" x="0.0" y="70" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title_museum_front" translatesAutoresizingMaskIntoConstraints="NO" id="mhd-0p-7mu">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title_museum_front" translatesAutoresizingMaskIntoConstraints="NO" id="mhd-0p-7mu">
                                         <rect key="frame" x="0.0" y="4" width="375" height="658"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -139,7 +139,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artImageCell" rowHeight="204" id="ecp-5p-0Ry" customClass="ArtImageTableViewCell" customModule="MuseumMindMaze" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artImageCell" rowHeight="204" id="ecp-5p-0Ry" customClass="ArtImageTableViewCell" customModule="MuseumMindMaze" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="204"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecp-5p-0Ry" id="1lo-zn-Me8">
@@ -370,7 +370,7 @@ tornotluk.in</string>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="choose_art" translatesAutoresizingMaskIntoConstraints="NO" id="IHX-2z-41J">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="choose_art" translatesAutoresizingMaskIntoConstraints="NO" id="IHX-2z-41J">
                                 <rect key="frame" x="0.0" y="120" width="375" height="667"/>
                             </imageView>
                         </subviews>
@@ -404,7 +404,7 @@ tornotluk.in</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="Z8z-Ev-Lek">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="Z8z-Ev-Lek">
                                 <rect key="frame" x="0.0" y="120" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If your answer is correct, you can choose another art object to keep playing. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbN-G9-dC6">
@@ -444,7 +444,7 @@ tornotluk.in</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="website" translatesAutoresizingMaskIntoConstraints="NO" id="zKf-P4-M8C">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="website" translatesAutoresizingMaskIntoConstraints="NO" id="zKf-P4-M8C">
                                 <rect key="frame" x="0.0" y="120" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good luck, and have fun exploring the museum!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pB9-HU-EFJ">
@@ -453,30 +453,33 @@ tornotluk.in</string>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0g-gH-lmK" userLabel="Close">
-                                <rect key="frame" x="16" y="619" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kT-cZ-Kal">
+                                <rect key="frame" x="117.5" y="98" width="140" height="40"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="CRr-L4-maM"/>
-                                    <constraint firstAttribute="height" constant="40" id="sVh-ri-991"/>
+                                    <constraint firstAttribute="width" constant="140" id="9Sc-yw-sCF"/>
                                 </constraints>
-                                <state key="normal" title="OK"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Got it!">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="dismissToGallery:" destination="SrQ-Hz-IB4" eventType="touchUpInside" id="fIp-MY-Uzx"/>
-                                    <action selector="dismissToGallery:" destination="pk2-Ns-iYd" eventType="touchUpInside" id="zL7-rV-XLP"/>
+                                    <segue destination="uvJ-tD-UfA" kind="show" id="14d-nA-J7J"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.14117647059999999" green="0.60784313729999995" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ho2-Pg-QlC" firstAttribute="top" secondItem="f0g-gH-lmK" secondAttribute="bottom" constant="8" symbolic="YES" id="3rC-7B-qbe"/>
                             <constraint firstItem="zKf-P4-M8C" firstAttribute="leading" secondItem="cWm-dO-uGv" secondAttribute="leading" id="5v7-Cv-qvE"/>
-                            <constraint firstItem="f0g-gH-lmK" firstAttribute="leading" secondItem="pB9-HU-EFJ" secondAttribute="leading" id="CE5-cS-89T"/>
+                            <constraint firstItem="0kT-cZ-Kal" firstAttribute="centerX" secondItem="pB9-HU-EFJ" secondAttribute="centerX" id="Bhc-7A-rSn"/>
                             <constraint firstItem="pB9-HU-EFJ" firstAttribute="top" secondItem="blG-LJ-yve" secondAttribute="bottom" constant="8" id="OFQ-4u-hSY"/>
                             <constraint firstItem="zKf-P4-M8C" firstAttribute="top" secondItem="cWm-dO-uGv" secondAttribute="top" constant="120" id="Qe9-r6-eO7"/>
                             <constraint firstAttribute="trailing" secondItem="zKf-P4-M8C" secondAttribute="trailing" id="Vm4-QE-1Sm"/>
                             <constraint firstItem="ho2-Pg-QlC" firstAttribute="top" secondItem="zKf-P4-M8C" secondAttribute="bottom" constant="-120" id="d3i-R9-tov"/>
                             <constraint firstItem="pB9-HU-EFJ" firstAttribute="trailing" secondItem="cWm-dO-uGv" secondAttribute="trailingMargin" id="e05-35-K8X"/>
+                            <constraint firstItem="ho2-Pg-QlC" firstAttribute="top" secondItem="0kT-cZ-Kal" secondAttribute="bottom" constant="529" id="kMa-C8-CA7"/>
                             <constraint firstItem="pB9-HU-EFJ" firstAttribute="leading" secondItem="cWm-dO-uGv" secondAttribute="leadingMargin" id="l8J-C6-mZ1"/>
+                            <constraint firstItem="0kT-cZ-Kal" firstAttribute="top" secondItem="pB9-HU-EFJ" secondAttribute="bottom" constant="22" id="qQu-FH-6RI"/>
                             <constraint firstItem="zKf-P4-M8C" firstAttribute="centerX" secondItem="cWm-dO-uGv" secondAttribute="centerX" id="v6u-sX-OrD"/>
                             <constraint firstItem="zKf-P4-M8C" firstAttribute="centerY" secondItem="cWm-dO-uGv" secondAttribute="centerY" constant="120" id="whf-Er-Wjl"/>
                         </constraints>
@@ -504,7 +507,7 @@ tornotluk.in</string>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="collection" translatesAutoresizingMaskIntoConstraints="NO" id="som-Oe-bg4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="collection" translatesAutoresizingMaskIntoConstraints="NO" id="som-Oe-bg4">
                                 <rect key="frame" x="0.0" y="120" width="375" height="668"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="668" id="pEL-gn-wGg"/>
@@ -538,7 +541,7 @@ tornotluk.in</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wrong" translatesAutoresizingMaskIntoConstraints="NO" id="hT8-l6-Fvv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wrong" translatesAutoresizingMaskIntoConstraints="NO" id="hT8-l6-Fvv">
                                 <rect key="frame" x="0.0" y="120" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If your answer is incorrect, you get to keep trying until you get the correct answer. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="827-Ap-Z72">
@@ -822,7 +825,7 @@ object belong to?</string>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="AQa-jq-ugG" userLabel="QuestionStackView">
                                 <rect key="frame" x="16" y="350" width="343" height="70"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="What materials is this object made of?" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3J-Cr-FPm" userLabel="Question">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="What materials is this object made of?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3J-Cr-FPm" userLabel="Question">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
                                         <color key="textColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -931,6 +934,7 @@ object belong to?</string>
         <image name="wrong" width="1226" height="1995"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Zus-UQ-eBj"/>
+        <segue reference="m6w-3j-vrF"/>
+        <segue reference="14d-nA-J7J"/>
     </inferredMetricsTieBreakers>
 </document>
