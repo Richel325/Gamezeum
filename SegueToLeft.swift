@@ -1,6 +1,6 @@
 //
-//  SegueFromLeft.swift
-//  dashcam_ios
+//  SegueToLeft.swift
+//  Gamezeum
 //
 //  Created by Richel Cuyler on 11/3/17.
 //  Copyright © 2017 Richel Cuyler. All rights reserved.

@@ -10,11 +10,11 @@
 		0C0E4F661E6D2B800038A17C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E4F651E6D2B800038A17C /* Reachability.swift */; };
 		0C0E4F681E6D632A0038A17C /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E4F671E6D632A0038A17C /* SplashScreenViewController.swift */; };
 		0C2141FB2012F42C00778B17 /* Fugue#1_RichelCuyler_2005.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C2141FA2012F42B00778B17 /* Fugue#1_RichelCuyler_2005.mp3 */; };
+		0C6C8D2820BD16FF00D34343 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CC3062D1E3F969100790A85 /* Info.plist */; };
 		0C73E0881FEA36F4006E1FAA /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C73E0871FEA36F4006E1FAA /* SettingsVC.swift */; };
 		0C82ADD31E53F14800F12A97 /* ScoreUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C82ADD21E53F14800F12A97 /* ScoreUserDefaults.swift */; };
 		0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */; };
 		0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */; };
-		0CB99E23209826C200C60D43 /* Delicia Melted.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CB99E22209826C200C60D43 /* Delicia Melted.otf */; };
 		0CB99E272098590100C60D43 /* Instruction1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E262098590100C60D43 /* Instruction1ViewController.swift */; };
 		0CB99E292098591300C60D43 /* Instruction2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E282098591200C60D43 /* Instruction2ViewController.swift */; };
 		0CB99E2B2098592500C60D43 /* Instruction3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E2A2098592500C60D43 /* Instruction3ViewController.swift */; };
@@ -25,6 +25,7 @@
 		0CC306271E3F969100790A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306251E3F969100790A85 /* Main.storyboard */; };
 		0CC306291E3F969100790A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306281E3F969100790A85 /* Assets.xcassets */; };
 		0CC3062C1E3F969100790A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC3062A1E3F969100790A85 /* LaunchScreen.storyboard */; };
+		0CC31A6720BD0D0F0043195F /* Delicia Melted.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA6FB421FE1231400539E5F /* Delicia Melted.otf */; };
 		0CF8C6922015AC1A00B07F89 /* SegueToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF8C6912015AC1A00B07F89 /* SegueToLeft.swift */; };
 		0CF942B41E4D8B5700E3F563 /* MediumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */; };
 		0CF942B61E4D8B7700E3F563 /* FindCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */; };
@@ -37,33 +38,33 @@
 
 /* Begin PBXFileReference section */
 		0C0E4F651E6D2B800038A17C /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		0C0E4F671E6D632A0038A17C /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		0C0E4F671E6D632A0038A17C /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashScreenViewController.swift; path = Gamezeum/SplashScreenViewController.swift; sourceTree = "<group>"; };
 		0C2141FA2012F42B00778B17 /* Fugue#1_RichelCuyler_2005.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fugue#1_RichelCuyler_2005.mp3"; sourceTree = "<group>"; };
-		0C73E0871FEA36F4006E1FAA /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		0C73E0871FEA36F4006E1FAA /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsVC.swift; path = Gamezeum/SettingsVC.swift; sourceTree = "<group>"; };
 		0C82ADD21E53F14800F12A97 /* ScoreUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreUserDefaults.swift; sourceTree = "<group>"; };
 		0CA6FB421FE1231400539E5F /* Delicia Melted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delicia Melted.otf"; sourceTree = "<group>"; };
 		0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		0CB99E22209826C200C60D43 /* Delicia Melted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delicia Melted.otf"; sourceTree = "<group>"; };
-		0CB99E262098590100C60D43 /* Instruction1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction1ViewController.swift; sourceTree = "<group>"; };
-		0CB99E282098591200C60D43 /* Instruction2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction2ViewController.swift; sourceTree = "<group>"; };
-		0CB99E2A2098592500C60D43 /* Instruction3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction3ViewController.swift; sourceTree = "<group>"; };
-		0CB99E2C2098594700C60D43 /* Instruction4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction4ViewController.swift; sourceTree = "<group>"; };
-		0CB99E2E2098595600C60D43 /* Instruction5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction5ViewController.swift; sourceTree = "<group>"; };
-		0CB99E3020985B1F00C60D43 /* InstructionPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionPageViewController.swift; sourceTree = "<group>"; };
-		0CC3061E1E3F969100790A85 /* MuseumMindMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumMindMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CC306211E3F969100790A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MuseumMindMaze/AppDelegate.swift; sourceTree = "<group>"; };
+		0CB99E262098590100C60D43 /* Instruction1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Instruction1ViewController.swift; path = Gamezeum/Instruction1ViewController.swift; sourceTree = "<group>"; };
+		0CB99E282098591200C60D43 /* Instruction2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Instruction2ViewController.swift; path = Gamezeum/Instruction2ViewController.swift; sourceTree = "<group>"; };
+		0CB99E2A2098592500C60D43 /* Instruction3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Instruction3ViewController.swift; path = Gamezeum/Instruction3ViewController.swift; sourceTree = "<group>"; };
+		0CB99E2C2098594700C60D43 /* Instruction4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Instruction4ViewController.swift; path = Gamezeum/Instruction4ViewController.swift; sourceTree = "<group>"; };
+		0CB99E2E2098595600C60D43 /* Instruction5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Instruction5ViewController.swift; path = Gamezeum/Instruction5ViewController.swift; sourceTree = "<group>"; };
+		0CB99E3020985B1F00C60D43 /* InstructionPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InstructionPageViewController.swift; path = Gamezeum/InstructionPageViewController.swift; sourceTree = "<group>"; };
+		0CC3061E1E3F969100790A85 /* Gamezeum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamezeum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC306211E3F969100790A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Gamezeum/AppDelegate.swift; sourceTree = "<group>"; };
 		0CC306261E3F969100790A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0CC306281E3F969100790A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CC306281E3F969100790A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Gamezeum/Assets.xcassets; sourceTree = "<group>"; };
 		0CC3062B1E3F969100790A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0CC3062D1E3F969100790A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CC3062D1E3F969100790A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/richelcuyler/Desktop/General Assembly/Gamezeum/Gamezeum/Info.plist"; sourceTree = "<absolute>"; };
+		0CC31A6820BD0D580043195F /* Delicia Melted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delicia Melted.otf"; sourceTree = "<group>"; };
 		0CF8C6912015AC1A00B07F89 /* SegueToLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueToLeft.swift; sourceTree = "<group>"; };
-		0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumViewController.swift; sourceTree = "<group>"; };
-		0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindCollectionViewController.swift; sourceTree = "<group>"; };
+		0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediumViewController.swift; path = Gamezeum/MediumViewController.swift; sourceTree = "<group>"; };
+		0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindCollectionViewController.swift; path = Gamezeum/FindCollectionViewController.swift; sourceTree = "<group>"; };
 		0CF942BF1E4F76CA00E3F563 /* QuestionVCEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionVCEnum.swift; sourceTree = "<group>"; };
-		0CF942C11E5136EA00E3F563 /* ArtImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtImageViewController.swift; sourceTree = "<group>"; };
-		0CF942C31E51429E00E3F563 /* ArtImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtImageTableViewCell.swift; sourceTree = "<group>"; };
-		0CF942C51E516EE900E3F563 /* GameIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameIntroViewController.swift; sourceTree = "<group>"; };
+		0CF942C11E5136EA00E3F563 /* ArtImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtImageViewController.swift; path = Gamezeum/ArtImageViewController.swift; sourceTree = "<group>"; };
+		0CF942C31E51429E00E3F563 /* ArtImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtImageTableViewCell.swift; path = Gamezeum/ArtImageTableViewCell.swift; sourceTree = "<group>"; };
+		0CF942C51E516EE900E3F563 /* GameIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameIntroViewController.swift; path = Gamezeum/GameIntroViewController.swift; sourceTree = "<group>"; };
 		0CF942CA1E51837000E3F563 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +89,7 @@
 				0C82ADD21E53F14800F12A97 /* ScoreUserDefaults.swift */,
 			);
 			name = Data;
-			path = MuseumMindMaze;
+			path = Gamezeum;
 			sourceTree = "<group>";
 		};
 		0CA60EC21E468F8B00CAA9B5 /* Logic */ = {
@@ -97,7 +98,6 @@
 				0CF942B21E4D8B2A00E3F563 /* ViewControllers */,
 			);
 			name = Logic;
-			path = MuseumMindMaze;
 			sourceTree = "<group>";
 		};
 		0CA60EC31E468FA000CAA9B5 /* UI */ = {
@@ -149,13 +149,13 @@
 		0CC306151E3F969100790A85 = {
 			isa = PBXGroup;
 			children = (
-				0CB99E22209826C200C60D43 /* Delicia Melted.otf */,
 				0CA6FB421FE1231400539E5F /* Delicia Melted.otf */,
+				0CC31A6820BD0D580043195F /* Delicia Melted.otf */,
 				0CF942C71E51704400E3F563 /* Music */,
 				0CA60EC31E468FA000CAA9B5 /* UI */,
 				0CA60EC21E468F8B00CAA9B5 /* Logic */,
 				0CA60EC11E468F6D00CAA9B5 /* Data */,
-				0CC306201E3F969100790A85 /* MuseumMindMaze */,
+				0CC306201E3F969100790A85 /* Gamezeum */,
 				0CC3061F1E3F969100790A85 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -163,18 +163,18 @@
 		0CC3061F1E3F969100790A85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0CC3061E1E3F969100790A85 /* MuseumMindMaze.app */,
+				0CC3061E1E3F969100790A85 /* Gamezeum.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0CC306201E3F969100790A85 /* MuseumMindMaze */ = {
+		0CC306201E3F969100790A85 /* Gamezeum */ = {
 			isa = PBXGroup;
 			children = (
 				0CC306281E3F969100790A85 /* Assets.xcassets */,
 				0CC3062D1E3F969100790A85 /* Info.plist */,
 			);
-			path = MuseumMindMaze;
+			name = Gamezeum;
 			sourceTree = "<group>";
 		};
 		0CF942B11E4D8B1600E3F563 /* Cells */ = {
@@ -206,9 +206,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0CC3061D1E3F969100790A85 /* MuseumMindMaze */ = {
+		0CC3061D1E3F969100790A85 /* Gamezeum */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CC306301E3F969100790A85 /* Build configuration list for PBXNativeTarget "MuseumMindMaze" */;
+			buildConfigurationList = 0CC306301E3F969100790A85 /* Build configuration list for PBXNativeTarget "Gamezeum" */;
 			buildPhases = (
 				0CC3061A1E3F969100790A85 /* Sources */,
 				0CC3061B1E3F969100790A85 /* Frameworks */,
@@ -218,9 +218,9 @@
 			);
 			dependencies = (
 			);
-			name = MuseumMindMaze;
+			name = Gamezeum;
 			productName = MuseumMindMaze;
-			productReference = 0CC3061E1E3F969100790A85 /* MuseumMindMaze.app */;
+			productReference = 0CC3061E1E3F969100790A85 /* Gamezeum.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -240,7 +240,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0CC306191E3F969100790A85 /* Build configuration list for PBXProject "MuseumMindMaze" */;
+			buildConfigurationList = 0CC306191E3F969100790A85 /* Build configuration list for PBXProject "Gamezeum" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -253,7 +253,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0CC3061D1E3F969100790A85 /* MuseumMindMaze */,
+				0CC3061D1E3F969100790A85 /* Gamezeum */,
 			);
 		};
 /* End PBXProject section */
@@ -265,8 +265,9 @@
 			files = (
 				0CC3062C1E3F969100790A85 /* LaunchScreen.storyboard in Resources */,
 				0C2141FB2012F42C00778B17 /* Fugue#1_RichelCuyler_2005.mp3 in Resources */,
+				0C6C8D2820BD16FF00D34343 /* Info.plist in Resources */,
 				0CC306291E3F969100790A85 /* Assets.xcassets in Resources */,
-				0CB99E23209826C200C60D43 /* Delicia Melted.otf in Resources */,
+				0CC31A6720BD0D0F0043195F /* Delicia Melted.otf in Resources */,
 				0CC306271E3F969100790A85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,7 +312,7 @@
 				0CC306261E3F969100790A85 /* Base */,
 			);
 			name = Main.storyboard;
-			path = MuseumMindMaze;
+			path = Gamezeum;
 			sourceTree = "<group>";
 		};
 		0CC3062A1E3F969100790A85 /* LaunchScreen.storyboard */ = {
@@ -320,7 +321,7 @@
 				0CC3062B1E3F969100790A85 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = MuseumMindMaze;
+			path = Gamezeum;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -428,7 +429,7 @@
 				"DEVELOPMENT_TEAM[sdk=*]" = 368R8KTT7Y;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
-				INFOPLIST_FILE = MuseumMindMaze/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Gamezeum/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -451,7 +452,7 @@
 				"DEVELOPMENT_TEAM[sdk=*]" = 368R8KTT7Y;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
-				INFOPLIST_FILE = MuseumMindMaze/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Gamezeum/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
@@ -466,7 +467,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0CC306191E3F969100790A85 /* Build configuration list for PBXProject "MuseumMindMaze" */ = {
+		0CC306191E3F969100790A85 /* Build configuration list for PBXProject "Gamezeum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CC3062E1E3F969100790A85 /* Debug */,
@@ -475,7 +476,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0CC306301E3F969100790A85 /* Build configuration list for PBXNativeTarget "MuseumMindMaze" */ = {
+		0CC306301E3F969100790A85 /* Build configuration list for PBXNativeTarget "Gamezeum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CC306311E3F969100790A85 /* Debug */,

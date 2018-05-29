@@ -1,6 +1,6 @@
 //
 //  InstructionPageViewController.swift
-//  MuseumMindMaze
+//  Gamezeum
 //
 //  Created by Richel Cuyler on 5/1/18.
 //  Copyright © 2018 Richel Cuyler. All rights reserved.

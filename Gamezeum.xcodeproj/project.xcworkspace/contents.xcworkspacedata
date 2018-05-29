@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MuseumMindMaze.xcodeproj">
+      location = "self:/Users/richelcuyler/Desktop/General Assembly/Gamezeum/Gamezeum.xcodeproj">
    </FileRef>
 </Workspace>

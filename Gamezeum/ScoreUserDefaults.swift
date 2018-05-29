@@ -1,6 +1,6 @@
 //
 //  ScoreUserDefaults.swift
-//  MuseumMindMaze
+//  Gamezeum
 //
 //  Created by Richel Cuyler on 2/14/17.
 //  Copyright © 2017 Richel Cuyler. All rights reserved.

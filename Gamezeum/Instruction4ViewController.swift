@@ -1,6 +1,6 @@
 //
-//  Instruction1ViewController.swift
-//  MuseumMindMaze
+//  Instruction4ViewController.swift
+//  Gamezeum
 //
 //  Created by Richel Cuyler on 5/1/18.
 //  Copyright © 2018 Richel Cuyler. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Instruction1ViewController: UIViewController {
+class Instruction4ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,5 +17,4 @@ class Instruction1ViewController: UIViewController {
     }
 
   
-
 }
