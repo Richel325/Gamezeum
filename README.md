@@ -37,7 +37,7 @@ My background and work in museums has been a way for me to combine my expertise 
 ##Hurdles
 
 * A major hurdle was figuring out which questions to ask based on information that I knew would always be available from the API. That really changed my original design early on, and forced me to simplify many design elements and features.
-* Another major hurdle was designing the 8-Bit game-like graphics. I had to outsource them to a graphic artist who is skilled in pixelated images. I think the final result - a pixelated image of the actual Brooklyn Museum - adds a really cute touch.
+* Another major hurdle was designing the 8-Bit game-like graphics. I had to outsource them to a graphic artist who is skilled in pixelated images. While I moved away from the 8-bit pixelated graphics for the final design, I wanted the final design to look clean, current, and easy to navigate.
 
 
 ##Still To Come
