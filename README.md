@@ -9,9 +9,9 @@ Learn more about the art at the museum, and quiz yourself on:
 Listen to relaxing, original classical music as you view different objects from the museum's collections, and explore objects on your phone before seeing them inside the museum on your next visit!
 
 ##Screenshots
-![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/TitleScreen.png)
-![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/ImageSelectScreen.png)
-![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/QuestionScreen.png)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/choose_art.png)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/collection_copy.png)
+![](https://github.com/Richel325/MuseumMindMaze/blob/master/MuseumMindMaze/Images/website_copy.png)
 
 ##TestFlight
 Available on TestFlight - contact for more details.
