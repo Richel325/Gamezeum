@@ -1,6 +1,6 @@
 # Gamezeum
 
-Gamezeum is a trivia game based on art objects received by using Brooklyn Museum's art collection API. 
+Gamezeum (formerly MuseumMindMaze) is a trivia game based on art objects received by using Brooklyn Museum's art collection API. 
 Learn more about the art at the museum, and quiz yourself on:
 
 * The collection the object belongs to
