@@ -12,7 +12,6 @@ class ArtImageTableViewCell: UITableViewCell {
     
     @IBOutlet weak var artImage: UIImageView!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,5 +21,8 @@ class ArtImageTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
+    
+    
+    
 
 }

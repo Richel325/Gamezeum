@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ylB-To-mvK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ylB-To-mvK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,7 +19,7 @@
         <!--GameIntroViewController-->
         <scene sceneID="gu1-x5-edo">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="LMj-HA-f7X" userLabel="GameIntroViewController" customClass="GameIntroViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="LMj-HA-f7X" userLabel="GameIntroViewController" customClass="GameIntroViewController" customModule="Gamezeum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BV0-wm-P0f"/>
                         <viewControllerLayoutGuide type="bottom" id="H7L-xC-Hx4"/>
@@ -31,67 +31,75 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5v-Su-3ns" userLabel="backgroundImageView">
                                 <rect key="frame" x="0.0" y="70" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title_museum_front" translatesAutoresizingMaskIntoConstraints="NO" id="mhd-0p-7mu">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title_museum_front" translatesAutoresizingMaskIntoConstraints="NO" id="mhd-0p-7mu">
                                         <rect key="frame" x="0.0" y="4" width="375" height="658"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mhd-0p-7mu" secondAttribute="trailing" id="3ZW-ee-PIp"/>
                                     <constraint firstAttribute="width" constant="375" id="8wg-Qm-jKh"/>
+                                    <constraint firstItem="mhd-0p-7mu" firstAttribute="centerY" secondItem="O5v-Su-3ns" secondAttribute="centerY" id="Ouf-e7-y6G"/>
+                                    <constraint firstItem="mhd-0p-7mu" firstAttribute="leading" secondItem="O5v-Su-3ns" secondAttribute="leading" id="h01-Bn-xR8"/>
                                     <constraint firstAttribute="height" constant="667" id="hUp-vA-OW1"/>
+                                    <constraint firstItem="mhd-0p-7mu" firstAttribute="top" secondItem="O5v-Su-3ns" secondAttribute="top" constant="4" id="v54-TN-FlX"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ro5-de-aDn" userLabel="startButtonView">
                                 <rect key="frame" x="94" y="500" width="200" height="136"/>
                                 <subviews>
-                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-3i-JDL" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="2" width="200" height="32"/>
+                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-3i-JDL" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
+                                        <rect key="frame" x="-78" y="-6" width="343" height="50"/>
                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Delicia-Melted" family="Delicia" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <size key="titleShadowOffset" width="2" height="2"/>
                                         <state key="normal" title="PLAY">
-                                            <color key="titleColor" red="0.10588235294117647" green="0.27058823529411763" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="checkAction:" destination="LMj-HA-f7X" eventType="touchUpInside" id="TCL-BA-cQK"/>
                                             <segue destination="uvJ-tD-UfA" kind="show" id="hxW-CI-wRg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVd-AA-RK3" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="52" width="200" height="32"/>
+                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVd-AA-RK3" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
+                                        <rect key="frame" x="-78" y="52" width="343" height="50"/>
                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Delicia-Melted" family="Delicia" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <size key="titleShadowOffset" width="2" height="2"/>
                                         <state key="normal" title="SETTINGS">
-                                            <color key="titleColor" red="0.1058823529" green="0.27058823529999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.13725490200000001" green="0.60392156860000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="pk2-Ns-iYd" kind="custom" customClass="SegueToLeft" customModule="MuseumMindMaze" customModuleProvider="target" id="Zus-UQ-eBj"/>
+                                            <segue destination="pk2-Ns-iYd" kind="custom" customClass="SegueToLeft" customModule="Gamezeum" customModuleProvider="target" id="Zus-UQ-eBj"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="xVd-AA-RK3" secondAttribute="trailing" id="BVM-y1-t8v"/>
-                                    <constraint firstItem="xVd-AA-RK3" firstAttribute="leading" secondItem="ro5-de-aDn" secondAttribute="leading" id="HWw-OR-hDW"/>
-                                    <constraint firstItem="xVd-AA-RK3" firstAttribute="centerY" secondItem="ro5-de-aDn" secondAttribute="centerY" id="aCA-cA-5iR"/>
+                                    <constraint firstAttribute="trailing" secondItem="xVd-AA-RK3" secondAttribute="trailing" constant="-65" id="BVM-y1-t8v"/>
+                                    <constraint firstItem="Q1L-3i-JDL" firstAttribute="top" secondItem="ro5-de-aDn" secondAttribute="top" constant="-6" id="D6w-XY-FIF"/>
+                                    <constraint firstItem="xVd-AA-RK3" firstAttribute="leading" secondItem="ro5-de-aDn" secondAttribute="leading" constant="-78" id="HWw-OR-hDW"/>
+                                    <constraint firstItem="xVd-AA-RK3" firstAttribute="centerY" secondItem="ro5-de-aDn" secondAttribute="centerY" constant="9" id="aCA-cA-5iR"/>
                                     <constraint firstItem="xVd-AA-RK3" firstAttribute="leading" secondItem="Q1L-3i-JDL" secondAttribute="leading" id="fBX-V0-Nq8"/>
                                     <constraint firstItem="xVd-AA-RK3" firstAttribute="trailing" secondItem="Q1L-3i-JDL" secondAttribute="trailing" id="oX4-5K-buv"/>
-                                    <constraint firstItem="xVd-AA-RK3" firstAttribute="top" secondItem="Q1L-3i-JDL" secondAttribute="bottom" constant="18" id="tBT-WL-0hf"/>
+                                    <constraint firstItem="xVd-AA-RK3" firstAttribute="top" secondItem="Q1L-3i-JDL" secondAttribute="bottom" constant="8" id="tBT-WL-0hf"/>
+                                    <constraint firstAttribute="bottom" secondItem="xVd-AA-RK3" secondAttribute="bottom" constant="34" id="teD-yp-Qrb"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1D1-Gv-tdC" userLabel="logoView">
                                 <rect key="frame" x="0.0" y="140" width="375" height="128"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gamezeum-raster-logo-V2B" translatesAutoresizingMaskIntoConstraints="NO" id="Djg-DK-jIY">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gamezeum-raster-logo-V2B" translatesAutoresizingMaskIntoConstraints="NO" id="Djg-DK-jIY">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Djg-DK-jIY" firstAttribute="leading" secondItem="1D1-Gv-tdC" secondAttribute="leading" id="01h-5Y-tDu"/>
+                                    <constraint firstAttribute="bottom" secondItem="Djg-DK-jIY" secondAttribute="bottom" id="1tX-Nv-ASK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Djg-DK-jIY" secondAttribute="trailing" id="MsG-yu-Xdx"/>
+                                    <constraint firstItem="Djg-DK-jIY" firstAttribute="top" secondItem="1D1-Gv-tdC" secondAttribute="top" id="oMn-4p-CQh"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -126,7 +134,7 @@
         <!--Choose Your Art:-->
         <scene sceneID="CcB-Nk-YBk">
             <objects>
-                <viewController title="Choose Your Art:" modalTransitionStyle="crossDissolve" id="uvJ-tD-UfA" customClass="ArtImageViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Choose Your Art:" modalTransitionStyle="crossDissolve" id="uvJ-tD-UfA" customClass="ArtImageViewController" customModule="Gamezeum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bia-ot-0Ua"/>
                         <viewControllerLayoutGuide type="bottom" id="dRq-y8-Pdm"/>
@@ -139,7 +147,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artImageCell" rowHeight="204" id="ecp-5p-0Ry" customClass="ArtImageTableViewCell" customModule="MuseumMindMaze" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artImageCell" rowHeight="204" id="ecp-5p-0Ry" customClass="ArtImageTableViewCell" customModule="Gamezeum" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="204"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecp-5p-0Ry" id="1lo-zn-Me8">
@@ -203,7 +211,7 @@
         <!--SettingsVC-->
         <scene sceneID="BrO-Xw-RHP">
             <objects>
-                <viewController id="pk2-Ns-iYd" userLabel="SettingsVC" customClass="SettingsVC" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pk2-Ns-iYd" userLabel="SettingsVC" customClass="SettingsVC" customModule="Gamezeum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xzw-kT-Fs7"/>
                         <viewControllerLayoutGuide type="bottom" id="DkT-gW-Sq6"/>
@@ -223,8 +231,8 @@
                                     <action selector="dismissToGallery:" destination="pk2-Ns-iYd" eventType="touchUpInside" id="e9w-81-ieM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JB9-ZJ-ojH" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="24" y="90" width="327" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JB9-ZJ-ojH" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
+                                <rect key="frame" x="16" y="115" width="343" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="HQ1-Dz-jBR"/>
@@ -288,8 +296,17 @@ tornotluk.in</string>
                                     </textView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhd-up-S0l" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
-                                <rect key="frame" x="24" y="173" width="327" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLg-mj-x98">
+                                <rect key="frame" x="124" y="20" width="126.5" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="h5W-Z2-rhG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Delicia-Melted" family="Delicia" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhd-up-S0l" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
+                                <rect key="frame" x="16" y="173" width="343" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <state key="normal" title="How To Play">
@@ -300,53 +317,44 @@ tornotluk.in</string>
                                     <segue destination="OTM-Vt-YdH" kind="show" id="yVo-sY-3CH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLg-mj-x98">
-                                <rect key="frame" x="124" y="20" width="126.5" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="h5W-Z2-rhG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Delicia-Melted" family="Delicia" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SzV-aa-HCW" firstAttribute="centerX" secondItem="PQb-gW-HbU" secondAttribute="centerX" id="0Uc-3T-h3g"/>
                             <constraint firstItem="SPU-DK-NfO" firstAttribute="top" secondItem="CFB-Xc-1ZJ" secondAttribute="bottom" constant="8" symbolic="YES" id="9U8-zN-Dlp"/>
                             <constraint firstItem="SzV-aa-HCW" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leading" id="CcV-mh-ViT"/>
-                            <constraint firstItem="JB9-ZJ-ojH" firstAttribute="top" secondItem="yLg-mj-x98" secondAttribute="bottom" constant="31" id="HRf-Kg-Vfm"/>
+                            <constraint firstItem="JB9-ZJ-ojH" firstAttribute="top" secondItem="yLg-mj-x98" secondAttribute="bottom" constant="56" id="HRf-Kg-Vfm"/>
                             <constraint firstItem="PQb-gW-HbU" firstAttribute="top" secondItem="SzV-aa-HCW" secondAttribute="bottom" constant="19" id="HTp-h7-1Yo"/>
                             <constraint firstItem="PQb-gW-HbU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SzC-2V-Jrr" secondAttribute="leadingMargin" id="Ihp-cX-fsH"/>
                             <constraint firstItem="CFB-Xc-1ZJ" firstAttribute="top" secondItem="PQb-gW-HbU" secondAttribute="bottom" constant="28" id="Ino-1Y-f38"/>
                             <constraint firstItem="CFB-Xc-1ZJ" firstAttribute="centerX" secondItem="PQb-gW-HbU" secondAttribute="centerX" id="K0Z-Y7-hAy"/>
                             <constraint firstItem="DkT-gW-Sq6" firstAttribute="top" secondItem="SPU-DK-NfO" secondAttribute="bottom" constant="7" id="N1a-RY-9g6"/>
                             <constraint firstItem="PQb-gW-HbU" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CFB-Xc-1ZJ" secondAttribute="trailing" id="QnU-B3-EXX"/>
-                            <constraint firstItem="PQb-gW-HbU" firstAttribute="trailing" secondItem="uhd-up-S0l" secondAttribute="trailing" id="Rot-7U-X8z"/>
+                            <constraint firstItem="PQb-gW-HbU" firstAttribute="trailing" secondItem="uhd-up-S0l" secondAttribute="trailing" constant="-8" id="Rot-7U-X8z"/>
                             <constraint firstAttribute="trailing" secondItem="yLg-mj-x98" secondAttribute="trailingMargin" constant="132.5" id="VgF-X0-v5g"/>
                             <constraint firstItem="yLg-mj-x98" firstAttribute="top" secondItem="Xzw-kT-Fs7" secondAttribute="bottom" id="WVd-zF-Cwr"/>
                             <constraint firstItem="CFB-Xc-1ZJ" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leadingMargin" constant="7" id="e5q-6g-BXS"/>
                             <constraint firstItem="SPU-DK-NfO" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leadingMargin" constant="-11" id="fPu-fF-Fxi"/>
                             <constraint firstItem="SzV-aa-HCW" firstAttribute="top" secondItem="SzC-2V-Jrr" secondAttribute="top" constant="257" id="gEY-PZ-cXg"/>
                             <constraint firstItem="SzV-aa-HCW" firstAttribute="top" secondItem="uhd-up-S0l" secondAttribute="bottom" constant="34" id="ghK-sO-J1R"/>
-                            <constraint firstItem="PQb-gW-HbU" firstAttribute="trailing" secondItem="JB9-ZJ-ojH" secondAttribute="trailing" id="hNd-T1-cdA"/>
-                            <constraint firstItem="PQb-gW-HbU" firstAttribute="leading" secondItem="uhd-up-S0l" secondAttribute="leading" id="l9c-He-Jp9"/>
+                            <constraint firstItem="PQb-gW-HbU" firstAttribute="trailing" secondItem="JB9-ZJ-ojH" secondAttribute="trailing" constant="-8" id="hNd-T1-cdA"/>
+                            <constraint firstItem="PQb-gW-HbU" firstAttribute="leading" secondItem="uhd-up-S0l" secondAttribute="leading" constant="8" id="l9c-He-Jp9"/>
                             <constraint firstAttribute="trailing" secondItem="SzV-aa-HCW" secondAttribute="trailing" id="mTE-4r-pty"/>
-                            <constraint firstItem="PQb-gW-HbU" firstAttribute="leading" secondItem="JB9-ZJ-ojH" secondAttribute="leading" id="msc-fa-cCU"/>
+                            <constraint firstItem="PQb-gW-HbU" firstAttribute="leading" secondItem="JB9-ZJ-ojH" secondAttribute="leading" constant="8" id="msc-fa-cCU"/>
                             <constraint firstItem="PQb-gW-HbU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CFB-Xc-1ZJ" secondAttribute="leading" id="x3M-KH-GaC"/>
                             <constraint firstItem="yLg-mj-x98" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SzC-2V-Jrr" secondAttribute="leadingMargin" id="zNn-ed-i9c"/>
-                            <constraint firstItem="uhd-up-S0l" firstAttribute="top" secondItem="JB9-ZJ-ojH" secondAttribute="bottom" constant="33" id="zUP-oh-wUU"/>
+                            <constraint firstItem="uhd-up-S0l" firstAttribute="top" secondItem="JB9-ZJ-ojH" secondAttribute="bottom" constant="8" id="zUP-oh-wUU"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6h-HJ-RFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1240.5" y="-3461.5"/>
+            <point key="canvasLocation" x="1239.2" y="-3461.9190404797605"/>
         </scene>
         <!--Instruction Page View Controller-->
         <scene sceneID="IFK-V8-klI">
             <objects>
-                <pageViewController storyboardIdentifier="InstructionPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="OTM-Vt-YdH" customClass="InstructionPageViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="InstructionPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="OTM-Vt-YdH" customClass="InstructionPageViewController" customModule="Gamezeum" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Poc-Z8-7aZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2289" y="-4382"/>
@@ -354,7 +362,7 @@ tornotluk.in</string>
         <!--Instruction1 View Controller-->
         <scene sceneID="eDy-Vp-Nmi">
             <objects>
-                <viewController storyboardIdentifier="Instruction1ViewController" id="Ib1-2d-hOQ" customClass="Instruction1ViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Instruction1ViewController" id="Ib1-2d-hOQ" customClass="Instruction1ViewController" customModule="Gamezeum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wiv-kZ-JIR"/>
                         <viewControllerLayoutGuide type="bottom" id="ed7-ve-bvi"/>
@@ -395,7 +403,7 @@ tornotluk.in</string>
         <!--Instruction4 View Controller-->
         <scene sceneID="X0G-qb-LRd">
             <objects>
-                <viewController storyboardIdentifier="Instruction4ViewController" id="Cic-OI-rGo" customClass="Instruction4ViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Instruction4ViewController" id="Cic-OI-rGo" customClass="Instruction4ViewController" customModule="Gamezeum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6NQ-df-Ous"/>
                         <viewControllerLayoutGuide type="bottom" id="Esh-pu-YOz"/>
@@ -435,7 +443,7 @@ tornotluk.in</string>
         <!--Instruction5 View Controller-->
         <scene sceneID="YFT-VN-9Tc">
             <objects>
-                <viewController storyboardIdentifier="Instruction5ViewController" id="SrQ-Hz-IB4" customClass="Instruction5ViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Instruction5ViewController" id="SrQ-Hz-IB4" customClass="Instruction5ViewController" customModule="Gamezeum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="blG-LJ-yve"/>
                         <viewControllerLayoutGuide type="bottom" id="ho2-Pg-QlC"/>
@@ -453,8 +461,8 @@ tornotluk.in</string>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kT-cZ-Kal">
-                                <rect key="frame" x="117.5" y="98" width="140" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kT-cZ-Kal" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
+                                <rect key="frame" x="16" y="101" width="343" height="40"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="9Sc-yw-sCF"/>
@@ -492,7 +500,7 @@ tornotluk.in</string>
         <!--Instruction2 View Controller-->
         <scene sceneID="yBA-Rv-MjU">
             <objects>
-                <viewController storyboardIdentifier="Instruction2ViewController" id="Zro-go-BrL" customClass="Instruction2ViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Instruction2ViewController" id="Zro-go-BrL" customClass="Instruction2ViewController" customModule="Gamezeum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9oU-gO-ZbW"/>
                         <viewControllerLayoutGuide type="bottom" id="B7J-QY-zR0"/>
@@ -532,7 +540,7 @@ tornotluk.in</string>
         <!--Instruction3 View Controller-->
         <scene sceneID="JmD-Q4-rDx">
             <objects>
-                <viewController storyboardIdentifier="Instruction3ViewController" id="mKD-EU-FVi" customClass="Instruction3ViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Instruction3ViewController" id="mKD-EU-FVi" customClass="Instruction3ViewController" customModule="Gamezeum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2BB-DZ-2Tq"/>
                         <viewControllerLayoutGuide type="bottom" id="wel-pO-OhJ"/>
@@ -572,7 +580,7 @@ tornotluk.in</string>
         <!--SplashScreenViewController-->
         <scene sceneID="OIj-CL-YuT">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="ylB-To-mvK" userLabel="SplashScreenViewController" customClass="SplashScreenViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="ylB-To-mvK" userLabel="SplashScreenViewController" customClass="SplashScreenViewController" customModule="Gamezeum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0gq-mp-bmV"/>
                         <viewControllerLayoutGuide type="bottom" id="NsA-V2-0ko"/>
@@ -607,7 +615,7 @@ tornotluk.in</string>
         <!--CollectionQuestion-->
         <scene sceneID="sWy-zg-n2s">
             <objects>
-                <viewController id="s1f-hd-btD" userLabel="CollectionQuestion" customClass="FindCollectionViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="s1f-hd-btD" userLabel="CollectionQuestion" customClass="FindCollectionViewController" customModule="Gamezeum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MVL-gO-EDb"/>
                         <viewControllerLayoutGuide type="bottom" id="inx-x5-mcQ"/>
@@ -661,7 +669,7 @@ tornotluk.in</string>
                                     <action selector="dismissToGallery:" destination="s1f-hd-btD" eventType="touchUpInside" id="0TF-bt-9VY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJS-65-5WM" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJS-65-5WM" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
                                 <rect key="frame" x="321" y="22" width="50" height="50"/>
                                 <state key="normal" backgroundImage="BK-MUS-Watermark"/>
                                 <connections>
@@ -671,7 +679,7 @@ tornotluk.in</string>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Vcn-dK-B9I" userLabel="AnswerStackView">
                                 <rect key="frame" x="13" y="398" width="349" height="210"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NyU-vc-zeS" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NyU-vc-zeS" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="349" height="49.5"/>
                                         <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -683,7 +691,7 @@ tornotluk.in</string>
                                             <action selector="submitAnswer1:" destination="s1f-hd-btD" eventType="touchUpInside" id="6Z8-Vu-CaD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vda-g5-bue" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vda-g5-bue" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="53.5" width="349" height="49.5"/>
                                         <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
@@ -695,7 +703,7 @@ tornotluk.in</string>
                                             <action selector="submitAnswer2:" destination="s1f-hd-btD" eventType="touchUpInside" id="kIJ-gX-mfX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="D8w-YX-FWy" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="D8w-YX-FWy" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="107" width="349" height="49.5"/>
                                         <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
@@ -707,7 +715,7 @@ tornotluk.in</string>
                                             <action selector="submitAnswer3:" destination="s1f-hd-btD" eventType="touchUpInside" id="rI6-Wv-pvX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TMh-YT-3SB" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TMh-YT-3SB" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="160.5" width="349" height="49.5"/>
                                         <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
@@ -781,7 +789,7 @@ object belong to?</string>
         <!--MaterialsQuestion-->
         <scene sceneID="Vul-UM-fcr">
             <objects>
-                <viewController id="DrB-iI-GJ6" userLabel="MaterialsQuestion" customClass="MediumViewController" customModule="MuseumMindMaze" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DrB-iI-GJ6" userLabel="MaterialsQuestion" customClass="MediumViewController" customModule="Gamezeum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m6J-L0-5Nz"/>
                         <viewControllerLayoutGuide type="bottom" id="jIk-am-LYw"/>
@@ -815,7 +823,7 @@ object belong to?</string>
                                     <segue destination="pk2-Ns-iYd" kind="presentation" id="XYc-Tw-rYz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pk2-gh-iPE" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pk2-gh-iPE" userLabel="OnlineReferenceButton" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
                                 <rect key="frame" x="321" y="22" width="50" height="50"/>
                                 <state key="normal" backgroundImage="BK-MUS-Watermark"/>
                                 <connections>
@@ -862,7 +870,7 @@ object belong to?</string>
                                     <action selector="dismissToGallery:" destination="DrB-iI-GJ6" eventType="touchUpInside" id="abF-H6-8fA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHH-Dm-jl4" userLabel="SubmitButton" customClass="CustomButton" customModule="MuseumMindMaze" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHH-Dm-jl4" userLabel="SubmitButton" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
                                 <rect key="frame" x="16" y="556" width="343" height="50"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -934,7 +942,7 @@ object belong to?</string>
         <image name="wrong" width="1226" height="1995"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="m6w-3j-vrF"/>
-        <segue reference="14d-nA-J7J"/>
+        <segue reference="Zus-UQ-eBj"/>
+        <segue reference="hxW-CI-wRg"/>
     </inferredMetricsTieBreakers>
 </document>
