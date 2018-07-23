@@ -52,6 +52,10 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
                     let _ =
                     self.dismiss(animated: true)}))
                 self.present(alertController2, animated: true, completion: nil)
+                //add observer for dismissal to delete row in ArtImageTableView when an a question is answered correctly.
+                
+                //need to reload the tableview after deleting? or does viewDidLoad handle this?
+            
             } else {
                 
                 let alertController1 = UIAlertController(title: "Wrong Answer!", message:

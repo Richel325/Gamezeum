@@ -440,10 +440,10 @@ tornotluk.in</string>
             </objects>
             <point key="canvasLocation" x="-1095.2" y="-3597.7511244377815"/>
         </scene>
-        <!--Instruction5 View Controller-->
+        <!--Instruction5ViewController-->
         <scene sceneID="YFT-VN-9Tc">
             <objects>
-                <viewController storyboardIdentifier="Instruction5ViewController" id="SrQ-Hz-IB4" customClass="Instruction5ViewController" customModule="Gamezeum" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Instruction5ViewController" title="Instruction5ViewController" id="SrQ-Hz-IB4" customClass="Instruction5ViewController" customModule="Gamezeum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="blG-LJ-yve"/>
                         <viewControllerLayoutGuide type="bottom" id="ho2-Pg-QlC"/>
@@ -461,11 +461,11 @@ tornotluk.in</string>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kT-cZ-Kal" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kT-cZ-Kal" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
                                 <rect key="frame" x="16" y="101" width="343" height="40"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="9Sc-yw-sCF"/>
+                                    <constraint firstAttribute="width" constant="343" id="9Sc-yw-sCF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Got it!">
@@ -485,9 +485,9 @@ tornotluk.in</string>
                             <constraint firstAttribute="trailing" secondItem="zKf-P4-M8C" secondAttribute="trailing" id="Vm4-QE-1Sm"/>
                             <constraint firstItem="ho2-Pg-QlC" firstAttribute="top" secondItem="zKf-P4-M8C" secondAttribute="bottom" constant="-120" id="d3i-R9-tov"/>
                             <constraint firstItem="pB9-HU-EFJ" firstAttribute="trailing" secondItem="cWm-dO-uGv" secondAttribute="trailingMargin" id="e05-35-K8X"/>
-                            <constraint firstItem="ho2-Pg-QlC" firstAttribute="top" secondItem="0kT-cZ-Kal" secondAttribute="bottom" constant="529" id="kMa-C8-CA7"/>
+                            <constraint firstItem="ho2-Pg-QlC" firstAttribute="top" secondItem="0kT-cZ-Kal" secondAttribute="bottom" constant="526" id="kMa-C8-CA7"/>
                             <constraint firstItem="pB9-HU-EFJ" firstAttribute="leading" secondItem="cWm-dO-uGv" secondAttribute="leadingMargin" id="l8J-C6-mZ1"/>
-                            <constraint firstItem="0kT-cZ-Kal" firstAttribute="top" secondItem="pB9-HU-EFJ" secondAttribute="bottom" constant="22" id="qQu-FH-6RI"/>
+                            <constraint firstItem="0kT-cZ-Kal" firstAttribute="top" secondItem="pB9-HU-EFJ" secondAttribute="bottom" constant="25" id="qQu-FH-6RI"/>
                             <constraint firstItem="zKf-P4-M8C" firstAttribute="centerX" secondItem="cWm-dO-uGv" secondAttribute="centerX" id="v6u-sX-OrD"/>
                             <constraint firstItem="zKf-P4-M8C" firstAttribute="centerY" secondItem="cWm-dO-uGv" secondAttribute="centerY" constant="120" id="whf-Er-Wjl"/>
                         </constraints>
@@ -943,6 +943,6 @@ object belong to?</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Zus-UQ-eBj"/>
-        <segue reference="hxW-CI-wRg"/>
+        <segue reference="14d-nA-J7J"/>
     </inferredMetricsTieBreakers>
 </document>
