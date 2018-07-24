@@ -23,6 +23,11 @@ class ArtImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(deleteReload), name: NSNotification.Name("deleteReload"), object: nil)
+        
+        
         reload()
         let aRefreshControl = UIRefreshControl()
         aRefreshControl.addTarget(self, action: #selector(refreshControlAction(sender:)), for: .valueChanged)
@@ -58,6 +63,12 @@ class ArtImageViewController: UIViewController {
         default:
             break
         }
+    }
+    
+    
+    @objc func deleteReload(){
+        //delete row then reload table and replace row with new object
+        print("notifications working!")
     }
 }
 

@@ -83,6 +83,9 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
                     "You got it right! Click OK to keep playing.", preferredStyle: UIAlertControllerStyle.alert)
                 alertController2.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(alertAction: UIAlertAction) in
                     let _ = self.dismiss(animated: true)}))
+                //add observer for dismissal to delete row in ArtImageTableView when an a question is answered correctly.
+                NotificationCenter.default.post(name: NSNotification.Name("deleteReload"), object: nil)
+                //need to reload the tableview after deleting? or does viewDidLoad handle this?
                 self.present(alertController2, animated: true, completion: nil)
             } else {
                 
@@ -107,6 +110,9 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
                 alertController2.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(alertAction: UIAlertAction) in
                     let _ =
                     self.dismiss(animated: true)}))
+                //add observer for dismissal to delete row in ArtImageTableView when an a question is answered correctly.
+                NotificationCenter.default.post(name: NSNotification.Name("deleteReload"), object: nil)
+                //need to reload the tableview after deleting? or does viewDidLoad handle this?
                 self.present(alertController2, animated: true, completion: nil)
             } else {
                 
@@ -129,6 +135,9 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
                     "You got it right! Click OK to keep playing.", preferredStyle: UIAlertControllerStyle.alert)
                 alertController2.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(alertAction: UIAlertAction) in
                     let _ = self.dismiss(animated: true)}))
+                //add observer for dismissal to delete row in ArtImageTableView when an a question is answered correctly.
+                NotificationCenter.default.post(name: NSNotification.Name("deleteReload"), object: nil)
+                //need to reload the tableview after deleting? or does viewDidLoad handle this?
                 self.present(alertController2, animated: true, completion: nil)
             } else {
                 
@@ -151,6 +160,9 @@ class FindCollectionViewController: UIViewController, SFSafariViewControllerDele
                     "You got it right! Click OK to keep playing.", preferredStyle: UIAlertControllerStyle.alert)
                 alertController2.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(alertAction: UIAlertAction) in
                     let _ = self.dismiss(animated: true)}))
+                //add observer for dismissal to delete row in ArtImageTableView when an a question is answered correctly.
+                NotificationCenter.default.post(name: NSNotification.Name("deleteReload"), object: nil)
+                //need to reload the tableview after deleting? or does viewDidLoad handle this?
                 self.present(alertController2, animated: true, completion: nil)
             } else {
                 

@@ -16,7 +16,6 @@ class Instruction5ViewController: UIViewController {
 
     
     @IBAction func buttonTapped(_ sender: Any) {
-        
         checkReachability()
     }
     
