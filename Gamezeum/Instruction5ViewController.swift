@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class Instruction5ViewController: UIViewController {
 
@@ -17,15 +18,7 @@ class Instruction5ViewController: UIViewController {
         super.viewDidLoad()
 
         
-        func checkReachability(sender: UIButton) {
-            if currentReachabilityStatus == .reachableViaWiFi || currentReachabilityStatus == .reachableViaWWAN {
-                //proceed as usual to tableview of art objects
-            } else {
-                let alertController1 = UIAlertController(title: "No internet connection!", message:
-                    "Please make sure you are connected to the internet, and try again.", preferredStyle: UIAlertControllerStyle.alert)
-                alertController1.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
-                self.present(alertController1, animated: true, completion: nil)        }
-        }
-    }
+        
+}
 
 }

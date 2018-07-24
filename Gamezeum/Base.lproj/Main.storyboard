@@ -129,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EyZ-tT-x1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-153.5" y="-2704.5"/>
+            <point key="canvasLocation" x="-225" y="-2704"/>
         </scene>
         <!--Choose Your Art:-->
         <scene sceneID="CcB-Nk-YBk">
@@ -472,7 +472,8 @@ tornotluk.in</string>
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="uvJ-tD-UfA" kind="show" id="14d-nA-J7J"/>
+                                    <action selector="buttonTapped:" destination="SrQ-Hz-IB4" eventType="touchUpInside" id="jnT-jM-sq5"/>
+                                    <segue destination="uvJ-tD-UfA" kind="show" id="hdG-1I-tpW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -943,6 +944,6 @@ object belong to?</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Zus-UQ-eBj"/>
-        <segue reference="14d-nA-J7J"/>
+        <segue reference="hdG-1I-tpW"/>
     </inferredMetricsTieBreakers>
 </document>

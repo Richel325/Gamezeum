@@ -10,6 +10,7 @@
 		0C0E4F661E6D2B800038A17C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E4F651E6D2B800038A17C /* Reachability.swift */; };
 		0C0E4F681E6D632A0038A17C /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E4F671E6D632A0038A17C /* SplashScreenViewController.swift */; };
 		0C2141FB2012F42C00778B17 /* Fugue#1_RichelCuyler_2005.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C2141FA2012F42B00778B17 /* Fugue#1_RichelCuyler_2005.mp3 */; };
+		0C3E479921068BEC00E9781E /* Instruction5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E479821068BEC00E9781E /* Instruction5ViewController.swift */; };
 		0C6C8D2820BD16FF00D34343 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CC3062D1E3F969100790A85 /* Info.plist */; };
 		0C73E0881FEA36F4006E1FAA /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C73E0871FEA36F4006E1FAA /* SettingsVC.swift */; };
 		0C82ADD31E53F14800F12A97 /* ScoreUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C82ADD21E53F14800F12A97 /* ScoreUserDefaults.swift */; };
@@ -19,7 +20,6 @@
 		0CB99E292098591300C60D43 /* Instruction2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E282098591200C60D43 /* Instruction2ViewController.swift */; };
 		0CB99E2B2098592500C60D43 /* Instruction3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E2A2098592500C60D43 /* Instruction3ViewController.swift */; };
 		0CB99E2D2098594700C60D43 /* Instruction4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E2C2098594700C60D43 /* Instruction4ViewController.swift */; };
-		0CB99E2F2098595600C60D43 /* Instruction5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E2E2098595600C60D43 /* Instruction5ViewController.swift */; };
 		0CB99E3120985B1F00C60D43 /* InstructionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E3020985B1F00C60D43 /* InstructionPageViewController.swift */; };
 		0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC306211E3F969100790A85 /* AppDelegate.swift */; };
 		0CC306271E3F969100790A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306251E3F969100790A85 /* Main.storyboard */; };
@@ -40,6 +40,7 @@
 		0C0E4F651E6D2B800038A17C /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		0C0E4F671E6D632A0038A17C /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashScreenViewController.swift; path = Gamezeum/SplashScreenViewController.swift; sourceTree = "<group>"; };
 		0C2141FA2012F42B00778B17 /* Fugue#1_RichelCuyler_2005.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fugue#1_RichelCuyler_2005.mp3"; sourceTree = "<group>"; };
+		0C3E479821068BEC00E9781E /* Instruction5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction5ViewController.swift; sourceTree = "<group>"; };
 		0C73E0871FEA36F4006E1FAA /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsVC.swift; path = Gamezeum/SettingsVC.swift; sourceTree = "<group>"; };
 		0C82ADD21E53F14800F12A97 /* ScoreUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreUserDefaults.swift; sourceTree = "<group>"; };
 		0CA6FB421FE1231400539E5F /* Delicia Melted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delicia Melted.otf"; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		0CB99E282098591200C60D43 /* Instruction2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Instruction2ViewController.swift; path = Gamezeum/Instruction2ViewController.swift; sourceTree = "<group>"; };
 		0CB99E2A2098592500C60D43 /* Instruction3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Instruction3ViewController.swift; path = Gamezeum/Instruction3ViewController.swift; sourceTree = "<group>"; };
 		0CB99E2C2098594700C60D43 /* Instruction4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Instruction4ViewController.swift; path = Gamezeum/Instruction4ViewController.swift; sourceTree = "<group>"; };
-		0CB99E2E2098595600C60D43 /* Instruction5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Instruction5ViewController.swift; path = Gamezeum/Instruction5ViewController.swift; sourceTree = "<group>"; };
 		0CB99E3020985B1F00C60D43 /* InstructionPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InstructionPageViewController.swift; path = Gamezeum/InstructionPageViewController.swift; sourceTree = "<group>"; };
 		0CC3061E1E3F969100790A85 /* Gamezeum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamezeum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC306211E3F969100790A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Gamezeum/AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 				0CB99E282098591200C60D43 /* Instruction2ViewController.swift */,
 				0CB99E2A2098592500C60D43 /* Instruction3ViewController.swift */,
 				0CB99E2C2098594700C60D43 /* Instruction4ViewController.swift */,
-				0CB99E2E2098595600C60D43 /* Instruction5ViewController.swift */,
+				0C3E479821068BEC00E9781E /* Instruction5ViewController.swift */,
 			);
 			name = Instructions;
 			sourceTree = "<group>";
@@ -299,7 +299,7 @@
 				0CF942B61E4D8B7700E3F563 /* FindCollectionViewController.swift in Sources */,
 				0CF942C01E4F76CA00E3F563 /* QuestionVCEnum.swift in Sources */,
 				0C0E4F661E6D2B800038A17C /* Reachability.swift in Sources */,
-				0CB99E2F2098595600C60D43 /* Instruction5ViewController.swift in Sources */,
+				0C3E479921068BEC00E9781E /* Instruction5ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
