@@ -44,7 +44,6 @@ class GameIntroViewController: UIViewController {
         super.viewDidAppear(animated)
         UIView.animate(withDuration: 1, animations: {
             self.backgroundImageView.alpha = 0.5
-            self.backgroundViewTopConstraint.constant = 0
         }) { (true) in
             showLogo()
             
