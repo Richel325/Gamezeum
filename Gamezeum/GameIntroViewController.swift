@@ -82,10 +82,6 @@ class GameIntroViewController: UIViewController {
                     self.present(alertController1, animated: true, completion: nil)        }
             }
             
-            
-            
-  
-            
 }
 
 
