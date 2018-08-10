@@ -18,6 +18,9 @@ class ArtImageViewController: UIViewController {
     @IBOutlet weak var artImageTableView: UITableView!
     
     var objects = [ArtObject]()
+    var replacementObjects = [ArtObject]()
+    var replacementObjectCount = 12
+    
     let mvc = MediumViewController()
     let fcv = FindCollectionViewController()
     
@@ -43,6 +46,7 @@ class ArtImageViewController: UIViewController {
         reload()
     }
     
+    
     func reload() {
         APIClient.getData(completion: { (objects: [ArtObject]?) -> () in
             self.objects = objects!.filter({ (obj:ArtObject) -> Bool in
@@ -51,6 +55,20 @@ class ArtImageViewController: UIViewController {
             self.artImageTableView.reloadData()
         })
     }
+    
+    
+    func fillReplacementObjects() {
+        //still using getData with an updated completion to append objects to replacementObjects
+    }
+    
+    
+    func appendFromReplacementObjects() {
+        //after object is deleted from tableview, append object from replacementObjects to objects
+        //does not need to make a networking call
+        // use .count method to check count; if count is = 0 {fillReplacementObjects}
+    }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier ?? "" {
@@ -66,11 +84,31 @@ class ArtImageViewController: UIViewController {
     }
     
     
-    @objc func deleteReload(){
+    @objc func deleteReload() {
         //delete row then reload table and replace row with new object
         print("notifications working!")
+        //make an api threshold
+        //always have a pool of items that one item can be picked from with prefetch
+        //additional array
+        //two data sources: array of objects and replacement objects
+        //each time we delete and reload, we move an object from the replacement array to the data source array
+        //when the replacement array gets to only 0 or 3 objects, append with 12 new objects and repeat
+        
+        //delete item from data source FIRST
+        //delete row at index path with fade animation
+        
+        //artImageTableView.deleteRows(at:, with:)
+        
+        //appendFromReplacementObjects
+        //insert row at index path with fade animation
+        //keep track of index path of object/ the object you selected in didSelectRowAT
     }
+    
 }
+
+
+
+
 
 
 extension ArtImageViewController: UITableViewDelegate {
