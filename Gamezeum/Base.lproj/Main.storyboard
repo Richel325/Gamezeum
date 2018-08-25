@@ -296,7 +296,7 @@ tornotluk.in</string>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLg-mj-x98">
-                                <rect key="frame" x="124.5" y="20" width="126.5" height="39"/>
+                                <rect key="frame" x="121.5" y="20" width="133" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="cAg-C0-MCO"/>
                                 </constraints>
@@ -933,7 +933,7 @@ object belong to?</string>
         <image name="wrong" width="1226" height="1995"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Zus-UQ-eBj"/>
+        <segue reference="XYc-Tw-rYz"/>
         <segue reference="hxW-CI-wRg"/>
     </inferredMetricsTieBreakers>
 </document>
