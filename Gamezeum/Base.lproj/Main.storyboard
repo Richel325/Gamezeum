@@ -296,7 +296,7 @@ tornotluk.in</string>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLg-mj-x98">
-                                <rect key="frame" x="121.5" y="20" width="133" height="39"/>
+                                <rect key="frame" x="124.5" y="20" width="126.5" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="cAg-C0-MCO"/>
                                 </constraints>
@@ -618,7 +618,7 @@ tornotluk.in</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QOv-I2-vFn" userLabel="paintingImageView">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QOv-I2-vFn" userLabel="paintingImageView">
                                 <rect key="frame" x="-23" y="-3" width="421" height="342"/>
                                 <gestureRecognizers/>
                             </imageView>
@@ -792,7 +792,7 @@ object belong to?</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iAo-5G-Q5d" userLabel="paintingImageView">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iAo-5G-Q5d" userLabel="paintingImageView">
                                 <rect key="frame" x="-23" y="-3" width="421" height="342"/>
                                 <gestureRecognizers/>
                             </imageView>
