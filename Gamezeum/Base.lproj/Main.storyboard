@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ylB-To-mvK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ylB-To-mvK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -221,10 +219,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPU-DK-NfO" userLabel="Close">
-                                <rect key="frame" x="5" y="620" width="40" height="40"/>
+                                <rect key="frame" x="16" y="608" width="40" height="39"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="A51-3Y-n3N"/>
-                                    <constraint firstAttribute="height" constant="40" id="hsn-ip-cSh"/>
+                                    <constraint firstAttribute="height" constant="39" id="DFG-Fp-iGz"/>
+                                    <constraint firstAttribute="width" constant="40" id="gWK-KR-NPm"/>
                                 </constraints>
                                 <state key="normal" image="close"/>
                                 <connections>
@@ -232,10 +230,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JB9-ZJ-ojH" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
-                                <rect key="frame" x="16" y="115" width="343" height="50"/>
+                                <rect key="frame" x="13" y="96" width="349" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="bur-Kg-2r5"/>
+                                    <constraint firstAttribute="height" constant="50" id="CBM-gj-scI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="Reset Score">
@@ -246,108 +244,74 @@
                                     <action selector="resetScore:" destination="pk2-Ns-iYd" eventType="touchUpInside" id="Xko-sf-PLo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQb-gW-HbU">
-                                <rect key="frame" x="24" y="276" width="327" height="100"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXf-5D-ixt" userLabel="Music Credit">
+                                <rect key="frame" x="0.0" y="350" width="375" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="EMI-DY-ldF"/>
+                                    <constraint firstAttribute="height" constant="150" id="zXs-Y4-oI5"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="While this application makes use of the Brooklyn Museum API, it is not an official product of the Brooklyn Museum.">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brooklynmuseumcom" translatesAutoresizingMaskIntoConstraints="NO" id="SzV-aa-HCW">
-                                <rect key="frame" x="0.0" y="257" width="375" height="0.0"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CFB-Xc-1ZJ" userLabel="ArtistCreditStack">
-                                <rect key="frame" x="23" y="404" width="327" height="208"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YXf-5D-ixt" userLabel="Music Credit">
-                                        <rect key="frame" x="0.0" y="0.0" width="159.5" height="208"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Music:
-Richel Cuyler
-"Fugue #1" (c)2006</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GgD-oS-n3g" userLabel="Design Credit">
-                                        <rect key="frame" x="167.5" y="0.0" width="159.5" height="208"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Design: 
-John Carimando
+                                <string key="text">While this application makes use of the Brooklyn Museum API, it is not an official product of the Brooklyn Museum.
+
+Music: Richel Cuyler
+"Fugue #1" (c)2006
+
+Design: John Carimando
 johncarimando.com
 tornotluk.in</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                                    </textView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="YXf-5D-ixt" firstAttribute="height" secondItem="GgD-oS-n3g" secondAttribute="height" id="A80-om-uzY"/>
-                                    <constraint firstItem="YXf-5D-ixt" firstAttribute="centerY" secondItem="GgD-oS-n3g" secondAttribute="centerY" id="g2A-eq-HP7"/>
-                                    <constraint firstItem="YXf-5D-ixt" firstAttribute="width" secondItem="GgD-oS-n3g" secondAttribute="width" id="hn2-iV-Lfa"/>
-                                </constraints>
-                            </stackView>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLg-mj-x98">
-                                <rect key="frame" x="124.5" y="20" width="126.5" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="cAg-C0-MCO"/>
-                                </constraints>
+                                <rect key="frame" x="13" y="28" width="349" height="20"/>
                                 <fontDescription key="fontDescription" name="Delicia-Melted" family="Delicia" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhd-up-S0l" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
-                                <rect key="frame" x="16" y="173" width="343" height="50"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999403953552" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="brooklynmuseumcom" translatesAutoresizingMaskIntoConstraints="NO" id="pvn-x1-T8H">
+                                <rect key="frame" x="0.0" y="217" width="375" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="ftS-th-6PO"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVX-45-4dP" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
+                                <rect key="frame" x="13" y="154" width="349" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="T43-Or-l4r"/>
+                                    <constraint firstAttribute="height" constant="50" id="i36-0Y-UUG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="How To Play">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="OTM-Vt-YdH" kind="show" id="yVo-sY-3CH"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uhd-up-S0l" firstAttribute="top" secondItem="JB9-ZJ-ojH" secondAttribute="bottom" constant="8" id="2e2-3y-6hG"/>
-                            <constraint firstItem="CFB-Xc-1ZJ" firstAttribute="width" secondItem="PQb-gW-HbU" secondAttribute="width" id="5J1-tg-XlU"/>
-                            <constraint firstAttribute="trailing" secondItem="SzV-aa-HCW" secondAttribute="trailing" id="88g-48-ubq"/>
-                            <constraint firstItem="SPU-DK-NfO" firstAttribute="top" secondItem="CFB-Xc-1ZJ" secondAttribute="bottom" constant="8" symbolic="YES" id="AKz-lJ-p0z"/>
-                            <constraint firstItem="SzV-aa-HCW" firstAttribute="top" secondItem="uhd-up-S0l" secondAttribute="bottom" constant="34" id="QJa-c4-IQM"/>
-                            <constraint firstItem="yLg-mj-x98" firstAttribute="top" secondItem="Xzw-kT-Fs7" secondAttribute="bottom" id="R07-sE-qsT"/>
-                            <constraint firstItem="yLg-mj-x98" firstAttribute="centerX" secondItem="SzC-2V-Jrr" secondAttribute="centerX" id="SAB-l9-650"/>
-                            <constraint firstItem="SPU-DK-NfO" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leadingMargin" constant="-11" id="Tyv-cJ-9Z2"/>
-                            <constraint firstAttribute="trailing" secondItem="PQb-gW-HbU" secondAttribute="trailing" constant="24" id="WDY-H3-kvq"/>
-                            <constraint firstItem="JB9-ZJ-ojH" firstAttribute="top" secondItem="yLg-mj-x98" secondAttribute="bottom" constant="56" id="YF5-II-Fv8"/>
-                            <constraint firstItem="CFB-Xc-1ZJ" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leadingMargin" constant="7" id="ZVz-2z-WqV"/>
-                            <constraint firstItem="PQb-gW-HbU" firstAttribute="top" secondItem="SzV-aa-HCW" secondAttribute="bottom" constant="19" id="bU8-BO-I2Q"/>
-                            <constraint firstItem="JB9-ZJ-ojH" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leading" constant="16" id="dZG-H7-PRZ"/>
-                            <constraint firstItem="CFB-Xc-1ZJ" firstAttribute="top" secondItem="PQb-gW-HbU" secondAttribute="bottom" constant="28" id="fnA-js-mwY"/>
-                            <constraint firstItem="JB9-ZJ-ojH" firstAttribute="centerX" secondItem="SzC-2V-Jrr" secondAttribute="centerX" id="hK0-T0-e4l"/>
-                            <constraint firstItem="uhd-up-S0l" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leading" constant="16" id="ikg-Aw-GJd"/>
-                            <constraint firstItem="PQb-gW-HbU" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leading" constant="24" id="nW6-Wg-Vbb"/>
-                            <constraint firstItem="SzV-aa-HCW" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leading" id="nXD-P1-ieB"/>
-                            <constraint firstItem="DkT-gW-Sq6" firstAttribute="top" secondItem="SPU-DK-NfO" secondAttribute="bottom" constant="7" id="sUS-5y-TkV"/>
-                            <constraint firstAttribute="trailing" secondItem="uhd-up-S0l" secondAttribute="trailing" constant="16" id="wI7-oF-bik"/>
+                            <constraint firstItem="JB9-ZJ-ojH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hVX-45-4dP" secondAttribute="leading" id="0TE-TI-sLt"/>
+                            <constraint firstItem="SPU-DK-NfO" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leadingMargin" id="5lI-HC-2In"/>
+                            <constraint firstItem="hVX-45-4dP" firstAttribute="centerX" secondItem="pvn-x1-T8H" secondAttribute="centerX" id="AUZ-p8-uuR"/>
+                            <constraint firstItem="pvn-x1-T8H" firstAttribute="leading" secondItem="YXf-5D-ixt" secondAttribute="leading" id="DNC-B5-dh7"/>
+                            <constraint firstItem="pvn-x1-T8H" firstAttribute="top" secondItem="hVX-45-4dP" secondAttribute="bottom" constant="13" id="ED5-Ce-2dn"/>
+                            <constraint firstItem="JB9-ZJ-ojH" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hVX-45-4dP" secondAttribute="trailing" id="Lp0-UG-V8o"/>
+                            <constraint firstAttribute="trailing" secondItem="pvn-x1-T8H" secondAttribute="trailing" id="M4Y-FD-Pdf"/>
+                            <constraint firstItem="pvn-x1-T8H" firstAttribute="trailing" secondItem="YXf-5D-ixt" secondAttribute="trailing" id="Y0s-jU-DDN"/>
+                            <constraint firstAttribute="bottom" secondItem="SPU-DK-NfO" secondAttribute="bottom" constant="20" symbolic="YES" id="bT2-Rd-V76"/>
+                            <constraint firstItem="yLg-mj-x98" firstAttribute="top" secondItem="Xzw-kT-Fs7" secondAttribute="bottom" constant="8" symbolic="YES" id="ccW-NV-cNI"/>
+                            <constraint firstItem="JB9-ZJ-ojH" firstAttribute="top" secondItem="yLg-mj-x98" secondAttribute="bottom" constant="48" id="hGC-7T-b1b"/>
+                            <constraint firstItem="yLg-mj-x98" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leadingMargin" constant="-3" id="hJl-t0-etd"/>
+                            <constraint firstItem="yLg-mj-x98" firstAttribute="trailing" secondItem="JB9-ZJ-ojH" secondAttribute="trailing" id="lae-q6-Z8B"/>
+                            <constraint firstItem="hVX-45-4dP" firstAttribute="top" secondItem="JB9-ZJ-ojH" secondAttribute="bottom" constant="8" symbolic="YES" id="nVY-2Q-jdL"/>
+                            <constraint firstItem="pvn-x1-T8H" firstAttribute="leading" secondItem="SzC-2V-Jrr" secondAttribute="leading" id="qQx-xj-eAa"/>
+                            <constraint firstItem="yLg-mj-x98" firstAttribute="leading" secondItem="JB9-ZJ-ojH" secondAttribute="leading" id="ycK-wT-HIh"/>
+                            <constraint firstItem="YXf-5D-ixt" firstAttribute="top" secondItem="pvn-x1-T8H" secondAttribute="bottom" constant="8" symbolic="YES" id="yhv-kd-5w1"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6h-HJ-RFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1239.2" y="-3461.9190404797605"/>
+            <point key="canvasLocation" x="1236" y="-3463.7181409295354"/>
         </scene>
         <!--Instruction Page View Controller-->
         <scene sceneID="IFK-V8-klI">
@@ -388,7 +352,6 @@ tornotluk.in</string>
                             <constraint firstItem="eXO-1T-wzL" firstAttribute="leading" secondItem="bRr-uA-gUp" secondAttribute="leadingMargin" id="Mnr-Te-kpg"/>
                             <constraint firstItem="IHX-2z-41J" firstAttribute="leading" secondItem="bRr-uA-gUp" secondAttribute="leading" id="QZJ-0Z-Lwk"/>
                             <constraint firstItem="ed7-ve-bvi" firstAttribute="top" secondItem="IHX-2z-41J" secondAttribute="bottom" constant="-120" id="cYo-uy-jDJ"/>
-                            <constraint firstItem="IHX-2z-41J" firstAttribute="centerY" secondItem="bRr-uA-gUp" secondAttribute="centerY" constant="120" id="jT1-mz-jTh"/>
                             <constraint firstItem="eXO-1T-wzL" firstAttribute="top" secondItem="Wiv-kZ-JIR" secondAttribute="bottom" id="st3-DQ-Kbp"/>
                             <constraint firstAttribute="trailing" secondItem="IHX-2z-41J" secondAttribute="trailing" id="ulb-a2-32o"/>
                         </constraints>
@@ -422,7 +385,6 @@ tornotluk.in</string>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Z8z-Ev-Lek" firstAttribute="centerY" secondItem="gFt-NO-HC9" secondAttribute="centerY" constant="120" id="4Q1-6g-0Yh"/>
                             <constraint firstItem="kbN-G9-dC6" firstAttribute="top" secondItem="6NQ-df-Ous" secondAttribute="bottom" constant="8" id="5Mn-Uh-v7j"/>
                             <constraint firstAttribute="trailing" secondItem="Z8z-Ev-Lek" secondAttribute="trailing" id="GFe-zY-CLa"/>
                             <constraint firstItem="Z8z-Ev-Lek" firstAttribute="top" secondItem="gFt-NO-HC9" secondAttribute="top" constant="120" id="Tof-NO-pSp"/>
@@ -510,7 +472,7 @@ tornotluk.in</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="collection" translatesAutoresizingMaskIntoConstraints="NO" id="som-Oe-bg4">
-                                <rect key="frame" x="0.0" y="121" width="375" height="666"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="633"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -518,12 +480,12 @@ tornotluk.in</string>
                             <constraint firstItem="som-Oe-bg4" firstAttribute="centerX" secondItem="v2S-Tf-fFW" secondAttribute="centerX" id="AYU-GF-rWv"/>
                             <constraint firstAttribute="trailing" secondItem="MZC-et-kv6" secondAttribute="trailing" constant="16" id="Mbz-V0-hj8"/>
                             <constraint firstItem="MZC-et-kv6" firstAttribute="top" secondItem="9oU-gO-ZbW" secondAttribute="bottom" constant="8" id="T9b-bt-GJh"/>
-                            <constraint firstAttribute="bottom" secondItem="som-Oe-bg4" secondAttribute="bottom" constant="-120" id="XrI-ty-amt"/>
+                            <constraint firstAttribute="bottom" secondItem="som-Oe-bg4" secondAttribute="bottom" constant="-86" id="XrI-ty-amt"/>
                             <constraint firstItem="MZC-et-kv6" firstAttribute="leading" secondItem="v2S-Tf-fFW" secondAttribute="leading" constant="16" id="d5W-9B-5G2"/>
                             <constraint firstAttribute="trailing" secondItem="som-Oe-bg4" secondAttribute="trailing" id="epw-5O-r4Y"/>
                             <constraint firstItem="som-Oe-bg4" firstAttribute="leading" secondItem="v2S-Tf-fFW" secondAttribute="leading" id="esl-qi-F3b"/>
-                            <constraint firstItem="som-Oe-bg4" firstAttribute="centerY" secondItem="v2S-Tf-fFW" secondAttribute="centerY" constant="120.5" id="fZK-KH-Q2W"/>
-                            <constraint firstItem="som-Oe-bg4" firstAttribute="top" secondItem="MZC-et-kv6" secondAttribute="bottom" constant="20" id="lnF-Iw-SlG"/>
+                            <constraint firstItem="som-Oe-bg4" firstAttribute="centerY" secondItem="v2S-Tf-fFW" secondAttribute="centerY" constant="103" id="fZK-KH-Q2W"/>
+                            <constraint firstItem="som-Oe-bg4" firstAttribute="top" secondItem="MZC-et-kv6" secondAttribute="bottom" constant="19" id="lnF-Iw-SlG"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -561,7 +523,6 @@ tornotluk.in</string>
                             <constraint firstItem="hT8-l6-Fvv" firstAttribute="top" secondItem="kKn-qx-4Eq" secondAttribute="top" constant="120" id="MkB-EB-M4Z"/>
                             <constraint firstItem="wel-pO-OhJ" firstAttribute="top" secondItem="hT8-l6-Fvv" secondAttribute="bottom" constant="-120" id="QiT-oc-yB7"/>
                             <constraint firstItem="hT8-l6-Fvv" firstAttribute="leading" secondItem="kKn-qx-4Eq" secondAttribute="leading" id="WHN-Pe-Rc9"/>
-                            <constraint firstItem="hT8-l6-Fvv" firstAttribute="centerY" secondItem="kKn-qx-4Eq" secondAttribute="centerY" constant="120" id="Ziu-Uz-FMP"/>
                             <constraint firstItem="827-Ap-Z72" firstAttribute="top" secondItem="2BB-DZ-2Tq" secondAttribute="bottom" constant="8" id="yCx-Cw-to4"/>
                             <constraint firstItem="hT8-l6-Fvv" firstAttribute="centerX" secondItem="kKn-qx-4Eq" secondAttribute="centerX" id="yoC-Ri-zHO"/>
                         </constraints>
@@ -654,7 +615,7 @@ tornotluk.in</string>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imy-su-5EA" userLabel="DismissButton">
-                                <rect key="frame" x="13" y="620" width="40" height="40"/>
+                                <rect key="frame" x="13" y="621" width="40" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="pZP-gi-wJM"/>
                                 </constraints>
@@ -671,10 +632,10 @@ tornotluk.in</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Vcn-dK-B9I" userLabel="AnswerStackView">
-                                <rect key="frame" x="13" y="398" width="349" height="210"/>
+                                <rect key="frame" x="13" y="398" width="349" height="211"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NyU-vc-zeS" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="349" height="49.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="349" height="50"/>
                                         <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
@@ -686,7 +647,7 @@ tornotluk.in</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vda-g5-bue" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="53.5" width="349" height="49.5"/>
+                                        <rect key="frame" x="0.0" y="54" width="349" height="49.5"/>
                                         <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
@@ -698,7 +659,7 @@ tornotluk.in</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="D8w-YX-FWy" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="107" width="349" height="49.5"/>
+                                        <rect key="frame" x="0.0" y="107.5" width="349" height="50"/>
                                         <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
@@ -710,7 +671,7 @@ tornotluk.in</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TMh-YT-3SB" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="160.5" width="349" height="49.5"/>
+                                        <rect key="frame" x="0.0" y="161.5" width="349" height="49.5"/>
                                         <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -723,7 +684,7 @@ tornotluk.in</string>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shu-y1-NmB" userLabel="Question">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shu-y1-NmB" userLabel="Question">
                                 <rect key="frame" x="0.0" y="340" width="375" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="rww-WH-CsM"/>
@@ -841,7 +802,7 @@ object belong to?</string>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="325 PTS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxd-no-qlQ">
-                                <rect key="frame" x="71" y="618" width="300" height="35"/>
+                                <rect key="frame" x="71" y="617" width="300" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="oRj-Jv-BFv"/>
                                 </constraints>
@@ -851,7 +812,7 @@ object belong to?</string>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8u8-7m-fLY" userLabel="DismissButton">
-                                <rect key="frame" x="16" y="615" width="40" height="40"/>
+                                <rect key="frame" x="16" y="614" width="40" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="16d-K3-vhG"/>
                                 </constraints>
@@ -861,7 +822,7 @@ object belong to?</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHH-Dm-jl4" userLabel="SubmitButton" customClass="CustomButton" customModule="Gamezeum" customModuleProvider="target">
-                                <rect key="frame" x="16" y="556" width="343" height="50"/>
+                                <rect key="frame" x="16" y="555" width="343" height="50"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="UKf-Wn-0Gc"/>
@@ -933,7 +894,7 @@ object belong to?</string>
         <image name="wrong" width="1226" height="1995"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XYc-Tw-rYz"/>
+        <segue reference="Zus-UQ-eBj"/>
         <segue reference="hxW-CI-wRg"/>
     </inferredMetricsTieBreakers>
 </document>
