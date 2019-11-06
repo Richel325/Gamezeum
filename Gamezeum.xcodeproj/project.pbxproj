@@ -15,14 +15,23 @@
 		0C82ADD31E53F14800F12A97 /* ScoreUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C82ADD21E53F14800F12A97 /* ScoreUserDefaults.swift */; };
 		0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */; };
 		0CB2C2C01E4129B800FEB7A8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */; };
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum.xcodeproj/project.pbxproj
+=======
+<<<<<<< HEAD:MuseumMindMaze.xcodeproj/project.pbxproj
+=======
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 		0CB99E272098590100C60D43 /* Instruction1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E262098590100C60D43 /* Instruction1ViewController.swift */; };
 		0CB99E292098591300C60D43 /* Instruction2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E282098591200C60D43 /* Instruction2ViewController.swift */; };
 		0CB99E2B2098592500C60D43 /* Instruction3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E2A2098592500C60D43 /* Instruction3ViewController.swift */; };
 		0CB99E2D2098594700C60D43 /* Instruction4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E2C2098594700C60D43 /* Instruction4ViewController.swift */; };
 		0CB99E3120985B1F00C60D43 /* InstructionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99E3020985B1F00C60D43 /* InstructionPageViewController.swift */; };
+<<<<<<< HEAD
 =======
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze.xcodeproj/project.pbxproj
+=======
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum.xcodeproj/project.pbxproj
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 		0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC306211E3F969100790A85 /* AppDelegate.swift */; };
 		0CC306271E3F969100790A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306251E3F969100790A85 /* Main.storyboard */; };
 		0CC306291E3F969100790A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC306281E3F969100790A85 /* Assets.xcassets */; };
@@ -45,7 +54,16 @@
 		0C3E479821068BEC00E9781E /* Instruction5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction5ViewController.swift; sourceTree = "<group>"; };
 		0C73E0871FEA36F4006E1FAA /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsVC.swift; path = Gamezeum/SettingsVC.swift; sourceTree = "<group>"; };
 		0C82ADD21E53F14800F12A97 /* ScoreUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreUserDefaults.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum.xcodeproj/project.pbxproj
+=======
+<<<<<<< HEAD:MuseumMindMaze.xcodeproj/project.pbxproj
+		0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		0CC3061E1E3F969100790A85 /* MuseumMindMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumMindMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC306211E3F969100790A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 		0CA6FB421FE1231400539E5F /* Delicia Melted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delicia Melted.otf"; sourceTree = "<group>"; };
 		0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
@@ -56,12 +74,16 @@
 		0CB99E3020985B1F00C60D43 /* InstructionPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InstructionPageViewController.swift; path = Gamezeum/InstructionPageViewController.swift; sourceTree = "<group>"; };
 		0CC3061E1E3F969100790A85 /* Gamezeum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamezeum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC306211E3F969100790A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Gamezeum/AppDelegate.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 =======
 		0CB2C2BD1E411C1300FEB7A8 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		0CB2C2BF1E4129B800FEB7A8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		0CC3061E1E3F969100790A85 /* MuseumMindMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumMindMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC306211E3F969100790A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze.xcodeproj/project.pbxproj
+=======
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum.xcodeproj/project.pbxproj
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 		0CC306261E3F969100790A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CC306281E3F969100790A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Gamezeum/Assets.xcassets; sourceTree = "<group>"; };
 		0CC3062B1E3F969100790A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -116,16 +138,32 @@
 				0CC306251E3F969100790A85 /* Main.storyboard */,
 				0CC3062A1E3F969100790A85 /* LaunchScreen.storyboard */,
 				0CF942CA1E51837000E3F563 /* CustomButton.swift */,
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum.xcodeproj/project.pbxproj
 				0CF8C6912015AC1A00B07F89 /* SegueToLeft.swift */,
 				0CC306211E3F969100790A85 /* AppDelegate.swift */,
 =======
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze.xcodeproj/project.pbxproj
+=======
+<<<<<<< HEAD:MuseumMindMaze.xcodeproj/project.pbxproj
+=======
+				0CF8C6912015AC1A00B07F89 /* SegueToLeft.swift */,
+				0CC306211E3F969100790A85 /* AppDelegate.swift */,
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum.xcodeproj/project.pbxproj
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 			);
 			name = UI;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum.xcodeproj/project.pbxproj
+=======
+<<<<<<< HEAD:MuseumMindMaze.xcodeproj/project.pbxproj
+		0CC306151E3F969100790A85 = {
+			isa = PBXGroup;
+			children = (
+=======
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 		0CB67FA61FDBB9A90072E039 /* Intro VCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,11 +203,15 @@
 			children = (
 				0CA6FB421FE1231400539E5F /* Delicia Melted.otf */,
 				0CC31A6820BD0D580043195F /* Delicia Melted.otf */,
+<<<<<<< HEAD
 =======
 		0CC306151E3F969100790A85 = {
 			isa = PBXGroup;
 			children = (
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze.xcodeproj/project.pbxproj
+=======
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum.xcodeproj/project.pbxproj
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 				0CF942C71E51704400E3F563 /* Music */,
 				0CA60EC31E468FA000CAA9B5 /* UI */,
 				0CA60EC21E468F8B00CAA9B5 /* Logic */,
@@ -207,17 +249,28 @@
 		0CF942B21E4D8B2A00E3F563 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum.xcodeproj/project.pbxproj
 				0CB67FA61FDBB9A90072E039 /* Intro VCs */,
 				0CB67FA71FDBB9B70072E039 /* Black VCs */,
 =======
+=======
+<<<<<<< HEAD:MuseumMindMaze.xcodeproj/project.pbxproj
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 				0C0E4F671E6D632A0038A17C /* SplashScreenViewController.swift */,
 				0CF942C51E516EE900E3F563 /* GameIntroViewController.swift */,
 				0CF942C11E5136EA00E3F563 /* ArtImageViewController.swift */,
 				0CF942B31E4D8B5700E3F563 /* MediumViewController.swift */,
 				0CF942B51E4D8B7700E3F563 /* FindCollectionViewController.swift */,
 				0CC306211E3F969100790A85 /* AppDelegate.swift */,
+<<<<<<< HEAD
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze.xcodeproj/project.pbxproj
+=======
+=======
+				0CB67FA61FDBB9A90072E039 /* Intro VCs */,
+				0CB67FA71FDBB9B70072E039 /* Black VCs */,
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum.xcodeproj/project.pbxproj
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -290,10 +343,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum.xcodeproj/project.pbxproj
 =======
 				0CF942C91E51705600E3F563 /* Fmaj.mp3 in Resources */,
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze.xcodeproj/project.pbxproj
+=======
+<<<<<<< HEAD:MuseumMindMaze.xcodeproj/project.pbxproj
+				0CF942C91E51705600E3F563 /* Fmaj.mp3 in Resources */,
+=======
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum.xcodeproj/project.pbxproj
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 				0CC3062C1E3F969100790A85 /* LaunchScreen.storyboard in Resources */,
 				0C2141FB2012F42C00778B17 /* Fugue#1_RichelCuyler_2005.mp3 in Resources */,
 				0CC306291E3F969100790A85 /* Assets.xcassets in Resources */,
@@ -317,10 +377,17 @@
 				0CF8C6922015AC1A00B07F89 /* SegueToLeft.swift in Sources */,
 				0CB99E3120985B1F00C60D43 /* InstructionPageViewController.swift in Sources */,
 				0C0E4F681E6D632A0038A17C /* SplashScreenViewController.swift in Sources */,
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum.xcodeproj/project.pbxproj
 				0C73E0881FEA36F4006E1FAA /* SettingsVC.swift in Sources */,
 =======
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze.xcodeproj/project.pbxproj
+=======
+<<<<<<< HEAD:MuseumMindMaze.xcodeproj/project.pbxproj
+=======
+				0C73E0881FEA36F4006E1FAA /* SettingsVC.swift in Sources */,
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum.xcodeproj/project.pbxproj
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 				0CB2C2BE1E411C1300FEB7A8 /* APIModel.swift in Sources */,
 				0CF942CB1E51837000E3F563 /* CustomButton.swift in Sources */,
 				0CC306221E3F969100790A85 /* AppDelegate.swift in Sources */,
@@ -477,12 +544,21 @@
 				"DEVELOPMENT_TEAM[sdk=*]" = 368R8KTT7Y;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum.xcodeproj/project.pbxproj
 				INFOPLIST_FILE = "$(SRCROOT)/Gamezeum/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 =======
 				INFOPLIST_FILE = MuseumMindMaze/Info.plist;
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze.xcodeproj/project.pbxproj
+=======
+<<<<<<< HEAD:MuseumMindMaze.xcodeproj/project.pbxproj
+				INFOPLIST_FILE = MuseumMindMaze/Info.plist;
+=======
+				INFOPLIST_FILE = "$(SRCROOT)/Gamezeum/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum.xcodeproj/project.pbxproj
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MJFE.Gamezeum;
@@ -504,18 +580,31 @@
 				"DEVELOPMENT_TEAM[sdk=*]" = 368R8KTT7Y;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum.xcodeproj/project.pbxproj
+=======
+<<<<<<< HEAD:MuseumMindMaze.xcodeproj/project.pbxproj
+				INFOPLIST_FILE = MuseumMindMaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MJFE.MuseumMindMaze;
+=======
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 				INFOPLIST_FILE = "$(SRCROOT)/Gamezeum/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MJFE.Gamezeum;
+<<<<<<< HEAD
 =======
 				INFOPLIST_FILE = MuseumMindMaze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MJFE.MuseumMindMaze;
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze.xcodeproj/project.pbxproj
+=======
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum.xcodeproj/project.pbxproj
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;

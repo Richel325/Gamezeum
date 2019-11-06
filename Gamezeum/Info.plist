@@ -15,6 +15,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum/Info.plist
 	<string>1.2</string>
 	<key>CFBundleVersion</key>
@@ -24,6 +25,17 @@
 	<key>CFBundleVersion</key>
 	<string>1.1</string>
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze/Info.plist
+=======
+<<<<<<< HEAD:MuseumMindMaze/Info.plist
+	<string>1.0.1</string>
+	<key>CFBundleVersion</key>
+	<string>1.1</string>
+=======
+	<string>1.2</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum/Info.plist
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIAppFonts</key>

@@ -23,10 +23,17 @@ class ArtObject { //condensed art object listing including artist, didactic labe
     var medium: String?
     var description: String?
     var primary_image: String?
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum/DataModel.swift
 =======
     
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze/DataModel.swift
+=======
+<<<<<<< HEAD:MuseumMindMaze/DataModel.swift
+    
+=======
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum/DataModel.swift
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
     var artist: Artist?
     var collection: Collection?
     var label: Label?

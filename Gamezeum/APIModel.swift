@@ -16,6 +16,7 @@ class APIClient{
     
     static func getData(onViewOnly: Bool = false, completion: @escaping ([ArtObject]?) -> ()) {
         DispatchQueue.global(qos: .background).async{
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum/APIModel.swift
             let randomNumber: Int = Int(arc4random_uniform(UInt32(92290-35))) //TO DO: how many objects are there? Is this correct?
             let endpoint = "https://www.brooklynmuseum.org/api/v2/object?&has_images=1&rights_type_permissive=1&offset=\(randomNumber)"
@@ -24,6 +25,16 @@ class APIClient{
             let randomNumber: Int = Int(arc4random_uniform(UInt32(10000)))
             let endpoint = "https://www.brooklynmuseum.org/api/v2/object?offset=\(randomNumber)"
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze/APIModel.swift
+=======
+<<<<<<< HEAD:MuseumMindMaze/APIModel.swift
+            let randomNumber: Int = Int(arc4random_uniform(UInt32(10000)))
+            let endpoint = "https://www.brooklynmuseum.org/api/v2/object?offset=\(randomNumber)"
+=======
+            let randomNumber: Int = Int(arc4random_uniform(UInt32(92290-35))) //TO DO: how many objects are there? Is this correct?
+            let endpoint = "https://www.brooklynmuseum.org/api/v2/object?&has_images=1&rights_type_permissive=1&offset=\(randomNumber)"
+           
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum/APIModel.swift
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
             var url = URLRequest(url: URL(string: endpoint)!)
             url.addValue(APIKey, forHTTPHeaderField: "api_key")
             let session = URLSession(configuration: URLSessionConfiguration.default)

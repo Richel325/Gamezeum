@@ -7,7 +7,22 @@
 //
 
 import UIKit
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum/MediumViewController.swift
+=======
+<<<<<<< HEAD:MuseumMindMaze/MediumViewController.swift
+
+class MediumViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var artTitle: UITextView!
+    @IBOutlet weak var artImage: UIImageView!
+    @IBOutlet weak var artArtist: UILabel!
+    @IBOutlet weak var artObjectDate: UILabel!
+    @IBOutlet weak var artDescription: UITextView!
+    @IBOutlet weak var answer: UITextField!
+    @IBOutlet weak var scoreLabel: UILabel!
+=======
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 import AVFoundation
 import SafariServices
 
@@ -20,6 +35,7 @@ class MediumViewController: UIViewController, UITextFieldDelegate, SFSafariViewC
     
     
     
+<<<<<<< HEAD
 =======
 
 class MediumViewController: UIViewController, UITextFieldDelegate {
@@ -32,6 +48,9 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var answer: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze/MediumViewController.swift
+=======
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum/MediumViewController.swift
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
     
     var object: ArtObject?
     var museumURL : String = "https://www.brooklynmuseum.org/opencollection/objects/"
@@ -71,10 +90,17 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
                 self.present(alertController2, animated: true, completion: nil)
                 
             } else {
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum/MediumViewController.swift
                 
 =======
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze/MediumViewController.swift
+=======
+<<<<<<< HEAD:MuseumMindMaze/MediumViewController.swift
+=======
+                
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum/MediumViewController.swift
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
                 let alertController1 = UIAlertController(title: "Wrong Answer!", message:
                     "Please try answering the question again.", preferredStyle: UIAlertControllerStyle.alert)
                 alertController1.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
@@ -98,7 +124,12 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
     }
     
     
+<<<<<<< HEAD
 <<<<<<< HEAD:Gamezeum/MediumViewController.swift
+=======
+<<<<<<< HEAD:MuseumMindMaze/MediumViewController.swift
+=======
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
     
     
     
@@ -114,7 +145,11 @@ class MediumViewController: UIViewController, UITextFieldDelegate {
     }
     
 
+<<<<<<< HEAD
 =======
 >>>>>>> 96aafcbfcbb955c03fd7ad1935c642b541b2fcd6:MuseumMindMaze/MediumViewController.swift
+=======
+>>>>>>> 16cb402b832133503c378ce8902f95e73a7365fa:Gamezeum/MediumViewController.swift
+>>>>>>> e9e526146ca6ae5acbcb129f623e6d97daa1de8e
 }
 
